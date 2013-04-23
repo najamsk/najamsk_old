@@ -12,7 +12,7 @@ $main-bg: #f8f8f8 !default;
 $page-bg: #252525 !default;
 $article-border: #eeeeee !default;
 
-$header-bg: #c13035 !default;
+$header-bg: #333 !default;
 $header-border: lighten($header-bg, 15) !default;
 $title-color: #f2f2f2 !default;
 $subtitle-color: #aaa !default;
@@ -44,6 +44,7 @@ $sidebar-border: desaturate(darken($sidebar-bg, 7), 10) !default;
 $sidebar-border-hover: darken($sidebar-bg, 7) !default;
 $sidebar-link-color-subdued: lighten($sidebar-color, 20) !default;
 $sidebar-link-color-subdued-hover: $sidebar-link-color-hover !default;
+$twitter-status-link: lighten($sidebar-link-color-subdued, 15) !default;
 
 $footer-color: #888 !default;
 $footer-bg: #ccc !default;
