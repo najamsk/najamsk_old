@@ -12,8 +12,8 @@ hi everyone,
 
 today I discovered a nice tip from a <a href="http://haacked.com/archive/2004/06/21/658.aspx" target="_blank">blog</a> I never knew selecting random rows were that easy with sqlserver 2000 and above. I have a country table that has four countries and from 4 I am selecting random 2.
 
-<em>SELECT TOP 2 * FROM country ORDER By NEWID()
-select * from country</em>
+	SELECT TOP 2 * FROM country ORDER By NEWID()
+	select * from country
 
 <strong>First Result</strong>
 

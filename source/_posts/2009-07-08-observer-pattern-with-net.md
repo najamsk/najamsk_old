@@ -12,7 +12,7 @@ Hi folks,
 
 Well I am investigating design patterns by reading an <a title="Read This" href="http://msdn.microsoft.com/en-us/magazine/cc188707.aspx" target="_blank">article</a> so after reading a bit I thought it would be nice if I write some code and test it.
 
-[code lang="csharp"]
+{% codeblock lang:c# %}
 
 using System;
 using System.Collections.Generic;
@@ -86,4 +86,4 @@ Console.ReadKey();
 }
 }
 
-[/code]
+{% endcodeblock %}

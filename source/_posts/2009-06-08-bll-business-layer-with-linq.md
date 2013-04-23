@@ -16,7 +16,7 @@ If you just want to list all the methods into your table that is also included i
 
 Problem arises if someone say only show selective columns then if you try to select few colums you will see visual studio provding you hint that objects return from the linq query will be of annonymous type. So to tackle this you have two options either spicy your return varriable of  object type or write a skelton class that have all those columns you want to have from your datable. Below is the code with skelton class approch its easy to guess skelton class will define a type and visual studio will not alert anymore by saying your objects are of annonymous type.
 
-[code lang="csharp"]
+{% codeblock lang:c# %}
 
 public class ItemsDT
 {
@@ -44,4 +44,4 @@ itemgroupName = t.Group.gName
 }).ToList&lt;ItemGridView&gt;();
 }
 
-[/code]
+{% endcodeblock %}

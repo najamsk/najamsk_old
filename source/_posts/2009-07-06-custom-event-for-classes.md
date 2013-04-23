@@ -9,7 +9,7 @@ categories:
 ---
 I was reading how to write events for your custom classes so after reading a little I thought give it a shot and created this sample code. Below code is using Product class with event and delegate for event handling and other class named Test is using this class and manipulate product class data. If you change the Name of the product event will fire.
 
-[code lang="csharp"]
+{% codeblock lang:c# %}
 
 using System;
 using System.Collections.Generic;
@@ -84,4 +84,4 @@ t.TestProduct();
 }
 }
 
-[/code]
+{% endcodeblock %}

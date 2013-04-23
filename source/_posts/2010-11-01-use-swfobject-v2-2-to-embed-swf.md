@@ -7,7 +7,7 @@ categories:
 - development
 - javascript
 ---
-<pre class="jscript">
+{% codeblock lang:js %}
 function flashswf(file, target, Width, Height, ID) {
 var flashvars = {}
 var params = {
@@ -25,4 +25,4 @@ swfobject.embedSWF(file, target, Width, Height, "9.0.115", false, flashvars, par
 
 flashswf("/swf/total moistureiser.swf", "flashW", "704", "286", "homeFlash");
 
-</pre>
+{% endcodeblock %}

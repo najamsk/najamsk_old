@@ -20,15 +20,18 @@ Lets first examine what are the requiments for webservice if we need to call it 
 By default asp.net web services use soap for communication scriptservice marker make your webservice to use JASON.
 
 Now lets defien the method in our webservice which we want to be accessable by our javascript code.
-[code lang="csharp"]
+
+{% codeblock lang:c# %}
 [WebMethod]
 public int AddingNumbers(int a, int b)
 {
 return a + b;
 }
-[/code]
+{% endcodeblock %}
+
 That's it now lets move to client side code.
-[code lang="javascript"]
+
+{% codeblock lang:c#%}
 $(function(){
 $.ajax({
 
@@ -47,7 +50,8 @@ alert("Request can't made using ajax");
 }
 });//ajax ends here
 });// document ready ends here
-[/code]
+{% endcodeblock %}
+
 In above javasrcipt code we are making an ajax post request we set  contentType to "application/json; charset=utf-8" and  dataType to "json" and passing a=1,b=2 as are data input parameters note that varriables name are same as verriables declared in webservice's function <strong>AddingNumbers </strong>input parameters.
 
 Please read articles from following links to know more and have a strong background.
