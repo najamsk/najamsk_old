@@ -13,15 +13,19 @@ My sound card working now after installing latest <a href="http://www.alsa-proje
 
 Compile alsa-driver like this:
 
+{% codeblock %}
 ./configure --with-cards=hda-intel
 make
 make install
+{% endcodeblock %}
 
 and alsa-lib and alsa-util in this order like this:
 
+{% codeblock %}
 ./configure
 make
 make install
+{% endcodeblock %}
 
 Reboot and there you go!
 

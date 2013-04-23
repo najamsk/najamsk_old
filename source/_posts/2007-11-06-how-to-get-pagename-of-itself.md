@@ -10,7 +10,10 @@ categories:
 ---
  If you want to display the filename or page name of the current displaying page just use these two lines and it will show only the filename like default.aspx, najam.aspx or indexas.aspx no matter it these pages are located deep into your site structure.
 
+
+{% codeblock lang:c# %}
 string pagename = System.IO.Path.GetFileName(Request.ServerVariables["SCRIPT_NAME"]); Response.Write(pagename);
+{% endcodeblock %}
 
 Enjoy coding
 
