@@ -4,7 +4,7 @@ title: My Acer Aspire 1642ZNWLCi
 date: 2007-02-13 22:31
 comments: true
 categories:
-- mine
+- inventory
 ---
 Hi i just wanted to share my laptop specification with you.
 <ul>

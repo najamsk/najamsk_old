@@ -4,8 +4,9 @@ title: Sql Data Srouce Control Deleting Data From Database
 date: 2008-07-17 05:23
 comments: true
 categories:
-- sql
+- asp.net
 - c#
+- ado.net
 ---
 Hey guyz today i will show you how to fire delete query by using our beloved control sqldatasource.
 

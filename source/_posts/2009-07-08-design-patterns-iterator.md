@@ -5,6 +5,8 @@ date: 2009-07-08 06:16
 comments: true
 categories:
 - c#
+- design patterns
+- .net
 ---
 Hi Guys,
 

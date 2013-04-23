@@ -5,6 +5,7 @@ date: 2007-01-06 16:34
 comments: true
 categories:
 - games
+- tips
 ---
 hi
 

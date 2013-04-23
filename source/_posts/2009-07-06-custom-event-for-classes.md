@@ -5,6 +5,7 @@ date: 2009-07-06 04:28
 comments: true
 categories:
 - c#
+- .net
 ---
 I was reading how to write events for your custom classes so after reading a little I thought give it a shot and created this sample code. Below code is using Product class with event and delegate for event handling and other class named Test is using this class and manipulate product class data. If you change the Name of the product event will fire.
 

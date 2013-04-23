@@ -5,6 +5,7 @@ date: 2009-01-27 02:28
 comments: true
 categories:
 - wordpress
+- blogging
 ---
 hi everyone
 

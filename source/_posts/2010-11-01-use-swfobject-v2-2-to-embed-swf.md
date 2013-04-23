@@ -4,7 +4,8 @@ title: use SWFObject v2.2 to embed swf
 date: 2010-11-01 09:46
 comments: true
 categories:
-- coding
+- development
+- javascript
 ---
 <pre class="jscript">
 function flashswf(file, target, Width, Height, ID) {

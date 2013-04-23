@@ -5,6 +5,7 @@ date: 2007-02-20 09:54
 comments: true
 categories:
 - linux
+- tips
 ---
 Hi guyz
 

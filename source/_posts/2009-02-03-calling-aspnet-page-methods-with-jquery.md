@@ -5,6 +5,9 @@ date: 2009-02-03 04:23
 comments: true
 categories:
 - asp.net
+- ajax
+- jQuery
+- development
 ---
 Hi guyz,
 

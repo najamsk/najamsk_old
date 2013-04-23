@@ -5,6 +5,7 @@ date: 2006-12-25 10:22
 comments: true
 categories:
 - cdma
+- telecom
 ---
 <p class="MsoNormal">I found following information very useful in result adding it onto my site.</p>
 <p class="MsoNormal"><strong>This article is taken from <a href="http://denbeste.nu/cd_log_entries/2002/10/GSM3G.shtml" title="Visit the source of this article" target="_blank">here</a>  as it was posted without changing a single bit. </strong></p>

@@ -4,7 +4,7 @@ title: reinstall grub after installing windows xp
 date: 2007-03-01 11:15
 comments: true
 categories:
-- xp
+- windows
 ---
 hi guyz
 

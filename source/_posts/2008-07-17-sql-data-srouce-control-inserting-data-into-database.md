@@ -5,6 +5,8 @@ date: 2008-07-17 05:07
 comments: true
 categories:
 - ado.net
+- c#
+- asp.net
 ---
 hey guyz how are you ??
 

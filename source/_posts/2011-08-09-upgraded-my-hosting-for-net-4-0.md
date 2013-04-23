@@ -5,6 +5,8 @@ date: 2011-08-09 10:13
 comments: true
 categories:
 - .net
+- hosting
+- news
 ---
 I have been watching Mix11 videos about asp.net mvc3 and felt pretty excited to mingle with these latest bits but I didn't wanted to limit myself to local environment I wanted to know what efforts are required if I am developing with latest stuff one limitation I had that my host always take ages to update server so I had support for .net3.5. I email them about this thing and in reply they told me either wait 6 months or pay $8. Since I was dying to test out EF code first I paid them and within one day my hosting is all updated and now I am running my incomplete demo online :).
 

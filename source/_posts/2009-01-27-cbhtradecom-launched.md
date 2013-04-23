@@ -5,6 +5,8 @@ date: 2009-01-27 07:54
 comments: true
 categories:
 - wordpress
+- news
+- projects
 ---
 hi guys
 

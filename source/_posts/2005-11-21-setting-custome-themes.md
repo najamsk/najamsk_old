@@ -5,6 +5,7 @@ date: 2005-11-21 22:04
 comments: true
 categories:
 - wordpress
+- blogging
 ---
 hi
 

@@ -5,6 +5,8 @@ date: 2009-06-09 22:37
 comments: true
 categories:
 - git
+- source control
+- version control
 ---
 hi
 

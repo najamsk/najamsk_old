@@ -5,6 +5,7 @@ date: 2009-01-27 02:50
 comments: true
 categories:
 - projects
+- news
 ---
 hi guys
 

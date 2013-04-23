@@ -5,6 +5,7 @@ date: 2009-07-09 23:01
 comments: true
 categories:
 - projects
+- news
 ---
 I have uploaded another static website that might become an e-commerce website in future.
 

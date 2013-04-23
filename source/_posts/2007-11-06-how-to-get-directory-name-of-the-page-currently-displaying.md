@@ -4,7 +4,9 @@ title: How to get directory name of the page currently displaying
 date: 2007-11-06 06:40
 comments: true
 categories:
-- C#
+- c#
+- .net
+- asp.net
 ---
 If you want to know only the directory name not the full path of the page that is currently displaying you can use this code
 

@@ -5,6 +5,8 @@ date: 2008-07-17 05:32
 comments: true
 categories:
 - ado.net
+- c#
+- asp.net
 ---
 hey guyz finally we have to learn how to update our tables in database so only for you guys here is my sample code
 

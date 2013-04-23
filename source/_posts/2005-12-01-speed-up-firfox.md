@@ -5,6 +5,8 @@ date: 2005-12-01 00:12
 comments: true
 categories:
 - firefox
+- tips
+- browsers
 ---
 <p><strong> Here's something for broadband people that will really speed Firefox up:<br />
 </strong><br />

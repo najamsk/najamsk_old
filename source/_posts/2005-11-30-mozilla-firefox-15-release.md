@@ -5,6 +5,7 @@ date: 2005-11-30 20:46
 comments: true
 categories:
 - firefox
+- browsers
 ---
 Firefox version 1.5 released today I have downloaded this latest version from http//:www.mozila.org
 

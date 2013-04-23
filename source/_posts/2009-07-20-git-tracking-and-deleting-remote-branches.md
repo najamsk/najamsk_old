@@ -5,6 +5,8 @@ date: 2009-07-20 09:11
 comments: true
 categories:
 - git
+- source control
+- version control
 ---
 <strong>List the remote branches that exist for a repository you have cloned:</strong>
 

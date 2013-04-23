@@ -5,6 +5,7 @@ date: 2007-09-30 19:47
 comments: true
 categories:
 - hosting
+- news
 ---
 Hi guyz,
 

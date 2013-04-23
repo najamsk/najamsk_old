@@ -5,6 +5,7 @@ date: 2010-12-03 01:59
 comments: true
 categories:
 - css
+- tips
 ---
 I was wondering how to count the rules of my style sheets after little googling i discovered two ways one is through vim and second is through a command line tool called grep.
 

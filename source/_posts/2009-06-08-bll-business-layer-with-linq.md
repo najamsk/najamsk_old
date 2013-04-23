@@ -5,6 +5,8 @@ date: 2009-06-08 07:04
 comments: true
 categories:
 - linq
+- c#
+- .net
 ---
 Hello guys,
 

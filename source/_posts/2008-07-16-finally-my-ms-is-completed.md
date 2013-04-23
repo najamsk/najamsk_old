@@ -5,6 +5,7 @@ date: 2008-07-16 08:13
 comments: true
 categories:
 - education
+- news
 ---
 Ummm whats new in my life?
 

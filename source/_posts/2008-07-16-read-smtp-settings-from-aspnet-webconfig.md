@@ -5,6 +5,8 @@ date: 2008-07-16 08:09
 comments: true
 categories:
 - asp.net
+- .net
+- c#
 ---
 hi guyz
 

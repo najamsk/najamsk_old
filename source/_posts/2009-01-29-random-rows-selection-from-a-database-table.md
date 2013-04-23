@@ -5,6 +5,8 @@ date: 2009-01-29 03:36
 comments: true
 categories:
 - database
+- tips
+- sql
 ---
 hi everyone,
 

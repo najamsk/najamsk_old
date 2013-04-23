@@ -5,6 +5,11 @@ date: 2009-02-03 05:22
 comments: true
 categories:
 - asp.net
+- ajax
+- web services
+- .net
+- c#
+- jQuery
 ---
 hi guys,
 

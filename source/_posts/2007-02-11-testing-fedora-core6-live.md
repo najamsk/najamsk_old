@@ -5,6 +5,8 @@ date: 2007-02-11 13:29
 comments: true
 categories:
 - linux 
+- tips
+- networks
 ---
 hi
 

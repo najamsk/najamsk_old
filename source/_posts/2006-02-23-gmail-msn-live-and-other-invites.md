@@ -5,6 +5,7 @@ date: 2006-02-23 21:37
 comments: true
 categories:
 - messengers
+- invites
 ---
 If anyone want to have invite of gmail,msn live messenger or mywallop (community) then please leave your email address as comment and dont forget to mention what invite you want.
 

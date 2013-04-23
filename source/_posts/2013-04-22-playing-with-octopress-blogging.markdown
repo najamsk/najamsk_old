@@ -7,6 +7,7 @@ categories:
 - ruby 
 - github 
 - octopress
+- blogging
 ---
 
 I think blogging using octopress and github pages mentioned in yayquery episode where [rebbeca murphy](http://google.com) let us know about her blog is now powered by these tools and she moved it from wordpress.
@@ -17,6 +18,7 @@ I have read following octopress documentation for configuration and blogging:
 
 * [configuring octopress](http://octopress.org/docs/configuring/)
 * [blogging with octopress](http://octopress.org/docs/blogging/)
+* To migrate your wordpress posts to markdown files i have used [wpxml2jekyll](https://github.com/theaob/wpXml2Jekyll)
 
 	rake setup_github_pages
 this will ask for your github repo path

@@ -5,6 +5,8 @@ date: 2005-12-02 13:12
 comments: true
 categories:
 - firefox
+- browsers
+- internet
 ---
 <p>For all of those who just downloaded Firefox 1.5 and canât get your extensions to work. This is a simple modification of Firefoxâs configuration to trick the extensions to work. No need to manually edit the extensions to get them to work. Currently all the extensions I use work except the bookmark sync extension that I so dearly want to.</p>
 <p>1. At the location bar, enter: about:config. This will show you a list of Firefox internal preferences.<br />

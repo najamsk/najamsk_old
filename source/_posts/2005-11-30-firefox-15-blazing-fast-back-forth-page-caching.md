@@ -5,6 +5,8 @@ date: 2005-11-30 23:43
 comments: true
 categories:
 - tips
+- browsers
+- internet
 ---
 <p>1. Download and install the latest Firefox<br />
 * Linux<br />
