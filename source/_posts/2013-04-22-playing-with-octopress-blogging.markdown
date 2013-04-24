@@ -9,26 +9,27 @@ categories:
 - octopress
 - blogging
 ---
+I first came to know about octopress from yayquery episode in which rebbeca murphy mentioned she has moved her blog form wordpress to octopress and she is very happy with that. At that time I didn't paid any attention to this. 
 
-I think blogging using octopress and github pages mentioned in yayquery episode where [rebbeca murphy](http://google.com) let us know about her blog is now powered by these tools and she moved it from wordpress.
+But today I suddenly started to play with it and I liked few things I learnt along the way and that kept me going till I have imported all of my posts from wordpress to github pages.
 
-At that time i did'nt do anythig with the info but today I thought lets do this crazy shit and wolla here I am.
 
-I have read following octopress documentation for configuration and blogging:
+I have read following pages form octopress documentation for configuration and blogging:
 
 * [configuring octopress](http://octopress.org/docs/configuring/)
 * [blogging with octopress](http://octopress.org/docs/blogging/)
 * To migrate your wordpress posts to markdown files i have used [wpxml2jekyll](https://github.com/theaob/wpXml2Jekyll)
-
+To link your octopress setup with github you have to run following this will ask for your user/organization repository.
+{% codeblock %}
 	rake setup_github_pages
-this will ask for your github repo path.
+{% endcodeblock %}
 
 Next you need to do following two commands to genrate site from octopress and upload it to github repo.
-
 	rake generate
 	rake deploy
 
-I will have few things in mind to discover about octopress 
+I will have few things in mind to discover about octopress
+
 * q: how to customize the styles/layout?
 * q: how to make twitter work in sidebar?
 * q: how to make rake preview to work against current copy in master branch?
