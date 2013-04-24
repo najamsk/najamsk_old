@@ -4,6 +4,8 @@ title: "Attended Bahria University Job Fair"
 date: 2013-04-24 21:48
 comments: true
 categories: 
+- events
+- news
 ---
 
 Bahria university hosted a job fair session on 19th April 2013 in which they invites companies from local industry. My company also participated in the event. 
