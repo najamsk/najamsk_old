@@ -1,0 +1,20 @@
+---
+layout: post
+title: "dotnet conf 2013"
+date: 2013-04-25 21:11
+comments: true
+published: false
+categories: 
+- conference
+- event
+---
+
+-- Advanced Debugging with WinDbg and SOS
+procdump can be uses for crash dumps and hang dumps. drag the dump files into visual studio 2010 with .net 4.0 installed.
+
+2nd tool is windbg 6.2.8 comes with SOS extension
+
+ yes! There's also a great tool called DebugDiag which is particularly useful for creating dumps of ASP.NET apps.
+
+ -- Utilize Compilation as a Service to create the next level plug in capability
+
