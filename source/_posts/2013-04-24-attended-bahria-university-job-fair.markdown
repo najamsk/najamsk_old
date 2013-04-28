@@ -30,3 +30,6 @@ After attending this I have been thinking about giving sessions to students in w
 In next post I will outlines topics for basic training if you are interested to contribute in this cause let me know. If you want to attend such sessions than you can contact me.
 
 These sessions will be free and you can contribute in exercise files, topics and provide your valuable feedback.
+
+
+![bahria job expo](http://sphotos-g.ak.fbcdn.net/hphotos-ak-ash3/533426_455628001181077_168154726_n.jpg)
