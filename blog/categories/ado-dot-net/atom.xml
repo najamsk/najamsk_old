@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ado.net | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io//blog/categories/ado-dot-net/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io//"/>
-  <updated>2013-04-28T11:13:40+05:00</updated>
-  <id>http://najamsk.github.io//</id>
+  <link href="http://najamsk.github.io/najamsk/blog/categories/ado-dot-net/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io/najamsk/"/>
+  <updated>2013-04-28T11:16:07+05:00</updated>
+  <id>http://najamsk.github.io/najamsk/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sql Data Srouce Control Updating Data From Database]]></title>
-    <link href="http://najamsk.github.io//blog/2008/07/17/sql-data-srouce-control-updating-data-from-database/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2008/07/17/sql-data-srouce-control-updating-data-from-database/"/>
     <updated>2008-07-17T05:32:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2008/07/17/sql-data-srouce-control-updating-data-from-database</id>
+    <id>http://najamsk.github.io/najamsk/blog/2008/07/17/sql-data-srouce-control-updating-data-from-database</id>
     <content type="html"><![CDATA[<p>hey guyz finally we have to learn how to update our tables in database so only for you guys here is my sample code</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -42,9 +42,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sql Data Srouce Control Deleting Data From Database]]></title>
-    <link href="http://najamsk.github.io//blog/2008/07/17/sql-data-srouce-control-deleting-data-from-database/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2008/07/17/sql-data-srouce-control-deleting-data-from-database/"/>
     <updated>2008-07-17T05:23:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2008/07/17/sql-data-srouce-control-deleting-data-from-database</id>
+    <id>http://najamsk.github.io/najamsk/blog/2008/07/17/sql-data-srouce-control-deleting-data-from-database</id>
     <content type="html"><![CDATA[<p>Hey guyz today i will show you how to fire delete query by using our beloved control sqldatasource.</p>
 
 <p>Here is the code</p>
@@ -67,9 +67,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sql Data Srouce Control Inserting Data Into Database]]></title>
-    <link href="http://najamsk.github.io//blog/2008/07/17/sql-data-srouce-control-inserting-data-into-database/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2008/07/17/sql-data-srouce-control-inserting-data-into-database/"/>
     <updated>2008-07-17T05:07:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2008/07/17/sql-data-srouce-control-inserting-data-into-database</id>
+    <id>http://najamsk.github.io/najamsk/blog/2008/07/17/sql-data-srouce-control-inserting-data-into-database</id>
     <content type="html"><![CDATA[<p>hey guyz how are you ??</p>
 
 <p>Me back with my sqldatasource  series. Today i will show you how to fire insert query using sqldatasource control into code behind i am using c#.</p>
@@ -112,9 +112,9 @@
   
   <entry>
     <title type="html"><![CDATA[Sql Data Srouce Control Fetch data from database]]></title>
-    <link href="http://najamsk.github.io//blog/2008/07/16/70/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2008/07/16/70/"/>
     <updated>2008-07-16T10:04:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2008/07/16/70</id>
+    <id>http://najamsk.github.io/najamsk/blog/2008/07/16/70</id>
     <content type="html"><![CDATA[<p>Hi in asp.net 2.0 this new datasource control has been added and i liked it alot and i used it on many places so i thought it would be nice if I share my knowledge with all my readers so first of all i would just like to show you how to retrieve some data from your database into C# code behind file.</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>

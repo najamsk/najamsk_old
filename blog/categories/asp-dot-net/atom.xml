@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: asp.net | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io//blog/categories/asp-dot-net/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io//"/>
-  <updated>2013-04-28T11:13:40+05:00</updated>
-  <id>http://najamsk.github.io//</id>
+  <link href="http://najamsk.github.io/najamsk/blog/categories/asp-dot-net/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io/najamsk/"/>
+  <updated>2013-04-28T11:16:07+05:00</updated>
+  <id>http://najamsk.github.io/najamsk/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Facebook Application Development using Asp.net]]></title>
-    <link href="http://najamsk.github.io//blog/2010/09/23/facebook-application-development-using-asp-net/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2010/09/23/facebook-application-development-using-asp-net/"/>
     <updated>2010-09-23T01:31:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2010/09/23/facebook-application-development-using-asp-net</id>
+    <id>http://najamsk.github.io/najamsk/blog/2010/09/23/facebook-application-development-using-asp-net</id>
     <content type="html"><![CDATA[<p>Hi,</p>
 
 <p>I have been busy with facebook application development using IFrame and since I have asp.net background so instead of php I wanted to do this in asp.net their are few wrappers or sdk available for this like. After googling I have picked <a href="http://facebooktoolkit.codeplex.com/">Facebook developer toolkit v3.01</a>. After downloading the binaries I have created a asp.net web application project with 4.0 framework and simply added the reference of facebook.dll and facebook.web.dll.</p>
@@ -50,9 +50,9 @@
   
   <entry>
     <title type="html"><![CDATA[Show Detailed ASP.NET Error Messages to Developers]]></title>
-    <link href="http://najamsk.github.io//blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers/"/>
     <updated>2009-06-24T02:56:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers</id>
+    <id>http://najamsk.github.io/najamsk/blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers</id>
     <content type="html"><![CDATA[<p>If ELMAH project will not work for me I will implement this error handling technique from scott gu blog.</p>
 
 <p><a title="Read Post" href="http://weblogs.asp.net/scottgu/archive/2006/08/12/Tip_2F00_Trick_3A00_-Show-Detailed-Error-Messages-to-Developers.aspx" target="_self">Read the post now</a>.</p>
@@ -61,9 +61,9 @@
   
   <entry>
     <title type="html"><![CDATA[Finally I have my hands on linq]]></title>
-    <link href="http://najamsk.github.io//blog/2009/06/08/finally-i-have-my-hands-on-linq/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2009/06/08/finally-i-have-my-hands-on-linq/"/>
     <updated>2009-06-08T06:45:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2009/06/08/finally-i-have-my-hands-on-linq</id>
+    <id>http://najamsk.github.io/najamsk/blog/2009/06/08/finally-i-have-my-hands-on-linq</id>
     <content type="html"><![CDATA[<p>hi folks</p>
 
 <p>After developing few asp.net 2.0 websites as our hosting upgraded to asp.net 3.5 I am finally making a dynamic website in asp.net 3.5 using linq to sql and I am trying hard to follow 3 tier model.</p>
@@ -74,9 +74,9 @@
   
   <entry>
     <title type="html"><![CDATA[Consuming asp.net webservice with jquery]]></title>
-    <link href="http://najamsk.github.io//blog/2009/02/03/consuming-aspnet-webservice-with-jquery/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2009/02/03/consuming-aspnet-webservice-with-jquery/"/>
     <updated>2009-02-03T05:22:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2009/02/03/consuming-aspnet-webservice-with-jquery</id>
+    <id>http://najamsk.github.io/najamsk/blog/2009/02/03/consuming-aspnet-webservice-with-jquery</id>
     <content type="html"><![CDATA[<p>hi guys,</p>
 
 <p>Well I like to share one more experiment with you that is how to call a webservice from your javascript(jquery). For that again you need to have an asp.net ajax enable website.</p>
@@ -153,9 +153,9 @@
   
   <entry>
     <title type="html"><![CDATA[Calling asp.net page methods with jquery]]></title>
-    <link href="http://najamsk.github.io//blog/2009/02/03/calling-aspnet-page-methods-with-jquery/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2009/02/03/calling-aspnet-page-methods-with-jquery/"/>
     <updated>2009-02-03T04:23:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2009/02/03/calling-aspnet-page-methods-with-jquery</id>
+    <id>http://najamsk.github.io/najamsk/blog/2009/02/03/calling-aspnet-page-methods-with-jquery</id>
     <content type="html"><![CDATA[<p>Hi guyz,</p>
 
 <p>Today I am sharing how to call asp.net web page code behind methods from client side javascript in my case it will be jquery.</p>

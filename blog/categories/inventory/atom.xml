@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: inventory | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io//blog/categories/inventory/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io//"/>
-  <updated>2013-04-28T11:13:40+05:00</updated>
-  <id>http://najamsk.github.io//</id>
+  <link href="http://najamsk.github.io/najamsk/blog/categories/inventory/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io/najamsk/"/>
+  <updated>2013-04-28T11:16:07+05:00</updated>
+  <id>http://najamsk.github.io/najamsk/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Wifi working on my acer 1642 with suse 10.2]]></title>
-    <link href="http://najamsk.github.io//blog/2007/04/14/wifi-working-on-my-acer-1642-with-suse-102/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2007/04/14/wifi-working-on-my-acer-1642-with-suse-102/"/>
     <updated>2007-04-14T17:41:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2007/04/14/wifi-working-on-my-acer-1642-with-suse-102</id>
+    <id>http://najamsk.github.io/najamsk/blog/2007/04/14/wifi-working-on-my-acer-1642-with-suse-102</id>
     <content type="html"><![CDATA[<p>Hi,</p>
 
 
@@ -44,9 +44,9 @@ firmware for my card.</p>
   
   <entry>
     <title type="html"><![CDATA[My Acer Aspire 1642ZNWLCi]]></title>
-    <link href="http://najamsk.github.io//blog/2007/02/13/my-acer-aspire-1642znwlci/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2007/02/13/my-acer-aspire-1642znwlci/"/>
     <updated>2007-02-13T22:31:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2007/02/13/my-acer-aspire-1642znwlci</id>
+    <id>http://najamsk.github.io/najamsk/blog/2007/02/13/my-acer-aspire-1642znwlci</id>
     <content type="html"><![CDATA[<p>Hi i just wanted to share my laptop specification with you.</p>
 
 <ul>

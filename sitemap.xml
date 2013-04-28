@@ -1,349 +1,373 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://najamsk.github.io//blog/2005/11/21/setting-custome-themes/</loc>
+        <loc>http://najamsk.github.io/najamsk/blog/2005/11/21/setting-custome-themes/</loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//blog/2005/11/30/software-development/</loc>
+        <loc>http://najamsk.github.io/najamsk/blog/2005/11/30/software-development/</loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//blog/2005/11/30/mozilla-firefox-15-release/</loc>
+        <loc>http://najamsk.github.io/najamsk/blog/2005/11/30/mozilla-firefox-15-release/</loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://najamsk.github.io//blog/2005/11/30/firefox-15-blazing-fast-back-forth-page-caching/
+            http://najamsk.github.io/najamsk/blog/2005/11/30/firefox-15-blazing-fast-back-forth-page-caching/
         </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//blog/2005/12/01/speed-up-firfox/</loc>
+        <loc>http://najamsk.github.io/najamsk/blog/2005/12/01/speed-up-firfox/</loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://najamsk.github.io//blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions/
-        </loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2005/12/13/how-much-ram-do-you-really-need/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2005/12/26/my-firefox-extensions/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2006/01/28/testing-yahoo-360/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2006/01/28/exams-over/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2006/02/03/msn-messenger-live/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://najamsk.github.io//blog/2006/02/18/windows-xp-professional-password-protected-file-sharing/
-        </loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2006/02/23/gmail-msn-live-and-other-invites/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2006/04/26/linux-file-structure/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2006/12/25/3g-evolution/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2006/12/25/my-desktop/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2007/01/06/how-to-use-custom-spray-in-cs/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2007/02/11/testing-fedora-core6-live/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2007/02/13/my-acer-aspire-1642znwlci/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2007/02/13/oh-god-hd-audio-driver-for-linux/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2007/02/20/realtek-hd-sound-card-working/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://najamsk.github.io//blog/2007/03/01/reinstall-grub-after-installing-windows-xp/
+            http://najamsk.github.io/najamsk/blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions/
         </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://najamsk.github.io//blog/2007/03/12/how-to-enable-full-multimedia-capabilities-on-suse-102-using-the-xine-engine/
+            http://najamsk.github.io/najamsk/blog/2005/12/13/how-much-ram-do-you-really-need/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2005/12/26/my-firefox-extensions/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2006/01/28/testing-yahoo-360/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2006/01/28/exams-over/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2006/02/03/msn-messenger-live/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2006/02/18/windows-xp-professional-password-protected-file-sharing/
         </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://najamsk.github.io//blog/2007/03/12/vychat-alternative-for-my-suse-102-laptop/
+            http://najamsk.github.io/najamsk/blog/2006/02/23/gmail-msn-live-and-other-invites/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2006/04/26/linux-file-structure/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2006/12/25/3g-evolution/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2006/12/25/my-desktop/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2007/01/06/how-to-use-custom-spray-in-cs/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2007/02/11/testing-fedora-core6-live/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2007/02/13/my-acer-aspire-1642znwlci/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2007/02/13/oh-god-hd-audio-driver-for-linux/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2007/02/20/realtek-hd-sound-card-working/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2007/03/01/reinstall-grub-after-installing-windows-xp/
         </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://najamsk.github.io//blog/2007/04/14/wifi-working-on-my-acer-1642-with-suse-102/
-        </loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2007/06/11/safari-on-windows/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2007/06/16/real-firefox/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2007/09/30/finally-my-own-domain/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2007/09/30/tags-welcome/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2007/10/19/synchronize-your-bookmarks/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2007/11/06/how-to-get-pagename-of-itself/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://najamsk.github.io//blog/2007/11/06/how-to-get-directory-name-of-the-page-currently-displaying/
+            http://najamsk.github.io/najamsk/blog/2007/03/12/how-to-enable-full-multimedia-capabilities-on-suse-102-using-the-xine-engine/
         </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://najamsk.github.io//blog/2008/07/16/read-smtp-settings-from-aspnet-webconfig/
-        </loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2008/07/16/finally-my-ms-is-completed/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2008/07/16/70/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://najamsk.github.io//blog/2008/07/17/sql-data-srouce-control-inserting-data-into-database/
+            http://najamsk.github.io/najamsk/blog/2007/03/12/vychat-alternative-for-my-suse-102-laptop/
         </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://najamsk.github.io//blog/2008/07/17/sql-data-srouce-control-deleting-data-from-database/
+            http://najamsk.github.io/najamsk/blog/2007/04/14/wifi-working-on-my-acer-1642-with-suse-102/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2007/06/11/safari-on-windows/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2007/06/16/real-firefox/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2007/09/30/finally-my-own-domain/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2007/09/30/tags-welcome/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2007/10/19/synchronize-your-bookmarks/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2007/11/06/how-to-get-pagename-of-itself/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2007/11/06/how-to-get-directory-name-of-the-page-currently-displaying/
         </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://najamsk.github.io//blog/2008/07/17/sql-data-srouce-control-updating-data-from-database/
+            http://najamsk.github.io/najamsk/blog/2008/07/16/read-smtp-settings-from-aspnet-webconfig/
         </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//blog/2008/09/27/google-chrome-bookmarks/</loc>
+        <loc>http://najamsk.github.io/najamsk/blog/2008/07/16/finally-my-ms-is-completed/</loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//blog/2009/01/27/wordpress-wamp-and-permalinks/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2009/01/27/tdf-solutions/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2009/01/27/cbhtradecom-launched/</loc>
+        <loc>http://najamsk.github.io/najamsk/blog/2008/07/16/70/</loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://najamsk.github.io//blog/2009/01/29/random-rows-selection-from-a-database-table/
+            http://najamsk.github.io/najamsk/blog/2008/07/17/sql-data-srouce-control-inserting-data-into-database/
         </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://najamsk.github.io//blog/2009/02/03/calling-aspnet-page-methods-with-jquery/
-        </loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2009/02/03/highlight-your-code-with-wordpress/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://najamsk.github.io//blog/2009/02/03/consuming-aspnet-webservice-with-jquery/
-        </loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2009/06/08/finally-i-have-my-hands-on-linq/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2009/06/08/bll-business-layer-with-linq/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2009/06/09/git-version-control-guides/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2009/06/22/c-interfaces/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://najamsk.github.io//blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers/
-        </loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2009/06/29/javascript-5-ways-to-call-a-function/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2009/07/06/custom-event-for-classes/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2009/07/08/gmail-out-of-beta/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2009/07/08/observer-pattern-with-net/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2009/07/08/design-patterns-iterator/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2009/07/09/circa-wear/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://najamsk.github.io//blog/2009/07/20/git-tracking-and-deleting-remote-branches/
-        </loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2010/01/25/221/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://najamsk.github.io//blog/2010/07/23/juqery-ani-patterns-for-performance-compression-by-paul-irish/
+            http://najamsk.github.io/najamsk/blog/2008/07/17/sql-data-srouce-control-deleting-data-from-database/
         </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://najamsk.github.io//blog/2010/07/23/10-things-i-learned-from-the-jquery-source/
+            http://najamsk.github.io/najamsk/blog/2008/07/17/sql-data-srouce-control-updating-data-from-database/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2008/09/27/google-chrome-bookmarks/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2009/01/27/wordpress-wamp-and-permalinks/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2009/01/27/tdf-solutions/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2009/01/27/cbhtradecom-launched/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2009/01/29/random-rows-selection-from-a-database-table/
         </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://najamsk.github.io//blog/2010/09/23/facebook-application-development-using-asp-net/
+            http://najamsk.github.io/najamsk/blog/2009/02/03/calling-aspnet-page-methods-with-jquery/
         </loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2010/11/01/use-swfobject-v2-2-to-embed-swf/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2010/12/03/css-diet-plan/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2010/12/06/get-running-jquery-version/</loc>
-        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
-    </url>
-    <url>
-        <loc>http://najamsk.github.io//blog/2010/12/08/css-overflow-benefit/</loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
         <loc>
-            http://najamsk.github.io//blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box/
+            http://najamsk.github.io/najamsk/blog/2009/02/03/highlight-your-code-with-wordpress/
         </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//blog/2011/05/07/update-to-ubuntu-11-messed-it-all/</loc>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2009/02/03/consuming-aspnet-webservice-with-jquery/
+        </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//blog/2011/08/09/my-pc-is-not-working/</loc>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2009/06/08/finally-i-have-my-hands-on-linq/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2009/06/08/bll-business-layer-with-linq/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2009/06/09/git-version-control-guides/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2009/06/22/c-interfaces/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2009/06/29/javascript-5-ways-to-call-a-function/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2009/07/06/custom-event-for-classes/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2009/07/08/gmail-out-of-beta/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2009/07/08/observer-pattern-with-net/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2009/07/08/design-patterns-iterator/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2009/07/09/circa-wear/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2009/07/20/git-tracking-and-deleting-remote-branches/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2010/01/25/221/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2010/07/23/juqery-ani-patterns-for-performance-compression-by-paul-irish/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2010/07/23/10-things-i-learned-from-the-jquery-source/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2010/09/23/facebook-application-development-using-asp-net/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2010/11/01/use-swfobject-v2-2-to-embed-swf/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2010/12/03/css-diet-plan/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2010/12/06/get-running-jquery-version/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2010/12/08/css-overflow-benefit/</loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2011/05/07/update-to-ubuntu-11-messed-it-all/
+        </loc>
+        <lastmod>2013-04-24T22:23:39+05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://najamsk.github.io/najamsk/blog/2011/08/09/my-pc-is-not-working/</loc>
         <lastmod>2013-04-27T20:13:52+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//blog/2011/08/09/upgraded-my-hosting-for-net-4-0/</loc>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2011/08/09/upgraded-my-hosting-for-net-4-0/
+        </loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//blog/2013/04/22/playing-with-octopress-blogging/</loc>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2013/04/22/playing-with-octopress-blogging/
+        </loc>
         <lastmod>2013-04-26T23:18:28+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//blog/2013/04/24/attended-bahria-university-job-fair/</loc>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2013/04/24/attended-bahria-university-job-fair/
+        </loc>
         <lastmod>2013-04-24T22:46:56+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/</loc>
+        <loc>
+            http://najamsk.github.io/najamsk/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/
+        </loc>
         <lastmod>2013-04-27T20:07:30+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//blog/archives/</loc>
+        <loc>http://najamsk.github.io/najamsk/blog/archives/</loc>
         <lastmod>2013-04-27T20:13:52+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//</loc>
+        <loc>http://najamsk.github.io/najamsk/</loc>
         <lastmod>2013-04-27T20:13:52+05:00</lastmod>
     </url>
     <url>
-        <loc>http://najamsk.github.io//robots.txt</loc>
+        <loc>http://najamsk.github.io/najamsk/robots.txt</loc>
         <lastmod>2013-04-24T22:23:39+05:00</lastmod>
     </url>
 </urlset>

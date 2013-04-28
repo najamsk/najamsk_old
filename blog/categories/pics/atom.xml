@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: pics | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io//blog/categories/pics/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io//"/>
-  <updated>2013-04-28T11:13:40+05:00</updated>
-  <id>http://najamsk.github.io//</id>
+  <link href="http://najamsk.github.io/najamsk/blog/categories/pics/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io/najamsk/"/>
+  <updated>2013-04-28T11:16:07+05:00</updated>
+  <id>http://najamsk.github.io/najamsk/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Real Firefox]]></title>
-    <link href="http://najamsk.github.io//blog/2007/06/16/real-firefox/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2007/06/16/real-firefox/"/>
     <updated>2007-06-16T18:35:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2007/06/16/real-firefox</id>
+    <id>http://najamsk.github.io/najamsk/blog/2007/06/16/real-firefox</id>
     <content type="html"><![CDATA[<p align="center"><a href="http://www.najamsikander.com/blog/?attachment_id=53" rel="attachment wp-att-53" title="Real Firefox"><img src="http://najam.files.wordpress.com/2007/06/firefox5.jpg" alt="Real Firefox" /></a></p>
 
 ]]></content>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: networks | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io//blog/categories/networks/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io//"/>
-  <updated>2013-04-28T11:13:40+05:00</updated>
-  <id>http://najamsk.github.io//</id>
+  <link href="http://najamsk.github.io/najamsk/blog/categories/networks/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io/najamsk/"/>
+  <updated>2013-04-28T11:16:07+05:00</updated>
+  <id>http://najamsk.github.io/najamsk/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Fedora Core6 live-configuring internet by spoofing mac address]]></title>
-    <link href="http://najamsk.github.io//blog/2007/02/11/testing-fedora-core6-live/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2007/02/11/testing-fedora-core6-live/"/>
     <updated>2007-02-11T13:29:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2007/02/11/testing-fedora-core6-live</id>
+    <id>http://najamsk.github.io/najamsk/blog/2007/02/11/testing-fedora-core6-live</id>
     <content type="html"><![CDATA[<p>hi</p>
 
 <p>Guyz i am writing this post while using fedora core 6 live cd and it took 2 hours to make internet working on this live distro.</p>

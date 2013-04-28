@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: desktop | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io//blog/categories/desktop/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io//"/>
-  <updated>2013-04-28T11:13:40+05:00</updated>
-  <id>http://najamsk.github.io//</id>
+  <link href="http://najamsk.github.io/najamsk/blog/categories/desktop/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io/najamsk/"/>
+  <updated>2013-04-28T11:16:07+05:00</updated>
+  <id>http://najamsk.github.io/najamsk/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[My Desktop]]></title>
-    <link href="http://najamsk.github.io//blog/2006/12/25/my-desktop/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2006/12/25/my-desktop/"/>
     <updated>2006-12-25T10:30:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2006/12/25/my-desktop</id>
+    <id>http://najamsk.github.io/najamsk/blog/2006/12/25/my-desktop</id>
     <content type="html"><![CDATA[<p> Here are screenshos of my desktop.</p>
 
 <p><a href="http://najam.files.wordpress.com/2006/12/desktop.JPG" title="Desktop"><img src="http://najam.files.wordpress.com/2006/12/desktop.thumbnail.JPG" alt="Desktop" /></a><a href="http://najam.files.wordpress.com/2006/12/computer.JPG" title="My computer"><img src="http://najam.files.wordpress.com/2006/12/computer.thumbnail.JPG" alt="My computer" /></a><a href="http://najam.files.wordpress.com/2006/12/cp.JPG" title="Control Panel"><img src="http://najam.files.wordpress.com/2006/12/cp.thumbnail.JPG" alt="Control Panel" /></a></p>

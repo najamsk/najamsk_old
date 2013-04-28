@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://najamsk.github.io//sitemap.xml 
+Sitemap: http://najamsk.github.io/najamsk/sitemap.xml 

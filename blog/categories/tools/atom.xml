@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tools | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io//blog/categories/tools/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io//"/>
-  <updated>2013-04-28T11:13:40+05:00</updated>
-  <id>http://najamsk.github.io//</id>
+  <link href="http://najamsk.github.io/najamsk/blog/categories/tools/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io/najamsk/"/>
+  <updated>2013-04-28T11:16:07+05:00</updated>
+  <id>http://najamsk.github.io/najamsk/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Show Detailed ASP.NET Error Messages to Developers]]></title>
-    <link href="http://najamsk.github.io//blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers/"/>
     <updated>2009-06-24T02:56:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers</id>
+    <id>http://najamsk.github.io/najamsk/blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers</id>
     <content type="html"><![CDATA[<p>If ELMAH project will not work for me I will implement this error handling technique from scott gu blog.</p>
 
 <p><a title="Read Post" href="http://weblogs.asp.net/scottgu/archive/2006/08/12/Tip_2F00_Trick_3A00_-Show-Detailed-Error-Messages-to-Developers.aspx" target="_self">Read the post now</a>.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: games | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io//blog/categories/games/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io//"/>
-  <updated>2013-04-28T11:13:40+05:00</updated>
-  <id>http://najamsk.github.io//</id>
+  <link href="http://najamsk.github.io/najamsk/blog/categories/games/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io/najamsk/"/>
+  <updated>2013-04-28T11:16:07+05:00</updated>
+  <id>http://najamsk.github.io/najamsk/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[How to make custom spray for CS]]></title>
-    <link href="http://najamsk.github.io//blog/2007/01/06/how-to-use-custom-spray-in-cs/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2007/01/06/how-to-use-custom-spray-in-cs/"/>
     <updated>2007-01-06T16:34:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2007/01/06/how-to-use-custom-spray-in-cs</id>
+    <id>http://najamsk.github.io/najamsk/blog/2007/01/06/how-to-use-custom-spray-in-cs</id>
     <content type="html"><![CDATA[<p>hi</p>
 
 <p>its very easy to use custome sprays in counter strike  just follow all the steps given below</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: web services | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io//blog/categories/web-services/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io//"/>
-  <updated>2013-04-28T11:13:40+05:00</updated>
-  <id>http://najamsk.github.io//</id>
+  <link href="http://najamsk.github.io/najamsk/blog/categories/web-services/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io/najamsk/"/>
+  <updated>2013-04-28T11:16:07+05:00</updated>
+  <id>http://najamsk.github.io/najamsk/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Consuming asp.net webservice with jquery]]></title>
-    <link href="http://najamsk.github.io//blog/2009/02/03/consuming-aspnet-webservice-with-jquery/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2009/02/03/consuming-aspnet-webservice-with-jquery/"/>
     <updated>2009-02-03T05:22:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2009/02/03/consuming-aspnet-webservice-with-jquery</id>
+    <id>http://najamsk.github.io/najamsk/blog/2009/02/03/consuming-aspnet-webservice-with-jquery</id>
     <content type="html"><![CDATA[<p>hi guys,</p>
 
 <p>Well I like to share one more experiment with you that is how to call a webservice from your javascript(jquery). For that again you need to have an asp.net ajax enable website.</p>

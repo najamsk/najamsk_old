@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: firefox | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io//blog/categories/firefox/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io//"/>
-  <updated>2013-04-28T11:13:40+05:00</updated>
-  <id>http://najamsk.github.io//</id>
+  <link href="http://najamsk.github.io/najamsk/blog/categories/firefox/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io/najamsk/"/>
+  <updated>2013-04-28T11:16:07+05:00</updated>
+  <id>http://najamsk.github.io/najamsk/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Real Firefox]]></title>
-    <link href="http://najamsk.github.io//blog/2007/06/16/real-firefox/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2007/06/16/real-firefox/"/>
     <updated>2007-06-16T18:35:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2007/06/16/real-firefox</id>
+    <id>http://najamsk.github.io/najamsk/blog/2007/06/16/real-firefox</id>
     <content type="html"><![CDATA[<p align="center"><a href="http://www.najamsikander.com/blog/?attachment_id=53" rel="attachment wp-att-53" title="Real Firefox"><img src="http://najam.files.wordpress.com/2007/06/firefox5.jpg" alt="Real Firefox" /></a></p>
 
 ]]></content>
@@ -25,18 +25,18 @@
   
   <entry>
     <title type="html"><![CDATA[My Firefox Extensions]]></title>
-    <link href="http://najamsk.github.io//blog/2005/12/26/my-firefox-extensions/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2005/12/26/my-firefox-extensions/"/>
     <updated>2005-12-26T21:29:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2005/12/26/my-firefox-extensions</id>
+    <id>http://najamsk.github.io/najamsk/blog/2005/12/26/my-firefox-extensions</id>
     <content type="html"><![CDATA[<p>Well here is a random list of all the extensions for my firefox<br />1. All in one gesture<br />2. Session Saver<br />3. Ad Block <br />4. Fasterfox<br />5. Reload Every<br />6. Groowe Searchtoobar<br /><br /></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Modify Firefox 1.5 to work with all extensions]]></title>
-    <link href="http://najamsk.github.io//blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions/"/>
     <updated>2005-12-02T13:12:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions</id>
+    <id>http://najamsk.github.io/najamsk/blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions</id>
     <content type="html"><![CDATA[<p>For all of those who just downloaded Firefox 1.5 and canât get your extensions to work. This is a simple modification of Firefoxâs configuration to trick the extensions to work. No need to manually edit the extensions to get them to work. Currently all the extensions I use work except the bookmark sync extension that I so dearly want to.</p>
 
 
@@ -53,9 +53,9 @@ Enter âapp.extensions.versionâ? (without quotes) for the preference name
   
   <entry>
     <title type="html"><![CDATA[Speed Up Firfox]]></title>
-    <link href="http://najamsk.github.io//blog/2005/12/01/speed-up-firfox/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2005/12/01/speed-up-firfox/"/>
     <updated>2005-12-01T00:12:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2005/12/01/speed-up-firfox</id>
+    <id>http://najamsk.github.io/najamsk/blog/2005/12/01/speed-up-firfox</id>
     <content type="html"><![CDATA[<p><strong> Here's something for broadband people that will really speed Firefox up:<br />
 </strong><br />
 1.Type "about:config" into the address bar and hit return. Scroll down and look for the following entries:</p>
@@ -92,9 +92,9 @@ network.http.pipelining.maxrequests</p>
   
   <entry>
     <title type="html"><![CDATA[Mozilla  Firefox 1.5 release]]></title>
-    <link href="http://najamsk.github.io//blog/2005/11/30/mozilla-firefox-15-release/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2005/11/30/mozilla-firefox-15-release/"/>
     <updated>2005-11-30T20:46:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2005/11/30/mozilla-firefox-15-release</id>
+    <id>http://najamsk.github.io/najamsk/blog/2005/11/30/mozilla-firefox-15-release</id>
     <content type="html"><![CDATA[<p>Firefox version 1.5 released today I have downloaded this latest version from http//:www.mozila.org</p>
 
 <p>New features include a drag and drop for tabbed browsing, a better pop up blocker algorithm, and a reference search engine which includes answer.com, a better live bookmark feature, and an improved option interface.</p>

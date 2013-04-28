@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: .net | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io//blog/categories/dot-net/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io//"/>
-  <updated>2013-04-28T11:13:40+05:00</updated>
-  <id>http://najamsk.github.io//</id>
+  <link href="http://najamsk.github.io/najamsk/blog/categories/dot-net/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io/najamsk/"/>
+  <updated>2013-04-28T11:16:07+05:00</updated>
+  <id>http://najamsk.github.io/najamsk/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Upgraded my hosting for .net 4.0]]></title>
-    <link href="http://najamsk.github.io//blog/2011/08/09/upgraded-my-hosting-for-net-4-0/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2011/08/09/upgraded-my-hosting-for-net-4-0/"/>
     <updated>2011-08-09T10:13:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2011/08/09/upgraded-my-hosting-for-net-4-0</id>
+    <id>http://najamsk.github.io/najamsk/blog/2011/08/09/upgraded-my-hosting-for-net-4-0</id>
     <content type="html"><![CDATA[<p>I have been watching Mix11 videos about asp.net mvc3 and felt pretty excited to mingle with these latest bits but I didn't wanted to limit myself to local environment I wanted to know what efforts are required if I am developing with latest stuff one limitation I had that my host always take ages to update server so I had support for .net3.5. I email them about this thing and in reply they told me either wait 6 months or pay $8. Since I was dying to test out EF code first I paid them and within one day my hosting is all updated and now I am running my incomplete demo online :).</p>
 
 <p>Deployment was a little bit scarier as my hosting doesn't come with any publishing/deployment server but if you have vs2010 sp1 then you are in safe hands all you have to do is to click on add deployable dependencies then build your solution and upload using your favorite ftp client.</p>
@@ -28,9 +28,9 @@
   
   <entry>
     <title type="html"><![CDATA[C# Parent Child Reference Variable &amp; Object Casting]]></title>
-    <link href="http://najamsk.github.io//blog/2010/01/25/221/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2010/01/25/221/"/>
     <updated>2010-01-25T04:28:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2010/01/25/221</id>
+    <id>http://najamsk.github.io/najamsk/blog/2010/01/25/221</id>
     <content type="html"><![CDATA[<p>I have been clearing my concepts regarding inheritance and investigating if parent reference variable can point to child class object and vice versa.</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -197,9 +197,9 @@
   
   <entry>
     <title type="html"><![CDATA[Design Patterns -- Iterator]]></title>
-    <link href="http://najamsk.github.io//blog/2009/07/08/design-patterns-iterator/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2009/07/08/design-patterns-iterator/"/>
     <updated>2009-07-08T06:16:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2009/07/08/design-patterns-iterator</id>
+    <id>http://najamsk.github.io/najamsk/blog/2009/07/08/design-patterns-iterator</id>
     <content type="html"><![CDATA[<p>Hi Guys,</p>
 
 <p>I am reading more on design patterns from this  <a title="Read This" href="http://msdn.microsoft.com/en-us/magazine/cc188707.aspx" target="_blank">article</a> after little theory session here is working code. Key point was all of the collection classes in the System.Collections namespace, as well as arrays, implement IEnumerable and can therefore be iterated over.</p>
@@ -270,9 +270,9 @@
   
   <entry>
     <title type="html"><![CDATA[Observer pattern with .net]]></title>
-    <link href="http://najamsk.github.io//blog/2009/07/08/observer-pattern-with-net/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2009/07/08/observer-pattern-with-net/"/>
     <updated>2009-07-08T05:11:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2009/07/08/observer-pattern-with-net</id>
+    <id>http://najamsk.github.io/najamsk/blog/2009/07/08/observer-pattern-with-net</id>
     <content type="html"><![CDATA[<p>Hi folks,</p>
 
 <p>Well I am investigating design patterns by reading an <a title="Read This" href="http://msdn.microsoft.com/en-us/magazine/cc188707.aspx" target="_blank">article</a> so after reading a bit I thought it would be nice if I write some code and test it.</p>
@@ -433,9 +433,9 @@
   
   <entry>
     <title type="html"><![CDATA[Custom Event for Classes]]></title>
-    <link href="http://najamsk.github.io//blog/2009/07/06/custom-event-for-classes/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2009/07/06/custom-event-for-classes/"/>
     <updated>2009-07-06T04:28:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2009/07/06/custom-event-for-classes</id>
+    <id>http://najamsk.github.io/najamsk/blog/2009/07/06/custom-event-for-classes</id>
     <content type="html"><![CDATA[<p>I was reading how to write events for your custom classes so after reading a little I thought give it a shot and created this sample code. Below code is using Product class with event and delegate for event handling and other class named Test is using this class and manipulate product class data. If you change the Name of the product event will fire.</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>

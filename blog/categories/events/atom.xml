@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: events | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io//blog/categories/events/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io//"/>
-  <updated>2013-04-28T11:13:40+05:00</updated>
-  <id>http://najamsk.github.io//</id>
+  <link href="http://najamsk.github.io/najamsk/blog/categories/events/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io/najamsk/"/>
+  <updated>2013-04-28T11:16:07+05:00</updated>
+  <id>http://najamsk.github.io/najamsk/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Microsoft Islamabad Meetup]]></title>
-    <link href="http://najamsk.github.io//blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/"/>
     <updated>2013-04-24T22:46:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2013/04/24/microsoft-islamabad-meetup-windwos-8</id>
+    <id>http://najamsk.github.io/najamsk/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8</id>
     <content type="html"><![CDATA[<p>I have been invited to [Microsoft Community Meetup] at marriott hotel islamabad on Friday 19th April 2013. It was really nice experience to meet fellow devs, students and MVP.</p>
 
 <p>Session was about windows 8 platform they have shown few apps that are developed in Pakistan and available for global audience. Highlight of the meetup was teams that have participated in Imagine cup and from pakistan. Team with first position showcased their project and I was blown away by their concept, presentation and business skills.</p>
@@ -32,9 +32,9 @@
   
   <entry>
     <title type="html"><![CDATA[Attended Bahria University Job Fair]]></title>
-    <link href="http://najamsk.github.io//blog/2013/04/24/attended-bahria-university-job-fair/"/>
+    <link href="http://najamsk.github.io/najamsk/blog/2013/04/24/attended-bahria-university-job-fair/"/>
     <updated>2013-04-24T21:48:00+05:00</updated>
-    <id>http://najamsk.github.io//blog/2013/04/24/attended-bahria-university-job-fair</id>
+    <id>http://najamsk.github.io/najamsk/blog/2013/04/24/attended-bahria-university-job-fair</id>
     <content type="html"><![CDATA[<p>Bahria university hosted a job fair session on 19th April 2013 in which they invites companies from local industry. My company also participated in the event.</p>
 
 <p>Myself and few other from our company spend whole day in the event looking for suitable events in .net, mobile development and social media positions.</p>
