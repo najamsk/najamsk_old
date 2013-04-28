@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: telecom | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io/najamsk/blog/categories/telecom/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io/najamsk/"/>
-  <updated>2013-04-28T12:59:04+05:00</updated>
-  <id>http://najamsk.github.io/najamsk/</id>
+  <link href="http://blog.najamsikander.com/blog/categories/telecom/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-04-28T13:02:54+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[3G Evolution]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2006/12/25/3g-evolution/"/>
+    <link href="http://blog.najamsikander.com/blog/2006/12/25/3g-evolution/"/>
     <updated>2006-12-25T10:24:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2006/12/25/3g-evolution</id>
+    <id>http://blog.najamsikander.com/blog/2006/12/25/3g-evolution</id>
     <content type="html"><![CDATA[<p><a href="http://najam.files.wordpress.com/2006/12/3g_evolution.GIF" title="3G Evolution"><img src="http://najam.files.wordpress.com/2006/12/3g_evolution.GIF" alt="3G Evolution" /></a></p>
 ]]></content>
   </entry>

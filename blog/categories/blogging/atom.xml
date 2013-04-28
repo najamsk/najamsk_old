@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: blogging | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io/najamsk/blog/categories/blogging/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io/najamsk/"/>
-  <updated>2013-04-28T12:59:04+05:00</updated>
-  <id>http://najamsk.github.io/najamsk/</id>
+  <link href="http://blog.najamsikander.com/blog/categories/blogging/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-04-28T13:02:54+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[playing with octopress blogging]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2013/04/22/playing-with-octopress-blogging/"/>
+    <link href="http://blog.najamsikander.com/blog/2013/04/22/playing-with-octopress-blogging/"/>
     <updated>2013-04-22T20:12:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2013/04/22/playing-with-octopress-blogging</id>
+    <id>http://blog.najamsikander.com/blog/2013/04/22/playing-with-octopress-blogging</id>
     <content type="html"><![CDATA[<p>I first came to know about octopress from yayquery episode in which rebbeca murphy mentioned she has moved her blog form wordpress to octopress and she is very happy with that. At that time I didn't paid any attention to this.</p>
 
 <p>But today I suddenly started to play with it and I liked few things I learn along the way and that kept me going till I have imported all of my posts from wordpress to github pages.</p>
@@ -69,9 +69,9 @@ rake deploy
   
   <entry>
     <title type="html"><![CDATA[Highlight your code with wordpress]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/02/03/highlight-your-code-with-wordpress/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/02/03/highlight-your-code-with-wordpress/"/>
     <updated>2009-02-03T05:00:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/02/03/highlight-your-code-with-wordpress</id>
+    <id>http://blog.najamsikander.com/blog/2009/02/03/highlight-your-code-with-wordpress</id>
     <content type="html"><![CDATA[<p>Hi guys,
 Today I have installed a new wordpress plugin called <strong>"Code Snippet"</strong> and it support code highlight for many languages try this out you would love it. <a title="Download code snippet" href="http://wordpress.org/extend/plugins/codesnippet-20/" target="_blank">Download it now</a>.</p>
 ]]></content>
@@ -79,9 +79,9 @@ Today I have installed a new wordpress plugin called <strong>"Code Snippet"</str
   
   <entry>
     <title type="html"><![CDATA[Wordpress wamp and permalinks]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/01/27/wordpress-wamp-and-permalinks/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/01/27/wordpress-wamp-and-permalinks/"/>
     <updated>2009-01-27T02:28:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/01/27/wordpress-wamp-and-permalinks</id>
+    <id>http://blog.najamsikander.com/blog/2009/01/27/wordpress-wamp-and-permalinks</id>
     <content type="html"><![CDATA[<p>hi everyone</p>
 
 <p>I am posting after a long time guess I was super busy :) well first things first I have installed wordpress 2.7 on my hosting and imported all the data from my blog running at http://najam.wordpress.com.</p>
@@ -92,18 +92,18 @@ Today I have installed a new wordpress plugin called <strong>"Code Snippet"</str
   
   <entry>
     <title type="html"><![CDATA[Tags!! welcome]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2007/09/30/tags-welcome/"/>
+    <link href="http://blog.najamsikander.com/blog/2007/09/30/tags-welcome/"/>
     <updated>2007-09-30T20:05:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2007/09/30/tags-welcome</id>
+    <id>http://blog.najamsikander.com/blog/2007/09/30/tags-welcome</id>
     <content type="html"><![CDATA[<p>With wordpress 2.3 codename dexter wordpress bloggers finally have their hands on most waited features <strong>"Tags". </strong>Tags are very much like categories but little convenient  then categories. Tags come handy when you are posting and you can put tags onto your post by just typing tag name and comma separate them whereas if you want post under multiple categories you have to select the check boxes for that.<span style="font-size:12pt;font-family:'Times New Roman';">  </span></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Testing yahoo 360]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2006/01/28/testing-yahoo-360/"/>
+    <link href="http://blog.najamsikander.com/blog/2006/01/28/testing-yahoo-360/"/>
     <updated>2006-01-28T16:48:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2006/01/28/testing-yahoo-360</id>
+    <id>http://blog.najamsikander.com/blog/2006/01/28/testing-yahoo-360</id>
     <content type="html"><![CDATA[<p>Do you ever tried yahoo 360 well I just created a yahoo 360 blog for testing and I must admit that yahoo 360 offering more options then wordpress and can comptiable to your existing blogs (wordpress or other famious blogs) and to your flicker photostream. You can checkout my yahoo 360 beta blog ;) at <a href="http://360.yahoo.com/dragona_eyez">http://360.yahoo.com/dragona_eyez</a><br />and please leave your comments. They are needed to improve my writing skills :).<br /><br /><br /></p>
 ]]></content>
   </entry>

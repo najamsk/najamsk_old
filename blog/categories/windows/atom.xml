@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: windows | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io/najamsk/blog/categories/windows/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io/najamsk/"/>
-  <updated>2013-04-28T12:59:04+05:00</updated>
-  <id>http://najamsk.github.io/najamsk/</id>
+  <link href="http://blog.najamsikander.com/blog/categories/windows/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-04-28T13:02:54+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[reinstall grub after installing windows xp]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2007/03/01/reinstall-grub-after-installing-windows-xp/"/>
+    <link href="http://blog.najamsikander.com/blog/2007/03/01/reinstall-grub-after-installing-windows-xp/"/>
     <updated>2007-03-01T11:15:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2007/03/01/reinstall-grub-after-installing-windows-xp</id>
+    <id>http://blog.najamsikander.com/blog/2007/03/01/reinstall-grub-after-installing-windows-xp</id>
     <content type="html"><![CDATA[<p>hi guyz</p>
 
 <p>Today i formated my c drive in which vista was installed and i replaced it with windows xp after installing win xp into my c drive my boot loader is disappeared as expected.</p>
@@ -47,9 +47,9 @@
   
   <entry>
     <title type="html"><![CDATA[Windows XP Professional Password Protected File Sharing?]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2006/02/18/windows-xp-professional-password-protected-file-sharing/"/>
+    <link href="http://blog.najamsikander.com/blog/2006/02/18/windows-xp-professional-password-protected-file-sharing/"/>
     <updated>2006-02-18T16:24:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2006/02/18/windows-xp-professional-password-protected-file-sharing</id>
+    <id>http://blog.najamsikander.com/blog/2006/02/18/windows-xp-professional-password-protected-file-sharing</id>
     <content type="html"><![CDATA[<p>Now days I am very curious to know how to restrict access to my shared folders I am currently using Windows XP Professional and I google a lot but till now I couldn’t find how to apply password. If someone knows how to do that with windows XP professional then please email me or comment your solution.</p>
 ]]></content>
   </entry>

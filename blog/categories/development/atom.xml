@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: development | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io/najamsk/blog/categories/development/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io/najamsk/"/>
-  <updated>2013-04-28T12:59:04+05:00</updated>
-  <id>http://najamsk.github.io/najamsk/</id>
+  <link href="http://blog.najamsikander.com/blog/categories/development/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-04-28T13:02:54+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Get Running Jquery Version]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2010/12/06/get-running-jquery-version/"/>
+    <link href="http://blog.najamsikander.com/blog/2010/12/06/get-running-jquery-version/"/>
     <updated>2010-12-06T02:12:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2010/12/06/get-running-jquery-version</id>
+    <id>http://blog.najamsikander.com/blog/2010/12/06/get-running-jquery-version</id>
     <content type="html"><![CDATA[<p>Few weeks back I came across a page that has multiple jquery versions referenced in it and I had no idea which jquery version is actually running. So after little bit of googling I find following solution.</p>
 
 <div>
@@ -33,9 +33,9 @@ jQuery.fn.jquery;</pre>
   
   <entry>
     <title type="html"><![CDATA[use SWFObject v2.2 to embed swf]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2010/11/01/use-swfobject-v2-2-to-embed-swf/"/>
+    <link href="http://blog.najamsikander.com/blog/2010/11/01/use-swfobject-v2-2-to-embed-swf/"/>
     <updated>2010-11-01T09:46:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2010/11/01/use-swfobject-v2-2-to-embed-swf</id>
+    <id>http://blog.najamsikander.com/blog/2010/11/01/use-swfobject-v2-2-to-embed-swf</id>
     <content type="html"><![CDATA[<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -78,9 +78,9 @@ jQuery.fn.jquery;</pre>
   
   <entry>
     <title type="html"><![CDATA[Calling asp.net page methods with jquery]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/02/03/calling-aspnet-page-methods-with-jquery/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/02/03/calling-aspnet-page-methods-with-jquery/"/>
     <updated>2009-02-03T04:23:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/02/03/calling-aspnet-page-methods-with-jquery</id>
+    <id>http://blog.najamsikander.com/blog/2009/02/03/calling-aspnet-page-methods-with-jquery</id>
     <content type="html"><![CDATA[<p>Hi guyz,</p>
 
 <p>Today I am sharing how to call asp.net web page code behind methods from client side javascript in my case it will be jquery.</p>
@@ -159,9 +159,9 @@ jQuery.fn.jquery;</pre>
   
   <entry>
     <title type="html"><![CDATA[Software development]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2005/11/30/software-development/"/>
+    <link href="http://blog.najamsikander.com/blog/2005/11/30/software-development/"/>
     <updated>2005-11-30T20:15:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2005/11/30/software-development</id>
+    <id>http://blog.najamsikander.com/blog/2005/11/30/software-development</id>
     <content type="html"><![CDATA[<p><a href="http://najam.files.wordpress.com/2005/11/project.jpg" title="Real world software development "><img width="128" height="96" src="http://najam.files.wordpress.com/2005/11/thumb-project.jpg" alt="Real world software development " /></a></p>
 ]]></content>
   </entry>

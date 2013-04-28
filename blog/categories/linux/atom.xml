@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: linux | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io/najamsk/blog/categories/linux/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io/najamsk/"/>
-  <updated>2013-04-28T12:59:04+05:00</updated>
-  <id>http://najamsk.github.io/najamsk/</id>
+  <link href="http://blog.najamsikander.com/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-04-28T13:02:54+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Update to ubuntu 11 messed it all]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2011/05/07/update-to-ubuntu-11-messed-it-all/"/>
+    <link href="http://blog.najamsikander.com/blog/2011/05/07/update-to-ubuntu-11-messed-it-all/"/>
     <updated>2011-05-07T13:46:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2011/05/07/update-to-ubuntu-11-messed-it-all</id>
+    <id>http://blog.najamsikander.com/blog/2011/05/07/update-to-ubuntu-11-messed-it-all</id>
     <content type="html"><![CDATA[<p>Previously I have told you about my ubuntu setup running via virtual box. I was happily working till ubuntu 11 launched and I decided to upgrade to version 11, after update vbox is not doing fullscreen worse part is compiz also not working. It seems may be driver for my ati hd 4890 not working properly.</p>
 
 
@@ -39,9 +39,9 @@ Najam sikander awan</p>
   
   <entry>
     <title type="html"><![CDATA[Back on linux with ubuntu using Virtual Box]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box/"/>
+    <link href="http://blog.najamsikander.com/blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box/"/>
     <updated>2011-04-02T05:26:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box</id>
+    <id>http://blog.najamsikander.com/blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box</id>
     <content type="html"><![CDATA[<p>Well for some experiments that involved git and curl I was coming across the windows problem I was trying to make my way using cygwin but after few stuck I always get stuck. Everyone's recommended solution  was using linux OS so I have download virtual box created a virtual machine and then installed ubuntu iso 10.10 32 bit. Now as I am trying to get some softwares like chrome and vim I got few errors in package manager saying something like waiting for jockey to end. Google comes to rescue in terminal I run following commands:</p>
 
 <pre>
@@ -86,9 +86,9 @@ sudo sh ./VBoxLinuxAdditions-x86.run (this is what you would type if you have an
   
   <entry>
     <title type="html"><![CDATA[Vychat alternative for my suse 10.2 laptop]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2007/03/12/vychat-alternative-for-my-suse-102-laptop/"/>
+    <link href="http://blog.najamsikander.com/blog/2007/03/12/vychat-alternative-for-my-suse-102-laptop/"/>
     <updated>2007-03-12T10:43:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2007/03/12/vychat-alternative-for-my-suse-102-laptop</id>
+    <id>http://blog.najamsikander.com/blog/2007/03/12/vychat-alternative-for-my-suse-102-laptop</id>
     <content type="html"><![CDATA[<p style="margin-bottom:0;" align="left"><font size="3">After switching to suse what I badly missed is vychat a very popular LAN chat client </font></p>
 
 
@@ -188,9 +188,9 @@ rcSuSEfirewall2 start</font>
   
   <entry>
     <title type="html"><![CDATA[How to enable full multimedia capabilities on Suse 10.2 using the xine engine]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2007/03/12/how-to-enable-full-multimedia-capabilities-on-suse-102-using-the-xine-engine/"/>
+    <link href="http://blog.najamsikander.com/blog/2007/03/12/how-to-enable-full-multimedia-capabilities-on-suse-102-using-the-xine-engine/"/>
     <updated>2007-03-12T10:36:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2007/03/12/how-to-enable-full-multimedia-capabilities-on-suse-102-using-the-xine-engine</id>
+    <id>http://blog.najamsikander.com/blog/2007/03/12/how-to-enable-full-multimedia-capabilities-on-suse-102-using-the-xine-engine</id>
     <content type="html"><![CDATA[<p>NOTE: The package manager in Suse 10.2 appears to be working a lot better than the one in 10.1, so this time we will be using YAST and not SMART to install the required packages.</p>
 
 <p>The first step in resolving the multimedia issue is to setup additional YAST <a href="http://www.linuxquestions.org/questions/showthread.php?t=509097#" target="_top"><u><font size="2"></font><font face="Verdana, Arial, Helvetica, sans-serif"></font><font color="#0000ff">software</font></u></a> sources. The software repositories used in this howto, are <a href="http://packman.links2linux.org/" target="_blank">Packman</a> and <a href="http://linux01.gwdg.de/%7Epbleser/" target="_blank">Guru</a>. If possible, please use a mirror instead of the main download site to prevent overloading one download location. The mirrors for Packman are listed <a href="ftp://packman.links2linux.de/pub/packman/MIRRORS" target="_blank">here</a> and the ones for Guru are on the section titled "Mirrors" on this <a href="http://linux01.gwdg.de/%7Epbleser/" target="_blank">page</a>.</p>
@@ -305,9 +305,9 @@ Have fun.  <img src="http://linuxquestions.cachefly.net/images/questions/images/
   
   <entry>
     <title type="html"><![CDATA[Realtek HD sound card working]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2007/02/20/realtek-hd-sound-card-working/"/>
+    <link href="http://blog.najamsikander.com/blog/2007/02/20/realtek-hd-sound-card-working/"/>
     <updated>2007-02-20T09:54:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2007/02/20/realtek-hd-sound-card-working</id>
+    <id>http://blog.najamsikander.com/blog/2007/02/20/realtek-hd-sound-card-working</id>
     <content type="html"><![CDATA[<p>Hi guyz</p>
 
 <p>My sound card working now after installing latest <a href="http://www.alsa-project.org/"><font color="#578fb2">Alsa</font></a> driver, Lib and Utils.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: browsers | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io/najamsk/blog/categories/browsers/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io/najamsk/"/>
-  <updated>2013-04-28T12:59:04+05:00</updated>
-  <id>http://najamsk.github.io/najamsk/</id>
+  <link href="http://blog.najamsikander.com/blog/categories/browsers/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-04-28T13:02:54+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Google Chrome Bookmarks?]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2008/09/27/google-chrome-bookmarks/"/>
+    <link href="http://blog.najamsikander.com/blog/2008/09/27/google-chrome-bookmarks/"/>
     <updated>2008-09-27T17:38:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2008/09/27/google-chrome-bookmarks</id>
+    <id>http://blog.najamsikander.com/blog/2008/09/27/google-chrome-bookmarks</id>
     <content type="html"><![CDATA[<p>hi friends</p>
 
 <p>You know google chrome is out and everyone was so excited about that including me as a very passionate user i tried to do all of the things now in chrome i have imported my firefox settings (bookmarks) into chrome. All bookmarks are showing good I liked that but shortly I needed to perform a simple task in chrome that is "searching for a bookmarked site among all the bookmarks i have" and till now i don't know how to search for my bookmark in mighty chrome.</p>
@@ -28,9 +28,9 @@
   
   <entry>
     <title type="html"><![CDATA[safari on windows]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2007/06/11/safari-on-windows/"/>
+    <link href="http://blog.najamsikander.com/blog/2007/06/11/safari-on-windows/"/>
     <updated>2007-06-11T22:21:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2007/06/11/safari-on-windows</id>
+    <id>http://blog.najamsikander.com/blog/2007/06/11/safari-on-windows</id>
     <content type="html"><![CDATA[<p>hi guyz
 believe or not safari famous apple browser new beta version is here for both mac and windows users yes u heard it all right its for windows too i have downloaded it and installed it and it works great for me.</p>
 
@@ -45,18 +45,18 @@ Najam Sikander Awan</p>
   
   <entry>
     <title type="html"><![CDATA[My Firefox Extensions]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2005/12/26/my-firefox-extensions/"/>
+    <link href="http://blog.najamsikander.com/blog/2005/12/26/my-firefox-extensions/"/>
     <updated>2005-12-26T21:29:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2005/12/26/my-firefox-extensions</id>
+    <id>http://blog.najamsikander.com/blog/2005/12/26/my-firefox-extensions</id>
     <content type="html"><![CDATA[<p>Well here is a random list of all the extensions for my firefox<br />1. All in one gesture<br />2. Session Saver<br />3. Ad Block <br />4. Fasterfox<br />5. Reload Every<br />6. Groowe Searchtoobar<br /><br /></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Modify Firefox 1.5 to work with all extensions]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions/"/>
+    <link href="http://blog.najamsikander.com/blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions/"/>
     <updated>2005-12-02T13:12:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions</id>
+    <id>http://blog.najamsikander.com/blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions</id>
     <content type="html"><![CDATA[<p>For all of those who just downloaded Firefox 1.5 and canât get your extensions to work. This is a simple modification of Firefoxâs configuration to trick the extensions to work. No need to manually edit the extensions to get them to work. Currently all the extensions I use work except the bookmark sync extension that I so dearly want to.</p>
 
 
@@ -73,9 +73,9 @@ Enter âapp.extensions.versionâ? (without quotes) for the preference name
   
   <entry>
     <title type="html"><![CDATA[Speed Up Firfox]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2005/12/01/speed-up-firfox/"/>
+    <link href="http://blog.najamsikander.com/blog/2005/12/01/speed-up-firfox/"/>
     <updated>2005-12-01T00:12:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2005/12/01/speed-up-firfox</id>
+    <id>http://blog.najamsikander.com/blog/2005/12/01/speed-up-firfox</id>
     <content type="html"><![CDATA[<p><strong> Here's something for broadband people that will really speed Firefox up:<br />
 </strong><br />
 1.Type "about:config" into the address bar and hit return. Scroll down and look for the following entries:</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: projects | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io/najamsk/blog/categories/projects/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io/najamsk/"/>
-  <updated>2013-04-28T12:59:04+05:00</updated>
-  <id>http://najamsk.github.io/najamsk/</id>
+  <link href="http://blog.najamsikander.com/blog/categories/projects/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-04-28T13:02:54+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Circa Wear]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/07/09/circa-wear/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/07/09/circa-wear/"/>
     <updated>2009-07-09T23:01:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/07/09/circa-wear</id>
+    <id>http://blog.najamsikander.com/blog/2009/07/09/circa-wear</id>
     <content type="html"><![CDATA[<p>I have uploaded another static website that might become an e-commerce website in future.</p>
 
 <p><a href="http://circa-wear.com/circa/" target="_blank">http://circa-wear.com/circa/</a></p>
@@ -26,9 +26,9 @@
   
   <entry>
     <title type="html"><![CDATA[cbhtrade.com launched]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/01/27/cbhtradecom-launched/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/01/27/cbhtradecom-launched/"/>
     <updated>2009-01-27T07:54:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/01/27/cbhtradecom-launched</id>
+    <id>http://blog.najamsikander.com/blog/2009/01/27/cbhtradecom-launched</id>
     <content type="html"><![CDATA[<p>hi guys</p>
 
 <p>After playing with wordpress we decided to make a small static website using wordpress 2.7. Please check it out at <a title="CBH" href="http://cbhtrade.com/cbh/" target="_blank">http://cbhtrade.com/cbh/</a></p>
@@ -37,9 +37,9 @@
   
   <entry>
     <title type="html"><![CDATA[Tdfsolutions.com]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/01/27/tdf-solutions/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/01/27/tdf-solutions/"/>
     <updated>2009-01-27T02:50:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/01/27/tdf-solutions</id>
+    <id>http://blog.najamsikander.com/blog/2009/01/27/tdf-solutions</id>
     <content type="html"><![CDATA[<p>hi guys</p>
 
 <p>well I have been learning html and css and my company let me do some slicing for them so here is my first offical html/css project please visit <a title="Tdf Solutions" href="http://www.tdfsolutions.com" target="_blank">http://www.tdfsolutions.com</a> .</p>

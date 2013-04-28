@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: wordpress | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io/najamsk/blog/categories/wordpress/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io/najamsk/"/>
-  <updated>2013-04-28T12:59:04+05:00</updated>
-  <id>http://najamsk.github.io/najamsk/</id>
+  <link href="http://blog.najamsikander.com/blog/categories/wordpress/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-04-28T13:02:54+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Highlight your code with wordpress]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/02/03/highlight-your-code-with-wordpress/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/02/03/highlight-your-code-with-wordpress/"/>
     <updated>2009-02-03T05:00:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/02/03/highlight-your-code-with-wordpress</id>
+    <id>http://blog.najamsikander.com/blog/2009/02/03/highlight-your-code-with-wordpress</id>
     <content type="html"><![CDATA[<p>Hi guys,
 Today I have installed a new wordpress plugin called <strong>"Code Snippet"</strong> and it support code highlight for many languages try this out you would love it. <a title="Download code snippet" href="http://wordpress.org/extend/plugins/codesnippet-20/" target="_blank">Download it now</a>.</p>
 ]]></content>
@@ -25,9 +25,9 @@ Today I have installed a new wordpress plugin called <strong>"Code Snippet"</str
   
   <entry>
     <title type="html"><![CDATA[cbhtrade.com launched]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/01/27/cbhtradecom-launched/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/01/27/cbhtradecom-launched/"/>
     <updated>2009-01-27T07:54:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/01/27/cbhtradecom-launched</id>
+    <id>http://blog.najamsikander.com/blog/2009/01/27/cbhtradecom-launched</id>
     <content type="html"><![CDATA[<p>hi guys</p>
 
 <p>After playing with wordpress we decided to make a small static website using wordpress 2.7. Please check it out at <a title="CBH" href="http://cbhtrade.com/cbh/" target="_blank">http://cbhtrade.com/cbh/</a></p>
@@ -36,9 +36,9 @@ Today I have installed a new wordpress plugin called <strong>"Code Snippet"</str
   
   <entry>
     <title type="html"><![CDATA[Wordpress wamp and permalinks]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/01/27/wordpress-wamp-and-permalinks/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/01/27/wordpress-wamp-and-permalinks/"/>
     <updated>2009-01-27T02:28:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/01/27/wordpress-wamp-and-permalinks</id>
+    <id>http://blog.najamsikander.com/blog/2009/01/27/wordpress-wamp-and-permalinks</id>
     <content type="html"><![CDATA[<p>hi everyone</p>
 
 <p>I am posting after a long time guess I was super busy :) well first things first I have installed wordpress 2.7 on my hosting and imported all the data from my blog running at http://najam.wordpress.com.</p>
@@ -49,18 +49,18 @@ Today I have installed a new wordpress plugin called <strong>"Code Snippet"</str
   
   <entry>
     <title type="html"><![CDATA[Tags!! welcome]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2007/09/30/tags-welcome/"/>
+    <link href="http://blog.najamsikander.com/blog/2007/09/30/tags-welcome/"/>
     <updated>2007-09-30T20:05:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2007/09/30/tags-welcome</id>
+    <id>http://blog.najamsikander.com/blog/2007/09/30/tags-welcome</id>
     <content type="html"><![CDATA[<p>With wordpress 2.3 codename dexter wordpress bloggers finally have their hands on most waited features <strong>"Tags". </strong>Tags are very much like categories but little convenient  then categories. Tags come handy when you are posting and you can put tags onto your post by just typing tag name and comma separate them whereas if you want post under multiple categories you have to select the check boxes for that.<span style="font-size:12pt;font-family:'Times New Roman';">  </span></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[setting custome themes??]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2005/11/21/setting-custome-themes/"/>
+    <link href="http://blog.najamsikander.com/blog/2005/11/21/setting-custome-themes/"/>
     <updated>2005-11-21T22:04:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2005/11/21/setting-custome-themes</id>
+    <id>http://blog.najamsikander.com/blog/2005/11/21/setting-custome-themes</id>
     <content type="html"><![CDATA[<p>hi</p>
 
 <p>i am using wordpress.com very first time i dont know how to set custom themes (http://managedtasks.com/wpthemes/blog/index.php?wptheme=narnia) from my panel i donwloaded a theme from wordpress which can be found at http://managedtasks.com/wpthemes/blog/index.php?wptheme=narnia can anyone please help me how to set this theme for my blog</p>

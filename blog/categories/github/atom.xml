@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: github | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io/najamsk/blog/categories/github/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io/najamsk/"/>
-  <updated>2013-04-28T12:59:04+05:00</updated>
-  <id>http://najamsk.github.io/najamsk/</id>
+  <link href="http://blog.najamsikander.com/blog/categories/github/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-04-28T13:02:54+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[playing with octopress blogging]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2013/04/22/playing-with-octopress-blogging/"/>
+    <link href="http://blog.najamsikander.com/blog/2013/04/22/playing-with-octopress-blogging/"/>
     <updated>2013-04-22T20:12:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2013/04/22/playing-with-octopress-blogging</id>
+    <id>http://blog.najamsikander.com/blog/2013/04/22/playing-with-octopress-blogging</id>
     <content type="html"><![CDATA[<p>I first came to know about octopress from yayquery episode in which rebbeca murphy mentioned she has moved her blog form wordpress to octopress and she is very happy with that. At that time I didn't paid any attention to this.</p>
 
 <p>But today I suddenly started to play with it and I liked few things I learn along the way and that kept me going till I have imported all of my posts from wordpress to github pages.</p>

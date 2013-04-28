@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: internet | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io/najamsk/blog/categories/internet/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io/najamsk/"/>
-  <updated>2013-04-28T12:59:04+05:00</updated>
-  <id>http://najamsk.github.io/najamsk/</id>
+  <link href="http://blog.najamsikander.com/blog/categories/internet/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-04-28T13:02:54+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Synchronize your bookmarks]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2007/10/19/synchronize-your-bookmarks/"/>
+    <link href="http://blog.najamsikander.com/blog/2007/10/19/synchronize-your-bookmarks/"/>
     <updated>2007-10-19T20:27:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2007/10/19/synchronize-your-bookmarks</id>
+    <id>http://blog.najamsikander.com/blog/2007/10/19/synchronize-your-bookmarks</id>
     <content type="html"><![CDATA[<p>Surrounded by computers and internet all the time when at work, in university labs or when browsing internet from your home. During long sessions we come across some really good websites and <a href="http://www,najamsikander.com">solutions</a> and add them to our bookmarks but as soon as you switch PC your favorites bookmarks are gone. Its very difficult to manage your bookmarks on multiple PC's but not anymore if you are a firefox fan. One can easily synchronize his/her bookmars by installing a little extension called foxmarks and signing up for an account in <a href="http://www.foxmarks.com" title="Signup Today For Free">foxmarks.com</a>. You probable already know about other solutions like google browser sync and <a href="http://del.icio.us/" title="http://del.icio.us/">del.icio.us</a> but both of them are very heavy for a dial up user with a distortion in phone line where foxmarks works like a breeze.</p>
 
 <p>Try foxmarks extension for yourself and give me your feedback on this post.</p>
@@ -30,9 +30,9 @@
   
   <entry>
     <title type="html"><![CDATA[Modify Firefox 1.5 to work with all extensions]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions/"/>
+    <link href="http://blog.najamsikander.com/blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions/"/>
     <updated>2005-12-02T13:12:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions</id>
+    <id>http://blog.najamsikander.com/blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions</id>
     <content type="html"><![CDATA[<p>For all of those who just downloaded Firefox 1.5 and canât get your extensions to work. This is a simple modification of Firefoxâs configuration to trick the extensions to work. No need to manually edit the extensions to get them to work. Currently all the extensions I use work except the bookmark sync extension that I so dearly want to.</p>
 
 
@@ -49,9 +49,9 @@ Enter âapp.extensions.versionâ? (without quotes) for the preference name
   
   <entry>
     <title type="html"><![CDATA[Firefox 1.5 - blazing fast back &amp; forth page caching]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2005/11/30/firefox-15-blazing-fast-back-forth-page-caching/"/>
+    <link href="http://blog.najamsikander.com/blog/2005/11/30/firefox-15-blazing-fast-back-forth-page-caching/"/>
     <updated>2005-11-30T23:43:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2005/11/30/firefox-15-blazing-fast-back-forth-page-caching</id>
+    <id>http://blog.najamsikander.com/blog/2005/11/30/firefox-15-blazing-fast-back-forth-page-caching</id>
     <content type="html"><![CDATA[<p>1. Download and install the latest Firefox<br />
 * Linux<br />
 * MacOS X<br />

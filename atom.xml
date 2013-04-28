@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io/najamsk/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io/najamsk/"/>
-  <updated>2013-04-28T12:59:04+05:00</updated>
-  <id>http://najamsk.github.io/najamsk/</id>
+  <link href="http://blog.najamsikander.com/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-04-28T13:02:54+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Microsoft Islamabad Meetup]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/"/>
+    <link href="http://blog.najamsikander.com/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/"/>
     <updated>2013-04-24T22:46:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8</id>
+    <id>http://blog.najamsikander.com/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8</id>
     <content type="html"><![CDATA[<p>I have been invited to [Microsoft Community Meetup] at marriott hotel islamabad on Friday 19th April 2013. It was really nice experience to meet fellow devs, students and MVP.</p>
 
 <p>Session was about windows 8 platform they have shown few apps that are developed in Pakistan and available for global audience. Highlight of the meetup was teams that have participated in Imagine cup and from pakistan. Team with first position showcased their project and I was blown away by their concept, presentation and business skills.</p>
@@ -32,9 +32,9 @@
   
   <entry>
     <title type="html"><![CDATA[Attended Bahria University Job Fair]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2013/04/24/attended-bahria-university-job-fair/"/>
+    <link href="http://blog.najamsikander.com/blog/2013/04/24/attended-bahria-university-job-fair/"/>
     <updated>2013-04-24T21:48:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2013/04/24/attended-bahria-university-job-fair</id>
+    <id>http://blog.najamsikander.com/blog/2013/04/24/attended-bahria-university-job-fair</id>
     <content type="html"><![CDATA[<p>Bahria university hosted a job fair session on 19th April 2013 in which they invites companies from local industry. My company also participated in the event.</p>
 
 <p>Myself and few other from our company spend whole day in the event looking for suitable events in .net, mobile development and social media positions.</p>
@@ -68,9 +68,9 @@
   
   <entry>
     <title type="html"><![CDATA[playing with octopress blogging]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2013/04/22/playing-with-octopress-blogging/"/>
+    <link href="http://blog.najamsikander.com/blog/2013/04/22/playing-with-octopress-blogging/"/>
     <updated>2013-04-22T20:12:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2013/04/22/playing-with-octopress-blogging</id>
+    <id>http://blog.najamsikander.com/blog/2013/04/22/playing-with-octopress-blogging</id>
     <content type="html"><![CDATA[<p>I first came to know about octopress from yayquery episode in which rebbeca murphy mentioned she has moved her blog form wordpress to octopress and she is very happy with that. At that time I didn&#8217;t paid any attention to this.</p>
 
 <p>But today I suddenly started to play with it and I liked few things I learn along the way and that kept me going till I have imported all of my posts from wordpress to github pages.</p>
@@ -113,9 +113,9 @@ rake deploy
   
   <entry>
     <title type="html"><![CDATA[Upgraded my hosting for .net 4.0]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2011/08/09/upgraded-my-hosting-for-net-4-0/"/>
+    <link href="http://blog.najamsikander.com/blog/2011/08/09/upgraded-my-hosting-for-net-4-0/"/>
     <updated>2011-08-09T10:13:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2011/08/09/upgraded-my-hosting-for-net-4-0</id>
+    <id>http://blog.najamsikander.com/blog/2011/08/09/upgraded-my-hosting-for-net-4-0</id>
     <content type="html"><![CDATA[<p>I have been watching Mix11 videos about asp.net mvc3 and felt pretty excited to mingle with these latest bits but I didn&#8217;t wanted to limit myself to local environment I wanted to know what efforts are required if I am developing with latest stuff one limitation I had that my host always take ages to update server so I had support for .net3.5. I email them about this thing and in reply they told me either wait 6 months or pay $8. Since I was dying to test out EF code first I paid them and within one day my hosting is all updated and now I am running my incomplete demo online :).</p>
 
 <p>Deployment was a little bit scarier as my hosting doesn&#8217;t come with any publishing/deployment server but if you have vs2010 sp1 then you are in safe hands all you have to do is to click on add deployable dependencies then build your solution and upload using your favorite ftp client.</p>
@@ -126,9 +126,9 @@ rake deploy
   
   <entry>
     <title type="html"><![CDATA[My PC is not working]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2011/08/09/my-pc-is-not-working/"/>
+    <link href="http://blog.najamsikander.com/blog/2011/08/09/my-pc-is-not-working/"/>
     <updated>2011-08-09T09:59:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2011/08/09/my-pc-is-not-working</id>
+    <id>http://blog.najamsikander.com/blog/2011/08/09/my-pc-is-not-working</id>
     <content type="html"><![CDATA[<p>I have spent so much money to build a dream PC for gaming and my web development work I was happy thought it was my investment and will recover it in future while working on it. But this never happened I worked on it successfully installed macOSX on it and then ubuntu using Virtualbox to setup my Node.JS environment but very time I need it most something bad happen. Always the worse part is not booting up and I never had any guesses where is the problem possible guesses always include ram, power supply, graphic card, processor or the Holy Motherboard in my case its always either MB or ram.</p>
 
 <p>Now again when I want to use my PC its not working. Some parts are in warranty and some are not lets see what happens next as I am convincing myself to lift this more then 10kg of weight to carry to computer market for diagnosis.</p>
@@ -139,9 +139,9 @@ rake deploy
   
   <entry>
     <title type="html"><![CDATA[Update to ubuntu 11 messed it all]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2011/05/07/update-to-ubuntu-11-messed-it-all/"/>
+    <link href="http://blog.najamsikander.com/blog/2011/05/07/update-to-ubuntu-11-messed-it-all/"/>
     <updated>2011-05-07T13:46:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2011/05/07/update-to-ubuntu-11-messed-it-all</id>
+    <id>http://blog.najamsikander.com/blog/2011/05/07/update-to-ubuntu-11-messed-it-all</id>
     <content type="html"><![CDATA[<p>Previously I have told you about my ubuntu setup running via virtual box. I was happily working till ubuntu 11 launched and I decided to upgrade to version 11, after update vbox is not doing fullscreen worse part is compiz also not working. It seems may be driver for my ati hd 4890 not working properly.</p>
 
 
@@ -163,9 +163,9 @@ Najam sikander awan</p>
   
   <entry>
     <title type="html"><![CDATA[Back on linux with ubuntu using Virtual Box]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box/"/>
+    <link href="http://blog.najamsikander.com/blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box/"/>
     <updated>2011-04-02T05:26:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box</id>
+    <id>http://blog.najamsikander.com/blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box</id>
     <content type="html"><![CDATA[<p>Well for some experiments that involved git and curl I was coming across the windows problem I was trying to make my way using cygwin but after few stuck I always get stuck. Everyone&#8217;s recommended solution  was using linux OS so I have download virtual box created a virtual machine and then installed ubuntu iso 10.10 32 bit. Now as I am trying to get some softwares like chrome and vim I got few errors in package manager saying something like waiting for jockey to end. Google comes to rescue in terminal I run following commands:</p>
 
 <pre>
@@ -210,9 +210,9 @@ sudo sh ./VBoxLinuxAdditions-x86.run (this is what you would type if you have an
   
   <entry>
     <title type="html"><![CDATA[CSS Overflow benefit]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2010/12/08/css-overflow-benefit/"/>
+    <link href="http://blog.najamsikander.com/blog/2010/12/08/css-overflow-benefit/"/>
     <updated>2010-12-08T02:13:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2010/12/08/css-overflow-benefit</id>
+    <id>http://blog.najamsikander.com/blog/2010/12/08/css-overflow-benefit</id>
     <content type="html"><![CDATA[<p>I read this article <a href="http://bit.ly/16pqBm">http://bit.ly/16pqBm</a> and find out the power of overflow that is when you set it to a value it creates a new block formatting context in simple word that means non floated element’s content will not flow around the floated element instead will get narrower.</p>
 
 <p>PS. Width should not be mentioned for non floated content so it can get narrower.</p>
@@ -221,9 +221,9 @@ sudo sh ./VBoxLinuxAdditions-x86.run (this is what you would type if you have an
   
   <entry>
     <title type="html"><![CDATA[Get Running Jquery Version]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2010/12/06/get-running-jquery-version/"/>
+    <link href="http://blog.najamsikander.com/blog/2010/12/06/get-running-jquery-version/"/>
     <updated>2010-12-06T02:12:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2010/12/06/get-running-jquery-version</id>
+    <id>http://blog.najamsikander.com/blog/2010/12/06/get-running-jquery-version</id>
     <content type="html"><![CDATA[<p>Few weeks back I came across a page that has multiple jquery versions referenced in it and I had no idea which jquery version is actually running. So after little bit of googling I find following solution.</p>
 
 <div>
@@ -239,9 +239,9 @@ jQuery.fn.jquery;</pre>
   
   <entry>
     <title type="html"><![CDATA[CSS Diet Plan - first step to object oriented css]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2010/12/03/css-diet-plan/"/>
+    <link href="http://blog.najamsikander.com/blog/2010/12/03/css-diet-plan/"/>
     <updated>2010-12-03T01:59:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2010/12/03/css-diet-plan</id>
+    <id>http://blog.najamsikander.com/blog/2010/12/03/css-diet-plan</id>
     <content type="html"><![CDATA[<p>I was wondering how to count the rules of my style sheets after little googling i discovered two ways one is through vim and second is through a command line tool called grep.</p>
 
 <p>If you are a vim user and your css file is loaded into vim in command mode enter following command</p>
@@ -266,9 +266,9 @@ jQuery.fn.jquery;</pre>
   
   <entry>
     <title type="html"><![CDATA[use SWFObject v2.2 to embed swf]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2010/11/01/use-swfobject-v2-2-to-embed-swf/"/>
+    <link href="http://blog.najamsikander.com/blog/2010/11/01/use-swfobject-v2-2-to-embed-swf/"/>
     <updated>2010-11-01T09:46:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2010/11/01/use-swfobject-v2-2-to-embed-swf</id>
+    <id>http://blog.najamsikander.com/blog/2010/11/01/use-swfobject-v2-2-to-embed-swf</id>
     <content type="html"><![CDATA[
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -312,9 +312,9 @@ jQuery.fn.jquery;</pre>
   
   <entry>
     <title type="html"><![CDATA[Facebook Application Development using Asp.net]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2010/09/23/facebook-application-development-using-asp-net/"/>
+    <link href="http://blog.najamsikander.com/blog/2010/09/23/facebook-application-development-using-asp-net/"/>
     <updated>2010-09-23T01:31:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2010/09/23/facebook-application-development-using-asp-net</id>
+    <id>http://blog.najamsikander.com/blog/2010/09/23/facebook-application-development-using-asp-net</id>
     <content type="html"><![CDATA[<p>Hi,</p>
 
 <p>I have been busy with facebook application development using IFrame and since I have asp.net background so instead of php I wanted to do this in asp.net their are few wrappers or sdk available for this like. After googling I have picked <a href="http://facebooktoolkit.codeplex.com/">Facebook developer toolkit v3.01</a>. After downloading the binaries I have created a asp.net web application project with 4.0 framework and simply added the reference of facebook.dll and facebook.web.dll.</p>
@@ -347,9 +347,9 @@ jQuery.fn.jquery;</pre>
   
   <entry>
     <title type="html"><![CDATA[10 Things I Learned from the jQuery Source]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2010/07/23/10-things-i-learned-from-the-jquery-source/"/>
+    <link href="http://blog.najamsikander.com/blog/2010/07/23/10-things-i-learned-from-the-jquery-source/"/>
     <updated>2010-07-23T03:22:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2010/07/23/10-things-i-learned-from-the-jquery-source</id>
+    <id>http://blog.najamsikander.com/blog/2010/07/23/10-things-i-learned-from-the-jquery-source</id>
     <content type="html"><![CDATA[<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="450" height="275" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://vimeo.com/moogaloop.swf?clip_id=12529436&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed type="application/x-shockwave-flash" width="450" height="275" src="http://vimeo.com/moogaloop.swf?clip_id=12529436&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 
 
@@ -359,9 +359,9 @@ jQuery.fn.jquery;</pre>
   
   <entry>
     <title type="html"><![CDATA[Juqery Ani-Patterns for performance &amp; compression by paul irish]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2010/07/23/juqery-ani-patterns-for-performance-compression-by-paul-irish/"/>
+    <link href="http://blog.najamsikander.com/blog/2010/07/23/juqery-ani-patterns-for-performance-compression-by-paul-irish/"/>
     <updated>2010-07-23T03:20:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2010/07/23/juqery-ani-patterns-for-performance-compression-by-paul-irish</id>
+    <id>http://blog.najamsikander.com/blog/2010/07/23/juqery-ani-patterns-for-performance-compression-by-paul-irish</id>
     <content type="html"><![CDATA[<div id="__ss_1984008" style="width: 425px;"><strong><a title="jQuery Anti-Patterns for Performance &amp; Compression" href="http://www.slideshare.net/paul.irish/perfcompression">jQuery Anti-Patterns for Performance &amp; Compression</a></strong><object id="__sse1984008" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="425" height="355" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="src" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=perfcompression-090911091939-phpapp01&amp;stripped_title=perfcompression" /><param name="name" value="__sse1984008" /><param name="allowfullscreen" value="true" /><embed id="__sse1984008" type="application/x-shockwave-flash" width="425" height="355" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=perfcompression-090911091939-phpapp01&amp;stripped_title=perfcompression" name="__sse1984008" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 <div style="padding: 5px 0 12px;">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/paul.irish">Paul Irish</a>.</div>
 </div>
@@ -371,9 +371,9 @@ jQuery.fn.jquery;</pre>
   
   <entry>
     <title type="html"><![CDATA[C# Parent Child Reference Variable &amp; Object Casting]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2010/01/25/221/"/>
+    <link href="http://blog.najamsikander.com/blog/2010/01/25/221/"/>
     <updated>2010-01-25T04:28:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2010/01/25/221</id>
+    <id>http://blog.najamsikander.com/blog/2010/01/25/221</id>
     <content type="html"><![CDATA[<p>I have been clearing my concepts regarding inheritance and investigating if parent reference variable can point to child class object and vice versa.</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -540,9 +540,9 @@ jQuery.fn.jquery;</pre>
   
   <entry>
     <title type="html"><![CDATA[git tracking and deleting remote branches]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/07/20/git-tracking-and-deleting-remote-branches/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/07/20/git-tracking-and-deleting-remote-branches/"/>
     <updated>2009-07-20T09:11:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/07/20/git-tracking-and-deleting-remote-branches</id>
+    <id>http://blog.najamsikander.com/blog/2009/07/20/git-tracking-and-deleting-remote-branches</id>
     <content type="html"><![CDATA[<p><strong>List the remote branches that exist for a repository you have cloned:</strong></p>
 
 <pre><code>git remote show origin
@@ -569,9 +569,9 @@ removes somebranch</p>
   
   <entry>
     <title type="html"><![CDATA[Circa Wear]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/07/09/circa-wear/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/07/09/circa-wear/"/>
     <updated>2009-07-09T23:01:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/07/09/circa-wear</id>
+    <id>http://blog.najamsikander.com/blog/2009/07/09/circa-wear</id>
     <content type="html"><![CDATA[<p>I have uploaded another static website that might become an e-commerce website in future.</p>
 
 <p><a href="http://circa-wear.com/circa/" target="_blank">http://circa-wear.com/circa/</a></p>
@@ -580,9 +580,9 @@ removes somebranch</p>
   
   <entry>
     <title type="html"><![CDATA[Design Patterns -- Iterator]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/07/08/design-patterns-iterator/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/07/08/design-patterns-iterator/"/>
     <updated>2009-07-08T06:16:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/07/08/design-patterns-iterator</id>
+    <id>http://blog.najamsikander.com/blog/2009/07/08/design-patterns-iterator</id>
     <content type="html"><![CDATA[<p>Hi Guys,</p>
 
 <p>I am reading more on design patterns from this  <a title="Read This" href="http://msdn.microsoft.com/en-us/magazine/cc188707.aspx" target="_blank">article</a> after little theory session here is working code. Key point was all of the collection classes in the System.Collections namespace, as well as arrays, implement IEnumerable and can therefore be iterated over.</p>
@@ -646,9 +646,9 @@ removes somebranch</p>
   
   <entry>
     <title type="html"><![CDATA[Observer pattern with .net]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/07/08/observer-pattern-with-net/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/07/08/observer-pattern-with-net/"/>
     <updated>2009-07-08T05:11:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/07/08/observer-pattern-with-net</id>
+    <id>http://blog.najamsikander.com/blog/2009/07/08/observer-pattern-with-net</id>
     <content type="html"><![CDATA[<p>Hi folks,</p>
 
 <p>Well I am investigating design patterns by reading an <a title="Read This" href="http://msdn.microsoft.com/en-us/magazine/cc188707.aspx" target="_blank">article</a> so after reading a bit I thought it would be nice if I write some code and test it.</p>
@@ -804,9 +804,9 @@ removes somebranch</p>
   
   <entry>
     <title type="html"><![CDATA[Gmail out of beta]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/07/08/gmail-out-of-beta/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/07/08/gmail-out-of-beta/"/>
     <updated>2009-07-08T01:22:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/07/08/gmail-out-of-beta</id>
+    <id>http://blog.najamsikander.com/blog/2009/07/08/gmail-out-of-beta</id>
     <content type="html"><![CDATA[<p>Finally Gmaiil is out of beta :) login to your inbox and see yourself.</p>
 ]]></content>
   </entry>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: linq | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io/najamsk/blog/categories/linq/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io/najamsk/"/>
-  <updated>2013-04-28T12:59:04+05:00</updated>
-  <id>http://najamsk.github.io/najamsk/</id>
+  <link href="http://blog.najamsikander.com/blog/categories/linq/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-04-28T13:02:54+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[BLL - Business layer with Linq]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2009/06/08/bll-business-layer-with-linq/"/>
+    <link href="http://blog.najamsikander.com/blog/2009/06/08/bll-business-layer-with-linq/"/>
     <updated>2009-06-08T07:04:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2009/06/08/bll-business-layer-with-linq</id>
+    <id>http://blog.najamsikander.com/blog/2009/06/08/bll-business-layer-with-linq</id>
     <content type="html"><![CDATA[<p>Hello guys,</p>
 
 <p>This is my first Bll class that is using linq and returning objects to presentation layer. Main data component class is ItemsDT which contain another skeleton class "ItemGridView" for custom view of items data table. "ItemGridView" contains basically have the fields that i want to show in my presentation layer. Note that items datatable has many column which can be reterived by calling AllItems() method.</p>

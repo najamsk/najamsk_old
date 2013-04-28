@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: css | Najam Sikander Awan]]></title>
-  <link href="http://najamsk.github.io/najamsk/blog/categories/css/atom.xml" rel="self"/>
-  <link href="http://najamsk.github.io/najamsk/"/>
-  <updated>2013-04-28T12:59:04+05:00</updated>
-  <id>http://najamsk.github.io/najamsk/</id>
+  <link href="http://blog.najamsikander.com/blog/categories/css/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-04-28T13:02:54+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[CSS Overflow benefit]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2010/12/08/css-overflow-benefit/"/>
+    <link href="http://blog.najamsikander.com/blog/2010/12/08/css-overflow-benefit/"/>
     <updated>2010-12-08T02:13:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2010/12/08/css-overflow-benefit</id>
+    <id>http://blog.najamsikander.com/blog/2010/12/08/css-overflow-benefit</id>
     <content type="html"><![CDATA[<p>I read this article <a href="http://bit.ly/16pqBm">http://bit.ly/16pqBm</a> and find out the power of overflow that is when you set it to a value it creates a new block formatting context in simple word that means non floated element’s content will not flow around the floated element instead will get narrower.</p>
 
 <p>PS. Width should not be mentioned for non floated content so it can get narrower.</p>
@@ -26,9 +26,9 @@
   
   <entry>
     <title type="html"><![CDATA[CSS Diet Plan - first step to object oriented css]]></title>
-    <link href="http://najamsk.github.io/najamsk/blog/2010/12/03/css-diet-plan/"/>
+    <link href="http://blog.najamsikander.com/blog/2010/12/03/css-diet-plan/"/>
     <updated>2010-12-03T01:59:00+05:00</updated>
-    <id>http://najamsk.github.io/najamsk/blog/2010/12/03/css-diet-plan</id>
+    <id>http://blog.najamsikander.com/blog/2010/12/03/css-diet-plan</id>
     <content type="html"><![CDATA[<p>I was wondering how to count the rules of my style sheets after little googling i discovered two ways one is through vim and second is through a command line tool called grep.</p>
 
 <p>If you are a vim user and your css file is loaded into vim in command mode enter following command</p>
