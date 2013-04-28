@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: database | Najam Sikander Awan]]></title>
+  <link href="http://najamsk.github.io//blog/categories/database/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io//"/>
+  <updated>2013-04-28T11:02:12+05:00</updated>
+  <id>http://najamsk.github.io//</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Random rows selection from a database table]]></title>
+    <link href="http://najamsk.github.io//blog/2009/01/29/random-rows-selection-from-a-database-table/"/>
+    <updated>2009-01-29T03:36:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/01/29/random-rows-selection-from-a-database-table</id>
+    <content type="html"><![CDATA[<p>hi everyone,</p>
+
+<p>today I discovered a nice tip from a <a href="http://haacked.com/archive/2004/06/21/658.aspx" target="_blank">blog</a> I never knew selecting random rows were that easy with sqlserver 2000 and above. I have a country table that has four countries and from 4 I am selecting random 2.</p>
+
+<pre><code>SELECT TOP 2 * FROM country ORDER By NEWID()
+select * from country
+</code></pre>
+
+<p><strong>First Result</strong></p>
+
+<p>3           SaudiArabia
+4           France</p>
+
+<p><strong>Second Result</strong></p>
+
+<p>1           UAE
+4           France</p>
+
+<p><strong>Third Result</strong></p>
+
+<p>1           UAE
+3           SaudiArabia</p>
+
+<p><strong>All Countries</strong></p>
+
+<p>1           UAE
+2           Pakistan
+3           SaudiArabia
+4           France</p>
+
+<p>Amazing right??</p>
+]]></content>
+  </entry>
+  
+</feed>

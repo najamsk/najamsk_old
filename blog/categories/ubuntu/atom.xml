@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ubuntu | Najam Sikander Awan]]></title>
+  <link href="http://najamsk.github.io//blog/categories/ubuntu/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io//"/>
+  <updated>2013-04-28T11:02:12+05:00</updated>
+  <id>http://najamsk.github.io//</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Update to ubuntu 11 messed it all]]></title>
+    <link href="http://najamsk.github.io//blog/2011/05/07/update-to-ubuntu-11-messed-it-all/"/>
+    <updated>2011-05-07T13:46:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2011/05/07/update-to-ubuntu-11-messed-it-all</id>
+    <content type="html"><![CDATA[<p>Previously I have told you about my ubuntu setup running via virtual box. I was happily working till ubuntu 11 launched and I decided to upgrade to version 11, after update vbox is not doing fullscreen worse part is compiz also not working. It seems may be driver for my ati hd 4890 not working properly.</p>
+
+
+<p>Possible fixes that I can think includes:</p>
+
+
+<p>$ freshly install ubuntu 11 using virtual box.<br>
+$ install ubuntu 10.10 again</p>
+
+
+<p>If anyone knows any better solution please post.</p>
+
+
+<p>Regards,<br>
+Najam sikander awan</p>
+
+]]></content>
+  </entry>
+  
+</feed>

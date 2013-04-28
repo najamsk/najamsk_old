@@ -1,0 +1,353 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>How to enable full multimedia capabilities on Suse 10.2 using the xine engine - Najam Sikander Awan</title>
+  <meta name="author" content="najam sikander awan">
+
+  
+  <meta name="description" content="NOTE: The package manager in Suse 10.2 appears to be working a lot better than the one in 10.1, so this time we will be using YAST and not SMART to &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://najamsk.github.io//blog/2007/03/12/how-to-enable-full-multimedia-capabilities-on-suse-102-using-the-xine-engine">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/najamsk/atom.xml" rel="alternate" title="Najam Sikander Awan" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Najam Sikander Awan</a></h1>
+  
+    <h2>covering web stack along with microsoft technologies</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/najamsk/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:najamsk.github.io/" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">How to Enable Full Multimedia Capabilities on Suse 10.2 Using the Xine Engine</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-12T10:36:00+05:00" pubdate data-updated="true">Mar 12<span>th</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>NOTE: The package manager in Suse 10.2 appears to be working a lot better than the one in 10.1, so this time we will be using YAST and not SMART to install the required packages.</p>
+
+<p>The first step in resolving the multimedia issue is to setup additional YAST <a href="http://www.linuxquestions.org/questions/showthread.php?t=509097#" target="_top"><u><font size="2"></font><font face="Verdana, Arial, Helvetica, sans-serif"></font><font color="#0000ff">software</font></u></a> sources. The software repositories used in this howto, are <a href="http://packman.links2linux.org/" target="_blank">Packman</a> and <a href="http://linux01.gwdg.de/%7Epbleser/" target="_blank">Guru</a>. If possible, please use a mirror instead of the main download site to prevent overloading one download location. The mirrors for Packman are listed <a href="ftp://packman.links2linux.de/pub/packman/MIRRORS" target="_blank">here</a> and the ones for Guru are on the section titled &#8220;Mirrors&#8221; on this <a href="http://linux01.gwdg.de/%7Epbleser/" target="_blank">page</a>.</p>
+
+<p><strong><u>Adding the Packman Repository</u></strong></p>
+
+<ol>
+    <li>
+<p style="margin-bottom:0;">Start YAST -&gt; Software -&gt;     Installation Source and click on &#8220;add&#8221;</p>
+</li>
+    <li>
+<p style="margin-bottom:0;">Select HTTP or FTP as the protocol  and click on &#8220;next&#8221;</p>
+</li>
+    <li>
+<p style="margin-bottom:0;"><a name="KonaLink1"></a>In the box  that is labeled &#8221;<a href="http://www.linuxquestions.org/questions/showthread.php?t=509097#" target="_top"><u><font size="2"></font><font face="Verdana, Arial, Helvetica, sans-serif"></font><font color="#0000ff">Server</font></u></a>    Name&#8221; enter the address of the ftp or http server of your   mirror e.g. mirror.geht-schon.de or ftp.uni-erlangen.de. Please do  not enter the preceding http:// or ftp://.</p>
+
+<p style="margin-bottom:0;">Working Example:
+<strong>Server Name:    mirror.geht-schon.de</strong></p></li>
+    <li>
+<p style="margin-bottom:0;">In the box labeled &#8220;Directory   on Server&#8221;, enter the path to the packman directory for Suse    10.2 e.g. /packman.links2linux.de/suse/10.2 or  /pub/mirrors/packman/suse/10.2
+Working Example:
+<strong>Directory   on Server: /packman.links2linux.de/suse/10.2</strong></p></li>
+    <li>Once thats done, click on the finish button and depending on    your net connection YAST may take a few seconds or a few minutes to     setup the repo.</li>
+</ol>
+
+
+<p>NOTE: If you are asked about a &#8220;KEY&#8221; please choose the option to import the key.</p>
+
+<p><strong><u>Adding the Guru Repository</u></strong></p>
+
+<p>*The process is similar to adding the packman repo, the only difference being the mirros, so I won&#8217;t delve into that. Follow the instructions above and just substitute server names and directory paths.</p>
+
+<p>Working Example</p>
+
+<p><strong>Server Name: </strong><a href="ftp://ftp.gwdg.de/"><strong>ftp.gwdg.de</strong></a>
+<strong>Directory on Server: /pub/linux/misc/suser-guru/rpm/10.2/RPMS</strong></p>
+
+<p><strong><u>Installing the required packages</u></strong></p>
+
+<p>Once the mirrors have been setup do the following,</p>
+
+<ol>
+    <li>
+<p style="margin-bottom:0;">YAST -&gt; Software -&gt; Software  Management</p>
+</li>
+    <li>
+<p style="margin-bottom:0;">Search for xine and when the    search results show up:</p>
+
+<ul>
+    <li>
+<p style="margin-bottom:0;">Select libxine1 for installation</p>
+</li>
+</ul>
+</li>
+    <li>
+<p style="margin-bottom:0;">Select xine-lib for deinstallation</p>
+</li>
+    <li>
+<p style="margin-bottom:0;">If you want amarok to use the xine  engine, select &#8220;amarok-xine&#8221; for installation if it is not  already installed</p>
+</li>
+    <li>
+<p style="margin-bottom:0;">If you use totem and prefer to use  xine instead of gstreamer as the backend, select libxine1-gnome-vfs     for installation</p>
+</li>
+    <li>Search for w32codec and select it for installation</li>
+</ol>
+
+
+<p style="margin-bottom:0;">Once thats done, click accept and YAST should install the packages for you and hopefully you can play mp3, mp4, wmv etc.
+
+NOTE: We did not use any packages from the Guru repository, but it has some apps e.g. Kmplayer, amarok-xmms, and others as well as not multimedia packages that you may find useful.
+
+<strong><u>Playing encrypted DVD discs</u></strong>
+
+Xine cannot play encrypted dvd discs without some help. If you want to do this, then go to <a href="http://download.videolan.org/pub/libdvdcss/1.2.9/rpm/" target="_blank">videolan</a> and download the libdvdcss rpm. Install the rpm by doing
+</p>
+
+
+<p style="margin-left:0.24in;margin-right:0.24in;margin-bottom:0.02in;"> Code:</p>
+
+
+
+
+<pre style="border:1px solid #000000;margin-left:0.24in;margin-right:0.24in;text-align:left;padding:0.04in;">#rpm -Uvh libdvdcss2-1.2.9-1.i386.rpm</pre>
+
+
+<p style="margin-left:0.24in;margin-right:0.24in;">
+NOTE: Using libdvdcss maybe illegal in your country, so please check with the authorities before downloading and using it. We will not be held responsible or accountable if you use this software where you are not supposed to.
+
+<strong><u>A note on package management</u></strong>
+
+If you have problems with your package manager, it maybe a good idea to drop back to the old Suse package manager instead of the Zenworks related tools. To do this do
+<ol>
+    <li>
+<p style="margin-bottom:0;">YAST -&gt; Software -&gt; Software  Management</p>
+</li>
+    <li>
+<p style="margin-bottom:0;">On the &#8220;Filter&#8221; box,    select &#8220;Patterns&#8221;</p>
+</li>
+    <li>
+<p style="margin-bottom:0;">Navigate to the &#8220;Enterprise     Software Management&#8221; pattern and deselect it and all the    packages listed on the right</p>
+</li>
+    <li>Click accept and once YAST has completed the changes, close     it and reboot.</li>
+</ol>
+When the system starts, you will notice that you have different tools for updating the system although YAST will work as usual but using the old backend.
+
+NOTE: As usual, any comments, addition and correction are welcome.
+
+Have fun.  <img src="http://linuxquestions.cachefly.net/images/questions/images/smilies/wink.gif" align="bottom" height="15" width="15" /></p>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">najam sikander awan</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-12T10:36:00+05:00" pubdate data-updated="true">Mar 12<span>th</span>, 2007</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>linux</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://najamsk.github.io//blog/2007/03/12/how-to-enable-full-multimedia-capabilities-on-suse-102-using-the-xine-engine/" data-via="najamsikander" data-counturl="http://najamsk.github.io//blog/2007/03/12/how-to-enable-full-multimedia-capabilities-on-suse-102-using-the-xine-engine/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2007/03/01/reinstall-grub-after-installing-windows-xp/" title="Previous Post: reinstall grub after installing windows xp">&laquo; reinstall grub after installing windows xp</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2007/03/12/vychat-alternative-for-my-suse-102-laptop/" title="Next Post: Vychat alternative for my suse 10.2 laptop">Vychat alternative for my suse 10.2 laptop &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/">Microsoft Islamabad Meetup</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/24/attended-bahria-university-job-fair/">Attended Bahria University Job Fair</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/22/playing-with-octopress-blogging/">playing with octopress blogging</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/09/upgraded-my-hosting-for-net-4-0/">Upgraded my hosting for .net 4.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/09/my-pc-is-not-working/">My PC is not working</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+ <h1>Twitter</h1>
+ <a class="twitter-timeline" href="https://twitter.com/najamsikander" data-widget-id="327838592250548224">Tweets by @najamsikander</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - najam sikander awan -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'root_hacker';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://najamsk.github.io//blog/2007/03/12/how-to-enable-full-multimedia-capabilities-on-suse-102-using-the-xine-engine/';
+        var disqus_url = 'http://najamsk.github.io//blog/2007/03/12/how-to-enable-full-multimedia-capabilities-on-suse-102-using-the-xine-engine/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: games | Najam Sikander Awan]]></title>
+  <link href="http://najamsk.github.io//blog/categories/games/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io//"/>
+  <updated>2013-04-28T11:02:12+05:00</updated>
+  <id>http://najamsk.github.io//</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to make custom spray for CS]]></title>
+    <link href="http://najamsk.github.io//blog/2007/01/06/how-to-use-custom-spray-in-cs/"/>
+    <updated>2007-01-06T16:34:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2007/01/06/how-to-use-custom-spray-in-cs</id>
+    <content type="html"><![CDATA[<p>hi</p>
+
+<p>its very easy to use custome sprays in counter strike  just follow all the steps given below</p>
+
+<ol>
+<li><p>download spray file with extension wad</p></li>
+<li><p>then rename it to tempdecal.wad</p></li>
+<li><p>now i have cs 1.6</p></li>
+<li><p>goto Counter-Strike\cstrike and paste wad file</p></li>
+<li><p>now start game goto options select srap</p></li>
+</ol>
+
+
+<p><a href="http://najam.files.wordpress.com/2007/01/spray.JPG" title="Direct link to file"><img src="http://najam.files.wordpress.com/2007/01/spray.thumbnail.JPG" alt="srap screen" height="128" width="169" /></a></p>
+
+<ol>
+<li>apply it and start playing and during play press T to spray.</li>
+</ol>
+
+
+<p>vola</p>
+
+<p><a href="http://www.najamsikander.com/blog/?attachment_id=41" rel="attachment wp-att-41" title="digg this"><img src="http://najam.files.wordpress.com/2007/01/283566-icon-32x32-32bit.png" alt="digg this" /></a></p>
+]]></content>
+  </entry>
+  
+</feed>

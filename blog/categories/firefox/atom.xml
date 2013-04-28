@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: firefox | Najam Sikander Awan]]></title>
+  <link href="http://najamsk.github.io//blog/categories/firefox/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io//"/>
+  <updated>2013-04-28T11:02:12+05:00</updated>
+  <id>http://najamsk.github.io//</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Real Firefox]]></title>
+    <link href="http://najamsk.github.io//blog/2007/06/16/real-firefox/"/>
+    <updated>2007-06-16T18:35:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2007/06/16/real-firefox</id>
+    <content type="html"><![CDATA[<p align="center"><a href="http://www.najamsikander.com/blog/?attachment_id=53" rel="attachment wp-att-53" title="Real Firefox"><img src="http://najam.files.wordpress.com/2007/06/firefox5.jpg" alt="Real Firefox" /></a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My Firefox Extensions]]></title>
+    <link href="http://najamsk.github.io//blog/2005/12/26/my-firefox-extensions/"/>
+    <updated>2005-12-26T21:29:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2005/12/26/my-firefox-extensions</id>
+    <content type="html"><![CDATA[<p>Well here is a random list of all the extensions for my firefox<br />1. All in one gesture<br />2. Session Saver<br />3. Ad Block <br />4. Fasterfox<br />5. Reload Every<br />6. Groowe Searchtoobar<br /><br /></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Modify Firefox 1.5 to work with all extensions]]></title>
+    <link href="http://najamsk.github.io//blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions/"/>
+    <updated>2005-12-02T13:12:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions</id>
+    <content type="html"><![CDATA[<p>For all of those who just downloaded Firefox 1.5 and canât get your extensions to work. This is a simple modification of Firefoxâs configuration to trick the extensions to work. No need to manually edit the extensions to get them to work. Currently all the extensions I use work except the bookmark sync extension that I so dearly want to.</p>
+
+
+<p>1. At the location bar, enter: about:config. This will show you a list of Firefox internal preferences.<br />
+2. Right-click on the list, select New &gt; String<br />
+Enter âapp.extensions.versionâ? (without quotes) for the preference name.<br />
+3. Then, enter â1.0â? (without quotes) as the value for app.extensions.version.<br />
+4. Restart Firefox 1.5, then enable those disabled Firefox extensions.<br />
+5. Restart Firefox 1.5 again to active the extensions. Done.
+</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Speed Up Firfox]]></title>
+    <link href="http://najamsk.github.io//blog/2005/12/01/speed-up-firfox/"/>
+    <updated>2005-12-01T00:12:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2005/12/01/speed-up-firfox</id>
+    <content type="html"><![CDATA[<p><strong> Here's something for broadband people that will really speed Firefox up:<br />
+</strong><br />
+1.Type "about:config" into the address bar and hit return. Scroll down and look for the following entries:</p>
+
+
+<p>network.http.pipelining<br />
+network.http.proxy.pipelining<br />
+network.http.pipelining.maxrequests</p>
+
+
+<p>Normally the browser will make one request to a web page at a time. When you enable pipelining it will make several at once, which really speeds up page loading.</p>
+
+
+<p>2. Alter the entries as follows:</p>
+
+
+<p>Set "network.http.pipelining" to "true"</p>
+
+
+<p>Set "network.http.proxy.pipelining" to "true"</p>
+
+
+<p>Set "network.http.pipelining.maxrequests" to some number like 30. This means it will make 30 requests at once.</p>
+
+
+<p>3. Lastly right-click anywhere and select New-&gt; Integer. Name it "nglayout.initialpaint.delay" and set its value to "0". This value is the amount of time the browser waits before it acts on information it receives.</p>
+
+
+<p>If you're using a broadband connection you'll load pages MUCH faster now!
+</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Mozilla  Firefox 1.5 release]]></title>
+    <link href="http://najamsk.github.io//blog/2005/11/30/mozilla-firefox-15-release/"/>
+    <updated>2005-11-30T20:46:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2005/11/30/mozilla-firefox-15-release</id>
+    <content type="html"><![CDATA[<p>Firefox version 1.5 released today I have downloaded this latest version from http//:www.mozila.org</p>
+
+<p>New features include a drag and drop for tabbed browsing, a better pop up blocker algorithm, and a reference search engine which includes answer.com, a better live bookmark feature, and an improved option interface.</p>
+
+<p>The software also includes an auto update system when security patches need to be applied or additional features become available.</p>
+
+<p>Mozilla also said that performance is better because of a next generation  rendering and layout engine. Mozilla said there are now 700 extensions to Firefox. More are expected in the coming weeks.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: telecom | Najam Sikander Awan]]></title>
+  <link href="http://najamsk.github.io//blog/categories/telecom/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io//"/>
+  <updated>2013-04-28T11:02:12+05:00</updated>
+  <id>http://najamsk.github.io//</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[3G Evolution]]></title>
+    <link href="http://najamsk.github.io//blog/2006/12/25/3g-evolution/"/>
+    <updated>2006-12-25T10:24:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2006/12/25/3g-evolution</id>
+    <content type="html"><![CDATA[<p><a href="http://najam.files.wordpress.com/2006/12/3g_evolution.GIF" title="3G Evolution"><img src="http://najam.files.wordpress.com/2006/12/3g_evolution.GIF" alt="3G Evolution" /></a></p>
+]]></content>
+  </entry>
+  
+</feed>

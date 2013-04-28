@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: internet | Najam Sikander Awan]]></title>
+  <link href="http://najamsk.github.io//blog/categories/internet/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io//"/>
+  <updated>2013-04-28T11:02:12+05:00</updated>
+  <id>http://najamsk.github.io//</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Synchronize your bookmarks]]></title>
+    <link href="http://najamsk.github.io//blog/2007/10/19/synchronize-your-bookmarks/"/>
+    <updated>2007-10-19T20:27:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2007/10/19/synchronize-your-bookmarks</id>
+    <content type="html"><![CDATA[<p>Surrounded by computers and internet all the time when at work, in university labs or when browsing internet from your home. During long sessions we come across some really good websites and <a href="http://www,najamsikander.com">solutions</a> and add them to our bookmarks but as soon as you switch PC your favorites bookmarks are gone. Its very difficult to manage your bookmarks on multiple PC's but not anymore if you are a firefox fan. One can easily synchronize his/her bookmars by installing a little extension called foxmarks and signing up for an account in <a href="http://www.foxmarks.com" title="Signup Today For Free">foxmarks.com</a>. You probable already know about other solutions like google browser sync and <a href="http://del.icio.us/" title="http://del.icio.us/">del.icio.us</a> but both of them are very heavy for a dial up user with a distortion in phone line where foxmarks works like a breeze.</p>
+
+<p>Try foxmarks extension for yourself and give me your feedback on this post.</p>
+
+<p>Bye Everyone</p>
+
+<p>thanks for reading :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Modify Firefox 1.5 to work with all extensions]]></title>
+    <link href="http://najamsk.github.io//blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions/"/>
+    <updated>2005-12-02T13:12:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2005/12/02/modify-firefox-15-to-work-with-all-extensions</id>
+    <content type="html"><![CDATA[<p>For all of those who just downloaded Firefox 1.5 and canât get your extensions to work. This is a simple modification of Firefoxâs configuration to trick the extensions to work. No need to manually edit the extensions to get them to work. Currently all the extensions I use work except the bookmark sync extension that I so dearly want to.</p>
+
+
+<p>1. At the location bar, enter: about:config. This will show you a list of Firefox internal preferences.<br />
+2. Right-click on the list, select New &gt; String<br />
+Enter âapp.extensions.versionâ? (without quotes) for the preference name.<br />
+3. Then, enter â1.0â? (without quotes) as the value for app.extensions.version.<br />
+4. Restart Firefox 1.5, then enable those disabled Firefox extensions.<br />
+5. Restart Firefox 1.5 again to active the extensions. Done.
+</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Firefox 1.5 - blazing fast back &amp; forth page caching]]></title>
+    <link href="http://najamsk.github.io//blog/2005/11/30/firefox-15-blazing-fast-back-forth-page-caching/"/>
+    <updated>2005-11-30T23:43:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2005/11/30/firefox-15-blazing-fast-back-forth-page-caching</id>
+    <content type="html"><![CDATA[<p>1. Download and install the latest Firefox<br />
+* Linux<br />
+* MacOS X<br />
+* Windows<br />
+2. Run Firefox and type 'about:config' in the location bar.<br />
+3. Right-click on the main content area.<br />
+1. Select New<br />
+2. Select Integer<br />
+4. Enter the preference name 'browser.sessionhistory.max_viewers' and click OK.<br />
+5. Enter '5' and click OK.<br />
+6. Shutdown and restart Firefox.<br />
+7. Take the feature for a test drive!<br />
+1. View a large web page with lots of elements, like planet.mozilla.org or mozillaZine feedHouse.<br />
+2. Next, go to another page, like Slashdot.<br />
+3. Click Firefox's Back button. If the preference is properly enabled, the previous page should appear instantly.<br />
+4. Click the Forward button to see it work again with Slashdot.
+</p>
+
+]]></content>
+  </entry>
+  
+</feed>

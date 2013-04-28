@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: news | Najam Sikander Awan]]></title>
+  <link href="http://najamsk.github.io//blog/categories/news/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io//"/>
+  <updated>2013-04-28T11:02:12+05:00</updated>
+  <id>http://najamsk.github.io//</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Microsoft Islamabad Meetup]]></title>
+    <link href="http://najamsk.github.io//blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/"/>
+    <updated>2013-04-24T22:46:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2013/04/24/microsoft-islamabad-meetup-windwos-8</id>
+    <content type="html"><![CDATA[<p>I have been invited to [Microsoft Community Meetup] at marriott hotel islamabad on Friday 19th April 2013. It was really nice experience to meet fellow devs, students and MVP.</p>
+
+<p>Session was about windows 8 platform they have shown few apps that are developed in Pakistan and available for global audience. Highlight of the meetup was teams that have participated in Imagine cup and from pakistan. Team with first position showcased their project and I was blown away by their concept, presentation and business skills.</p>
+
+<p>These students are from <a href="http://www.giki.edu.pk/">Ghulam Ishaq Khan Institute</a> and their project is called "EPI-C" do check it out.</p>
+
+<p><img src="http://sphotos-h.ak.fbcdn.net/hphotos-ak-ash3/562418_10152378956639625_176689566_n.jpg" alt="EPI-C" /></p>
+
+<p>thanks for reading my blog.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Attended Bahria University Job Fair]]></title>
+    <link href="http://najamsk.github.io//blog/2013/04/24/attended-bahria-university-job-fair/"/>
+    <updated>2013-04-24T21:48:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2013/04/24/attended-bahria-university-job-fair</id>
+    <content type="html"><![CDATA[<p>Bahria university hosted a job fair session on 19th April 2013 in which they invites companies from local industry. My company also participated in the event.</p>
+
+<p>Myself and few other from our company spend whole day in the event looking for suitable events in .net, mobile development and social media positions.</p>
+
+<p>All day long I have been interviewing and the answers given by students in 6th and final semesters were disappointing.</p>
+
+<p>Common reason for such answers were:</p>
+
+<ul>
+<li>teacher didn't teach us good</li>
+<li>course is not yet offered</li>
+<li>what we have read we don't remember at the moment</li>
+<li>we are here for internship in 6 months you will teach us and than we will score good job in some other company. I don't who told them we are here for schooling and companies will be teaching them for 6 months. Why universities are not teaching them?</li>
+</ul>
+
+
+<p>After attending this I have been thinking about giving sessions to students in web development for following reasons:</p>
+
+<ul>
+<li>Introduce them what industry expects form them as fresh devs.</li>
+<li>Also motivate them to learn more and don't rely on university.</li>
+<li>Do small contributions in open source for learning.</li>
+</ul>
+
+
+<p>In next post I will outlines topics for basic training if you are interested to contribute in this cause let me know. If you want to attend such sessions than you can contact me.</p>
+
+<p>These sessions will be free and you can contribute in exercise files, topics and provide your valuable feedback.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Upgraded my hosting for .net 4.0]]></title>
+    <link href="http://najamsk.github.io//blog/2011/08/09/upgraded-my-hosting-for-net-4-0/"/>
+    <updated>2011-08-09T10:13:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2011/08/09/upgraded-my-hosting-for-net-4-0</id>
+    <content type="html"><![CDATA[<p>I have been watching Mix11 videos about asp.net mvc3 and felt pretty excited to mingle with these latest bits but I didn't wanted to limit myself to local environment I wanted to know what efforts are required if I am developing with latest stuff one limitation I had that my host always take ages to update server so I had support for .net3.5. I email them about this thing and in reply they told me either wait 6 months or pay $8. Since I was dying to test out EF code first I paid them and within one day my hosting is all updated and now I am running my incomplete demo online :).</p>
+
+<p>Deployment was a little bit scarier as my hosting doesn't come with any publishing/deployment server but if you have vs2010 sp1 then you are in safe hands all you have to do is to click on add deployable dependencies then build your solution and upload using your favorite ftp client.</p>
+
+<p>This far I like MVC3.0 , Nuget and MVC Scaffolding but I am still learning how to scaffold many to many relations or at least leverage scaffolding and then tune it to have many to many relations.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My PC is not working]]></title>
+    <link href="http://najamsk.github.io//blog/2011/08/09/my-pc-is-not-working/"/>
+    <updated>2011-08-09T09:59:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2011/08/09/my-pc-is-not-working</id>
+    <content type="html"><![CDATA[<p>I have spent so much money to build a dream PC for gaming and my web development work I was happy thought it was my investment and will recover it in future while working on it. But this never happened I worked on it successfully installed macOSX on it and then ubuntu using Virtualbox to setup my Node.JS environment but very time I need it most something bad happen. Always the worse part is not booting up and I never had any guesses where is the problem possible guesses always include ram, power supply, graphic card, processor or the Holy Motherboard in my case its always either MB or ram.</p>
+
+<p>Now again when I want to use my PC its not working. Some parts are in warranty and some are not lets see what happens next as I am convincing myself to lift this more then 10kg of weight to carry to computer market for diagnosis.</p>
+
+<p>Thats pretty much it. Thank you for still reading my blog.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Circa Wear]]></title>
+    <link href="http://najamsk.github.io//blog/2009/07/09/circa-wear/"/>
+    <updated>2009-07-09T23:01:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/07/09/circa-wear</id>
+    <content type="html"><![CDATA[<p>I have uploaded another static website that might become an e-commerce website in future.</p>
+
+<p><a href="http://circa-wear.com/circa/" target="_blank">http://circa-wear.com/circa/</a></p>
+]]></content>
+  </entry>
+  
+</feed>

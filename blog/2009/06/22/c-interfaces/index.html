@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>C# Interfaces - Najam Sikander Awan</title>
+  <meta name="author" content="najam sikander awan">
+
+  
+  <meta name="description" content="These parts are taken from msdn and some might be taken from other websites. An interface can inherit from one or more base interfaces. When a base &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://najamsk.github.io//blog/2009/06/22/c-interfaces">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/najamsk/atom.xml" rel="alternate" title="Najam Sikander Awan" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Najam Sikander Awan</a></h1>
+  
+    <h2>covering web stack along with microsoft technologies</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/najamsk/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:najamsk.github.io/" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">C# Interfaces</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-06-22T03:37:00+05:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>These parts are taken from msdn and some might be taken from other websites.</p>
+
+<p>An interface can inherit from one or more base interfaces.</p>
+
+<p>When a base type list contains a base class and interfaces, the base class must come first in the list.</p>
+
+<p>A class that implements an interface can explicitly implement members of that interface. An explicitly implemented member cannot be accessed through a class instance, but only through an instance of the interface.</p>
+
+<p>Ref: <a href="http://msdn.microsoft.com/en-us/library/87d83y5b(VS.80).aspx">http://msdn.microsoft.com/en-us/library/87d83y5b(VS.80).aspx</a></p>
+
+<p>Interfaces can consist of methods, properties, events, indexers, or any combination of those four member types. An interface cannot contain fields. Interfaces members are automatically public.</p>
+
+<p>if a base class implements an interface, the derived class inherits that implementation.</p>
+
+<p>Classes and structs can inherit from interfaces in a manner similar to how classes can inherit a base class or struct, with two exceptions:</p>
+
+<ul>
+    <li>A class or struct can inherit more than one interface.</li>
+    <li>When a class or struct inherits an interface, it inherits only the method names and signatures, because the interface itself contains no implementations</li>
+</ul>
+
+
+<p>To implement an interface member, the corresponding member on the class must be public, non-static, and have the same name and signature as the interface member. Properties and indexers on a class can define extra accessors for a property or indexer defined on an interface. For example, an interface may declare a property with a <a id="ctl00_MTContentSelector1_mainContentContainer_ctl06" onclick="javascript:Track('ctl00_MTContentSelector1_mainContentContainer_ctl00|ctl00_MTContentSelector1_mainContentContainer_ctl06',this);" href="http://msdn.microsoft.com/en-us/library/ms228503.aspx">get</a> accessor, but the class implementing the interface can declare the same property with both a <span><span>get</span></span> and <a id="ctl00_MTContentSelector1_mainContentContainer_ctl07" onclick="javascript:Track('ctl00_MTContentSelector1_mainContentContainer_ctl00|ctl00_MTContentSelector1_mainContentContainer_ctl07',this);" href="http://msdn.microsoft.com/en-us/library/ms228368.aspx">set</a> accessor. However, if the property or indexer uses explicit implementation, the accessors must match.</p>
+
+<p>Interfaces can inherit other interfaces. It is possible for a class to inherit an interface multiple times, through base classes or interfaces it inherits. In this case, the class can only implement the interface one time, if it is declared as part of the new class. If the inherited interface is not declared as part of the new class, its implementation is provided by the base class that declared it. It is possible for a base class to implement interface members using virtual members; in that case, the class inheriting the interface can change the interface behavior by overriding the virtual members. For more information about virtual members</p>
+
+<p>Overview:</p>
+
+<p>An interface has the following properties:</p>
+
+<ul>
+    <li>An interface is like an abstract base class: any non-abstract type inheriting the interface must implement all its members.</li>
+    <li>An interface cannot be instantiated directly.</li>
+    <li>Interfaces can contain events, indexers, methods and properties.</li>
+    <li>Interfaces contain no implementation of methods.</li>
+    <li>Classes and structs can inherit from more than one interface.</li>
+    <li>An interface can itself inherit from multiple interfaces.</li>
+</ul>
+
+
+<p>Ref: <a href="http://msdn.microsoft.com/en-us/library/ms173156.aspx">http://msdn.microsoft.com/en-us/library/ms173156.aspx</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">najam sikander awan</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-06-22T03:37:00+05:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2009</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/dot-net/'>.net</a>, <a class='category' href='/blog/categories/c-number/'>c#</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://najamsk.github.io//blog/2009/06/22/c-interfaces/" data-via="najamsikander" data-counturl="http://najamsk.github.io//blog/2009/06/22/c-interfaces/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2009/06/09/git-version-control-guides/" title="Previous Post: Git version control Guides">&laquo; Git version control Guides</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers/" title="Next Post: Show Detailed ASP.NET Error Messages to Developers">Show Detailed ASP.NET Error Messages to Developers &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/">Microsoft Islamabad Meetup</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/24/attended-bahria-university-job-fair/">Attended Bahria University Job Fair</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/22/playing-with-octopress-blogging/">playing with octopress blogging</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/09/upgraded-my-hosting-for-net-4-0/">Upgraded my hosting for .net 4.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/09/my-pc-is-not-working/">My PC is not working</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+ <h1>Twitter</h1>
+ <a class="twitter-timeline" href="https://twitter.com/najamsikander" data-widget-id="327838592250548224">Tweets by @najamsikander</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - najam sikander awan -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'root_hacker';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://najamsk.github.io//blog/2009/06/22/c-interfaces/';
+        var disqus_url = 'http://najamsk.github.io//blog/2009/06/22/c-interfaces/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

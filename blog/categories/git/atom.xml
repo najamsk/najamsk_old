@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: git | Najam Sikander Awan]]></title>
+  <link href="http://najamsk.github.io//blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io//"/>
+  <updated>2013-04-28T11:02:12+05:00</updated>
+  <id>http://najamsk.github.io//</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[git tracking and deleting remote branches]]></title>
+    <link href="http://najamsk.github.io//blog/2009/07/20/git-tracking-and-deleting-remote-branches/"/>
+    <updated>2009-07-20T09:11:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/07/20/git-tracking-and-deleting-remote-branches</id>
+    <content type="html"><![CDATA[<p><strong>List the remote branches that exist for a repository you have cloned:</strong></p>
+
+<pre><code>git remote show origin
+</code></pre>
+
+<p><strong>Create a local branch that tracks one of the remote branches and then use that local branch:</strong></p>
+
+<pre><code>git checkout --track -b name_of_local_branch origin/name_of_remote_branch
+</code></pre>
+
+<p>If you have not done a pull since someone else created the remote branch, you may first need to do:</p>
+
+<pre><code>git fetch
+</code></pre>
+
+<p><strong>Remove <em>branch</em> from <em>repo</em>.</strong></p>
+
+<p><code>git push {repo} :heads/{branch}</code></p>
+
+<p>Ex: <code>git push origin :somebranch</code>
+removes somebranch</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Git version control Guides]]></title>
+    <link href="http://najamsk.github.io//blog/2009/06/09/git-version-control-guides/"/>
+    <updated>2009-06-09T22:37:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/06/09/git-version-control-guides</id>
+    <content type="html"><![CDATA[<p>hi</p>
+
+<p>I have been reading these guides for a while to learn git I thought i should share them with rest of the gang.</p>
+
+<p><a href="http://www.sourcemage.org/Git_Guide">http://www.sourcemage.org/Git_Guide</a></p>
+
+<p><a href="http://www.kernel.org/pub/software/scm/git/docs/everyday.html">http://www.kernel.org/pub/software/scm/git/docs/everyday.html</a></p>
+
+<p><a href="http://spheredev.org/wiki/Git_for_the_lazy">http://spheredev.org/wiki/Git_for_the_lazy</a></p>
+]]></content>
+  </entry>
+  
+</feed>

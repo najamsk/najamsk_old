@@ -1,0 +1,341 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>oh God Hd audio driver for linux - Najam Sikander Awan</title>
+  <meta name="author" content="najam sikander awan">
+
+  
+  <meta name="description" content="hi guyz; Well after solving problem for my lan card through mac spoofing next problem that I want to solve now is making sound work on my acer laptop &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://najamsk.github.io//blog/2007/02/13/oh-god-hd-audio-driver-for-linux">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/najamsk/atom.xml" rel="alternate" title="Najam Sikander Awan" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Najam Sikander Awan</a></h1>
+  
+    <h2>covering web stack along with microsoft technologies</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/najamsk/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:najamsk.github.io/" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Oh God Hd Audio Driver for Linux</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-13T22:33:00+05:00" pubdate data-updated="true">Feb 13<span>th</span>, 2007</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>hi guyz;</p>
+
+<p>Well after solving problem for my lan card through mac spoofing next problem that I want to solve now is making sound work on my acer laptop while running fedore core 6 live cd.</p>
+
+<p>Now as i inspect my hardware i get to know that i have a realtek sound card that has hd audio codec Alc 883 now.</p>
+
+<p>to check if your hardware is detected by linux or not you have to run following command in shell</p>
+
+<pre><code>/sbin/lspci
+</code></pre>
+
+<p>This will list hardware check your sound card vendor and note model for your card.</p>
+
+<p>output of sbin/lspci for my laptop is listed below</p>
+
+<pre><code>00:00.0 Host bridge: Intel Corporation Mobile 915GM/PM/GMS/910GML Express Processor to DRAM Controller (rev 04)
+00:02.0 VGA compatible controller: Intel Corporation Mobile 915GM/GMS/910GML Express Graphics Controller (rev 04)
+00:02.1 Display controller: Intel Corporation Mobile 915GM/GMS/910GML Express Graphics Controller (rev 04)
+00:1b.0 Audio device: Intel Corporation 82801FB/FBM/FR/FW/FRW (ICH6 Family) High Definition Audio Controller (rev 04)
+</code></pre>
+
+<p>Now as i googled i come to know that this problem is because alsa bug and older kernel many users with latest kernel like 2.6.17 and fedora 6 live hai kernel 2.6.18 so i think i don&#8217;t need to play with kernel.</p>
+
+<p>You can also find currently running modules for your sound card by running
+following into  shell</p>
+
+<pre><code>/sbin/lsmod
+</code></pre>
+
+<p>output of /sbin/lsmod is given below</p>
+
+<pre><code>Module                  Size  Used by
+i915                   23361  3
+drm                    72789  4 i915
+ipv6                  267489  12
+hidp                   24129  2
+rfcomm                 46041  0
+l2cap                  31681  10 hidp,rfcomm
+bluetooth              58917  5 hidp,rfcomm,l2cap
+cpufreq_ondemand       11085  1
+dm_mirror              33041  0
+video                  21061  0
+sbs                    20225  0
+i2c_ec                  9281  1 sbs
+button                 10961  0
+battery                14405  0
+asus_acpi              20697  0
+ac                      9541  0
+parport_pc             31205  0
+lp                     17033  0
+parport                40841  2 parport_pc,lp
+snd_hda_intel          22613  2
+snd_hda_codec         154049  1 snd_hda_intel
+joydev                 13697  0
+snd_seq_dummy           8133  0
+snd_seq_oss            37185  0
+snd_seq_midi_event     11841  1 snd_seq_oss
+snd_seq                57137  5 snd_seq_dummy,snd_seq_oss,snd_seq_midi_event
+snd_seq_device         12621  3 snd_seq_dummy,snd_seq_oss,snd_seq
+snd_pcm_oss            46561  0
+snd_mixer_oss          20545  1 snd_pcm_oss
+snd_pcm                80325  3 snd_hda_intel,snd_hda_codec,snd_pcm_oss
+ipw2200               112037  0
+snd_timer              27077  2 snd_seq,snd_pcm
+pcspkr                  7361  0
+serio_raw              11205  0
+snd                    57029  13 snd_hda_intel,snd_hda_codec,snd_seq_oss,snd_seq,snd_seq_device,snd_pcm_oss,snd_mixer_oss,snd_pcm,snd_timer
+8139too                31169  0
+8139cp                 28609  0
+i2c_i801               11853  0
+soundcore              14113  1 snd
+mii                     9665  2 8139too,8139cp
+snd_page_alloc         14281  2 snd_hda_intel,snd_pcm
+i2c_core               25537  2 i2c_ec,i2c_i801
+ieee80211              34953  1 ipw2200
+ieee80211_crypt        10433  1 ieee80211
+ext3                  136009  1
+jbd                    63337  1 ext3
+squashfs               49093  1
+dm_snapshot            21357  1
+dm_mod                 61529  6 dm_mirror,dm_snapshot
+loop                   20297  134
+uhci_hcd               27725  0
+ehci_hcd               35661  0
+ide_cd                 42337  3
+cdrom                  38625  1 ide_cd
+</code></pre>
+
+<p>Now 2nd thing is to check your alsa driver version now i don&#8217;t how to check that :( currently stuck on that i don&#8217;t know from where to download alsa driver for fedora 6 live and then how to make it work and i don&#8217;t want to run fedora 6 live on my laptop i just want all the functionality while running it with cd.</p>
+
+<p>Please help me out here.</p>
+
+<p>Check <a href="http://najam.wordpress.com/2007/02/13/my-acer-aspire-1642znwlci/" title="My laptop configuration">my laptop specification</a> if you need to know them to solve this problem.</p>
+
+<p>Regards</p>
+
+<p>Najam Sikander Awan</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">najam sikander awan</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-13T22:33:00+05:00" pubdate data-updated="true">Feb 13<span>th</span>, 2007</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/linux/'>linux</a>, <a class='category' href='/blog/categories/tips/'>tips</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://najamsk.github.io//blog/2007/02/13/oh-god-hd-audio-driver-for-linux/" data-via="najamsikander" data-counturl="http://najamsk.github.io//blog/2007/02/13/oh-god-hd-audio-driver-for-linux/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2007/02/13/my-acer-aspire-1642znwlci/" title="Previous Post: My Acer Aspire 1642ZNWLCi">&laquo; My Acer Aspire 1642ZNWLCi</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2007/02/20/realtek-hd-sound-card-working/" title="Next Post: Realtek HD sound card working">Realtek HD sound card working &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/">Microsoft Islamabad Meetup</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/24/attended-bahria-university-job-fair/">Attended Bahria University Job Fair</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/22/playing-with-octopress-blogging/">playing with octopress blogging</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/09/upgraded-my-hosting-for-net-4-0/">Upgraded my hosting for .net 4.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/09/my-pc-is-not-working/">My PC is not working</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+ <h1>Twitter</h1>
+ <a class="twitter-timeline" href="https://twitter.com/najamsikander" data-widget-id="327838592250548224">Tweets by @najamsikander</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - najam sikander awan -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'root_hacker';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://najamsk.github.io//blog/2007/02/13/oh-god-hd-audio-driver-for-linux/';
+        var disqus_url = 'http://najamsk.github.io//blog/2007/02/13/oh-god-hd-audio-driver-for-linux/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

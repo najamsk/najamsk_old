@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: asp.net | Najam Sikander Awan]]></title>
+  <link href="http://najamsk.github.io//blog/categories/asp-dot-net/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io//"/>
+  <updated>2013-04-28T11:02:12+05:00</updated>
+  <id>http://najamsk.github.io//</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Facebook Application Development using Asp.net]]></title>
+    <link href="http://najamsk.github.io//blog/2010/09/23/facebook-application-development-using-asp-net/"/>
+    <updated>2010-09-23T01:31:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2010/09/23/facebook-application-development-using-asp-net</id>
+    <content type="html"><![CDATA[<p>Hi,</p>
+
+<p>I have been busy with facebook application development using IFrame and since I have asp.net background so instead of php I wanted to do this in asp.net their are few wrappers or sdk available for this like. After googling I have picked <a href="http://facebooktoolkit.codeplex.com/">Facebook developer toolkit v3.01</a>. After downloading the binaries I have created a asp.net web application project with 4.0 framework and simply added the reference of facebook.dll and facebook.web.dll.</p>
+
+<p>In default.aspx code behind file we add the using statements for facebook dlls and inherit our page from facebook.web.CanvasIFrameBasePage and override the PreInit method for default page. Look at the snapshot of my default.aspx.cs for more understanding.</p>
+
+<p><a href="http://lh5.ggpht.com/_N_nhMTznTSY/TJrnvUilvCI/AAAAAAAAACE/tHVcjSKB9BY/s800/5.jpg"><img class="  " title="Defualt.aspx.cs" src="http://lh5.ggpht.com/_N_nhMTznTSY/TJrnvUilvCI/AAAAAAAAACE/tHVcjSKB9BY/s800/5.jpg" alt="Default page code behind " width="504" height="308" /></a></p>
+
+<p>The hardest part was to configure my app with facebook and I also wanted to continue development using my development PC so that I don't have to upload my code as code changes. So lets first dive into facebook app configurations.</p>
+
+<p><a href="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnqw-CC4I/AAAAAAAAABs/hPltmO-C6Io/s720/2.jpg"><img class=" " title="Facebook Application Settings" src="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnqw-CC4I/AAAAAAAAABs/hPltmO-C6Io/s720/2.jpg" alt="FB APP Settings" width="504" height="347" /></a></p>
+
+<p>From above snapshot you can see my application will run at at http://apps.facebook.com/fbnajam and the domain I am providing as Canvas URL is http://fbnajam.com. The www.fbnajam.com domain is not registered to anyone :) I will map this domain to my local IP address (127.0.0.1) by editting hosts file.</p>
+
+<p><a href="http://lh5.ggpht.com/_N_nhMTznTSY/TJrntfNdypI/AAAAAAAAAB8/H51GzD07FxM/s1024/3.jpg"><img class=" " title="Hosts file" src="http://lh5.ggpht.com/_N_nhMTznTSY/TJrntfNdypI/AAAAAAAAAB8/H51GzD07FxM/s1024/3.jpg" alt="domain mapping" width="717" height="338" /></a></p>
+
+<p>Note in hosts file you can't put port with ip address for example 127.0.0./:1259 will not work so in your hosts file you will only enter the mapping between your virtual domain and 127.0.0.1 after making the entry make sure you reboot your PC to commit your changes.</p>
+
+<p>Final part is to edit your web.config file and put app settings section which will contain your faceboko app api key, facebook app secret key and facebook app callbak URL in my case that was fbnajam.com for more understanding please look at following snapshot.</p>
+
+<p><a href="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnuXSsh2I/AAAAAAAAACA/mJg7weL-tbI/s800/4.jpg"><img class=" " title="Web.Config" src="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnuXSsh2I/AAAAAAAAACA/mJg7weL-tbI/s800/4.jpg" alt="web config" width="560" height="337" /></a></p>
+
+<p>Now if you press F5 to run your application it will open facebook page showing your app and you will see your your name.</p>
+
+<p><a href="http://lh6.ggpht.com/_N_nhMTznTSY/TJrnrgWdiNI/AAAAAAAAAB0/QbLOxyowUww/6.jpg"><img class=" " title="Facebook App Running" src="http://lh6.ggpht.com/_N_nhMTznTSY/TJrnrgWdiNI/AAAAAAAAAB0/QbLOxyowUww/6.jpg" alt="app result" width="694" height="195" /></a></p>
+
+<p>After creating my first Facebook IFrame application I still want to use xFBML if supported need to test this application in my office. After doing some more experiments will update this post.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Show Detailed ASP.NET Error Messages to Developers]]></title>
+    <link href="http://najamsk.github.io//blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers/"/>
+    <updated>2009-06-24T02:56:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers</id>
+    <content type="html"><![CDATA[<p>If ELMAH project will not work for me I will implement this error handling technique from scott gu blog.</p>
+
+<p><a title="Read Post" href="http://weblogs.asp.net/scottgu/archive/2006/08/12/Tip_2F00_Trick_3A00_-Show-Detailed-Error-Messages-to-Developers.aspx" target="_self">Read the post now</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Finally I have my hands on linq]]></title>
+    <link href="http://najamsk.github.io//blog/2009/06/08/finally-i-have-my-hands-on-linq/"/>
+    <updated>2009-06-08T06:45:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/06/08/finally-i-have-my-hands-on-linq</id>
+    <content type="html"><![CDATA[<p>hi folks</p>
+
+<p>After developing few asp.net 2.0 websites as our hosting upgraded to asp.net 3.5 I am finally making a dynamic website in asp.net 3.5 using linq to sql and I am trying hard to follow 3 tier model.</p>
+
+<p>I will keep posting about this learning adventure of mine.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Consuming asp.net webservice with jquery]]></title>
+    <link href="http://najamsk.github.io//blog/2009/02/03/consuming-aspnet-webservice-with-jquery/"/>
+    <updated>2009-02-03T05:22:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/02/03/consuming-aspnet-webservice-with-jquery</id>
+    <content type="html"><![CDATA[<p>hi guys,</p>
+
+<p>Well I like to share one more experiment with you that is how to call a webservice from your javascript(jquery). For that again you need to have an asp.net ajax enable website.</p>
+
+<p>Lets first examine what are the requiments for webservice if we need to call it from javascript well after having asp.net ajax enable website first is you should mark your serverice as [ScriptService] what it does it will make all the methods/functions of your webservice to be accessable from javascript code and it also serialise your webservice response using JASON .</p>
+
+<p>By default asp.net web services use soap for communication scriptservice marker make your webservice to use JASON.</p>
+
+<p>Now lets defien the method in our webservice which we want to be accessable by our javascript code.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="na">[WebMethod]</span>
+</span><span class='line'><span class="k">public</span> <span class="kt">int</span> <span class="nf">AddingNumbers</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">return</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>That's it now lets move to client side code.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="err">$</span><span class="p">(</span><span class="n">function</span><span class="p">(){</span>
+</span><span class='line'><span class="err">$</span><span class="p">.</span><span class="n">ajax</span><span class="p">({&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span><span class="n">type</span><span class="p">:</span> <span class="s">&quot;POST&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="n">url</span><span class="p">:</span> <span class="s">&quot;WebServices/MyWS.asmx/AddingNumbers&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="n">data</span><span class="p">:</span> <span class="s">&quot;{&#39;a&#39;:&#39;1&#39;,&#39;b&#39;:&#39;2&#39;}&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="n">contentType</span><span class="p">:</span> <span class="s">&quot;application/json; charset=utf-8&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="n">dataType</span><span class="p">:</span> <span class="s">&quot;json&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="n">success</span><span class="p">:</span> <span class="n">function</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'><span class="c1">// Do something interesting here.</span>
+</span><span class='line'><span class="n">alert</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+</span><span class='line'><span class="p">},</span>
+</span><span class='line'><span class="n">error</span><span class="p">:</span> <span class="n">function</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">alert</span><span class="p">(</span><span class="s">&quot;Request can&#39;t made using ajax&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">});</span><span class="c1">//ajax ends here</span>
+</span><span class='line'><span class="p">});</span><span class="c1">// document ready ends here</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>In above javasrcipt code we are making an ajax post request we set  contentType to "application/json; charset=utf-8" and  dataType to "json" and passing a=1,b=2 as are data input parameters note that varriables name are same as verriables declared in webservice's function <strong>AddingNumbers </strong>input parameters.</p>
+
+<p>Please read articles from following links to know more and have a strong background.</p>
+
+<p>http://encosia.com/2008/03/27/using-jquery-to-consume-aspnet-json-web-services/</p>
+
+<p>http://encosia.com/2008/06/05/3-mistakes-to-avoid-when-using-jquery-with-aspnet-ajax/</p>
+
+<p>http://www.keithrousseau.com/blog/2008/05/using-jquery-json-with-aspnet/</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Calling asp.net page methods with jquery]]></title>
+    <link href="http://najamsk.github.io//blog/2009/02/03/calling-aspnet-page-methods-with-jquery/"/>
+    <updated>2009-02-03T04:23:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/02/03/calling-aspnet-page-methods-with-jquery</id>
+    <content type="html"><![CDATA[<p>Hi guyz,</p>
+
+<p>Today I am sharing how to call asp.net web page code behind methods from client side javascript in my case it will be jquery.</p>
+
+<p>Let us divide this into two parts the server side and client side on server side we have to write a function or page method.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="na">[WebMethod]</span>
+</span><span class='line'><span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">AddStrings</span><span class="p">(</span><span class="kt">string</span> <span class="n">a</span><span class="p">,</span> <span class="kt">string</span> <span class="n">b</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">return</span> <span class="kt">string</span><span class="p">.</span><span class="n">Format</span><span class="p">(</span><span class="s">&quot;my friend answer is {0}&quot;</span><span class="p">,</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Note that we mark  our AddStrings function as WebMethod and its public and static this is the basic requirement for the funtion if you want to call it from javascript or jquery.</p>
+
+<p>Function itlsef is pretty simple all it does takes two strings join them and return the result.  Thats all we need to write for server side.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+</span><span class='line'><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;POST&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="nx">url</span><span class="o">:</span> <span class="s2">&quot;Default.aspx/AddStrings&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="nx">data</span><span class="o">:</span> <span class="s2">&quot;{a:&#39;najam &#39;,b:&#39;sikander&#39;}&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="nx">contentType</span><span class="o">:</span> <span class="s2">&quot;application/json; charset=utf-8&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="nx">dataType</span><span class="o">:</span> <span class="s2">&quot;json&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'><span class="c1">// Do something interesting here.</span>
+</span><span class='line'><span class="nx">alert</span><span class="p">(</span><span class="nx">msg</span><span class="p">);</span>
+</span><span class='line'><span class="p">},</span>
+</span><span class='line'><span class="nx">error</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Request can&#39;t made using ajax&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">});</span><span class="c1">//ajax ends here</span>
+</span><span class='line'><span class="p">});</span><span class="c1">// document ready ends here</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Client side has its own requirements first its better to use post request if you want any result back from server and then you should use json as communication medium and for that we need to set content type and data type as</p>
+
+<p>contentType: "application/json; charset=utf-8",  dataType: "json" and we should supply the input  data with our request. Please note that if your server side function expecting two parameters named "a" and "b" you should name your javascript input parameters same as server side parameters thats why in data section we have same name of the varriables. Example data: "{a:'najam ',b:'sikander'}",</p>
+
+<p>Last requirement is your web.config should have entries for asp.net ajax sections. If you are building from scrath you can shoose asp.net ajax website as template when starting new website.</p>
+
+<p>Please read articles from following links to know more and have a strong background.</p>
+
+<p>http://encosia.com/2008/03/27/using-jquery-to-consume-aspnet-json-web-services/</p>
+
+<p>http://encosia.com/2008/06/05/3-mistakes-to-avoid-when-using-jquery-with-aspnet-ajax/</p>
+
+<p>http://www.keithrousseau.com/blog/2008/05/using-jquery-json-with-aspnet/</p>
+]]></content>
+  </entry>
+  
+</feed>

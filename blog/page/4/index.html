@@ -1,0 +1,675 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Najam Sikander Awan</title>
+  <meta name="author" content="najam sikander awan">
+
+  
+  <meta name="description" content="hi everyone, today I discovered a nice tip from a blog I never knew selecting random rows were that easy with sqlserver 2000 and above. I have a &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://najamsk.github.io//blog/page/4">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/najamsk/atom.xml" rel="alternate" title="Najam Sikander Awan" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Najam Sikander Awan</a></h1>
+  
+    <h2>covering web stack along with microsoft technologies</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/najamsk/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:najamsk.github.io/" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/01/29/random-rows-selection-from-a-database-table/">Random Rows Selection From a Database Table</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-01-29T03:36:00+05:00" pubdate data-updated="true">Jan 29<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hi everyone,</p>
+
+<p>today I discovered a nice tip from a <a href="http://haacked.com/archive/2004/06/21/658.aspx" target="_blank">blog</a> I never knew selecting random rows were that easy with sqlserver 2000 and above. I have a country table that has four countries and from 4 I am selecting random 2.</p>
+
+<pre><code>SELECT TOP 2 * FROM country ORDER By NEWID()
+select * from country
+</code></pre>
+
+<p><strong>First Result</strong></p>
+
+<p>3           SaudiArabia
+4           France</p>
+
+<p><strong>Second Result</strong></p>
+
+<p>1           UAE
+4           France</p>
+
+<p><strong>Third Result</strong></p>
+
+<p>1           UAE
+3           SaudiArabia</p>
+
+<p><strong>All Countries</strong></p>
+
+<p>1           UAE
+2           Pakistan
+3           SaudiArabia
+4           France</p>
+
+<p>Amazing right??</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/01/27/cbhtradecom-launched/">cbhtrade.com Launched</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-01-27T07:54:00+05:00" pubdate data-updated="true">Jan 27<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hi guys</p>
+
+<p>After playing with wordpress we decided to make a small static website using wordpress 2.7. Please check it out at <a title="CBH" href="http://cbhtrade.com/cbh/" target="_blank">http://cbhtrade.com/cbh/</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/01/27/tdf-solutions/">Tdfsolutions.com</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-01-27T02:50:00+05:00" pubdate data-updated="true">Jan 27<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hi guys</p>
+
+<p>well I have been learning html and css and my company let me do some slicing for them so here is my first offical html/css project please visit <a title="Tdf Solutions" href="http://www.tdfsolutions.com" target="_blank">http://www.tdfsolutions.com</a> .</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/01/27/wordpress-wamp-and-permalinks/">Wordpress Wamp and Permalinks</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-01-27T02:28:00+05:00" pubdate data-updated="true">Jan 27<span>th</span>, 2009</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hi everyone</p>
+
+<p>I am posting after a long time guess I was super busy :) well first things first I have installed wordpress 2.7 on my hosting and imported all the data from my blog running at http://najam.wordpress.com.</p>
+
+<p>Now a days I am busy with developing themes with wordpress and since I am stuck with windows wamp is a choice for me. One problem I run into is if I try to put custom structure for my permalinks to have more seo friendly blog it fails to show the post or page :( . Anyone know whats the problem? And even if I do this for this blog you reading it would fail to show the page/post that includes the front page.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/09/27/google-chrome-bookmarks/">Google Chrome Bookmarks?</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-09-27T17:38:00+05:00" pubdate data-updated="true">Sep 27<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hi friends</p>
+
+<p>You know google chrome is out and everyone was so excited about that including me as a very passionate user i tried to do all of the things now in chrome i have imported my firefox settings (bookmarks) into chrome. All bookmarks are showing good I liked that but shortly I needed to perform a simple task in chrome that is &#8220;searching for a bookmarked site among all the bookmarks i have&#8221; and till now i don&#8217;t know how to search for my bookmark in mighty chrome.</p>
+
+<p>So if anyone of you know how to seach bookmarks in chrome please let me know. And one more thing what about tags how can I tag my pages?</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/07/17/sql-data-srouce-control-updating-data-from-database/">Sql Data Srouce Control Updating Data From Database</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-17T05:32:00+05:00" pubdate data-updated="true">Jul 17<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hey guyz finally we have to learn how to update our tables in database so only for you guys here is my sample code</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="kt">string</span> <span class="n">giftId</span> <span class="p">=</span> <span class="n">GridView1</span><span class="p">.</span><span class="n">SelectedRow</span><span class="p">.</span><span class="n">Cells</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">Text</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span> <span class="c1">//getting an id</span>
+</span><span class='line'><span class="n">SqlDataSource</span> <span class="n">myDbSource</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlDataSource</span><span class="p">();</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ConnectionString</span> <span class="p">=</span> <span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">ConnectionStrings</span><span class="p">[</span><span class="s">&quot;ConnectionString&quot;</span><span class="p">].</span><span class="n">ConnectionString</span><span class="p">;</span>
+</span><span class='line'><span class="c1">//myDbSource.InsertCommand = &quot;update gifts set giftActivate=1 where giftId=&quot; + Entrydate + &quot;)&quot;;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">UpdateCommand</span> <span class="p">=</span> <span class="s">&quot;update gifts set giftActivate=&#39;1&#39; where giftId=&quot;</span> <span class="p">+</span> <span class="n">giftId</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ProviderName</span> <span class="p">=</span> <span class="s">&quot;System.Data.SqlClient&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">Update</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Well this code set giftActive flag to 1 for all the rows matched with giftid value.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/07/17/sql-data-srouce-control-deleting-data-from-database/">Sql Data Srouce Control Deleting Data From Database</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-17T05:23:00+05:00" pubdate data-updated="true">Jul 17<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hey guyz today i will show you how to fire delete query by using our beloved control sqldatasource.</p>
+
+<p>Here is the code</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="n">SqlDataSource</span> <span class="n">myDbSource22</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlDataSource</span><span class="p">();</span>
+</span><span class='line'><span class="n">myDbSource22</span><span class="p">.</span><span class="n">ConnectionString</span> <span class="p">=</span> <span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">ConnectionStrings</span><span class="p">[</span><span class="s">&quot;lalConnectionString&quot;</span><span class="p">].</span><span class="n">ConnectionString</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource22</span><span class="p">.</span><span class="n">ProviderName</span> <span class="p">=</span> <span class="s">&quot;System.Data.SqlClient&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource22</span><span class="p">.</span><span class="n">DeleteCommand</span> <span class="p">=</span> <span class="s">&quot;delete from ProductsGroups where pid = &quot;</span> <span class="p">+</span> <span class="n">productId</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource22</span><span class="p">.</span><span class="n">Delete</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>All it does it deletes all the rows for a given productID from table productgroups. Simple right ;)</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/07/17/sql-data-srouce-control-inserting-data-into-database/">Sql Data Srouce Control Inserting Data Into Database</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-17T05:07:00+05:00" pubdate data-updated="true">Jul 17<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hey guyz how are you ??</p>
+
+<p>Me back with my sqldatasource  series. Today i will show you how to fire insert query using sqldatasource control into code behind i am using c#.</p>
+
+<p>Below is the sample code UserID is the parameter passing into a function as an argument.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="n">DateTime</span> <span class="n">Entrydate</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Today</span><span class="p">;</span>
+</span><span class='line'><span class="n">SqlDataSource</span> <span class="n">myDbSource</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlDataSource</span><span class="p">();</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ConnectionString</span> <span class="p">=</span> <span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">ConnectionStrings</span><span class="p">[</span><span class="s">&quot;ConnectionString&quot;</span><span class="p">].</span><span class="n">ConnectionString</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">InsertCommand</span> <span class="p">=</span> <span class="s">&quot;insert into tbl_invoices (user,Entrydate) values (&quot;</span> <span class="p">+</span> <span class="n">UserID</span> <span class="p">+</span> <span class="s">&quot;,&#39;&quot;</span> <span class="p">+</span> <span class="n">Entrydate</span> <span class="p">+</span> <span class="s">&quot;&#39;)&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ProviderName</span> <span class="p">=</span> <span class="s">&quot;System.Data.SqlClient&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">Insert</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">SelectCommand</span> <span class="p">=</span> <span class="s">&quot;SELECT IDENT_CURRENT(&#39;tbl_invoices&#39;)&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">DataView</span> <span class="n">dv</span> <span class="p">=</span> <span class="p">(</span><span class="n">DataView</span><span class="p">)</span><span class="n">myDbSource</span><span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="k">new</span> <span class="n">DataSourceSelectArguments</span><span class="p">());</span>
+</span><span class='line'><span class="n">DataTable</span> <span class="n">dt</span> <span class="p">=</span> <span class="n">dv</span><span class="p">.</span><span class="n">Table</span><span class="p">;</span>
+</span><span class='line'><span class="kt">string</span> <span class="n">invNumber</span> <span class="p">=</span> <span class="n">dt</span><span class="p">.</span><span class="n">Rows</span><span class="p">[</span><span class="m">0</span><span class="p">][</span><span class="m">0</span><span class="p">].</span><span class="n">ToString</span><span class="p">();</span>
+</span><span class='line'><span class="k">return</span> <span class="n">invNumber</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
+</span><span class='line'><span class="c1">//return string.Empty;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Code above is very simple what it does simple take UserID as an argument and then insert a new record into tbl_invoices table and then after it i am firing a select statement that returns the latest ID into tbl_invoices table. SELECT IDENT_CURRENT(&#8216;table name&#8217;) return the id of the last record inserted into the table.</p>
+
+<p>Happy coding bye</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/07/16/70/">Sql Data Srouce Control Fetch Data From Database</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-16T10:04:00+05:00" pubdate data-updated="true">Jul 16<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hi in asp.net 2.0 this new datasource control has been added and i liked it alot and i used it on many places so i thought it would be nice if I share my knowledge with all my readers so first of all i would just like to show you how to retrieve some data from your database into C# code behind file.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="kt">string</span> <span class="n">userID</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">string</span> <span class="n">UserName</span><span class="p">=</span><span class="s">&quot;najam&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">SqlDataSource</span> <span class="n">myDbSource</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlDataSource</span><span class="p">();</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ConnectionString</span> <span class="p">=</span> <span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">ConnectionStrings</span><span class="p">[</span><span class="s">&quot;ConnectionString&quot;</span><span class="p">].</span><span class="n">ConnectionString</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">SelectCommand</span> <span class="p">=</span> <span class="s">&quot;select userId from Users where userName=&#39;&quot;</span> <span class="p">+</span> <span class="n">UserName</span> <span class="p">+</span> <span class="s">&quot;&#39;&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ProviderName</span> <span class="p">=</span> <span class="s">&quot;System.Data.SqlClient&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">DataView</span> <span class="n">dv</span> <span class="p">=</span> <span class="p">(</span><span class="n">DataView</span><span class="p">)</span><span class="n">myDbSource</span><span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="k">new</span> <span class="n">DataSourceSelectArguments</span><span class="p">());</span>
+</span><span class='line'><span class="n">DataTable</span> <span class="n">dt</span> <span class="p">=</span> <span class="n">dv</span><span class="p">.</span><span class="n">Table</span><span class="p">;</span>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">dt</span><span class="p">.</span><span class="n">Rows</span><span class="p">.</span><span class="n">Count</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">userID</span> <span class="p">=</span> <span class="n">dt</span><span class="p">.</span><span class="n">Rows</span><span class="p">[</span><span class="m">0</span><span class="p">][</span><span class="m">0</span><span class="p">].</span><span class="n">ToString</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Above code will return user id if username supplied. You will see no data adapters or command object.</p>
+
+<p>If you like instead of creating sql datasrouce control in code behind just drag and drop it onto ur aspx page and then in your code behind reference it that will shorten the line of code for fetching data from your database.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/07/16/finally-my-ms-is-completed/">Finally My Ms Is Completed</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-16T08:13:00+05:00" pubdate data-updated="true">Jul 16<span>th</span>, 2008</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Ummm whats new in my life?</p>
+
+<p>Well finally my Ms in telecom is completed all courses are clear and i am fleeing like a free bird. Tension free consitration on my job no more travling in triangle from home to office and then from there to university.</p>
+
+<p>Hopefully now i will get some time to write for my blog. If anyone still reading please keep reading</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/5/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/blog/page/3/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/">Microsoft Islamabad Meetup</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/24/attended-bahria-university-job-fair/">Attended Bahria University Job Fair</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/22/playing-with-octopress-blogging/">playing with octopress blogging</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/09/upgraded-my-hosting-for-net-4-0/">Upgraded my hosting for .net 4.0</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/08/09/my-pc-is-not-working/">My PC is not working</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+ <h1>Twitter</h1>
+ <a class="twitter-timeline" href="https://twitter.com/najamsikander" data-widget-id="327838592250548224">Tweets by @najamsikander</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - najam sikander awan -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'root_hacker';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

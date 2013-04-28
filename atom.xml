@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Najam Sikander Awan]]></title>
+  <link href="http://najamsk.github.io//atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io//"/>
+  <updated>2013-04-28T11:02:12+05:00</updated>
+  <id>http://najamsk.github.io//</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Microsoft Islamabad Meetup]]></title>
+    <link href="http://najamsk.github.io//blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/"/>
+    <updated>2013-04-24T22:46:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2013/04/24/microsoft-islamabad-meetup-windwos-8</id>
+    <content type="html"><![CDATA[<p>I have been invited to [Microsoft Community Meetup] at marriott hotel islamabad on Friday 19th April 2013. It was really nice experience to meet fellow devs, students and MVP.</p>
+
+<p>Session was about windows 8 platform they have shown few apps that are developed in Pakistan and available for global audience. Highlight of the meetup was teams that have participated in Imagine cup and from pakistan. Team with first position showcased their project and I was blown away by their concept, presentation and business skills.</p>
+
+<p>These students are from <a href="http://www.giki.edu.pk/">Ghulam Ishaq Khan Institute</a> and their project is called &#8220;EPI-C&#8221; do check it out.</p>
+
+<p><img src="http://sphotos-h.ak.fbcdn.net/hphotos-ak-ash3/562418_10152378956639625_176689566_n.jpg" alt="EPI-C" /></p>
+
+<p>thanks for reading my blog.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Attended Bahria University Job Fair]]></title>
+    <link href="http://najamsk.github.io//blog/2013/04/24/attended-bahria-university-job-fair/"/>
+    <updated>2013-04-24T21:48:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2013/04/24/attended-bahria-university-job-fair</id>
+    <content type="html"><![CDATA[<p>Bahria university hosted a job fair session on 19th April 2013 in which they invites companies from local industry. My company also participated in the event.</p>
+
+<p>Myself and few other from our company spend whole day in the event looking for suitable events in .net, mobile development and social media positions.</p>
+
+<p>All day long I have been interviewing and the answers given by students in 6th and final semesters were disappointing.</p>
+
+<p>Common reason for such answers were:</p>
+
+<ul>
+<li>teacher didn&#8217;t teach us good</li>
+<li>course is not yet offered</li>
+<li>what we have read we don&#8217;t remember at the moment</li>
+<li>we are here for internship in 6 months you will teach us and than we will score good job in some other company. I don&#8217;t who told them we are here for schooling and companies will be teaching them for 6 months. Why universities are not teaching them?</li>
+</ul>
+
+
+<p>After attending this I have been thinking about giving sessions to students in web development for following reasons:</p>
+
+<ul>
+<li>Introduce them what industry expects form them as fresh devs.</li>
+<li>Also motivate them to learn more and don&#8217;t rely on university.</li>
+<li>Do small contributions in open source for learning.</li>
+</ul>
+
+
+<p>In next post I will outlines topics for basic training if you are interested to contribute in this cause let me know. If you want to attend such sessions than you can contact me.</p>
+
+<p>These sessions will be free and you can contribute in exercise files, topics and provide your valuable feedback.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[playing with octopress blogging]]></title>
+    <link href="http://najamsk.github.io//blog/2013/04/22/playing-with-octopress-blogging/"/>
+    <updated>2013-04-22T20:12:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2013/04/22/playing-with-octopress-blogging</id>
+    <content type="html"><![CDATA[<p>I first came to know about octopress from yayquery episode in which rebbeca murphy mentioned she has moved her blog form wordpress to octopress and she is very happy with that. At that time I didn&#8217;t paid any attention to this.</p>
+
+<p>But today I suddenly started to play with it and I liked few things I learn along the way and that kept me going till I have imported all of my posts from wordpress to github pages.</p>
+
+<p>I have read following pages form octopress documentation for configuration and blogging:</p>
+
+<ul>
+<li><a href="http://octopress.org/docs/configuring/">configuring octopress</a></li>
+<li><a href="http://octopress.org/docs/blogging/">blogging with octopress</a></li>
+<li>To migrate your wordpress posts to markdown files i have used <a href="https://github.com/theaob/wpXml2Jekyll">wpxml2jekyll</a></li>
+<li>To integrate twitter into your octopress blog sidebar read <a href="http://blog.jmac.org/blog/2013/03/30/putting-twitter-back-into-octopress/">put twitter back into sidebar</a>
+To link your octopress setup with github you have to run following this will ask for your user/organization repository.</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next you need to do following two commands to generate site from octopress and upload it to github repo.</p>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<p>I will have few things in mind to discover about octopress</p>
+
+<ul>
+<li>q: how to customize the styles/layout?</li>
+<li>q: how to make twitter work in sidebar?</li>
+<li>q: how to make rake preview to work against current copy in master branch?</li>
+<li>q: how to make it work against blog.najamsikander.com</li>
+<li>q: how to get my comments against each post from discuss?</li>
+</ul>
+
+
+<p>I will keep updating this post while discovering work around. I guess i will be ditching wordpress soon after finding all the answers.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Upgraded my hosting for .net 4.0]]></title>
+    <link href="http://najamsk.github.io//blog/2011/08/09/upgraded-my-hosting-for-net-4-0/"/>
+    <updated>2011-08-09T10:13:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2011/08/09/upgraded-my-hosting-for-net-4-0</id>
+    <content type="html"><![CDATA[<p>I have been watching Mix11 videos about asp.net mvc3 and felt pretty excited to mingle with these latest bits but I didn&#8217;t wanted to limit myself to local environment I wanted to know what efforts are required if I am developing with latest stuff one limitation I had that my host always take ages to update server so I had support for .net3.5. I email them about this thing and in reply they told me either wait 6 months or pay $8. Since I was dying to test out EF code first I paid them and within one day my hosting is all updated and now I am running my incomplete demo online :).</p>
+
+<p>Deployment was a little bit scarier as my hosting doesn&#8217;t come with any publishing/deployment server but if you have vs2010 sp1 then you are in safe hands all you have to do is to click on add deployable dependencies then build your solution and upload using your favorite ftp client.</p>
+
+<p>This far I like MVC3.0 , Nuget and MVC Scaffolding but I am still learning how to scaffold many to many relations or at least leverage scaffolding and then tune it to have many to many relations.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My PC is not working]]></title>
+    <link href="http://najamsk.github.io//blog/2011/08/09/my-pc-is-not-working/"/>
+    <updated>2011-08-09T09:59:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2011/08/09/my-pc-is-not-working</id>
+    <content type="html"><![CDATA[<p>I have spent so much money to build a dream PC for gaming and my web development work I was happy thought it was my investment and will recover it in future while working on it. But this never happened I worked on it successfully installed macOSX on it and then ubuntu using Virtualbox to setup my Node.JS environment but very time I need it most something bad happen. Always the worse part is not booting up and I never had any guesses where is the problem possible guesses always include ram, power supply, graphic card, processor or the Holy Motherboard in my case its always either MB or ram.</p>
+
+<p>Now again when I want to use my PC its not working. Some parts are in warranty and some are not lets see what happens next as I am convincing myself to lift this more then 10kg of weight to carry to computer market for diagnosis.</p>
+
+<p>Thats pretty much it. Thank you for still reading my blog.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Update to ubuntu 11 messed it all]]></title>
+    <link href="http://najamsk.github.io//blog/2011/05/07/update-to-ubuntu-11-messed-it-all/"/>
+    <updated>2011-05-07T13:46:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2011/05/07/update-to-ubuntu-11-messed-it-all</id>
+    <content type="html"><![CDATA[<p>Previously I have told you about my ubuntu setup running via virtual box. I was happily working till ubuntu 11 launched and I decided to upgrade to version 11, after update vbox is not doing fullscreen worse part is compiz also not working. It seems may be driver for my ati hd 4890 not working properly.</p>
+
+
+<p>Possible fixes that I can think includes:</p>
+
+
+<p>$ freshly install ubuntu 11 using virtual box.<br>
+$ install ubuntu 10.10 again</p>
+
+
+<p>If anyone knows any better solution please post.</p>
+
+
+<p>Regards,<br>
+Najam sikander awan</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Back on linux with ubuntu using Virtual Box]]></title>
+    <link href="http://najamsk.github.io//blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box/"/>
+    <updated>2011-04-02T05:26:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box</id>
+    <content type="html"><![CDATA[<p>Well for some experiments that involved git and curl I was coming across the windows problem I was trying to make my way using cygwin but after few stuck I always get stuck. Everyone&#8217;s recommended solution  was using linux OS so I have download virtual box created a virtual machine and then installed ubuntu iso 10.10 32 bit. Now as I am trying to get some softwares like chrome and vim I got few errors in package manager saying something like waiting for jockey to end. Google comes to rescue in terminal I run following commands:</p>
+
+<pre>
+ps -e | grep jockey
+sudo kill process_id
+</pre>
+
+
+<p>Second big problem was I wanted full screen when using ubuntu solution that I found in some forum is following:</p>
+
+<p>The nut of what you will be doing:</p>
+
+<ol>
+<li>Install Ubuntu on VB.</li>
+<li>After install and restart, go to the &#8216;Devices&#8217; menu for VirtualBox.</li>
+<li>Select &#8216;Install Guest Additions&#8217;.</li>
+<li>Open Terminal in Ubuntu.</li>
+</ol>
+
+
+<p>Type:
+cd /media/cdrom0 (this puts you to the cdrom directory where you just mounted guest additions)
+Press enter then type:
+dir (this shows you what&#8217;s inside this directory.)
+Press enter then type:
+sudo sh ./VBoxLinuxAdditions-x86.run (this is what you would type if you have an x86 machine, typical. If you have an AMD use that one, and so forth.)</p>
+
+<ol>
+<li>Wait for update to complete.</li>
+<li>Once complete, shut down Ubuntu.</li>
+<li>Restart VirtualBox</li>
+<li>Boot up Ubuntu.</li>
+<li>Once booted, press cmd+F for fullscreen or cmd+L for seamless.</li>
+</ol>
+
+
+<p>Best,</p>
+
+<p>Najam Sikander Awan</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CSS Overflow benefit]]></title>
+    <link href="http://najamsk.github.io//blog/2010/12/08/css-overflow-benefit/"/>
+    <updated>2010-12-08T02:13:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2010/12/08/css-overflow-benefit</id>
+    <content type="html"><![CDATA[<p>I read this article <a href="http://bit.ly/16pqBm">http://bit.ly/16pqBm</a> and find out the power of overflow that is when you set it to a value it creates a new block formatting context in simple word that means non floated element’s content will not flow around the floated element instead will get narrower.</p>
+
+<p>PS. Width should not be mentioned for non floated content so it can get narrower.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Get Running Jquery Version]]></title>
+    <link href="http://najamsk.github.io//blog/2010/12/06/get-running-jquery-version/"/>
+    <updated>2010-12-06T02:12:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2010/12/06/get-running-jquery-version</id>
+    <content type="html"><![CDATA[<p>Few weeks back I came across a page that has multiple jquery versions referenced in it and I had no idea which jquery version is actually running. So after little bit of googling I find following solution.</p>
+
+<div>
+<pre>//Returns "1.3.1"
+$().jquery;
+
+//Returns "1.3.1"
+jQuery.fn.jquery;</pre>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[CSS Diet Plan - first step to object oriented css]]></title>
+    <link href="http://najamsk.github.io//blog/2010/12/03/css-diet-plan/"/>
+    <updated>2010-12-03T01:59:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2010/12/03/css-diet-plan</id>
+    <content type="html"><![CDATA[<p>I was wondering how to count the rules of my style sheets after little googling i discovered two ways one is through vim and second is through a command line tool called grep.</p>
+
+<p>If you are a vim user and your css file is loaded into vim in command mode enter following command</p>
+
+<pre>:%s/font-size//gn</pre>
+
+
+<p>output will be the number of type font-size is used in your css file.</p>
+
+<p>for grep open your command line and enter</p>
+
+<pre>cat style.css | grep -c font-size</pre>
+
+
+<p>output will be the count of font-size occurrences in style.css.</p>
+
+<p>you can use *.css as well for all the css files in current directory.</p>
+
+<p>Other then these methods I am really interested to use a tool which will take a file and list all the rules along with their count in code.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[use SWFObject v2.2 to embed swf]]></title>
+    <link href="http://najamsk.github.io//blog/2010/11/01/use-swfobject-v2-2-to-embed-swf/"/>
+    <updated>2010-11-01T09:46:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2010/11/01/use-swfobject-v2-2-to-embed-swf</id>
+    <content type="html"><![CDATA[
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">function</span> <span class="nx">flashswf</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="nx">target</span><span class="p">,</span> <span class="nx">Width</span><span class="p">,</span> <span class="nx">Height</span><span class="p">,</span> <span class="nx">ID</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">flashvars</span> <span class="o">=</span> <span class="p">{}</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">params</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'><span class="c1">//allowfullscreen:&quot;true&quot;,</span>
+</span><span class='line'><span class="nx">allowscriptaccess</span><span class="o">:</span> <span class="s2">&quot;always&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="nx">wmode</span><span class="o">:</span> <span class="s2">&quot;transparent&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="nx">menu</span><span class="o">:</span> <span class="s2">&quot;false&quot;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">attributes</span> <span class="o">=</span> <span class="p">{</span>
+</span><span class='line'><span class="nx">id</span><span class="o">:</span> <span class="nx">ID</span><span class="p">,</span>
+</span><span class='line'><span class="nx">name</span><span class="o">:</span> <span class="nx">ID</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="nx">swfobject</span><span class="p">.</span><span class="nx">embedSWF</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="nx">target</span><span class="p">,</span> <span class="nx">Width</span><span class="p">,</span> <span class="nx">Height</span><span class="p">,</span> <span class="s2">&quot;9.0.115&quot;</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="nx">flashvars</span><span class="p">,</span> <span class="nx">params</span><span class="p">,</span> <span class="nx">attributes</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">flashswf</span><span class="p">(</span><span class="s2">&quot;/swf/total moistureiser.swf&quot;</span><span class="p">,</span> <span class="s2">&quot;flashW&quot;</span><span class="p">,</span> <span class="s2">&quot;704&quot;</span><span class="p">,</span> <span class="s2">&quot;286&quot;</span><span class="p">,</span> <span class="s2">&quot;homeFlash&quot;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Facebook Application Development using Asp.net]]></title>
+    <link href="http://najamsk.github.io//blog/2010/09/23/facebook-application-development-using-asp-net/"/>
+    <updated>2010-09-23T01:31:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2010/09/23/facebook-application-development-using-asp-net</id>
+    <content type="html"><![CDATA[<p>Hi,</p>
+
+<p>I have been busy with facebook application development using IFrame and since I have asp.net background so instead of php I wanted to do this in asp.net their are few wrappers or sdk available for this like. After googling I have picked <a href="http://facebooktoolkit.codeplex.com/">Facebook developer toolkit v3.01</a>. After downloading the binaries I have created a asp.net web application project with 4.0 framework and simply added the reference of facebook.dll and facebook.web.dll.</p>
+
+<p>In default.aspx code behind file we add the using statements for facebook dlls and inherit our page from facebook.web.CanvasIFrameBasePage and override the PreInit method for default page. Look at the snapshot of my default.aspx.cs for more understanding.</p>
+
+<p><a href="http://lh5.ggpht.com/_N_nhMTznTSY/TJrnvUilvCI/AAAAAAAAACE/tHVcjSKB9BY/s800/5.jpg"><img class="  " title="Defualt.aspx.cs" src="http://lh5.ggpht.com/_N_nhMTznTSY/TJrnvUilvCI/AAAAAAAAACE/tHVcjSKB9BY/s800/5.jpg" alt="Default page code behind " width="504" height="308" /></a></p>
+
+<p>The hardest part was to configure my app with facebook and I also wanted to continue development using my development PC so that I don&#8217;t have to upload my code as code changes. So lets first dive into facebook app configurations.</p>
+
+<p><a href="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnqw-CC4I/AAAAAAAAABs/hPltmO-C6Io/s720/2.jpg"><img class=" " title="Facebook Application Settings" src="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnqw-CC4I/AAAAAAAAABs/hPltmO-C6Io/s720/2.jpg" alt="FB APP Settings" width="504" height="347" /></a></p>
+
+<p>From above snapshot you can see my application will run at at http://apps.facebook.com/fbnajam and the domain I am providing as Canvas URL is http://fbnajam.com. The www.fbnajam.com domain is not registered to anyone :) I will map this domain to my local IP address (127.0.0.1) by editting hosts file.</p>
+
+<p><a href="http://lh5.ggpht.com/_N_nhMTznTSY/TJrntfNdypI/AAAAAAAAAB8/H51GzD07FxM/s1024/3.jpg"><img class=" " title="Hosts file" src="http://lh5.ggpht.com/_N_nhMTznTSY/TJrntfNdypI/AAAAAAAAAB8/H51GzD07FxM/s1024/3.jpg" alt="domain mapping" width="717" height="338" /></a></p>
+
+<p>Note in hosts file you can&#8217;t put port with ip address for example 127.0.0./:1259 will not work so in your hosts file you will only enter the mapping between your virtual domain and 127.0.0.1 after making the entry make sure you reboot your PC to commit your changes.</p>
+
+<p>Final part is to edit your web.config file and put app settings section which will contain your faceboko app api key, facebook app secret key and facebook app callbak URL in my case that was fbnajam.com for more understanding please look at following snapshot.</p>
+
+<p><a href="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnuXSsh2I/AAAAAAAAACA/mJg7weL-tbI/s800/4.jpg"><img class=" " title="Web.Config" src="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnuXSsh2I/AAAAAAAAACA/mJg7weL-tbI/s800/4.jpg" alt="web config" width="560" height="337" /></a></p>
+
+<p>Now if you press F5 to run your application it will open facebook page showing your app and you will see your your name.</p>
+
+<p><a href="http://lh6.ggpht.com/_N_nhMTznTSY/TJrnrgWdiNI/AAAAAAAAAB0/QbLOxyowUww/6.jpg"><img class=" " title="Facebook App Running" src="http://lh6.ggpht.com/_N_nhMTznTSY/TJrnrgWdiNI/AAAAAAAAAB0/QbLOxyowUww/6.jpg" alt="app result" width="694" height="195" /></a></p>
+
+<p>After creating my first Facebook IFrame application I still want to use xFBML if supported need to test this application in my office. After doing some more experiments will update this post.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[10 Things I Learned from the jQuery Source]]></title>
+    <link href="http://najamsk.github.io//blog/2010/07/23/10-things-i-learned-from-the-jquery-source/"/>
+    <updated>2010-07-23T03:22:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2010/07/23/10-things-i-learned-from-the-jquery-source</id>
+    <content type="html"><![CDATA[<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="450" height="275" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://vimeo.com/moogaloop.swf?clip_id=12529436&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed type="application/x-shockwave-flash" width="450" height="275" src="http://vimeo.com/moogaloop.swf?clip_id=12529436&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+
+
+<p><a href="http://vimeo.com/12529436">Paul Irish : 10 Things I Learned from the jQuery Source</a> from <a href="http://vimeo.com/yayquery">yayQuery</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Juqery Ani-Patterns for performance &amp; compression by paul irish]]></title>
+    <link href="http://najamsk.github.io//blog/2010/07/23/juqery-ani-patterns-for-performance-compression-by-paul-irish/"/>
+    <updated>2010-07-23T03:20:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2010/07/23/juqery-ani-patterns-for-performance-compression-by-paul-irish</id>
+    <content type="html"><![CDATA[<div id="__ss_1984008" style="width: 425px;"><strong><a title="jQuery Anti-Patterns for Performance &amp; Compression" href="http://www.slideshare.net/paul.irish/perfcompression">jQuery Anti-Patterns for Performance &amp; Compression</a></strong><object id="__sse1984008" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="425" height="355" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="src" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=perfcompression-090911091939-phpapp01&amp;stripped_title=perfcompression" /><param name="name" value="__sse1984008" /><param name="allowfullscreen" value="true" /><embed id="__sse1984008" type="application/x-shockwave-flash" width="425" height="355" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=perfcompression-090911091939-phpapp01&amp;stripped_title=perfcompression" name="__sse1984008" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+<div style="padding: 5px 0 12px;">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/paul.irish">Paul Irish</a>.</div>
+</div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[C# Parent Child Reference Variable &amp; Object Casting]]></title>
+    <link href="http://najamsk.github.io//blog/2010/01/25/221/"/>
+    <updated>2010-01-25T04:28:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2010/01/25/221</id>
+    <content type="html"><![CDATA[<p>I have been clearing my concepts regarding inheritance and investigating if parent reference variable can point to child class object and vice versa.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+</span><span class='line'><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+</span><span class='line'><span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">namespace</span> <span class="nn">oops</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">A</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">public</span> <span class="nf">A</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;A&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;===============================&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">Add</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Add&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">B</span> <span class="p">:</span> <span class="n">A</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">public</span> <span class="nf">B</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;B&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;===============================&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">Sub</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Sub&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">Program</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">A</span> <span class="n">objA</span> <span class="p">=</span> <span class="k">new</span> <span class="n">A</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">B</span> <span class="n">objB</span> <span class="p">=</span> <span class="n">objA</span> <span class="k">as</span> <span class="n">B</span><span class="p">;</span>
+</span><span class='line'><span class="n">A</span> <span class="n">objAB</span> <span class="p">=</span> <span class="k">new</span> <span class="n">B</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">B</span> <span class="n">objBB</span> <span class="p">=</span> <span class="n">objAB</span> <span class="k">as</span> <span class="n">B</span><span class="p">;</span>
+</span><span class='line'><span class="n">objBB</span><span class="p">.</span><span class="n">Sub</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">objB</span> <span class="k">is</span> <span class="n">B</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">objB</span><span class="p">.</span><span class="n">Add</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;objB is not B&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//objA.Add();</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong><span style="text-decoration: underline;">Out put of the code is</span></strong></p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="n">A</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">===============================</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">A</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">===============================</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">B</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">===============================</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">Sub</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">objB</span> <span class="k">is</span> <span class="n">not</span> <span class="n">B</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[git tracking and deleting remote branches]]></title>
+    <link href="http://najamsk.github.io//blog/2009/07/20/git-tracking-and-deleting-remote-branches/"/>
+    <updated>2009-07-20T09:11:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/07/20/git-tracking-and-deleting-remote-branches</id>
+    <content type="html"><![CDATA[<p><strong>List the remote branches that exist for a repository you have cloned:</strong></p>
+
+<pre><code>git remote show origin
+</code></pre>
+
+<p><strong>Create a local branch that tracks one of the remote branches and then use that local branch:</strong></p>
+
+<pre><code>git checkout --track -b name_of_local_branch origin/name_of_remote_branch
+</code></pre>
+
+<p>If you have not done a pull since someone else created the remote branch, you may first need to do:</p>
+
+<pre><code>git fetch
+</code></pre>
+
+<p><strong>Remove <em>branch</em> from <em>repo</em>.</strong></p>
+
+<p><code>git push {repo} :heads/{branch}</code></p>
+
+<p>Ex: <code>git push origin :somebranch</code>
+removes somebranch</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Circa Wear]]></title>
+    <link href="http://najamsk.github.io//blog/2009/07/09/circa-wear/"/>
+    <updated>2009-07-09T23:01:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/07/09/circa-wear</id>
+    <content type="html"><![CDATA[<p>I have uploaded another static website that might become an e-commerce website in future.</p>
+
+<p><a href="http://circa-wear.com/circa/" target="_blank">http://circa-wear.com/circa/</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Design Patterns -- Iterator]]></title>
+    <link href="http://najamsk.github.io//blog/2009/07/08/design-patterns-iterator/"/>
+    <updated>2009-07-08T06:16:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/07/08/design-patterns-iterator</id>
+    <content type="html"><![CDATA[<p>Hi Guys,</p>
+
+<p>I am reading more on design patterns from this  <a title="Read This" href="http://msdn.microsoft.com/en-us/magazine/cc188707.aspx" target="_blank">article</a> after little theory session here is working code. Key point was all of the collection classes in the System.Collections namespace, as well as arrays, implement IEnumerable and can therefore be iterated over.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'>   <span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">namespace</span> <span class="nn">ConsoleApplication1</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>  <span class="k">class</span> <span class="nc">IteratorPattern</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kt">int</span><span class="p">[]</span> <span class="n">values</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[]</span> <span class="p">{</span> <span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">5</span> <span class="p">};</span>
+</span><span class='line'>  <span class="n">IEnumerator</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">int</span><span class="p">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">e</span> <span class="p">=</span> <span class="p">((</span><span class="n">IEnumerable</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">int</span><span class="p">&amp;</span><span class="n">gt</span><span class="p">;)</span><span class="n">values</span><span class="p">).</span><span class="n">GetEnumerator</span><span class="p">();</span>
+</span><span class='line'>  <span class="k">while</span> <span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">MoveNext</span><span class="p">())</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>  <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">ToString</span><span class="p">()</span> <span class="p">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Observer pattern with .net]]></title>
+    <link href="http://najamsk.github.io//blog/2009/07/08/observer-pattern-with-net/"/>
+    <updated>2009-07-08T05:11:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/07/08/observer-pattern-with-net</id>
+    <content type="html"><![CDATA[<p>Hi folks,</p>
+
+<p>Well I am investigating design patterns by reading an <a title="Read This" href="http://msdn.microsoft.com/en-us/magazine/cc188707.aspx" target="_blank">article</a> so after reading a bit I thought it would be nice if I write some code and test it.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+</span><span class='line'><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+</span><span class='line'><span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+</span><span class='line'><span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">namespace</span> <span class="nn">ConsoleApplication1</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">Program</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="c1">/// &amp;lt;summary&amp;gt;</span>
+</span><span class='line'><span class="c1">/// Product Class</span>
+</span><span class='line'><span class="c1">/// &amp;lt;/summary&amp;gt;</span>
+</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">Product</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">public</span> <span class="k">delegate</span> <span class="k">void</span> <span class="nf">NameChangeEventHandler</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">);</span>
+</span><span class='line'><span class="k">public</span> <span class="k">event</span> <span class="n">NameChangeEventHandler</span> <span class="n">NameChanged</span><span class="p">;</span>
+</span><span class='line'><span class="k">private</span> <span class="kt">string</span> <span class="n">_name</span><span class="p">;</span>
+</span><span class='line'><span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">get</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">return</span> <span class="n">_name</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">set</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">_name</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">NameChanged</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">NameChanged</span><span class="p">(</span><span class="m">5</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">public</span> <span class="nf">Product</span><span class="p">(</span><span class="kt">string</span> <span class="n">name</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Name</span> <span class="p">=</span> <span class="n">name</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">PrintName</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;ProductName={0}&quot;</span><span class="p">,</span> <span class="n">Name</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">/// &amp;lt;summary&amp;gt;</span>
+</span><span class='line'><span class="c1">/// Test Class</span>
+</span><span class='line'><span class="c1">/// &amp;lt;/summary&amp;gt;</span>
+</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">Test</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">public</span> <span class="nf">Test</span><span class="p">(</span><span class="n">Product</span> <span class="n">P</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">P</span><span class="p">.</span><span class="n">NameChanged</span> <span class="p">+=</span> <span class="k">new</span> <span class="n">Product</span><span class="p">.</span><span class="n">NameChangeEventHandler</span><span class="p">(</span><span class="n">ChangeDetected</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">ChangeDetected</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;change found,argument passed is {0}&quot;</span><span class="p">,</span><span class="n">a</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Product</span> <span class="n">p</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Product</span><span class="p">(</span><span class="s">&quot;najam awan&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="n">p</span><span class="p">.</span><span class="n">PrintName</span><span class="p">();</span>
+</span><span class='line'><span class="n">Test</span> <span class="n">t</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Test</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+</span><span class='line'><span class="n">p</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="s">&quot;najaf awan&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">p</span><span class="p">.</span><span class="n">PrintName</span><span class="p">();</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Gmail out of beta]]></title>
+    <link href="http://najamsk.github.io//blog/2009/07/08/gmail-out-of-beta/"/>
+    <updated>2009-07-08T01:22:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/07/08/gmail-out-of-beta</id>
+    <content type="html"><![CDATA[<p>Finally Gmaiil is out of beta :) login to your inbox and see yourself.</p>
+]]></content>
+  </entry>
+  
+</feed>

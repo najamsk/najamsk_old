@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: microsoft | Najam Sikander Awan]]></title>
+  <link href="http://najamsk.github.io//blog/categories/microsoft/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io//"/>
+  <updated>2013-04-28T11:02:12+05:00</updated>
+  <id>http://najamsk.github.io//</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Microsoft Islamabad Meetup]]></title>
+    <link href="http://najamsk.github.io//blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/"/>
+    <updated>2013-04-24T22:46:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2013/04/24/microsoft-islamabad-meetup-windwos-8</id>
+    <content type="html"><![CDATA[<p>I have been invited to [Microsoft Community Meetup] at marriott hotel islamabad on Friday 19th April 2013. It was really nice experience to meet fellow devs, students and MVP.</p>
+
+<p>Session was about windows 8 platform they have shown few apps that are developed in Pakistan and available for global audience. Highlight of the meetup was teams that have participated in Imagine cup and from pakistan. Team with first position showcased their project and I was blown away by their concept, presentation and business skills.</p>
+
+<p>These students are from <a href="http://www.giki.edu.pk/">Ghulam Ishaq Khan Institute</a> and their project is called "EPI-C" do check it out.</p>
+
+<p><img src="http://sphotos-h.ak.fbcdn.net/hphotos-ak-ash3/562418_10152378956639625_176689566_n.jpg" alt="EPI-C" /></p>
+
+<p>thanks for reading my blog.</p>
+]]></content>
+  </entry>
+  
+</feed>

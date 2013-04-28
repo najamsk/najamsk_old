@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: web services | Najam Sikander Awan]]></title>
+  <link href="http://najamsk.github.io//blog/categories/web-services/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io//"/>
+  <updated>2013-04-28T11:02:12+05:00</updated>
+  <id>http://najamsk.github.io//</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Consuming asp.net webservice with jquery]]></title>
+    <link href="http://najamsk.github.io//blog/2009/02/03/consuming-aspnet-webservice-with-jquery/"/>
+    <updated>2009-02-03T05:22:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2009/02/03/consuming-aspnet-webservice-with-jquery</id>
+    <content type="html"><![CDATA[<p>hi guys,</p>
+
+<p>Well I like to share one more experiment with you that is how to call a webservice from your javascript(jquery). For that again you need to have an asp.net ajax enable website.</p>
+
+<p>Lets first examine what are the requiments for webservice if we need to call it from javascript well after having asp.net ajax enable website first is you should mark your serverice as [ScriptService] what it does it will make all the methods/functions of your webservice to be accessable from javascript code and it also serialise your webservice response using JASON .</p>
+
+<p>By default asp.net web services use soap for communication scriptservice marker make your webservice to use JASON.</p>
+
+<p>Now lets defien the method in our webservice which we want to be accessable by our javascript code.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="na">[WebMethod]</span>
+</span><span class='line'><span class="k">public</span> <span class="kt">int</span> <span class="nf">AddingNumbers</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">return</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>That's it now lets move to client side code.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="err">$</span><span class="p">(</span><span class="n">function</span><span class="p">(){</span>
+</span><span class='line'><span class="err">$</span><span class="p">.</span><span class="n">ajax</span><span class="p">({&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span><span class="n">type</span><span class="p">:</span> <span class="s">&quot;POST&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="n">url</span><span class="p">:</span> <span class="s">&quot;WebServices/MyWS.asmx/AddingNumbers&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="n">data</span><span class="p">:</span> <span class="s">&quot;{&#39;a&#39;:&#39;1&#39;,&#39;b&#39;:&#39;2&#39;}&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="n">contentType</span><span class="p">:</span> <span class="s">&quot;application/json; charset=utf-8&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="n">dataType</span><span class="p">:</span> <span class="s">&quot;json&quot;</span><span class="p">,</span>
+</span><span class='line'><span class="n">success</span><span class="p">:</span> <span class="n">function</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'><span class="c1">// Do something interesting here.</span>
+</span><span class='line'><span class="n">alert</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
+</span><span class='line'><span class="p">},</span>
+</span><span class='line'><span class="n">error</span><span class="p">:</span> <span class="n">function</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">alert</span><span class="p">(</span><span class="s">&quot;Request can&#39;t made using ajax&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">});</span><span class="c1">//ajax ends here</span>
+</span><span class='line'><span class="p">});</span><span class="c1">// document ready ends here</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>In above javasrcipt code we are making an ajax post request we set  contentType to "application/json; charset=utf-8" and  dataType to "json" and passing a=1,b=2 as are data input parameters note that varriables name are same as verriables declared in webservice's function <strong>AddingNumbers </strong>input parameters.</p>
+
+<p>Please read articles from following links to know more and have a strong background.</p>
+
+<p>http://encosia.com/2008/03/27/using-jquery-to-consume-aspnet-json-web-services/</p>
+
+<p>http://encosia.com/2008/06/05/3-mistakes-to-avoid-when-using-jquery-with-aspnet-ajax/</p>
+
+<p>http://www.keithrousseau.com/blog/2008/05/using-jquery-json-with-aspnet/</p>
+]]></content>
+  </entry>
+  
+</feed>

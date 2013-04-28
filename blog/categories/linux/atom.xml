@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: linux | Najam Sikander Awan]]></title>
+  <link href="http://najamsk.github.io//blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://najamsk.github.io//"/>
+  <updated>2013-04-28T11:02:12+05:00</updated>
+  <id>http://najamsk.github.io//</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Update to ubuntu 11 messed it all]]></title>
+    <link href="http://najamsk.github.io//blog/2011/05/07/update-to-ubuntu-11-messed-it-all/"/>
+    <updated>2011-05-07T13:46:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2011/05/07/update-to-ubuntu-11-messed-it-all</id>
+    <content type="html"><![CDATA[<p>Previously I have told you about my ubuntu setup running via virtual box. I was happily working till ubuntu 11 launched and I decided to upgrade to version 11, after update vbox is not doing fullscreen worse part is compiz also not working. It seems may be driver for my ati hd 4890 not working properly.</p>
+
+
+<p>Possible fixes that I can think includes:</p>
+
+
+<p>$ freshly install ubuntu 11 using virtual box.<br>
+$ install ubuntu 10.10 again</p>
+
+
+<p>If anyone knows any better solution please post.</p>
+
+
+<p>Regards,<br>
+Najam sikander awan</p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Back on linux with ubuntu using Virtual Box]]></title>
+    <link href="http://najamsk.github.io//blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box/"/>
+    <updated>2011-04-02T05:26:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2011/04/02/back-on-linux-with-ubuntu-using-virtual-box</id>
+    <content type="html"><![CDATA[<p>Well for some experiments that involved git and curl I was coming across the windows problem I was trying to make my way using cygwin but after few stuck I always get stuck. Everyone's recommended solution  was using linux OS so I have download virtual box created a virtual machine and then installed ubuntu iso 10.10 32 bit. Now as I am trying to get some softwares like chrome and vim I got few errors in package manager saying something like waiting for jockey to end. Google comes to rescue in terminal I run following commands:</p>
+
+<pre>
+ps -e | grep jockey
+sudo kill process_id
+</pre>
+
+
+<p>Second big problem was I wanted full screen when using ubuntu solution that I found in some forum is following:</p>
+
+<p>The nut of what you will be doing:</p>
+
+<ol>
+<li>Install Ubuntu on VB.</li>
+<li>After install and restart, go to the 'Devices' menu for VirtualBox.</li>
+<li>Select 'Install Guest Additions'.</li>
+<li>Open Terminal in Ubuntu.</li>
+</ol>
+
+
+<p>Type:
+cd /media/cdrom0 (this puts you to the cdrom directory where you just mounted guest additions)
+Press enter then type:
+dir (this shows you what's inside this directory.)
+Press enter then type:
+sudo sh ./VBoxLinuxAdditions-x86.run (this is what you would type if you have an x86 machine, typical. If you have an AMD use that one, and so forth.)</p>
+
+<ol>
+<li>Wait for update to complete.</li>
+<li>Once complete, shut down Ubuntu.</li>
+<li>Restart VirtualBox</li>
+<li>Boot up Ubuntu.</li>
+<li>Once booted, press cmd+F for fullscreen or cmd+L for seamless.</li>
+</ol>
+
+
+<p>Best,</p>
+
+<p>Najam Sikander Awan</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Vychat alternative for my suse 10.2 laptop]]></title>
+    <link href="http://najamsk.github.io//blog/2007/03/12/vychat-alternative-for-my-suse-102-laptop/"/>
+    <updated>2007-03-12T10:43:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2007/03/12/vychat-alternative-for-my-suse-102-laptop</id>
+    <content type="html"><![CDATA[<p style="margin-bottom:0;" align="left"><font size="3">After switching to suse what I badly missed is vychat a very popular LAN chat client </font></p>
+
+
+<p style="margin-bottom:0;" align="left"><font size="3">that support many useful functions such as file transfer and real time chat capabilities. All of my network users use windows and they communicate and file transfer with each other using vychat so after setting up suse I googled and end up with many vychat clones for unix and linux. Below is the list of some clones</font></p>
+
+
+
+
+<p style="margin-bottom:0;" align="left">
+<ol>
+    <li>
+<p style="margin-bottom:0;" align="left"><font size="3">Trix</font></p>
+</li>
+    <li>
+<p style="margin-bottom:0;" align="left"><font size="3">Vqcc-gtk</font></p>
+</li>
+    <li>
+<p style="margin-bottom:0;" align="left"><font size="3">Vyqchat</font></p>
+</li>
+</ol>
+</p>
+
+
+<p style="margin-bottom:0;" align="left">
+</p>
+
+
+<p style="margin-bottom:0;" align="left"><font size="3">I have successfully installed trix and vqcc-gtk but the only problem with them is that they were not showing any users. So I decided to take help from linux irc help channels and from there a kind guy named yasir told me that i have to either disable firewall or add vychat ports to my susefirewall. </font></p>
+
+
+
+
+<p style="margin-bottom:0;" align="left">
+</p>
+
+
+<p style="margin-bottom:0;" align="left"><font size="3">After disabling firewall i get all of my users in trix and vqcc-gtk. You can turn on and off firewall on suse by typing following commands in shell as root.</font></p>
+
+
+
+
+<p style="margin-bottom:0;" align="left">
+</p>
+
+
+<p align="left"><font size="3"><strong>Turning firewall off</strong>
+rcSuSEfirewall2 stop</font>
+
+</p>
+
+
+<p align="left"><font size="3">
+<strong>turning firewall on </strong>
+rcSuSEfirewall2 start</font>
+</p>
+
+
+<p align="left">&nbsp;</p>
+
+
+<p><form></p>
+
+<p class="enclosure-inner enclosure-photo">
+</p>
+
+
+<p class="enclosure-list">
+</p>
+
+
+<p class="enclosure-item photo-asset last">
+</p>
+
+
+<p class="enclosure-image">                          <a href="http://najam.vox.com/library/photo/6a00c2251d69c9549d00cd97177f0c4cd5.html"><img src="http://a4.vox.com/6a00c2251d69c9549d00cd97177f0c4cd5-200pi" alt="TriX" /></a>
+</p>
+
+
+<p class="enclosure-image-actions"><a href="void 0;" class="command-edit-asset" title="Edit"><img src="http://aka-static.vox.com/.shared:v23.8:vox:en_us/images/icons/enclosure-edit.gif" alt="Edit" /></a><a href="void 0;" class="command-edit-enclosure-format" title="Format"><img src="http://aka-static.vox.com/.shared:v23.8:vox:en_us/images/icons/enclosure-format.gif" alt="Format" /></a><a href="void 0;" class="command-delete-enclosure" title="Remove"><img src="http://aka-static.vox.com/.shared:v23.8:vox:en_us/images/icons/enclosure-remove.gif" alt="Remove" /></a></p>
+
+
+
+
+<p class="enclosure-meta">
+</p>
+
+
+<p class="enclosure-asset-name"><a href="http://najam.vox.com/library/photo/6a00c2251d69c9549d00cd97177f0c4cd5.html" title="TriX">TriX</a></p>
+
+
+<p></form><!-- end enclosure --></p>
+
+<p style="margin-bottom:0;" align="left"></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to enable full multimedia capabilities on Suse 10.2 using the xine engine]]></title>
+    <link href="http://najamsk.github.io//blog/2007/03/12/how-to-enable-full-multimedia-capabilities-on-suse-102-using-the-xine-engine/"/>
+    <updated>2007-03-12T10:36:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2007/03/12/how-to-enable-full-multimedia-capabilities-on-suse-102-using-the-xine-engine</id>
+    <content type="html"><![CDATA[<p>NOTE: The package manager in Suse 10.2 appears to be working a lot better than the one in 10.1, so this time we will be using YAST and not SMART to install the required packages.</p>
+
+<p>The first step in resolving the multimedia issue is to setup additional YAST <a href="http://www.linuxquestions.org/questions/showthread.php?t=509097#" target="_top"><u><font size="2"></font><font face="Verdana, Arial, Helvetica, sans-serif"></font><font color="#0000ff">software</font></u></a> sources. The software repositories used in this howto, are <a href="http://packman.links2linux.org/" target="_blank">Packman</a> and <a href="http://linux01.gwdg.de/%7Epbleser/" target="_blank">Guru</a>. If possible, please use a mirror instead of the main download site to prevent overloading one download location. The mirrors for Packman are listed <a href="ftp://packman.links2linux.de/pub/packman/MIRRORS" target="_blank">here</a> and the ones for Guru are on the section titled "Mirrors" on this <a href="http://linux01.gwdg.de/%7Epbleser/" target="_blank">page</a>.</p>
+
+<p><strong><u>Adding the Packman Repository</u></strong></p>
+
+<ol>
+    <li>
+<p style="margin-bottom:0;">Start YAST -&gt; Software -&gt;     Installation Source and click on "add"</p>
+</li>
+    <li>
+<p style="margin-bottom:0;">Select HTTP or FTP as the protocol  and click on "next"</p>
+</li>
+    <li>
+<p style="margin-bottom:0;"><a name="KonaLink1"></a>In the box  that is labeled "<a href="http://www.linuxquestions.org/questions/showthread.php?t=509097#" target="_top"><u><font size="2"></font><font face="Verdana, Arial, Helvetica, sans-serif"></font><font color="#0000ff">Server</font></u></a>    Name" enter the address of the ftp or http server of your   mirror e.g. mirror.geht-schon.de or ftp.uni-erlangen.de. Please do  not enter the preceding http:// or ftp://.</p>
+
+<p style="margin-bottom:0;">Working Example:
+<strong>Server Name:    mirror.geht-schon.de</strong></p></li>
+    <li>
+<p style="margin-bottom:0;">In the box labeled "Directory   on Server", enter the path to the packman directory for Suse    10.2 e.g. /packman.links2linux.de/suse/10.2 or  /pub/mirrors/packman/suse/10.2
+Working Example:
+<strong>Directory   on Server: /packman.links2linux.de/suse/10.2</strong></p></li>
+    <li>Once thats done, click on the finish button and depending on    your net connection YAST may take a few seconds or a few minutes to     setup the repo.</li>
+</ol>
+
+
+<p>NOTE: If you are asked about a "KEY" please choose the option to import the key.</p>
+
+<p><strong><u>Adding the Guru Repository</u></strong></p>
+
+<p>*The process is similar to adding the packman repo, the only difference being the mirros, so I won't delve into that. Follow the instructions above and just substitute server names and directory paths.</p>
+
+<p>Working Example</p>
+
+<p><strong>Server Name: </strong><a href="ftp://ftp.gwdg.de/"><strong>ftp.gwdg.de</strong></a>
+<strong>Directory on Server: /pub/linux/misc/suser-guru/rpm/10.2/RPMS</strong></p>
+
+<p><strong><u>Installing the required packages</u></strong></p>
+
+<p>Once the mirrors have been setup do the following,</p>
+
+<ol>
+    <li>
+<p style="margin-bottom:0;">YAST -&gt; Software -&gt; Software  Management</p>
+</li>
+    <li>
+<p style="margin-bottom:0;">Search for xine and when the    search results show up:</p>
+
+<ul>
+    <li>
+<p style="margin-bottom:0;">Select libxine1 for installation</p>
+</li>
+</ul>
+</li>
+    <li>
+<p style="margin-bottom:0;">Select xine-lib for deinstallation</p>
+</li>
+    <li>
+<p style="margin-bottom:0;">If you want amarok to use the xine  engine, select "amarok-xine" for installation if it is not  already installed</p>
+</li>
+    <li>
+<p style="margin-bottom:0;">If you use totem and prefer to use  xine instead of gstreamer as the backend, select libxine1-gnome-vfs     for installation</p>
+</li>
+    <li>Search for w32codec and select it for installation</li>
+</ol>
+
+
+<p style="margin-bottom:0;">Once thats done, click accept and YAST should install the packages for you and hopefully you can play mp3, mp4, wmv etc.
+
+NOTE: We did not use any packages from the Guru repository, but it has some apps e.g. Kmplayer, amarok-xmms, and others as well as not multimedia packages that you may find useful.
+
+<strong><u>Playing encrypted DVD discs</u></strong>
+
+Xine cannot play encrypted dvd discs without some help. If you want to do this, then go to <a href="http://download.videolan.org/pub/libdvdcss/1.2.9/rpm/" target="_blank">videolan</a> and download the libdvdcss rpm. Install the rpm by doing
+</p>
+
+
+<p style="margin-left:0.24in;margin-right:0.24in;margin-bottom:0.02in;"> Code:</p>
+
+
+
+
+<pre style="border:1px solid #000000;margin-left:0.24in;margin-right:0.24in;text-align:left;padding:0.04in;">#rpm -Uvh libdvdcss2-1.2.9-1.i386.rpm</pre>
+
+
+<p style="margin-left:0.24in;margin-right:0.24in;">
+NOTE: Using libdvdcss maybe illegal in your country, so please check with the authorities before downloading and using it. We will not be held responsible or accountable if you use this software where you are not supposed to.
+
+<strong><u>A note on package management</u></strong>
+
+If you have problems with your package manager, it maybe a good idea to drop back to the old Suse package manager instead of the Zenworks related tools. To do this do
+<ol>
+    <li>
+<p style="margin-bottom:0;">YAST -&gt; Software -&gt; Software  Management</p>
+</li>
+    <li>
+<p style="margin-bottom:0;">On the "Filter" box,    select "Patterns"</p>
+</li>
+    <li>
+<p style="margin-bottom:0;">Navigate to the "Enterprise     Software Management" pattern and deselect it and all the    packages listed on the right</p>
+</li>
+    <li>Click accept and once YAST has completed the changes, close     it and reboot.</li>
+</ol>
+When the system starts, you will notice that you have different tools for updating the system although YAST will work as usual but using the old backend.
+
+NOTE: As usual, any comments, addition and correction are welcome.
+
+Have fun.  <img src="http://linuxquestions.cachefly.net/images/questions/images/smilies/wink.gif" align="bottom" height="15" width="15" /></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Realtek HD sound card working]]></title>
+    <link href="http://najamsk.github.io//blog/2007/02/20/realtek-hd-sound-card-working/"/>
+    <updated>2007-02-20T09:54:00+05:00</updated>
+    <id>http://najamsk.github.io//blog/2007/02/20/realtek-hd-sound-card-working</id>
+    <content type="html"><![CDATA[<p>Hi guyz</p>
+
+<p>My sound card working now after installing latest <a href="http://www.alsa-project.org/"><font color="#578fb2">Alsa</font></a> driver, Lib and Utils.</p>
+
+<p>Compile alsa-driver like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>./configure --with-cards=hda-intel
+</span><span class='line'>make
+</span><span class='line'>make install</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>and alsa-lib and alsa-util in this order like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>./configure
+</span><span class='line'>make
+</span><span class='line'>make install</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Reboot and there you go!</p>
+
+<p>Regards
+Najam Sikander Awan</p>
+]]></content>
+  </entry>
+  
+</feed>
