@@ -4,7 +4,7 @@
   <title><![CDATA[Category: twitter | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/twitter/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2013-05-03T21:31:54+05:00</updated>
+  <updated>2013-05-03T21:36:41+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -19,6 +19,9 @@
     <updated>2013-05-03T21:11:00+05:00</updated>
     <id>http://blog.najamsikander.com/blog/2013/05/03/fetch-public-tweets-of-any-user-using-jquery</id>
     <content type="html"><![CDATA[<p>I have been asked by many friends how to load tweets of any user using jQuery I have put some time and found two ways to do that using jQuery.</p>
+
+<!-- more -->
+
 
 <h2>Twitter Timeline API</h2>
 
