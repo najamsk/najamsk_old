@@ -9,7 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="hi guyz Sorry for writing after such a long time i guess i am very busy now a days so for a project i needed to read my smtp email settings defined &hellip;">
+  <meta name="description" content="hey guyz how are you ?? Me back with my sqldatasource  series. Today i will show you how to fire insert query using sqldatasource control into code &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,194 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/07/17/sql-data-srouce-control-inserting-data-into-database/">Sql Data Srouce Control Inserting Data Into Database</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-17T05:07:00+05:00" pubdate data-updated="true">Jul 17<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/07/17/sql-data-srouce-control-inserting-data-into-database/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hey guyz how are you ??</p>
+
+<p>Me back with my sqldatasource  series. Today i will show you how to fire insert query using sqldatasource control into code behind i am using c#.</p>
+
+<p>Below is the sample code UserID is the parameter passing into a function as an argument.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="n">DateTime</span> <span class="n">Entrydate</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Today</span><span class="p">;</span>
+</span><span class='line'><span class="n">SqlDataSource</span> <span class="n">myDbSource</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlDataSource</span><span class="p">();</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ConnectionString</span> <span class="p">=</span> <span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">ConnectionStrings</span><span class="p">[</span><span class="s">&quot;ConnectionString&quot;</span><span class="p">].</span><span class="n">ConnectionString</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">InsertCommand</span> <span class="p">=</span> <span class="s">&quot;insert into tbl_invoices (user,Entrydate) values (&quot;</span> <span class="p">+</span> <span class="n">UserID</span> <span class="p">+</span> <span class="s">&quot;,&#39;&quot;</span> <span class="p">+</span> <span class="n">Entrydate</span> <span class="p">+</span> <span class="s">&quot;&#39;)&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ProviderName</span> <span class="p">=</span> <span class="s">&quot;System.Data.SqlClient&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">Insert</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">SelectCommand</span> <span class="p">=</span> <span class="s">&quot;SELECT IDENT_CURRENT(&#39;tbl_invoices&#39;)&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">DataView</span> <span class="n">dv</span> <span class="p">=</span> <span class="p">(</span><span class="n">DataView</span><span class="p">)</span><span class="n">myDbSource</span><span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="k">new</span> <span class="n">DataSourceSelectArguments</span><span class="p">());</span>
+</span><span class='line'><span class="n">DataTable</span> <span class="n">dt</span> <span class="p">=</span> <span class="n">dv</span><span class="p">.</span><span class="n">Table</span><span class="p">;</span>
+</span><span class='line'><span class="kt">string</span> <span class="n">invNumber</span> <span class="p">=</span> <span class="n">dt</span><span class="p">.</span><span class="n">Rows</span><span class="p">[</span><span class="m">0</span><span class="p">][</span><span class="m">0</span><span class="p">].</span><span class="n">ToString</span><span class="p">();</span>
+</span><span class='line'><span class="k">return</span> <span class="n">invNumber</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
+</span><span class='line'><span class="c1">//return string.Empty;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Code above is very simple what it does simple take UserID as an argument and then insert a new record into tbl_invoices table and then after it i am firing a select statement that returns the latest ID into tbl_invoices table. SELECT IDENT_CURRENT(&#8216;table name&#8217;) return the id of the last record inserted into the table.</p>
+
+<p>Happy coding bye</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/07/16/70/">Sql Data Srouce Control Fetch Data From Database</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-16T10:04:00+05:00" pubdate data-updated="true">Jul 16<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/07/16/70/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hi in asp.net 2.0 this new datasource control has been added and i liked it alot and i used it on many places so i thought it would be nice if I share my knowledge with all my readers so first of all i would just like to show you how to retrieve some data from your database into C# code behind file.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="kt">string</span> <span class="n">userID</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">string</span> <span class="n">UserName</span><span class="p">=</span><span class="s">&quot;najam&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">SqlDataSource</span> <span class="n">myDbSource</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlDataSource</span><span class="p">();</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ConnectionString</span> <span class="p">=</span> <span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">ConnectionStrings</span><span class="p">[</span><span class="s">&quot;ConnectionString&quot;</span><span class="p">].</span><span class="n">ConnectionString</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">SelectCommand</span> <span class="p">=</span> <span class="s">&quot;select userId from Users where userName=&#39;&quot;</span> <span class="p">+</span> <span class="n">UserName</span> <span class="p">+</span> <span class="s">&quot;&#39;&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ProviderName</span> <span class="p">=</span> <span class="s">&quot;System.Data.SqlClient&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">DataView</span> <span class="n">dv</span> <span class="p">=</span> <span class="p">(</span><span class="n">DataView</span><span class="p">)</span><span class="n">myDbSource</span><span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="k">new</span> <span class="n">DataSourceSelectArguments</span><span class="p">());</span>
+</span><span class='line'><span class="n">DataTable</span> <span class="n">dt</span> <span class="p">=</span> <span class="n">dv</span><span class="p">.</span><span class="n">Table</span><span class="p">;</span>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">dt</span><span class="p">.</span><span class="n">Rows</span><span class="p">.</span><span class="n">Count</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">userID</span> <span class="p">=</span> <span class="n">dt</span><span class="p">.</span><span class="n">Rows</span><span class="p">[</span><span class="m">0</span><span class="p">][</span><span class="m">0</span><span class="p">].</span><span class="n">ToString</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Above code will return user id if username supplied. You will see no data adapters or command object.</p>
+
+<p>If you like instead of creating sql datasrouce control in code behind just drag and drop it onto ur aspx page and then in your code behind reference it that will shorten the line of code for fetching data from your database.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/07/16/finally-my-ms-is-completed/">Finally My Ms Is Completed</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-16T08:13:00+05:00" pubdate data-updated="true">Jul 16<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/07/16/finally-my-ms-is-completed/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Ummm whats new in my life?</p>
+
+<p>Well finally my Ms in telecom is completed all courses are clear and i am fleeing like a free bird. Tension free consitration on my job no more travling in triangle from home to office and then from there to university.</p>
+
+<p>Hopefully now i will get some time to write for my blog. If anyone still reading please keep reading</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -410,241 +598,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2007/06/11/safari-on-windows/">Safari on Windows</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-06-11T22:21:00+05:00" pubdate data-updated="true">Jun 11<span>th</span>, 2007</time>
-        
-         | <a href="/blog/2007/06/11/safari-on-windows/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>hi guyz
-believe or not safari famous apple browser new beta version is here for both mac and windows users yes u heard it all right its for windows too i have downloaded it and installed it and it works great for me.</p>
-
-<p>Since i never used it and i am a big fan of firefox i am finding a little difficulty to find the features i am used to with like a home page icon history cleaner,no enter or go button,full screen and how to auto complete url for .com and other domains.</p>
-
-<p>I guess it will take time to get used to with that but one thing is for sure this is very good move made by apple they should launch more products for window users.</p>
-
-<p>Regards
-Najam Sikander Awan</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2007/04/14/wifi-working-on-my-acer-1642-with-suse-102/">Wifi Working on My Acer 1642 With Suse 10.2</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-04-14T17:41:00+05:00" pubdate data-updated="true">Apr 14<span>th</span>, 2007</time>
-        
-         | <a href="/blog/2007/04/14/wifi-working-on-my-acer-1642-with-suse-102/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Hi,</p>
-
-
-<p>phew after lots of search finally my acer 1642 ( <a href="http://najam.wordpress.com/2007/02/13/my-acer-aspire-1642znwlci/">view specifications</a> ) laptop with suse 10.2 communication with Access Point. :D</p>
-
-
-<p>Intel
-PRO/Wireless 2200BG is my wireless card and its detected by suse 10.2
-but as i turn my wifi on led is not lightening up and nothing works&nbsp; as
-i searched&nbsp; i found that suse 10.2 includes driver for my wireless lan
-card but firmware is missing so all i have to do is install proper
-firmware for my card.</p>
-
-
-<p>Some forums mentioned that for suse10.2 and Intel PRO/Wireless 2200BG card proper firmware is version 3 and all i have to do is <a href="http://ipw2200.sourceforge.net/firmware.php">download</a> it and extract it into /lib/firmware.  Reboot.</p>
-
-
-<p>After reboot my led lighten up and i installed some packages like knetworkmanager from yast to manage my wireless connections.</p>
-
-
-<p>Regards<br />Najam Sikander Awan<br /><br /><p class="poweredbyperformancing">Powered by <a href="http://scribefire.com/">ScribeFire</a>.</p></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2007/03/12/vychat-alternative-for-my-suse-102-laptop/">Vychat Alternative for My Suse 10.2 Laptop</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-03-12T10:43:00+05:00" pubdate data-updated="true">Mar 12<span>th</span>, 2007</time>
-        
-         | <a href="/blog/2007/03/12/vychat-alternative-for-my-suse-102-laptop/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p style="margin-bottom:0;" align="left"><font size="3">After switching to suse what I badly missed is vychat a very popular LAN chat client </font></p>
-
-
-<p style="margin-bottom:0;" align="left"><font size="3">that support many useful functions such as file transfer and real time chat capabilities. All of my network users use windows and they communicate and file transfer with each other using vychat so after setting up suse I googled and end up with many vychat clones for unix and linux. Below is the list of some clones</font></p>
-
-
-
-
-<p style="margin-bottom:0;" align="left">
-<ol>
-    <li>
-<p style="margin-bottom:0;" align="left"><font size="3">Trix</font></p>
-</li>
-    <li>
-<p style="margin-bottom:0;" align="left"><font size="3">Vqcc-gtk</font></p>
-</li>
-    <li>
-<p style="margin-bottom:0;" align="left"><font size="3">Vyqchat</font></p>
-</li>
-</ol>
-</p>
-
-
-<p style="margin-bottom:0;" align="left">
-</p>
-
-
-<p style="margin-bottom:0;" align="left"><font size="3">I have successfully installed trix and vqcc-gtk but the only problem with them is that they were not showing any users. So I decided to take help from linux irc help channels and from there a kind guy named yasir told me that i have to either disable firewall or add vychat ports to my susefirewall. </font></p>
-
-
-
-
-<p style="margin-bottom:0;" align="left">
-</p>
-
-
-<p style="margin-bottom:0;" align="left"><font size="3">After disabling firewall i get all of my users in trix and vqcc-gtk. You can turn on and off firewall on suse by typing following commands in shell as root.</font></p>
-
-
-
-
-<p style="margin-bottom:0;" align="left">
-</p>
-
-
-<p align="left"><font size="3"><strong>Turning firewall off</strong>
-rcSuSEfirewall2 stop</font>
-
-</p>
-
-
-<p align="left"><font size="3">
-<strong>turning firewall on </strong>
-rcSuSEfirewall2 start</font>
-</p>
-
-
-<p align="left">&nbsp;</p>
-
-
-<p><form></p>
-
-<p class="enclosure-inner enclosure-photo">
-</p>
-
-
-<p class="enclosure-list">
-</p>
-
-
-<p class="enclosure-item photo-asset last">
-</p>
-
-
-<p class="enclosure-image">                          <a href="http://najam.vox.com/library/photo/6a00c2251d69c9549d00cd97177f0c4cd5.html"><img src="http://a4.vox.com/6a00c2251d69c9549d00cd97177f0c4cd5-200pi" alt="TriX" /></a>
-</p>
-
-
-<p class="enclosure-image-actions"><a href="void 0;" class="command-edit-asset" title="Edit"><img src="http://aka-static.vox.com/.shared:v23.8:vox:en_us/images/icons/enclosure-edit.gif" alt="Edit" /></a><a href="void 0;" class="command-edit-enclosure-format" title="Format"><img src="http://aka-static.vox.com/.shared:v23.8:vox:en_us/images/icons/enclosure-format.gif" alt="Format" /></a><a href="void 0;" class="command-delete-enclosure" title="Remove"><img src="http://aka-static.vox.com/.shared:v23.8:vox:en_us/images/icons/enclosure-remove.gif" alt="Remove" /></a></p>
-
-
-
-
-<p class="enclosure-meta">
-</p>
-
-
-<p class="enclosure-asset-name"><a href="http://najam.vox.com/library/photo/6a00c2251d69c9549d00cd97177f0c4cd5.html" title="TriX">TriX</a></p>
-
-
-<p></form><!-- end enclosure --></p>
-
-<p style="margin-bottom:0;" align="left"></p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/6/">&larr; Older</a>
@@ -662,23 +615,23 @@ rcSuSEfirewall2 start</font>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/05/03/testing-jquery-code-via-yui-test/">Testing jQuery code via YUI Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/03/fetch-public-tweets-of-any-user-using-jquery/">fetch public tweets of any user using jQuery</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/03/mvc3-scafolding-commands/">MVC3 Scaffolding Commands</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/">Microsoft Islamabad Meetup</a>
       </li>
     
       <li class="post">
         <a href="/blog/2013/04/24/attended-bahria-university-job-fair/">Attended Bahria University Job Fair</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/22/playing-with-octopress-blogging/">playing with octopress blogging</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/08/09/upgraded-my-hosting-for-net-4-0/">Upgraded my hosting for .net 4.0</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/08/09/my-pc-is-not-working/">My PC is not working</a>
       </li>
     
   </ul>

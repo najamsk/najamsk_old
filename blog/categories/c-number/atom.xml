@@ -4,7 +4,7 @@
   <title><![CDATA[Category: c# | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/c-number/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2013-04-30T21:53:23+05:00</updated>
+  <updated>2013-05-03T21:24:05+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[MVC3 Scaffolding Commands]]></title>
+    <link href="http://blog.najamsikander.com/blog/2013/05/03/mvc3-scafolding-commands/"/>
+    <updated>2013-05-03T21:06:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2013/05/03/mvc3-scafolding-commands</id>
+    <content type="html"><![CDATA[<p>I had a freelance project that I have decided to do in MVC3 and to found following scaffolding commands very useful to get my Context, repository, controller, controller and views in PM console inside visual studio</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="n">Scaffold</span> <span class="n">DbContext</span> <span class="p">-</span><span class="n">Project</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span> <span class="n">Service</span> <span class="n">Concrete</span><span class="p">.</span><span class="n">CRSContext</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Repository</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">Attachment</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">BigAppContext</span> <span class="p">-</span><span class="n">force</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Controller</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Project</span> <span class="p">-</span><span class="n">ControllerName</span> <span class="n">Projects</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">BigAppContext</span> <span class="p">-</span><span class="n">Repository</span> <span class="p">-</span><span class="n">NoChildItems</span> <span class="p">-</span><span class="n">Force</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Controller</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Service</span> <span class="p">-</span><span class="n">ControllerName</span> <span class="n">Services</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">CRSContext</span> <span class="p">-</span><span class="n">Repository</span> <span class="p">-</span><span class="n">NoChildItems</span> <span class="p">-</span><span class="n">Force</span> <span class="p">-</span><span class="n">Area</span> <span class="n">admin</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Views</span> <span class="p">-</span><span class="n">Controller</span> <span class="n">Tags</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Tag</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[C# Parent Child Reference Variable &amp; Object Casting]]></title>
@@ -578,55 +599,6 @@
 </span><span class='line'>
 </span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[C# Interfaces]]></title>
-    <link href="http://blog.najamsikander.com/blog/2009/06/22/c-interfaces/"/>
-    <updated>2009-06-22T03:37:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2009/06/22/c-interfaces</id>
-    <content type="html"><![CDATA[<p>These parts are taken from msdn and some might be taken from other websites.</p>
-
-<p>An interface can inherit from one or more base interfaces.</p>
-
-<p>When a base type list contains a base class and interfaces, the base class must come first in the list.</p>
-
-<p>A class that implements an interface can explicitly implement members of that interface. An explicitly implemented member cannot be accessed through a class instance, but only through an instance of the interface.</p>
-
-<p>Ref: <a href="http://msdn.microsoft.com/en-us/library/87d83y5b(VS.80).aspx">http://msdn.microsoft.com/en-us/library/87d83y5b(VS.80).aspx</a></p>
-
-<p>Interfaces can consist of methods, properties, events, indexers, or any combination of those four member types. An interface cannot contain fields. Interfaces members are automatically public.</p>
-
-<p>if a base class implements an interface, the derived class inherits that implementation.</p>
-
-<p>Classes and structs can inherit from interfaces in a manner similar to how classes can inherit a base class or struct, with two exceptions:</p>
-
-<ul>
-    <li>A class or struct can inherit more than one interface.</li>
-    <li>When a class or struct inherits an interface, it inherits only the method names and signatures, because the interface itself contains no implementations</li>
-</ul>
-
-
-<p>To implement an interface member, the corresponding member on the class must be public, non-static, and have the same name and signature as the interface member. Properties and indexers on a class can define extra accessors for a property or indexer defined on an interface. For example, an interface may declare a property with a <a id="ctl00_MTContentSelector1_mainContentContainer_ctl06" onclick="javascript:Track('ctl00_MTContentSelector1_mainContentContainer_ctl00|ctl00_MTContentSelector1_mainContentContainer_ctl06',this);" href="http://msdn.microsoft.com/en-us/library/ms228503.aspx">get</a> accessor, but the class implementing the interface can declare the same property with both a <span><span>get</span></span> and <a id="ctl00_MTContentSelector1_mainContentContainer_ctl07" onclick="javascript:Track('ctl00_MTContentSelector1_mainContentContainer_ctl00|ctl00_MTContentSelector1_mainContentContainer_ctl07',this);" href="http://msdn.microsoft.com/en-us/library/ms228368.aspx">set</a> accessor. However, if the property or indexer uses explicit implementation, the accessors must match.</p>
-
-<p>Interfaces can inherit other interfaces. It is possible for a class to inherit an interface multiple times, through base classes or interfaces it inherits. In this case, the class can only implement the interface one time, if it is declared as part of the new class. If the inherited interface is not declared as part of the new class, its implementation is provided by the base class that declared it. It is possible for a base class to implement interface members using virtual members; in that case, the class inheriting the interface can change the interface behavior by overriding the virtual members. For more information about virtual members</p>
-
-<p>Overview:</p>
-
-<p>An interface has the following properties:</p>
-
-<ul>
-    <li>An interface is like an abstract base class: any non-abstract type inheriting the interface must implement all its members.</li>
-    <li>An interface cannot be instantiated directly.</li>
-    <li>Interfaces can contain events, indexers, methods and properties.</li>
-    <li>Interfaces contain no implementation of methods.</li>
-    <li>Classes and structs can inherit from more than one interface.</li>
-    <li>An interface can itself inherit from multiple interfaces.</li>
-</ul>
-
-
-<p>Ref: <a href="http://msdn.microsoft.com/en-us/library/ms173156.aspx">http://msdn.microsoft.com/en-us/library/ms173156.aspx</a></p>
 ]]></content>
   </entry>
   

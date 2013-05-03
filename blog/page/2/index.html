@@ -9,26 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-function flashswf(file, target, Width, Height, ID) {
-var flashvars = {}
-var params = {
-//allowfullscreen:& &hellip;">
+  <meta name="description" content="I read this article http://bit.ly/16pqBm and find out the power of overflow that is when you set it to a value it creates a new block formatting &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -96,6 +77,149 @@ var params = {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/12/08/css-overflow-benefit/">CSS Overflow Benefit</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-12-08T02:13:00+05:00" pubdate data-updated="true">Dec 8<span>th</span>, 2010</time>
+        
+         | <a href="/blog/2010/12/08/css-overflow-benefit/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I read this article <a href="http://bit.ly/16pqBm">http://bit.ly/16pqBm</a> and find out the power of overflow that is when you set it to a value it creates a new block formatting context in simple word that means non floated element’s content will not flow around the floated element instead will get narrower.</p>
+
+<p>PS. Width should not be mentioned for non floated content so it can get narrower.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/12/06/get-running-jquery-version/">Get Running Jquery Version</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-12-06T02:12:00+05:00" pubdate data-updated="true">Dec 6<span>th</span>, 2010</time>
+        
+         | <a href="/blog/2010/12/06/get-running-jquery-version/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Few weeks back I came across a page that has multiple jquery versions referenced in it and I had no idea which jquery version is actually running. So after little bit of googling I find following solution.</p>
+
+<div>
+<pre>//Returns "1.3.1"
+$().jquery;
+
+//Returns "1.3.1"
+jQuery.fn.jquery;</pre>
+</div>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/12/03/css-diet-plan/">CSS Diet Plan - First Step to Object Oriented Css</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-12-03T01:59:00+05:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2010</time>
+        
+         | <a href="/blog/2010/12/03/css-diet-plan/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I was wondering how to count the rules of my style sheets after little googling i discovered two ways one is through vim and second is through a command line tool called grep.</p>
+
+<p>If you are a vim user and your css file is loaded into vim in command mode enter following command</p>
+
+<pre>:%s/font-size//gn</pre>
+
+
+<p>output will be the number of type font-size is used in your css file.</p>
+
+<p>for grep open your command line and enter</p>
+
+<pre>cat style.css | grep -c font-size</pre>
+
+
+<p>output will be the count of font-size occurrences in style.css.</p>
+
+<p>you can use *.css as well for all the css files in current directory.</p>
+
+<p>Other then these methods I am really interested to use a tool which will take a file and list all the rules along with their count in code.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -614,326 +738,6 @@ removes somebranch</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/07/08/design-patterns-iterator/">Design Patterns &#8211; Iterator</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-07-08T06:16:00+05:00" pubdate data-updated="true">Jul 8<span>th</span>, 2009</time>
-        
-         | <a href="/blog/2009/07/08/design-patterns-iterator/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Hi Guys,</p>
-
-<p>I am reading more on design patterns from this  <a title="Read This" href="http://msdn.microsoft.com/en-us/magazine/cc188707.aspx" target="_blank">article</a> after little theory session here is working code. Key point was all of the collection classes in the System.Collections namespace, as well as arrays, implement IEnumerable and can therefore be iterated over.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-</pre></td><td class='code'><pre><code class='c#'><span class='line'>   <span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
-</span><span class='line'>  <span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">namespace</span> <span class="nn">ConsoleApplication1</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>  <span class="k">class</span> <span class="nc">IteratorPattern</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="kt">int</span><span class="p">[]</span> <span class="n">values</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[]</span> <span class="p">{</span> <span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">5</span> <span class="p">};</span>
-</span><span class='line'>  <span class="n">IEnumerator</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">int</span><span class="p">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">e</span> <span class="p">=</span> <span class="p">((</span><span class="n">IEnumerable</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">int</span><span class="p">&amp;</span><span class="n">gt</span><span class="p">;)</span><span class="n">values</span><span class="p">).</span><span class="n">GetEnumerator</span><span class="p">();</span>
-</span><span class='line'>  <span class="k">while</span> <span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">MoveNext</span><span class="p">())</span>
-</span><span class='line'>  <span class="p">{</span>
-</span><span class='line'>  <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">ToString</span><span class="p">()</span> <span class="p">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/07/08/observer-pattern-with-net/">Observer Pattern With .net</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-07-08T05:11:00+05:00" pubdate data-updated="true">Jul 8<span>th</span>, 2009</time>
-        
-         | <a href="/blog/2009/07/08/observer-pattern-with-net/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Hi folks,</p>
-
-<p>Well I am investigating design patterns by reading an <a title="Read This" href="http://msdn.microsoft.com/en-us/magazine/cc188707.aspx" target="_blank">article</a> so after reading a bit I thought it would be nice if I write some code and test it.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-<span class='line-number'>60</span>
-<span class='line-number'>61</span>
-<span class='line-number'>62</span>
-<span class='line-number'>63</span>
-<span class='line-number'>64</span>
-<span class='line-number'>65</span>
-<span class='line-number'>66</span>
-<span class='line-number'>67</span>
-<span class='line-number'>68</span>
-<span class='line-number'>69</span>
-<span class='line-number'>70</span>
-<span class='line-number'>71</span>
-</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-</span><span class='line'><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
-</span><span class='line'><span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
-</span><span class='line'><span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">namespace</span> <span class="nn">ConsoleApplication1</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="k">class</span> <span class="nc">Program</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="c1">/// &amp;lt;summary&amp;gt;</span>
-</span><span class='line'><span class="c1">/// Product Class</span>
-</span><span class='line'><span class="c1">/// &amp;lt;/summary&amp;gt;</span>
-</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">Product</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="k">public</span> <span class="k">delegate</span> <span class="k">void</span> <span class="nf">NameChangeEventHandler</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">);</span>
-</span><span class='line'><span class="k">public</span> <span class="k">event</span> <span class="n">NameChangeEventHandler</span> <span class="n">NameChanged</span><span class="p">;</span>
-</span><span class='line'><span class="k">private</span> <span class="kt">string</span> <span class="n">_name</span><span class="p">;</span>
-</span><span class='line'><span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="k">get</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="k">return</span> <span class="n">_name</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="k">set</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">_name</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
-</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">NameChanged</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">NameChanged</span><span class="p">(</span><span class="m">5</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">public</span> <span class="nf">Product</span><span class="p">(</span><span class="kt">string</span> <span class="n">name</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">Name</span> <span class="p">=</span> <span class="n">name</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">PrintName</span><span class="p">()</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;ProductName={0}&quot;</span><span class="p">,</span> <span class="n">Name</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">/// &amp;lt;summary&amp;gt;</span>
-</span><span class='line'><span class="c1">/// Test Class</span>
-</span><span class='line'><span class="c1">/// &amp;lt;/summary&amp;gt;</span>
-</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">Test</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="k">public</span> <span class="nf">Test</span><span class="p">(</span><span class="n">Product</span> <span class="n">P</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">P</span><span class="p">.</span><span class="n">NameChanged</span> <span class="p">+=</span> <span class="k">new</span> <span class="n">Product</span><span class="p">.</span><span class="n">NameChangeEventHandler</span><span class="p">(</span><span class="n">ChangeDetected</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">ChangeDetected</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;change found,argument passed is {0}&quot;</span><span class="p">,</span><span class="n">a</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">Product</span> <span class="n">p</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Product</span><span class="p">(</span><span class="s">&quot;najam awan&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="n">p</span><span class="p">.</span><span class="n">PrintName</span><span class="p">();</span>
-</span><span class='line'><span class="n">Test</span> <span class="n">t</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Test</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
-</span><span class='line'><span class="n">p</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="s">&quot;najaf awan&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="n">p</span><span class="p">.</span><span class="n">PrintName</span><span class="p">();</span>
-</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/07/08/gmail-out-of-beta/">Gmail Out of Beta</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-07-08T01:22:00+05:00" pubdate data-updated="true">Jul 8<span>th</span>, 2009</time>
-        
-         | <a href="/blog/2009/07/08/gmail-out-of-beta/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Finally Gmaiil is out of beta :) login to your inbox and see yourself.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -951,23 +755,23 @@ removes somebranch</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/05/03/testing-jquery-code-via-yui-test/">Testing jQuery code via YUI Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/03/fetch-public-tweets-of-any-user-using-jquery/">fetch public tweets of any user using jQuery</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/03/mvc3-scafolding-commands/">MVC3 Scaffolding Commands</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/">Microsoft Islamabad Meetup</a>
       </li>
     
       <li class="post">
         <a href="/blog/2013/04/24/attended-bahria-university-job-fair/">Attended Bahria University Job Fair</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/22/playing-with-octopress-blogging/">playing with octopress blogging</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/08/09/upgraded-my-hosting-for-net-4-0/">Upgraded my hosting for .net 4.0</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/08/09/my-pc-is-not-working/">My PC is not working</a>
       </li>
     
   </ul>

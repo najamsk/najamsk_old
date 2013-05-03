@@ -9,7 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="I was reading how to write events for your custom classes so after reading a little I thought give it a shot and created this sample code. Below code &hellip;">
+  <meta name="description" content="Hi Guys, I am reading more on design patterns from this  article after little theory session here is working code. Key point was all of the &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,326 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/07/08/design-patterns-iterator/">Design Patterns &#8211; Iterator</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-07-08T06:16:00+05:00" pubdate data-updated="true">Jul 8<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/07/08/design-patterns-iterator/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hi Guys,</p>
+
+<p>I am reading more on design patterns from this  <a title="Read This" href="http://msdn.microsoft.com/en-us/magazine/cc188707.aspx" target="_blank">article</a> after little theory session here is working code. Key point was all of the collection classes in the System.Collections namespace, as well as arrays, implement IEnumerable and can therefore be iterated over.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'>   <span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">namespace</span> <span class="nn">ConsoleApplication1</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>  <span class="k">class</span> <span class="nc">IteratorPattern</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kt">int</span><span class="p">[]</span> <span class="n">values</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[]</span> <span class="p">{</span> <span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">5</span> <span class="p">};</span>
+</span><span class='line'>  <span class="n">IEnumerator</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">int</span><span class="p">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">e</span> <span class="p">=</span> <span class="p">((</span><span class="n">IEnumerable</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="kt">int</span><span class="p">&amp;</span><span class="n">gt</span><span class="p">;)</span><span class="n">values</span><span class="p">).</span><span class="n">GetEnumerator</span><span class="p">();</span>
+</span><span class='line'>  <span class="k">while</span> <span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">MoveNext</span><span class="p">())</span>
+</span><span class='line'>  <span class="p">{</span>
+</span><span class='line'>  <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">ToString</span><span class="p">()</span> <span class="p">+</span> <span class="s">&quot; &quot;</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/07/08/observer-pattern-with-net/">Observer Pattern With .net</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-07-08T05:11:00+05:00" pubdate data-updated="true">Jul 8<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/07/08/observer-pattern-with-net/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hi folks,</p>
+
+<p>Well I am investigating design patterns by reading an <a title="Read This" href="http://msdn.microsoft.com/en-us/magazine/cc188707.aspx" target="_blank">article</a> so after reading a bit I thought it would be nice if I write some code and test it.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+</span><span class='line'><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+</span><span class='line'><span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+</span><span class='line'><span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">namespace</span> <span class="nn">ConsoleApplication1</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">Program</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="c1">/// &amp;lt;summary&amp;gt;</span>
+</span><span class='line'><span class="c1">/// Product Class</span>
+</span><span class='line'><span class="c1">/// &amp;lt;/summary&amp;gt;</span>
+</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">Product</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">public</span> <span class="k">delegate</span> <span class="k">void</span> <span class="nf">NameChangeEventHandler</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">);</span>
+</span><span class='line'><span class="k">public</span> <span class="k">event</span> <span class="n">NameChangeEventHandler</span> <span class="n">NameChanged</span><span class="p">;</span>
+</span><span class='line'><span class="k">private</span> <span class="kt">string</span> <span class="n">_name</span><span class="p">;</span>
+</span><span class='line'><span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">get</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">return</span> <span class="n">_name</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">set</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">_name</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">NameChanged</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">NameChanged</span><span class="p">(</span><span class="m">5</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">public</span> <span class="nf">Product</span><span class="p">(</span><span class="kt">string</span> <span class="n">name</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Name</span> <span class="p">=</span> <span class="n">name</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">PrintName</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;ProductName={0}&quot;</span><span class="p">,</span> <span class="n">Name</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">/// &amp;lt;summary&amp;gt;</span>
+</span><span class='line'><span class="c1">/// Test Class</span>
+</span><span class='line'><span class="c1">/// &amp;lt;/summary&amp;gt;</span>
+</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">Test</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">public</span> <span class="nf">Test</span><span class="p">(</span><span class="n">Product</span> <span class="n">P</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">P</span><span class="p">.</span><span class="n">NameChanged</span> <span class="p">+=</span> <span class="k">new</span> <span class="n">Product</span><span class="p">.</span><span class="n">NameChangeEventHandler</span><span class="p">(</span><span class="n">ChangeDetected</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">ChangeDetected</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;change found,argument passed is {0}&quot;</span><span class="p">,</span><span class="n">a</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Product</span> <span class="n">p</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Product</span><span class="p">(</span><span class="s">&quot;najam awan&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="n">p</span><span class="p">.</span><span class="n">PrintName</span><span class="p">();</span>
+</span><span class='line'><span class="n">Test</span> <span class="n">t</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Test</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+</span><span class='line'><span class="n">p</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="s">&quot;najaf awan&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">p</span><span class="p">.</span><span class="n">PrintName</span><span class="p">();</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/07/08/gmail-out-of-beta/">Gmail Out of Beta</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-07-08T01:22:00+05:00" pubdate data-updated="true">Jul 8<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/07/08/gmail-out-of-beta/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Finally Gmaiil is out of beta :) login to your inbox and see yourself.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -612,267 +932,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/02/03/consuming-aspnet-webservice-with-jquery/">Consuming asp.net Webservice With Jquery</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-02-03T05:22:00+05:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2009</time>
-        
-         | <a href="/blog/2009/02/03/consuming-aspnet-webservice-with-jquery/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>hi guys,</p>
-
-<p>Well I like to share one more experiment with you that is how to call a webservice from your javascript(jquery). For that again you need to have an asp.net ajax enable website.</p>
-
-<p>Lets first examine what are the requiments for webservice if we need to call it from javascript well after having asp.net ajax enable website first is you should mark your serverice as [ScriptService] what it does it will make all the methods/functions of your webservice to be accessable from javascript code and it also serialise your webservice response using JASON .</p>
-
-<p>By default asp.net web services use soap for communication scriptservice marker make your webservice to use JASON.</p>
-
-<p>Now lets defien the method in our webservice which we want to be accessable by our javascript code.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="na">[WebMethod]</span>
-</span><span class='line'><span class="k">public</span> <span class="kt">int</span> <span class="nf">AddingNumbers</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="k">return</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>That&#8217;s it now lets move to client side code.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="err">$</span><span class="p">(</span><span class="n">function</span><span class="p">(){</span>
-</span><span class='line'><span class="err">$</span><span class="p">.</span><span class="n">ajax</span><span class="p">({</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">type</span><span class="p">:</span> <span class="s">&quot;POST&quot;</span><span class="p">,</span>
-</span><span class='line'><span class="n">url</span><span class="p">:</span> <span class="s">&quot;WebServices/MyWS.asmx/AddingNumbers&quot;</span><span class="p">,</span>
-</span><span class='line'><span class="n">data</span><span class="p">:</span> <span class="s">&quot;{&#39;a&#39;:&#39;1&#39;,&#39;b&#39;:&#39;2&#39;}&quot;</span><span class="p">,</span>
-</span><span class='line'><span class="n">contentType</span><span class="p">:</span> <span class="s">&quot;application/json; charset=utf-8&quot;</span><span class="p">,</span>
-</span><span class='line'><span class="n">dataType</span><span class="p">:</span> <span class="s">&quot;json&quot;</span><span class="p">,</span>
-</span><span class='line'><span class="n">success</span><span class="p">:</span> <span class="n">function</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'><span class="c1">// Do something interesting here.</span>
-</span><span class='line'><span class="n">alert</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span>
-</span><span class='line'><span class="p">},</span>
-</span><span class='line'><span class="n">error</span><span class="p">:</span> <span class="n">function</span><span class="p">()</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">alert</span><span class="p">(</span><span class="s">&quot;Request can&#39;t made using ajax&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="p">});</span><span class="c1">//ajax ends here</span>
-</span><span class='line'><span class="p">});</span><span class="c1">// document ready ends here</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>In above javasrcipt code we are making an ajax post request we set  contentType to &#8220;application/json; charset=utf-8&#8221; and  dataType to &#8220;json&#8221; and passing a=1,b=2 as are data input parameters note that varriables name are same as verriables declared in webservice&#8217;s function <strong>AddingNumbers </strong>input parameters.</p>
-
-<p>Please read articles from following links to know more and have a strong background.</p>
-
-<p>http://encosia.com/2008/03/27/using-jquery-to-consume-aspnet-json-web-services/</p>
-
-<p>http://encosia.com/2008/06/05/3-mistakes-to-avoid-when-using-jquery-with-aspnet-ajax/</p>
-
-<p>http://www.keithrousseau.com/blog/2008/05/using-jquery-json-with-aspnet/</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/02/03/highlight-your-code-with-wordpress/">Highlight Your Code With Wordpress</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-02-03T05:00:00+05:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2009</time>
-        
-         | <a href="/blog/2009/02/03/highlight-your-code-with-wordpress/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Hi guys,
-Today I have installed a new wordpress plugin called <strong>&#8220;Code Snippet&#8221;</strong> and it support code highlight for many languages try this out you would love it. <a title="Download code snippet" href="http://wordpress.org/extend/plugins/codesnippet-20/" target="_blank">Download it now</a>.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/02/03/calling-aspnet-page-methods-with-jquery/">Calling asp.net Page Methods With Jquery</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-02-03T04:23:00+05:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2009</time>
-        
-         | <a href="/blog/2009/02/03/calling-aspnet-page-methods-with-jquery/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Hi guyz,</p>
-
-<p>Today I am sharing how to call asp.net web page code behind methods from client side javascript in my case it will be jquery.</p>
-
-<p>Let us divide this into two parts the server side and client side on server side we have to write a function or page method.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="na">[WebMethod]</span>
-</span><span class='line'><span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">AddStrings</span><span class="p">(</span><span class="kt">string</span> <span class="n">a</span><span class="p">,</span> <span class="kt">string</span> <span class="n">b</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="k">return</span> <span class="kt">string</span><span class="p">.</span><span class="n">Format</span><span class="p">(</span><span class="s">&quot;my friend answer is {0}&quot;</span><span class="p">,</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Note that we mark  our AddStrings function as WebMethod and its public and static this is the basic requirement for the funtion if you want to call it from javascript or jquery.</p>
-
-<p>Function itlsef is pretty simple all it does takes two strings join them and return the result.  Thats all we need to write for server side.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
-</span><span class='line'><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">type</span><span class="o">:</span> <span class="s2">&quot;POST&quot;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">url</span><span class="o">:</span> <span class="s2">&quot;Default.aspx/AddStrings&quot;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">data</span><span class="o">:</span> <span class="s2">&quot;{a:&#39;najam &#39;,b:&#39;sikander&#39;}&quot;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">contentType</span><span class="o">:</span> <span class="s2">&quot;application/json; charset=utf-8&quot;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">dataType</span><span class="o">:</span> <span class="s2">&quot;json&quot;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">msg</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'><span class="c1">// Do something interesting here.</span>
-</span><span class='line'><span class="nx">alert</span><span class="p">(</span><span class="nx">msg</span><span class="p">);</span>
-</span><span class='line'><span class="p">},</span>
-</span><span class='line'><span class="nx">error</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="nx">alert</span><span class="p">(</span><span class="s2">&quot;Request can&#39;t made using ajax&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="p">});</span><span class="c1">//ajax ends here</span>
-</span><span class='line'><span class="p">});</span><span class="c1">// document ready ends here</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Client side has its own requirements first its better to use post request if you want any result back from server and then you should use json as communication medium and for that we need to set content type and data type as</p>
-
-<p>contentType: &#8220;application/json; charset=utf-8&#8221;,  dataType: &#8220;json&#8221; and we should supply the input  data with our request. Please note that if your server side function expecting two parameters named &#8220;a&#8221; and &#8220;b&#8221; you should name your javascript input parameters same as server side parameters thats why in data section we have same name of the varriables. Example data: &#8220;{a:&#8217;najam &#8216;,b:&#8217;sikander&#8217;}&#8221;,</p>
-
-<p>Last requirement is your web.config should have entries for asp.net ajax sections. If you are building from scrath you can shoose asp.net ajax website as template when starting new website.</p>
-
-<p>Please read articles from following links to know more and have a strong background.</p>
-
-<p>http://encosia.com/2008/03/27/using-jquery-to-consume-aspnet-json-web-services/</p>
-
-<p>http://encosia.com/2008/06/05/3-mistakes-to-avoid-when-using-jquery-with-aspnet-ajax/</p>
-
-<p>http://www.keithrousseau.com/blog/2008/05/using-jquery-json-with-aspnet/</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -890,23 +949,23 @@ Today I have installed a new wordpress plugin called <strong>&#8220;Code Snippet
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/05/03/testing-jquery-code-via-yui-test/">Testing jQuery code via YUI Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/03/fetch-public-tweets-of-any-user-using-jquery/">fetch public tweets of any user using jQuery</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/03/mvc3-scafolding-commands/">MVC3 Scaffolding Commands</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/">Microsoft Islamabad Meetup</a>
       </li>
     
       <li class="post">
         <a href="/blog/2013/04/24/attended-bahria-university-job-fair/">Attended Bahria University Job Fair</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/22/playing-with-octopress-blogging/">playing with octopress blogging</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/08/09/upgraded-my-hosting-for-net-4-0/">Upgraded my hosting for .net 4.0</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/08/09/my-pc-is-not-working/">My PC is not working</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: javascript | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2013-04-30T21:53:23+05:00</updated>
+  <updated>2013-05-03T21:24:05+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Testing jQuery code via YUI Test]]></title>
+    <link href="http://blog.najamsikander.com/blog/2013/05/03/testing-jquery-code-via-yui-test/"/>
+    <updated>2013-05-03T21:22:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2013/05/03/testing-jquery-code-via-yui-test</id>
+    <content type="html"><![CDATA[<p>The term TDD is not new to me I heard it quite often but never took time to go into details until last few days. I have been checking stuff from YUI team and liked their YUI test framework for now ,but in future i might switch to qUint (jquery testing framework) as I am big fan of jQuery and using it daily.
+There are different version of YUI like 2.0,3.0 and standalone version of YUI test that has no dependency over YUI framework according to yui theater video.
+So for learning purpose I have written few lines of jQuery to set color of a paragraph on mouse hover. I wrote a test using YUI; in the test I simulate mouse hover event and then checking the paragraph css color properties using jquery :).
+You can view the code at <a href="http://snipplr.com/view/47746/testing-js-code/">http://snipplr.com/view/47746/testing-js-code/</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Get Running Jquery Version]]></title>
@@ -97,19 +109,6 @@ jQuery.fn.jquery;</pre>
 <div style="padding: 5px 0 12px;">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/paul.irish">Paul Irish</a>.</div>
 </div>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[JavaScript, 5 ways to call a function]]></title>
-    <link href="http://blog.najamsikander.com/blog/2009/06/29/javascript-5-ways-to-call-a-function/"/>
-    <updated>2009-06-29T00:29:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2009/06/29/javascript-5-ways-to-call-a-function</id>
-    <content type="html"><![CDATA[<p>Hello</p>
-
-<p>I have came across to this wonderful blog post that show in details how to call javascript functions using different ways its a must read article even if you are not good in javascript please read article at</p>
-
-<p><a href="http://devlicio.us/blogs/sergio_pereira/archive/2009/02/09/javascript-5-ways-to-call-a-function.aspx" target="_self">http://devlicio.us/blogs/sergio_pereira/archive/2009/02/09/javascript-5-ways-to-call-a-function.aspx</a></p>
 ]]></content>
   </entry>
   

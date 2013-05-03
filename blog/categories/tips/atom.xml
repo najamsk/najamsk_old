@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tips | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/tips/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2013-04-30T21:53:23+05:00</updated>
+  <updated>2013-05-03T21:24:05+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Testing jQuery code via YUI Test]]></title>
+    <link href="http://blog.najamsikander.com/blog/2013/05/03/testing-jquery-code-via-yui-test/"/>
+    <updated>2013-05-03T21:22:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2013/05/03/testing-jquery-code-via-yui-test</id>
+    <content type="html"><![CDATA[<p>The term TDD is not new to me I heard it quite often but never took time to go into details until last few days. I have been checking stuff from YUI team and liked their YUI test framework for now ,but in future i might switch to qUint (jquery testing framework) as I am big fan of jQuery and using it daily.
+There are different version of YUI like 2.0,3.0 and standalone version of YUI test that has no dependency over YUI framework according to yui theater video.
+So for learning purpose I have written few lines of jQuery to set color of a paragraph on mouse hover. I wrote a test using YUI; in the test I simulate mouse hover event and then checking the paragraph css color properties using jquery :).
+You can view the code at <a href="http://snipplr.com/view/47746/testing-js-code/">http://snipplr.com/view/47746/testing-js-code/</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MVC3 Scaffolding Commands]]></title>
+    <link href="http://blog.najamsikander.com/blog/2013/05/03/mvc3-scafolding-commands/"/>
+    <updated>2013-05-03T21:06:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2013/05/03/mvc3-scafolding-commands</id>
+    <content type="html"><![CDATA[<p>I had a freelance project that I have decided to do in MVC3 and to found following scaffolding commands very useful to get my Context, repository, controller, controller and views in PM console inside visual studio</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="n">Scaffold</span> <span class="n">DbContext</span> <span class="p">-</span><span class="n">Project</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span> <span class="n">Service</span> <span class="n">Concrete</span><span class="p">.</span><span class="n">CRSContext</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Repository</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">Attachment</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">BigAppContext</span> <span class="p">-</span><span class="n">force</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Controller</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Project</span> <span class="p">-</span><span class="n">ControllerName</span> <span class="n">Projects</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">BigAppContext</span> <span class="p">-</span><span class="n">Repository</span> <span class="p">-</span><span class="n">NoChildItems</span> <span class="p">-</span><span class="n">Force</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Controller</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Service</span> <span class="p">-</span><span class="n">ControllerName</span> <span class="n">Services</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">CRSContext</span> <span class="p">-</span><span class="n">Repository</span> <span class="p">-</span><span class="n">NoChildItems</span> <span class="p">-</span><span class="n">Force</span> <span class="p">-</span><span class="n">Area</span> <span class="n">admin</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Views</span> <span class="p">-</span><span class="n">Controller</span> <span class="n">Tags</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Tag</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[CSS Overflow benefit]]></title>
@@ -66,27 +99,6 @@ jQuery.fn.jquery;</pre>
 <p>you can use *.css as well for all the css files in current directory.</p>
 
 <p>Other then these methods I am really interested to use a tool which will take a file and list all the rules along with their count in code.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Show Detailed ASP.NET Error Messages to Developers]]></title>
-    <link href="http://blog.najamsikander.com/blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers/"/>
-    <updated>2009-06-24T02:56:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers</id>
-    <content type="html"><![CDATA[<p>If ELMAH project will not work for me I will implement this error handling technique from scott gu blog.</p>
-
-<p><a title="Read Post" href="http://weblogs.asp.net/scottgu/archive/2006/08/12/Tip_2F00_Trick_3A00_-Show-Detailed-Error-Messages-to-Developers.aspx" target="_self">Read the post now</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Highlight your code with wordpress]]></title>
-    <link href="http://blog.najamsikander.com/blog/2009/02/03/highlight-your-code-with-wordpress/"/>
-    <updated>2009-02-03T05:00:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2009/02/03/highlight-your-code-with-wordpress</id>
-    <content type="html"><![CDATA[<p>Hi guys,
-Today I have installed a new wordpress plugin called <strong>"Code Snippet"</strong> and it support code highlight for many languages try this out you would love it. <a title="Download code snippet" href="http://wordpress.org/extend/plugins/codesnippet-20/" target="_blank">Download it now</a>.</p>
 ]]></content>
   </entry>
   

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: MVC | Najam Sikander Awan]]></title>
+  <link href="http://blog.najamsikander.com/blog/categories/mvc/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-05-03T21:24:05+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MVC3 Scaffolding Commands]]></title>
+    <link href="http://blog.najamsikander.com/blog/2013/05/03/mvc3-scafolding-commands/"/>
+    <updated>2013-05-03T21:06:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2013/05/03/mvc3-scafolding-commands</id>
+    <content type="html"><![CDATA[<p>I had a freelance project that I have decided to do in MVC3 and to found following scaffolding commands very useful to get my Context, repository, controller, controller and views in PM console inside visual studio</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="n">Scaffold</span> <span class="n">DbContext</span> <span class="p">-</span><span class="n">Project</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span> <span class="n">Service</span> <span class="n">Concrete</span><span class="p">.</span><span class="n">CRSContext</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Repository</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">Attachment</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">BigAppContext</span> <span class="p">-</span><span class="n">force</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Controller</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Project</span> <span class="p">-</span><span class="n">ControllerName</span> <span class="n">Projects</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">BigAppContext</span> <span class="p">-</span><span class="n">Repository</span> <span class="p">-</span><span class="n">NoChildItems</span> <span class="p">-</span><span class="n">Force</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Controller</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Service</span> <span class="p">-</span><span class="n">ControllerName</span> <span class="n">Services</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">CRSContext</span> <span class="p">-</span><span class="n">Repository</span> <span class="p">-</span><span class="n">NoChildItems</span> <span class="p">-</span><span class="n">Force</span> <span class="p">-</span><span class="n">Area</span> <span class="n">admin</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Views</span> <span class="p">-</span><span class="n">Controller</span> <span class="n">Tags</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Tag</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+</feed>
