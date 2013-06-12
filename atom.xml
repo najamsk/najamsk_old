@@ -4,7 +4,7 @@
   <title><![CDATA[Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2013-06-12T10:50:56+05:00</updated>
+  <updated>2013-06-12T11:05:34+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -152,6 +152,21 @@
 </span><span class='line'><span class="n">Scaffold</span> <span class="n">Views</span> <span class="p">-</span><span class="n">Controller</span> <span class="n">Tags</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Tag</span>
 </span></code></pre></td></tr></table></div></figure>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Nook Simple Touch: E-Reader]]></title>
+    <link href="http://blog.najamsikander.com/blog/2013/04/24/nook-simple-touch-e-reader/"/>
+    <updated>2013-04-24T23:03:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2013/04/24/nook-simple-touch-e-reader</id>
+    <content type="html"><![CDATA[<p>I like to read books mostly on programming topics in my opinion  the best reading experience is in form of print but it&#8217;s expensive and hard to mange so after reading books on laptop I googled for a economic e-book reader.</p>
+
+<p>I was puzzled between kindle and nook devices after reading reviews and considering the price I went for <a href="http://www.barnesandnoble.com/p/nook-simple-touch-barnes-noble/1102344735">Nook Simple Touch</a> other than price its battery life was big plus to me.</p>
+
+<p>I have large collection of free e-books few of them are living in my nook and I am reading them experience is not that great as compare to actual book but it gets the job done.</p>
+
+<p>One problem I faced just after I get nook was screen damage. It started with a line in bottom and than it gradually expand I don&#8217;t how it got damage. Since nook doesn&#8217;t operate in Pakistan so I had to sent it back to usa via my friends and they claim warranty and they send it back to me using some other friend.</p>
 ]]></content>
   </entry>
   
@@ -679,35 +694,6 @@ jQuery.fn.jquery;</pre>
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[git tracking and deleting remote branches]]></title>
-    <link href="http://blog.najamsikander.com/blog/2009/07/20/git-tracking-and-deleting-remote-branches/"/>
-    <updated>2009-07-20T09:11:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2009/07/20/git-tracking-and-deleting-remote-branches</id>
-    <content type="html"><![CDATA[<p><strong>List the remote branches that exist for a repository you have cloned:</strong></p>
-
-<pre><code>git remote show origin
-</code></pre>
-
-<p><strong>Create a local branch that tracks one of the remote branches and then use that local branch:</strong></p>
-
-<pre><code>git checkout --track -b name_of_local_branch origin/name_of_remote_branch
-</code></pre>
-
-<p>If you have not done a pull since someone else created the remote branch, you may first need to do:</p>
-
-<pre><code>git fetch
-</code></pre>
-
-<p><strong>Remove <em>branch</em> from <em>repo</em>.</strong></p>
-
-<p><code>git push {repo} :heads/{branch}</code></p>
-
-<p>Ex: <code>git push origin :somebranch</code>
-removes somebranch</p>
 ]]></content>
   </entry>
   
