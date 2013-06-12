@@ -9,7 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="Previously I have told you about my ubuntu setup running via virtual box. I was happily working till ubuntu 11 launched and I decided to upgrade to &hellip;">
+  <meta name="description" content="Well for some experiments that involved git and curl I was coming across the windows problem I was trying to make my way using cygwin but after few &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,59 +77,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/05/07/update-to-ubuntu-11-messed-it-all/">Update to Ubuntu 11 Messed It All</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-05-07T13:46:00+05:00" pubdate data-updated="true">May 7<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/05/07/update-to-ubuntu-11-messed-it-all/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Previously I have told you about my ubuntu setup running via virtual box. I was happily working till ubuntu 11 launched and I decided to upgrade to version 11, after update vbox is not doing fullscreen worse part is compiz also not working. It seems may be driver for my ati hd 4890 not working properly.</p>
-
-
-<p>Possible fixes that I can think includes:</p>
-
-
-<p>$ freshly install ubuntu 11 using virtual box.<br>
-$ install ubuntu 10.10 again</p>
-
-
-<p>If anyone knows any better solution please post.</p>
-
-
-<p>Regards,<br>
-Najam sikander awan</p>
-
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -769,6 +716,64 @@ jQuery.fn.jquery;</pre>
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/07/20/git-tracking-and-deleting-remote-branches/">Git Tracking and Deleting Remote Branches</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-07-20T09:11:00+05:00" pubdate data-updated="true">Jul 20<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/07/20/git-tracking-and-deleting-remote-branches/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><strong>List the remote branches that exist for a repository you have cloned:</strong></p>
+
+<pre><code>git remote show origin
+</code></pre>
+
+<p><strong>Create a local branch that tracks one of the remote branches and then use that local branch:</strong></p>
+
+<pre><code>git checkout --track -b name_of_local_branch origin/name_of_remote_branch
+</code></pre>
+
+<p>If you have not done a pull since someone else created the remote branch, you may first need to do:</p>
+
+<pre><code>git fetch
+</code></pre>
+
+<p><strong>Remove <em>branch</em> from <em>repo</em>.</strong></p>
+
+<p><code>git push {repo} :heads/{branch}</code></p>
+
+<p>Ex: <code>git push origin :somebranch</code>
+removes somebranch</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -802,7 +807,7 @@ jQuery.fn.jquery;</pre>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/04/24/nook-simple-touch-e-reader/">Nook Simple Touch: E-Reader</a>
+        <a href="/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/">Microsoft Islamabad Meetup</a>
       </li>
     
   </ul>

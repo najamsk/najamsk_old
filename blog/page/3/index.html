@@ -9,7 +9,8 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="List the remote branches that exist for a repository you have cloned: git remote show origin Create a local branch that tracks one of the remote &hellip;">
+  <meta name="description" content="I have uploaded another static website that might become an e-commerce website in future. http://circa-wear.com/circa/
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,64 +78,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/07/20/git-tracking-and-deleting-remote-branches/">Git Tracking and Deleting Remote Branches</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-07-20T09:11:00+05:00" pubdate data-updated="true">Jul 20<span>th</span>, 2009</time>
-        
-         | <a href="/blog/2009/07/20/git-tracking-and-deleting-remote-branches/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><strong>List the remote branches that exist for a repository you have cloned:</strong></p>
-
-<pre><code>git remote show origin
-</code></pre>
-
-<p><strong>Create a local branch that tracks one of the remote branches and then use that local branch:</strong></p>
-
-<pre><code>git checkout --track -b name_of_local_branch origin/name_of_remote_branch
-</code></pre>
-
-<p>If you have not done a pull since someone else created the remote branch, you may first need to do:</p>
-
-<pre><code>git fetch
-</code></pre>
-
-<p><strong>Remove <em>branch</em> from <em>repo</em>.</strong></p>
-
-<p><code>git push {repo} :heads/{branch}</code></p>
-
-<p>Ex: <code>git push origin :somebranch</code>
-removes somebranch</p>
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -889,6 +832,105 @@ removes somebranch</p>
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/06/08/bll-business-layer-with-linq/">BLL - Business Layer With Linq</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-06-08T07:04:00+05:00" pubdate data-updated="true">Jun 8<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/06/08/bll-business-layer-with-linq/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hello guys,</p>
+
+<p>This is my first Bll class that is using linq and returning objects to presentation layer. Main data component class is ItemsDT which contain another skeleton class &#8220;ItemGridView&#8221; for custom view of items data table. &#8220;ItemGridView&#8221; contains basically have the fields that i want to show in my presentation layer. Note that items datatable has many column which can be reterived by calling AllItems() method.</p>
+
+<p>If you just want to list all the methods into your table that is also included into your linq to sql file then you can set your method return type to list collection of the type that specified in dbml file (linq to sql). For example if you add items table into your linq to sql you will have a new type or class called Item. From your linq code you can return all the rows into the table as objects. Now these objects you can have as list collection of type Items so your method can return List&lt;Items&gt; and this return list will bind to any databound control like grid view with ease.</p>
+
+<p>Problem arises if someone say only show selective columns then if you try to select few colums you will see visual studio provding you hint that objects return from the linq query will be of annonymous type. So to tackle this you have two options either spicy your return varriable of  object type or write a skelton class that have all those columns you want to have from your datable. Below is the code with skelton class approch its easy to guess skelton class will define a type and visual studio will not alert anymore by saying your objects are of annonymous type.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">ItemsDT</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="na">[System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)]</span>
+</span><span class='line'><span class="k">public</span> <span class="k">static</span> <span class="n">List</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">Items</span><span class="p">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">AllItems</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">DBDataContext</span> <span class="n">db</span> <span class="p">=</span> <span class="k">new</span> <span class="n">DBDataContext</span><span class="p">();</span>
+</span><span class='line'><span class="k">return</span> <span class="p">(</span><span class="k">from</span> <span class="n">t</span> <span class="k">in</span> <span class="n">db</span><span class="p">.</span><span class="n">Items</span> <span class="k">select</span> <span class="n">t</span><span class="p">).</span><span class="n">ToList</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">Items</span><span class="p">&amp;</span><span class="n">gt</span><span class="p">;();</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">ItemGridView</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">public</span> <span class="kt">int</span> <span class="n">itemID</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="k">public</span> <span class="kt">string</span> <span class="n">itemName</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="k">public</span> <span class="kt">string</span> <span class="n">itemgroupName</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="na">[System.ComponentModel.DataObjectMethod(System.ComponentModel.DataObjectMethodType.Select)]</span>
+</span><span class='line'><span class="k">public</span> <span class="k">static</span> <span class="n">List</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">ItemGridView</span><span class="p">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">ListSubGroups_Admin</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">return</span> <span class="p">(</span><span class="k">from</span> <span class="n">t</span> <span class="k">in</span> <span class="n">AllItems</span><span class="p">()</span> <span class="k">select</span> <span class="k">new</span> <span class="n">ItemGridView</span> <span class="p">{</span>
+</span><span class='line'><span class="n">itemID</span> <span class="p">=</span> <span class="n">t</span><span class="p">.</span><span class="n">sgID</span><span class="p">,</span>
+</span><span class='line'><span class="n">itemName</span> <span class="p">=</span> <span class="n">t</span><span class="p">.</span><span class="n">sgName</span><span class="p">,</span>
+</span><span class='line'><span class="n">itemgroupName</span> <span class="p">=</span> <span class="n">t</span><span class="p">.</span><span class="n">Group</span><span class="p">.</span><span class="n">gName</span>
+</span><span class='line'><span class="p">}).</span><span class="n">ToList</span><span class="p">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="n">ItemGridView</span><span class="p">&amp;</span><span class="n">gt</span><span class="p">;();</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -922,7 +964,7 @@ removes somebranch</p>
       </li>
     
       <li class="post">
-        <a href="/blog/2013/04/24/nook-simple-touch-e-reader/">Nook Simple Touch: E-Reader</a>
+        <a href="/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/">Microsoft Islamabad Meetup</a>
       </li>
     
   </ul>
