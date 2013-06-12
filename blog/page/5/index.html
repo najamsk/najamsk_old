@@ -9,7 +9,12 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="hey guyz how are you ?? Me back with my sqldatasource  series. Today i will show you how to fire insert query using sqldatasource control into code &hellip;">
+  <meta name="description" content="Hey guyz today i will show you how to fire delete query by using our beloved control sqldatasource. Here is the code 1
+2
+3
+4
+5
+SqlDataSource &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +82,61 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/07/17/sql-data-srouce-control-deleting-data-from-database/">Sql Data Srouce Control Deleting Data From Database</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-17T05:23:00+05:00" pubdate data-updated="true">Jul 17<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/07/17/sql-data-srouce-control-deleting-data-from-database/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hey guyz today i will show you how to fire delete query by using our beloved control sqldatasource.</p>
+
+<p>Here is the code</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="n">SqlDataSource</span> <span class="n">myDbSource22</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlDataSource</span><span class="p">();</span>
+</span><span class='line'><span class="n">myDbSource22</span><span class="p">.</span><span class="n">ConnectionString</span> <span class="p">=</span> <span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">ConnectionStrings</span><span class="p">[</span><span class="s">&quot;lalConnectionString&quot;</span><span class="p">].</span><span class="n">ConnectionString</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource22</span><span class="p">.</span><span class="n">ProviderName</span> <span class="p">=</span> <span class="s">&quot;System.Data.SqlClient&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource22</span><span class="p">.</span><span class="n">DeleteCommand</span> <span class="p">=</span> <span class="s">&quot;delete from ProductsGroups where pid = &quot;</span> <span class="p">+</span> <span class="n">productId</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource22</span><span class="p">.</span><span class="n">Delete</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>All it does it deletes all the rows for a given productID from table productgroups. Simple right ;)</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -559,45 +619,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2007/06/16/real-firefox/">Real Firefox</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-06-16T18:35:00+05:00" pubdate data-updated="true">Jun 16<span>th</span>, 2007</time>
-        
-         | <a href="/blog/2007/06/16/real-firefox/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p align="center"><a href="http://www.najamsikander.com/blog/?attachment_id=53" rel="attachment wp-att-53" title="Real Firefox"><img src="http://najam.files.wordpress.com/2007/06/firefox5.jpg" alt="Real Firefox" /></a></p>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/6/">&larr; Older</a>
@@ -615,6 +636,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/06/12/screen-calipers/">screen calipers</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/05/03/testing-jquery-code-via-yui-test/">Testing jQuery code via YUI Test</a>
       </li>
     
@@ -628,10 +653,6 @@
     
       <li class="post">
         <a href="/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/">Microsoft Islamabad Meetup</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/04/24/attended-bahria-university-job-fair/">Attended Bahria University Job Fair</a>
       </li>
     
   </ul>

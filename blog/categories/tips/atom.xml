@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tips | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/tips/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2013-05-03T21:41:41+05:00</updated>
+  <updated>2013-06-12T10:50:56+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[screen calipers]]></title>
+    <link href="http://blog.najamsikander.com/blog/2013/06/12/screen-calipers/"/>
+    <updated>2013-06-12T10:43:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2013/06/12/screen-calipers</id>
+    <content type="html"><![CDATA[<p>I have used this tool for my web projects where clients do require pixel perfect html for all browsers. Since this tool helped me a lot in past I thought to share it with all.</p>
+
+<p><img src="https://lh6.googleusercontent.com/-awHPpGChMBg/UbgL-OsTlkI/AAAAAAAACYU/sw_7SPJts2s/w946-h512-no/screencalipers.png" alt="screen calipers" /></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Testing jQuery code via YUI Test]]></title>
@@ -173,24 +184,6 @@
     <content type="html"><![CDATA[<p>I read this article <a href="http://bit.ly/16pqBm">http://bit.ly/16pqBm</a> and find out the power of overflow that is when you set it to a value it creates a new block formatting context in simple word that means non floated element’s content will not flow around the floated element instead will get narrower.</p>
 
 <p>PS. Width should not be mentioned for non floated content so it can get narrower.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Get Running Jquery Version]]></title>
-    <link href="http://blog.najamsikander.com/blog/2010/12/06/get-running-jquery-version/"/>
-    <updated>2010-12-06T02:12:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2010/12/06/get-running-jquery-version</id>
-    <content type="html"><![CDATA[<p>Few weeks back I came across a page that has multiple jquery versions referenced in it and I had no idea which jquery version is actually running. So after little bit of googling I find following solution.</p>
-
-<div>
-<pre>//Returns "1.3.1"
-$().jquery;
-
-//Returns "1.3.1"
-jQuery.fn.jquery;</pre>
-</div>
-
 ]]></content>
   </entry>
   
