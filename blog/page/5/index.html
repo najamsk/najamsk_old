@@ -9,12 +9,14 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="Hey guyz today i will show you how to fire delete query by using our beloved control sqldatasource. Here is the code 1
+  <meta name="description" content="hey guyz finally we have to learn how to update our tables in database so only for you guys here is my sample code 1
 2
 3
 4
 5
-SqlDataSource &hellip;">
+6
+7
+string giftId = &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -82,6 +84,63 @@ SqlDataSource &hellip;">
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/07/17/sql-data-srouce-control-updating-data-from-database/">Sql Data Srouce Control Updating Data From Database</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-17T05:32:00+05:00" pubdate data-updated="true">Jul 17<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/07/17/sql-data-srouce-control-updating-data-from-database/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hey guyz finally we have to learn how to update our tables in database so only for you guys here is my sample code</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="kt">string</span> <span class="n">giftId</span> <span class="p">=</span> <span class="n">GridView1</span><span class="p">.</span><span class="n">SelectedRow</span><span class="p">.</span><span class="n">Cells</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">Text</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span> <span class="c1">//getting an id</span>
+</span><span class='line'><span class="n">SqlDataSource</span> <span class="n">myDbSource</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlDataSource</span><span class="p">();</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ConnectionString</span> <span class="p">=</span> <span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">ConnectionStrings</span><span class="p">[</span><span class="s">&quot;ConnectionString&quot;</span><span class="p">].</span><span class="n">ConnectionString</span><span class="p">;</span>
+</span><span class='line'><span class="c1">//myDbSource.InsertCommand = &quot;update gifts set giftActivate=1 where giftId=&quot; + Entrydate + &quot;)&quot;;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">UpdateCommand</span> <span class="p">=</span> <span class="s">&quot;update gifts set giftActivate=&#39;1&#39; where giftId=&quot;</span> <span class="p">+</span> <span class="n">giftId</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ProviderName</span> <span class="p">=</span> <span class="s">&quot;System.Data.SqlClient&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">Update</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Well this code set giftActive flag to 1 for all the rows matched with giftid value.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -560,58 +619,6 @@ SqlDataSource &hellip;">
 
 
   <div class="entry-content"><p>With wordpress 2.3 codename dexter wordpress bloggers finally have their hands on most waited features <strong>&#8220;Tags&#8221;. </strong>Tags are very much like categories but little convenient  then categories. Tags come handy when you are posting and you can put tags onto your post by just typing tag name and comma separate them whereas if you want post under multiple categories you have to select the check boxes for that.<span style="font-size:12pt;font-family:'Times New Roman';">  </span></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2007/09/30/finally-my-own-domain/">Finally I Have My Own Domain</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-09-30T19:47:00+05:00" pubdate data-updated="true">Sep 30<span>th</span>, 2007</time>
-        
-         | <a href="/blog/2007/09/30/finally-my-own-domain/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Hi guyz,</p>
-
-<p>After many days I am back and back for good :) recentlly i purchased a domain name and hosting package, so that i can have my own <a href="http://najamsikander.com" title="Visit my Website now.">website</a> and I want my settings persistent which was not possible in the case of free hosting like in my case my hosting provider remove the mysql database support.</p>
-
-<p>Can&#8217;t tell you how happy I am after getting my <a href="http://najamsikander.com" title="Visit my Website now.">website</a> up and running its currently in beta state I will design it from scratch as time permits and planning to use table less design. With my <a href="http://najamsikander.com" title="Visit my Website now.">website</a> I have configured a wordpress blog and currently its using a template that I pick form internet after designing my main <a href="http://najamsikander.com" title="Visit my Website now.">website</a> I will design my own wordpress template.</p>
-
-<p>Below is the screen shot of my new <a href="http://najamsikander.com" title="Visit my Website now.">website</a>.</p>
-
-<p><a href="http://www.najamsikander.com" title="Visit my website"><img src="http://najam.files.wordpress.com/2007/09/najam-sikander-awan.thumbnail.png" alt="My website pic" height="183" width="285" /></a></p>
-
-<p>my <a href="http://blog.najamsikander.com" title="Visit my blog now">blog</a> snapshot is give below</p>
-
-<p><a href="http://blog.najamsikander.com" title="first blog design"><img src="http://najam.files.wordpress.com/2007/09/najam-sikander-awan-blog.thumbnail.png" alt="first blog design" height="310" width="254" /></a></p>
-
-<p>please visit <a href="http://www.najamsikander.com" title="Visit my website now.">http://www.najamsikander.com</a>  and for blog please visit <a href="http://www.blog.najamsikander.com" title="Visit my blog now">http://www.blog.najamsikander.com</a></p>
 </div>
   
   
