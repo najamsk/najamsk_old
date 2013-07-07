@@ -367,12 +367,18 @@
         <lastmod>2013-06-12T10:50:33+05:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://blog.najamsikander.com/blog/2013/07/07/empower-your-outlook-with-powershell/
+        </loc>
+        <lastmod>2013-07-07T19:49:27+05:00</lastmod>
+    </url>
+    <url>
         <loc>http://blog.najamsikander.com/blog/archives/</loc>
-        <lastmod>2013-06-12T11:22:44+05:00</lastmod>
+        <lastmod>2013-07-07T19:49:27+05:00</lastmod>
     </url>
     <url>
         <loc>http://blog.najamsikander.com/</loc>
-        <lastmod>2013-06-12T11:22:44+05:00</lastmod>
+        <lastmod>2013-07-07T19:49:27+05:00</lastmod>
     </url>
     <url>
         <loc>http://blog.najamsikander.com/robots.txt</loc>
