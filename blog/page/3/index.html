@@ -9,7 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="I have been clearing my concepts regarding inheritance and investigating if parent reference variable can point to child class object and vice &hellip;">
+  <meta name="description" content="List the remote branches that exist for a repository you have cloned: git remote show origin Create a local branch that tracks one of the remote &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,204 +77,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/01/25/221/">C# Parent Child Reference Variable &amp; Object Casting</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-01-25T04:28:00+05:00" pubdate data-updated="true">Jan 25<span>th</span>, 2010</time>
-        
-         | <a href="/blog/2010/01/25/221/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I have been clearing my concepts regarding inheritance and investigating if parent reference variable can point to child class object and vice versa.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-<span class='line-number'>39</span>
-<span class='line-number'>40</span>
-<span class='line-number'>41</span>
-<span class='line-number'>42</span>
-<span class='line-number'>43</span>
-<span class='line-number'>44</span>
-<span class='line-number'>45</span>
-<span class='line-number'>46</span>
-<span class='line-number'>47</span>
-<span class='line-number'>48</span>
-<span class='line-number'>49</span>
-<span class='line-number'>50</span>
-<span class='line-number'>51</span>
-<span class='line-number'>52</span>
-<span class='line-number'>53</span>
-<span class='line-number'>54</span>
-<span class='line-number'>55</span>
-<span class='line-number'>56</span>
-<span class='line-number'>57</span>
-<span class='line-number'>58</span>
-<span class='line-number'>59</span>
-<span class='line-number'>60</span>
-</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
-</span><span class='line'><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
-</span><span class='line'><span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">namespace</span> <span class="nn">oops</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">A</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="k">public</span> <span class="nf">A</span><span class="p">()</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;A&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;===============================&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">Add</span><span class="p">()</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Add&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">B</span> <span class="p">:</span> <span class="n">A</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="k">public</span> <span class="nf">B</span><span class="p">()</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;B&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;===============================&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">Sub</span><span class="p">()</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Sub&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">class</span> <span class="nc">Program</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">A</span> <span class="n">objA</span> <span class="p">=</span> <span class="k">new</span> <span class="n">A</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">B</span> <span class="n">objB</span> <span class="p">=</span> <span class="n">objA</span> <span class="k">as</span> <span class="n">B</span><span class="p">;</span>
-</span><span class='line'><span class="n">A</span> <span class="n">objAB</span> <span class="p">=</span> <span class="k">new</span> <span class="n">B</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">B</span> <span class="n">objBB</span> <span class="p">=</span> <span class="n">objAB</span> <span class="k">as</span> <span class="n">B</span><span class="p">;</span>
-</span><span class='line'><span class="n">objBB</span><span class="p">.</span><span class="n">Sub</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">objB</span> <span class="k">is</span> <span class="n">B</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">objB</span><span class="p">.</span><span class="n">Add</span><span class="p">();</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="k">else</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;objB is not B&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">//objA.Add();</span>
-</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p><strong><span style="text-decoration: underline;">Out put of the code is</span></strong></p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="n">A</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">===============================</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">A</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">===============================</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">B</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">===============================</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">Sub</span>
-</span><span class='line'>
-</span><span class='line'><span class="n">objB</span> <span class="k">is</span> <span class="n">not</span> <span class="n">B</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -1034,6 +836,52 @@ removes somebranch</p>
 
 
 <p>Ref: <a href="http://msdn.microsoft.com/en-us/library/ms173156.aspx">http://msdn.microsoft.com/en-us/library/ms173156.aspx</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/06/09/git-version-control-guides/">Git Version Control Guides</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-06-09T22:37:00+05:00" pubdate data-updated="true">Jun 9<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/06/09/git-version-control-guides/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hi</p>
+
+<p>I have been reading these guides for a while to learn git I thought i should share them with rest of the gang.</p>
+
+<p><a href="http://www.sourcemage.org/Git_Guide">http://www.sourcemage.org/Git_Guide</a></p>
+
+<p><a href="http://www.kernel.org/pub/software/scm/git/docs/everyday.html">http://www.kernel.org/pub/software/scm/git/docs/everyday.html</a></p>
+
+<p><a href="http://spheredev.org/wiki/Git_for_the_lazy">http://spheredev.org/wiki/Git_for_the_lazy</a></p>
 </div>
   
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2013-07-07T19:49:40+05:00</updated>
+  <updated>2013-07-07T19:57:32+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -216,15 +216,6 @@
 <p>These sessions will be free and you can contribute in exercise files, topics and provide your valuable feedback.</p>
 
 <p><img src="http://sphotos-g.ak.fbcdn.net/hphotos-ak-ash3/533426_455628001181077_168154726_n.jpg" alt="bahria job expo" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Nook Simple Touch E Reader]]></title>
-    <link href="http://blog.najamsikander.com/blog/2013/04/24/nook-simple-touch-e-reader/"/>
-    <updated>2013-04-24T00:00:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2013/04/24/nook-simple-touch-e-reader</id>
-    <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
@@ -527,6 +518,175 @@ jQuery.fn.jquery;</pre>
     <content type="html"><![CDATA[<div id="__ss_1984008" style="width: 425px;"><strong><a title="jQuery Anti-Patterns for Performance &amp; Compression" href="http://www.slideshare.net/paul.irish/perfcompression">jQuery Anti-Patterns for Performance &amp; Compression</a></strong><object id="__sse1984008" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="425" height="355" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="src" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=perfcompression-090911091939-phpapp01&amp;stripped_title=perfcompression" /><param name="name" value="__sse1984008" /><param name="allowfullscreen" value="true" /><embed id="__sse1984008" type="application/x-shockwave-flash" width="425" height="355" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=perfcompression-090911091939-phpapp01&amp;stripped_title=perfcompression" name="__sse1984008" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 <div style="padding: 5px 0 12px;">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/paul.irish">Paul Irish</a>.</div>
 </div>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[C# Parent Child Reference Variable &amp; Object Casting]]></title>
+    <link href="http://blog.najamsikander.com/blog/2010/01/25/221/"/>
+    <updated>2010-01-25T04:28:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2010/01/25/221</id>
+    <content type="html"><![CDATA[<p>I have been clearing my concepts regarding inheritance and investigating if parent reference variable can point to child class object and vice versa.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+</span><span class='line'><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+</span><span class='line'><span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">namespace</span> <span class="nn">oops</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">A</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">public</span> <span class="nf">A</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;A&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;===============================&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">Add</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Add&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">B</span> <span class="p">:</span> <span class="n">A</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">public</span> <span class="nf">B</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;B&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;===============================&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">Sub</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Sub&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">Program</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">A</span> <span class="n">objA</span> <span class="p">=</span> <span class="k">new</span> <span class="n">A</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">B</span> <span class="n">objB</span> <span class="p">=</span> <span class="n">objA</span> <span class="k">as</span> <span class="n">B</span><span class="p">;</span>
+</span><span class='line'><span class="n">A</span> <span class="n">objAB</span> <span class="p">=</span> <span class="k">new</span> <span class="n">B</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">B</span> <span class="n">objBB</span> <span class="p">=</span> <span class="n">objAB</span> <span class="k">as</span> <span class="n">B</span><span class="p">;</span>
+</span><span class='line'><span class="n">objBB</span><span class="p">.</span><span class="n">Sub</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">objB</span> <span class="k">is</span> <span class="n">B</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">objB</span><span class="p">.</span><span class="n">Add</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">else</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;objB is not B&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">//objA.Add();</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong><span style="text-decoration: underline;">Out put of the code is</span></strong></p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="n">A</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">===============================</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">A</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">===============================</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">B</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">===============================</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">Sub</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">objB</span> <span class="k">is</span> <span class="n">not</span> <span class="n">B</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
 
 ]]></content>
   </entry>
