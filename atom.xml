@@ -4,7 +4,7 @@
   <title><![CDATA[Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2013-07-07T19:57:32+05:00</updated>
+  <updated>2013-07-07T23:58:53+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -19,6 +19,18 @@
     <updated>2013-07-07T19:49:00+05:00</updated>
     <id>http://blog.najamsikander.com/blog/2013/07/07/empower-your-outlook-with-powershell</id>
     <content type="html"><![CDATA[<p>I will soon share code with the world</p>
+
+<div><script src='https://gist.github.com/5944505.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+
+<p>Above code is used to select a folder under your outlook inbox in my case its jun 2013 which comes under EmailLog which is under my inbox. I have saved the result of this function into a variable. That would be passed into second function for html creation.</p>
+
+<div><script src='https://gist.github.com/5944515.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+
+
+<p>This funciton will take email objects and wrap html mark around thema before saving them into a html file.</p>
 ]]></content>
   </entry>
   
