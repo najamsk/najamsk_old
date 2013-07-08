@@ -7,7 +7,9 @@ categories:
 ---
 
 
-I will soon share code with the world
+I needed to genrate an email log that contains every email from our clients these normally stored in their seprate folder. One way was to copy and paste email headers and body into a word document. Second was to use powershell and got all the emails using some script.
+
+After playing a little with powershell and google few of its basic I have completed my task with powershell.
 
 {% gist 5944505 %}
 
