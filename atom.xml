@@ -4,7 +4,7 @@
   <title><![CDATA[Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2013-07-07T23:58:53+05:00</updated>
+  <updated>2013-07-25T15:27:23+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -18,7 +18,9 @@
     <link href="http://blog.najamsikander.com/blog/2013/07/07/empower-your-outlook-with-powershell/"/>
     <updated>2013-07-07T19:49:00+05:00</updated>
     <id>http://blog.najamsikander.com/blog/2013/07/07/empower-your-outlook-with-powershell</id>
-    <content type="html"><![CDATA[<p>I will soon share code with the world</p>
+    <content type="html"><![CDATA[<p>I needed to genrate an email log that contains every email from our clients these normally stored in their seprate folder. One way was to copy and paste email headers and body into a word document. Second was to use powershell and got all the emails using some script.</p>
+
+<p>After playing a little with powershell and google few of its basic I have completed my task with powershell.</p>
 
 <div><script src='https://gist.github.com/5944505.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
