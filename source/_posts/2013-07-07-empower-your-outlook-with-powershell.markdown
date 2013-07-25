@@ -18,6 +18,3 @@ Above code is used to select a folder under your outlook inbox in my case its ju
 {% gist 5944515 %}
 
 This funciton will take email objects and wrap html mark around thema before saving them into a html file.
-
-
-
