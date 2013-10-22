@@ -4,6 +4,10 @@ title: "empower your outlook with powershell"
 date: 2013-07-07 19:49
 comments: true
 categories: 
+- powershell
+- hacking
+- Emails
+- Productivity
 ---
 
 
@@ -17,4 +21,4 @@ Above code is used to select a folder under your outlook inbox in my case its ju
 
 {% gist 5944515 %}
 
-This funciton will take email objects and wrap html mark around thema before saving them into a html file.
+This function will take email objects and wrap html mark around them before saving them into a html file.
