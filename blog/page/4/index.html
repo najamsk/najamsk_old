@@ -9,7 +9,8 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="Hello guys, This is my first Bll class that is using linq and returning objects to presentation layer. Main data component class is ItemsDT which &hellip;">
+  <meta name="description" content="If ELMAH project will not work for me I will implement this error handling technique from scott gu blog. Read the post now.
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +78,170 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers/">Show Detailed ASP.NET Error Messages to Developers</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-06-24T02:56:00+05:00" pubdate data-updated="true">Jun 24<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/06/24/show-detailed-asp-net-error-messages-to-developers/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If ELMAH project will not work for me I will implement this error handling technique from scott gu blog.</p>
+
+<p><a title="Read Post" href="http://weblogs.asp.net/scottgu/archive/2006/08/12/Tip_2F00_Trick_3A00_-Show-Detailed-Error-Messages-to-Developers.aspx" target="_self">Read the post now</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/06/22/c-interfaces/">C# Interfaces</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-06-22T03:37:00+05:00" pubdate data-updated="true">Jun 22<span>nd</span>, 2009</time>
+        
+         | <a href="/blog/2009/06/22/c-interfaces/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>These parts are taken from msdn and some might be taken from other websites.</p>
+
+<p>An interface can inherit from one or more base interfaces.</p>
+
+<p>When a base type list contains a base class and interfaces, the base class must come first in the list.</p>
+
+<p>A class that implements an interface can explicitly implement members of that interface. An explicitly implemented member cannot be accessed through a class instance, but only through an instance of the interface.</p>
+
+<p>Ref: <a href="http://msdn.microsoft.com/en-us/library/87d83y5b(VS.80).aspx">http://msdn.microsoft.com/en-us/library/87d83y5b(VS.80).aspx</a></p>
+
+<p>Interfaces can consist of methods, properties, events, indexers, or any combination of those four member types. An interface cannot contain fields. Interfaces members are automatically public.</p>
+
+<p>if a base class implements an interface, the derived class inherits that implementation.</p>
+
+<p>Classes and structs can inherit from interfaces in a manner similar to how classes can inherit a base class or struct, with two exceptions:</p>
+
+<ul>
+    <li>A class or struct can inherit more than one interface.</li>
+    <li>When a class or struct inherits an interface, it inherits only the method names and signatures, because the interface itself contains no implementations</li>
+</ul>
+
+
+<p>To implement an interface member, the corresponding member on the class must be public, non-static, and have the same name and signature as the interface member. Properties and indexers on a class can define extra accessors for a property or indexer defined on an interface. For example, an interface may declare a property with a <a id="ctl00_MTContentSelector1_mainContentContainer_ctl06" onclick="javascript:Track('ctl00_MTContentSelector1_mainContentContainer_ctl00|ctl00_MTContentSelector1_mainContentContainer_ctl06',this);" href="http://msdn.microsoft.com/en-us/library/ms228503.aspx">get</a> accessor, but the class implementing the interface can declare the same property with both a <span><span>get</span></span> and <a id="ctl00_MTContentSelector1_mainContentContainer_ctl07" onclick="javascript:Track('ctl00_MTContentSelector1_mainContentContainer_ctl00|ctl00_MTContentSelector1_mainContentContainer_ctl07',this);" href="http://msdn.microsoft.com/en-us/library/ms228368.aspx">set</a> accessor. However, if the property or indexer uses explicit implementation, the accessors must match.</p>
+
+<p>Interfaces can inherit other interfaces. It is possible for a class to inherit an interface multiple times, through base classes or interfaces it inherits. In this case, the class can only implement the interface one time, if it is declared as part of the new class. If the inherited interface is not declared as part of the new class, its implementation is provided by the base class that declared it. It is possible for a base class to implement interface members using virtual members; in that case, the class inheriting the interface can change the interface behavior by overriding the virtual members. For more information about virtual members</p>
+
+<p>Overview:</p>
+
+<p>An interface has the following properties:</p>
+
+<ul>
+    <li>An interface is like an abstract base class: any non-abstract type inheriting the interface must implement all its members.</li>
+    <li>An interface cannot be instantiated directly.</li>
+    <li>Interfaces can contain events, indexers, methods and properties.</li>
+    <li>Interfaces contain no implementation of methods.</li>
+    <li>Classes and structs can inherit from more than one interface.</li>
+    <li>An interface can itself inherit from multiple interfaces.</li>
+</ul>
+
+
+<p>Ref: <a href="http://msdn.microsoft.com/en-us/library/ms173156.aspx">http://msdn.microsoft.com/en-us/library/ms173156.aspx</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/06/09/git-version-control-guides/">Git Version Control Guides</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-06-09T22:37:00+05:00" pubdate data-updated="true">Jun 9<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/06/09/git-version-control-guides/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hi</p>
+
+<p>I have been reading these guides for a while to learn git I thought i should share them with rest of the gang.</p>
+
+<p><a href="http://www.sourcemage.org/Git_Guide">http://www.sourcemage.org/Git_Guide</a></p>
+
+<p><a href="http://www.kernel.org/pub/software/scm/git/docs/everyday.html">http://www.kernel.org/pub/software/scm/git/docs/everyday.html</a></p>
+
+<p><a href="http://spheredev.org/wiki/Git_for_the_lazy">http://spheredev.org/wiki/Git_for_the_lazy</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -588,130 +753,6 @@ select * from country
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/01/27/tdf-solutions/">Tdfsolutions.com</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-01-27T02:50:00+05:00" pubdate data-updated="true">Jan 27<span>th</span>, 2009</time>
-        
-         | <a href="/blog/2009/01/27/tdf-solutions/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>hi guys</p>
-
-<p>well I have been learning html and css and my company let me do some slicing for them so here is my first offical html/css project please visit <a title="Tdf Solutions" href="http://www.tdfsolutions.com" target="_blank">http://www.tdfsolutions.com</a> .</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/01/27/wordpress-wamp-and-permalinks/">Wordpress Wamp and Permalinks</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-01-27T02:28:00+05:00" pubdate data-updated="true">Jan 27<span>th</span>, 2009</time>
-        
-         | <a href="/blog/2009/01/27/wordpress-wamp-and-permalinks/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>hi everyone</p>
-
-<p>I am posting after a long time guess I was super busy :) well first things first I have installed wordpress 2.7 on my hosting and imported all the data from my blog running at http://najam.wordpress.com.</p>
-
-<p>Now a days I am busy with developing themes with wordpress and since I am stuck with windows wamp is a choice for me. One problem I run into is if I try to put custom structure for my permalinks to have more seo friendly blog it fails to show the post or page :( . Anyone know whats the problem? And even if I do this for this blog you reading it would fail to show the page/post that includes the front page.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2008/09/27/google-chrome-bookmarks/">Google Chrome Bookmarks?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-09-27T17:38:00+05:00" pubdate data-updated="true">Sep 27<span>th</span>, 2008</time>
-        
-         | <a href="/blog/2008/09/27/google-chrome-bookmarks/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>hi friends</p>
-
-<p>You know google chrome is out and everyone was so excited about that including me as a very passionate user i tried to do all of the things now in chrome i have imported my firefox settings (bookmarks) into chrome. All bookmarks are showing good I liked that but shortly I needed to perform a simple task in chrome that is &#8220;searching for a bookmarked site among all the bookmarks i have&#8221; and till now i don&#8217;t know how to search for my bookmark in mighty chrome.</p>
-
-<p>So if anyone of you know how to seach bookmarks in chrome please let me know. And one more thing what about tags how can I tag my pages?</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/5/">&larr; Older</a>
@@ -729,6 +770,10 @@ select * from country
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/22/mongodb-setup-on-windows-8/">MongoDB Setup On Windows 8</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/07/07/empower-your-outlook-with-powershell/">empower your outlook with powershell</a>
       </li>
     
@@ -742,10 +787,6 @@ select * from country
     
       <li class="post">
         <a href="/blog/2013/05/03/fetch-public-tweets-of-any-user-using-jquery/">fetch public tweets of any user using jQuery</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/03/mvc3-scafolding-commands/">MVC3 Scaffolding Commands</a>
       </li>
     
   </ul>

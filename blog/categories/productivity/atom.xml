@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Productivity | Najam Sikander Awan]]></title>
+  <link href="http://blog.najamsikander.com/blog/categories/productivity/atom.xml" rel="self"/>
+  <link href="http://blog.najamsikander.com/"/>
+  <updated>2013-10-22T15:45:50+05:00</updated>
+  <id>http://blog.najamsikander.com/</id>
+  <author>
+    <name><![CDATA[najam sikander awan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[empower your outlook with powershell]]></title>
+    <link href="http://blog.najamsikander.com/blog/2013/07/07/empower-your-outlook-with-powershell/"/>
+    <updated>2013-07-07T19:49:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2013/07/07/empower-your-outlook-with-powershell</id>
+    <content type="html"><![CDATA[<p>I needed to genrate an email log that contains every email from our clients these normally stored in their seprate folder. One way was to copy and paste email headers and body into a word document. Second was to use powershell and got all the emails using some script.</p>
+
+<p>After playing a little with powershell and google few of its basic I have completed my task with powershell.</p>
+
+<p><div><script src='https://gist.github.com/5944505.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p>
+
+<p>Above code is used to select a folder under your outlook inbox in my case its jun 2013 which comes under EmailLog which is under my inbox. I have saved the result of this function into a variable. That would be passed into second function for html creation.</p>
+
+<p><div><script src='https://gist.github.com/5944515.js'></script>
+<noscript><pre><code></code></pre></noscript></div>
+</p>
+
+<p>This function will take email objects and wrap html mark around them before saving them into a html file.</p>
+]]></content>
+  </entry>
+  
+</feed>

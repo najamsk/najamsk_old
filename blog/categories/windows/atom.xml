@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: windows | Najam Sikander Awan]]></title>
+  <title><![CDATA[Category: Windows | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/windows/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2013-07-25T15:30:53+05:00</updated>
+  <updated>2013-10-22T15:45:50+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -14,43 +14,116 @@
 
   
   <entry>
-    <title type="html"><![CDATA[reinstall grub after installing windows xp]]></title>
-    <link href="http://blog.najamsikander.com/blog/2007/03/01/reinstall-grub-after-installing-windows-xp/"/>
-    <updated>2007-03-01T11:15:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2007/03/01/reinstall-grub-after-installing-windows-xp</id>
-    <content type="html"><![CDATA[<p>hi guyz</p>
+    <title type="html"><![CDATA[MongoDB Setup On Windows 8]]></title>
+    <link href="http://blog.najamsikander.com/blog/2013/10/22/mongodb-setup-on-windows-8/"/>
+    <updated>2013-10-22T13:15:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2013/10/22/mongodb-setup-on-windows-8</id>
+    <content type="html"><![CDATA[<p>I am very much into learning new tools and burning hours of my life trying to figure them out. To track whats new on development horizon and technology I tend to keep my eyes on sessions, conferences, blogs and screen-casts.</p>
 
-<p>Today i formated my c drive in which vista was installed and i replaced it with windows xp after installing win xp into my c drive my boot loader is disappeared as expected.</p>
+<p>In past few days I wanted to explore no-sql options two in particular RavenDB and MongoDB. I have successfully completed the environment setup for raven but didn't use it in any project until now. On the other hand I have built a new website for my current employer using MVC4 and MongoDB. I have learned a a lot and in this blog post I will share few commands to setup mongoDB and deploy it on remote server.</p>
 
-<p>Fixing  grub  (boot loader) is simple insert your suse 10.2 dvd or frist cd into drive and boot from it choose "Rescue System" after loading some stuff system will take you into command prompt</p>
+<p>You can download MongoDb zip file from http://www.mongodb.org/downloads. I picked 64bit version of it.</p>
 
-<ol>
-    <li>first I list all of my partitions by using fdisk -l
-<pre style="border:1px inset;overflow:auto;width:98%;height:210px;margin:0;padding:3px;">  Device Boot      Start         End      Blocks   Id  System
-/dev/sda1   *           1        2167    17406396    7  Fat32
-/dev/sda2            5822       12161    50926050    f  W95 Ext'd (LBA)
-/dev/sda3            2168        5821    29350755    c  W95 FAT32 (LBA)
-/dev/sda5            5822        6076     2048256    b  W95 FAT32
-/dev/sda6            6077        6270     1558273+  82  Linux swap
-/dev/sda7            6271        7837    12586896   83  Linux
-/dev/sda8            7838       12161    34732498+  83  Linux</pre>
-</li>
-    <li>Then enter grub</li>
-    <li>root (hd0,6)</li>
-    <li>setup (hd0)</li>
-    <li>quit</li>
-    <li>reboot :)</li>
-</ol>
+<h2>Installing MongoDb as windows service</h2>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Windows XP Professional Password Protected File Sharing?]]></title>
-    <link href="http://blog.najamsikander.com/blog/2006/02/18/windows-xp-professional-password-protected-file-sharing/"/>
-    <updated>2006-02-18T16:24:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2006/02/18/windows-xp-professional-password-protected-file-sharing</id>
-    <content type="html"><![CDATA[<p>Now days I am very curious to know how to restrict access to my shared folders I am currently using Windows XP Professional and I google a lot but till now I couldn’t find how to apply password. If someone knows how to do that with windows XP professional then please email me or comment your solution.</p>
+<p>To install MongoDB using your command prompt navigate to the bin folder in my case it was on following path:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>D:\mongodb\bin&gt;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Then run following command to install it</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>D:\mongodb\bin&gt;mongod --dbpath=D:\mongodb --logpath=D:\mongodb\log.txt --install
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Then you can goto windows services and look for MongoDB service and simply start it. If you face any error during installation make sure you launch command prompt as administrator and log.txt file used in above command do exists in your hard drive.</p>
+
+<p>If for some reason you want to un-install the MongoDB service run following command in command prompt after stopping service from system services.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>D:\mongodb\bin&gt;mongod --remove
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>GUI to manage MongoDB</h2>
+
+<p>You can interact with MongoDb database and collections using command prompt it will make you master of the little quires against small frequent tasks. In my case I wanted some simple GUI to perform simple tasks and I came across <a href="http://robomongo.org/">RoboMongo</a>.</p>
+
+<p>Installation is simple once this tool is installed and you have your MongoDb service up and running. click on the create button showing in following screen.</p>
+
+<p><img src="https://lh4.googleusercontent.com/-W5SYuoYBfqE/UmZNepJZPkI/AAAAAAAACcQ/LVaMJiW2k50/w668-h410-no/roboCreate.jpg" alt="Robo Mongo Connection Screen" /></p>
+
+<p>Proceed with defaults in address I have localhost and using port 27017. After connection is created you can click on the connect button and it will show you following screen listing with your databases and collections.</p>
+
+<p><img src="https://lh6.googleusercontent.com/fJjuZWRgwzWSRNwF0HzVw4bJ8JryEKLuAwWWIaKlfEY=w1183-h737-no" alt="Robo Mongo Showing Databases and Collections" /></p>
+
+<h2>Deployment</h2>
+
+<p>After completing v1.0 I have been asked to deploy our new web site on remote server. Asp.net deployment was not a big deal but to deploy local MongoDb database onto remote I had to read about two commands <em>mongodump</em> and <em>mongorestore</em></p>
+
+<p>First to create a backup file of my local mongoDB database I run following command</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>mongodump --db DBName
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Above command will generate called DBName under MongoDB_Installation_Folder/bin/dump inside generated folder you will find <em>.bson</em> files for all the collections your database contains. I have uploaded this folder on remote server.</p>
+
+<p>Now to restore MongoDB on remote server I used mongorestore command syntax is simple you need to supply foldername/dbname to restore</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>mongorestore dump/DBName
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Once restore is completed successfully you can check your database on remote using RoboMongo.</p>
+
+<p>I hope this will help someone starting with MongoDB thank you for reading my blog.</p>
 ]]></content>
   </entry>
   

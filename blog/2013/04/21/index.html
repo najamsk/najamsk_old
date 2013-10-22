@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Writing .Net Windows Service Made Easy Using Topshelp - Najam Sikander Awan</title>
+  <meta name="author" content="najam sikander awan">
+
+  
+  <meta name="description" content="I have first read about topshelf Gregor&#8217;s blog and latter fond scott hanselman recommendation about it. 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.najamsikander.com/blog/2013/04/21">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Najam Sikander Awan" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-40504056-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Najam Sikander Awan</a></h1>
+  
+    <h2>covering web stack along with microsoft technologies</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.najamsikander.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Writing .Net Windows Service Made Easy Using Topshelp</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-21T03:28:00+05:00" pubdate data-updated="true">Apr 21<span>st</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I have first read about <a href="http://topshelf-project.com/">topshelf</a> <a href="http://gregorsuttie.com/2012/08/20/what-i-learned-last-week-13th-august-17th-august/">Gregor&#8217;s blog</a> and latter fond scott hanselman recommendation about it.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">TownCrier</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="k">readonly</span> <span class="n">Timer</span> <span class="n">_timer</span><span class="p">;</span>
+</span><span class='line'>    <span class="k">public</span> <span class="nf">TownCrier</span><span class="p">()</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="n">_timer</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Timer</span><span class="p">(</span><span class="m">1000</span><span class="p">)</span> <span class="p">{</span><span class="n">AutoReset</span> <span class="p">=</span> <span class="k">true</span><span class="p">};</span>
+</span><span class='line'>        <span class="n">_timer</span><span class="p">.</span><span class="n">Elapsed</span> <span class="p">+=</span> <span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="n">eventArgs</span><span class="p">)</span> <span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;It is {0} an all is well&quot;</span><span class="p">,</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="k">public</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span> <span class="p">{</span> <span class="n">_timer</span><span class="p">.</span><span class="n">Start</span><span class="p">();</span> <span class="p">}</span>
+</span><span class='line'>    <span class="k">public</span> <span class="k">void</span> <span class="nf">Stop</span><span class="p">()</span> <span class="p">{</span> <span class="n">_timer</span><span class="p">.</span><span class="n">Stop</span><span class="p">();</span> <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">Program</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">()</span>
+</span><span class='line'>    <span class="p">{</span>
+</span><span class='line'>        <span class="n">HostFactory</span><span class="p">.</span><span class="n">Run</span><span class="p">(</span><span class="n">x</span> <span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span>                                 <span class="c1">//1</span>
+</span><span class='line'>        <span class="p">{</span>
+</span><span class='line'>            <span class="n">x</span><span class="p">.</span><span class="n">Service</span><span class="p">(</span><span class="n">s</span> <span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span>                        <span class="c1">//2</span>
+</span><span class='line'>            <span class="p">{</span>
+</span><span class='line'>               <span class="n">s</span><span class="p">.</span><span class="n">ConstructUsing</span><span class="p">(</span><span class="n">name</span><span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="k">new</span> <span class="n">TownCrier</span><span class="p">());</span>     <span class="c1">//3</span>
+</span><span class='line'>               <span class="n">s</span><span class="p">.</span><span class="n">WhenStarted</span><span class="p">(</span><span class="n">tc</span> <span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">tc</span><span class="p">.</span><span class="n">Start</span><span class="p">());</span>              <span class="c1">//4</span>
+</span><span class='line'>               <span class="n">s</span><span class="p">.</span><span class="n">WhenStopped</span><span class="p">(</span><span class="n">tc</span> <span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">tc</span><span class="p">.</span><span class="n">Stop</span><span class="p">());</span>               <span class="c1">//5</span>
+</span><span class='line'>            <span class="p">});</span>
+</span><span class='line'>            <span class="n">x</span><span class="p">.</span><span class="n">RunAsLocalSystem</span><span class="p">();</span>                            <span class="c1">//6</span>
+</span><span class='line'>
+</span><span class='line'>            <span class="n">x</span><span class="p">.</span><span class="n">SetDescription</span><span class="p">(</span><span class="s">&quot;Sample Topshelf Host&quot;</span><span class="p">);</span>        <span class="c1">//7</span>
+</span><span class='line'>            <span class="n">x</span><span class="p">.</span><span class="n">SetDisplayName</span><span class="p">(</span><span class="s">&quot;Stuff&quot;</span><span class="p">);</span>                       <span class="c1">//8</span>
+</span><span class='line'>            <span class="n">x</span><span class="p">.</span><span class="n">SetServiceName</span><span class="p">(</span><span class="s">&quot;stuff&quot;</span><span class="p">);</span>                       <span class="c1">//9</span>
+</span><span class='line'>        <span class="p">});</span>                                                  <span class="c1">//10</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I have slowly started to play with this tool learning its simple APP, browsing documentation and creating test code. One of my asp.net project has a page which is performing monthly payments using authorize.net and as number of users are increased this page is timing out and asp.net gives us thread aborted exception.</p>
+
+<p>This was perfect timing to use topshelf and migrate payment code into a windows service. So I have started with very basic sample, few timers, stop/start events and while I was into it I have decided to implement Unit Of Work and Repository pattern for data access layer. Will write a short post about how I have used these patterns with asp.net web forms application.</p>
+
+<p>Back to Topshelf service has been written and deployed on live server and its working so far but I need to answer following questions and they will be a learning document for newcomer.</p>
+
+<ul>
+    <li><span style="line-height: 21px;">Q. When timer is elpased and if any config file is modified would it read updated settings?</span></li>
+    <li>even if service is running if code is reading from config inside timer elapsed event handler it will get fresh values from config</li>
+    <li><span style="line-height: 21px;">Q. How to install/uninstall the service?</span></li>
+    <li><span style="line-height: 21px;">Q. How to recover if service keeps running even after stop signal or some bug don&#8217;t let it stop?</span></li>
+    <li><span style="line-height: 21px;">Q. How to send cc email using NLOG?</span></li>
+    <li><span style="line-height: 21px;">Q. Nlog write to file?</span></li>
+    <li><span style="line-height: 21px;">Q. How sential is helping me on live server with logging?</span></li>
+    <li><span style="line-height: 21px;">Q. When topshelf code is modified new exe file can be updated after just stopping service or un-install is required?</span></li>
+    <li><span style="line-height: 21px;">Q. Used Settings section (type safety) in app.config vs app settings that is basically a key value pair of string types?</span></li>
+</ul>
+
+
+<p>This tools also works great with logging tools, I have tested it against NLog and to view these logs I have used Sential.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">najam sikander awan</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-21T03:28:00+05:00" pubdate data-updated="true">Apr 21<span>st</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/dot-net/'>.net</a>, <a class='category' href='/blog/categories/c-number/'>c#</a>, <a class='category' href='/blog/categories/topshef/'>topshef</a>, <a class='category' href='/blog/categories/windows-services/'>windows services</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.najamsikander.com/blog/2013/04/21/" data-via="najamsikander" data-counturl="http://blog.najamsikander.com/blog/2013/04/21/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/08/09/upgraded-my-hosting-for-net-4-0/" title="Previous Post: Upgraded my hosting for .net 4.0">&laquo; Upgraded my hosting for .net 4.0</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/04/22/playing-with-octopress-blogging/" title="Next Post: playing with octopress blogging">playing with octopress blogging &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/10/22/mongodb-setup-on-windows-8/">MongoDB Setup On Windows 8</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/07/empower-your-outlook-with-powershell/">empower your outlook with powershell</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/12/screen-calipers/">screen calipers</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/03/testing-jquery-code-via-yui-test/">Testing jQuery code via YUI Test</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/03/fetch-public-tweets-of-any-user-using-jquery/">fetch public tweets of any user using jQuery</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+ <h1>Twitter</h1>
+ <a class="twitter-timeline" href="https://twitter.com/najamsikander" data-widget-id="327838592250548224">Tweets by @najamsikander</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - najam sikander awan -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'najamsikanderawan';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.najamsikander.com/blog/2013/04/21/';
+        var disqus_url = 'http://blog.najamsikander.com/blog/2013/04/21/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

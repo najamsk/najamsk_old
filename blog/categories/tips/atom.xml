@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: tips | Najam Sikander Awan]]></title>
+  <title><![CDATA[Category: Tips | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/tips/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2013-07-25T15:30:53+05:00</updated>
+  <updated>2013-10-22T15:45:50+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -14,176 +14,116 @@
 
   
   <entry>
-    <title type="html"><![CDATA[screen calipers]]></title>
-    <link href="http://blog.najamsikander.com/blog/2013/06/12/screen-calipers/"/>
-    <updated>2013-06-12T10:43:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2013/06/12/screen-calipers</id>
-    <content type="html"><![CDATA[<p>I have used this tool for my web projects where clients do require pixel perfect html for all browsers. Since this tool helped me a lot in past I thought to share it with all.</p>
+    <title type="html"><![CDATA[MongoDB Setup On Windows 8]]></title>
+    <link href="http://blog.najamsikander.com/blog/2013/10/22/mongodb-setup-on-windows-8/"/>
+    <updated>2013-10-22T13:15:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2013/10/22/mongodb-setup-on-windows-8</id>
+    <content type="html"><![CDATA[<p>I am very much into learning new tools and burning hours of my life trying to figure them out. To track whats new on development horizon and technology I tend to keep my eyes on sessions, conferences, blogs and screen-casts.</p>
 
-<p><img src="https://lh6.googleusercontent.com/-awHPpGChMBg/UbgL-OsTlkI/AAAAAAAACYU/sw_7SPJts2s/w946-h512-no/screencalipers.png" alt="screen calipers" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Testing jQuery code via YUI Test]]></title>
-    <link href="http://blog.najamsikander.com/blog/2013/05/03/testing-jquery-code-via-yui-test/"/>
-    <updated>2013-05-03T21:22:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2013/05/03/testing-jquery-code-via-yui-test</id>
-    <content type="html"><![CDATA[<p>The term TDD is not new to me I heard it quite often but never took time to go into details until last few days. I have been checking stuff from YUI team and liked their YUI test framework for now ,but in future i might switch to qUint (jquery testing framework) as I am big fan of jQuery and using it daily.</p>
+<p>In past few days I wanted to explore no-sql options two in particular RavenDB and MongoDB. I have successfully completed the environment setup for raven but didn't use it in any project until now. On the other hand I have built a new website for my current employer using MVC4 and MongoDB. I have learned a a lot and in this blog post I will share few commands to setup mongoDB and deploy it on remote server.</p>
 
-<p>There are different version of YUI like 2.0,3.0 and standalone version of YUI test that has no dependency over YUI framework according to yui theater video.</p>
+<p>You can download MongoDb zip file from http://www.mongodb.org/downloads. I picked 64bit version of it.</p>
 
-<p>So for learning purpose I have written few lines of jQuery to set color of a paragraph on mouse hover. I wrote a test using YUI; in the test I simulate mouse hover event and then checking the paragraph css color properties using jquery :).</p>
+<h2>Installing MongoDb as windows service</h2>
 
-<p>You can view the code at <a href="http://snipplr.com/view/47746/testing-js-code/">http://snipplr.com/view/47746/testing-js-code/</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[fetch public tweets of any user using jQuery]]></title>
-    <link href="http://blog.najamsikander.com/blog/2013/05/03/fetch-public-tweets-of-any-user-using-jquery/"/>
-    <updated>2013-05-03T21:11:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2013/05/03/fetch-public-tweets-of-any-user-using-jquery</id>
-    <content type="html"><![CDATA[<p>I have been asked by many friends how to load tweets of any user using jQuery I have put some time and found two ways to do that using jQuery.</p>
+<p>To install MongoDB using your command prompt navigate to the bin folder in my case it was on following path:</p>
 
-<!-- more -->
-
-
-<h2>Twitter Timeline API</h2>
-
-<p>following is the code to get public tweets of any user using javascript and twitter timeline api</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">type</span> <span class="o">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">dataType</span> <span class="o">:</span> <span class="s1">&#39;jsonp&#39;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">url</span> <span class="o">:</span> <span class="s1">&#39;http://api.twitter.com/1/statuses/user_timeline.json?screen_name=najamsikander&#39;</span><span class="p">,</span>
+</span><span class='line'>&lt;pre>&lt;code>D:\mongodb\bin&gt;
+</span><span class='line'>&lt;/code>&lt;/pre>
 </span><span class='line'>
-</span><span class='line'><span class="nx">success</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">tweets</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">tweets</span><span class="p">);</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span>   <span class="kd">var</span> <span class="nx">twitter</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">tweets</span><span class="p">.</span><span class="nx">results</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="k">return</span> <span class="p">{</span>
-</span><span class='line'>         <span class="nx">username</span> <span class="o">:</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">from_user</span><span class="p">,</span>
-</span><span class='line'>         <span class="nx">tweet</span> <span class="o">:</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">text</span><span class="p">,</span>
-</span><span class='line'>         <span class="nx">imgSource</span> <span class="o">:</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">profile_image_url</span><span class="p">,</span>
-</span><span class='line'>         <span class="nx">geo</span> <span class="o">:</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">geo</span>
-</span><span class='line'>      <span class="p">};</span>
-</span><span class='line'>   <span class="p">});</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">twitter</span> <span class="p">);</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">twitter</span><span class="p">.</span><span class="nx">length</span><span class="p">);</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="p">}</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<h2>Twitter Search</h2>
+<p>Then run following command to install it</p>
 
-<p>If you only need less then 5 tweets and you don’t want to deal with api rate constraint use following code that just search tweets of any user.</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">type</span> <span class="o">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">dataType</span> <span class="o">:</span> <span class="s1">&#39;jsonp&#39;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">url</span> <span class="o">:</span> <span class="s1">&#39;http://search.twitter.com/search.json?from=najamsikander&#39;</span><span class="p">,</span>
+</span><span class='line'>&lt;pre>&lt;code>D:\mongodb\bin&gt;mongod --dbpath=D:\mongodb --logpath=D:\mongodb\log.txt --install
+</span><span class='line'>&lt;/code>&lt;/pre>
 </span><span class='line'>
-</span><span class='line'><span class="nx">success</span> <span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">tweets</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>   <span class="kd">var</span> <span class="nx">twitter</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">tweets</span><span class="p">.</span><span class="nx">results</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">obj</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="k">return</span> <span class="p">{</span>
-</span><span class='line'>         <span class="nx">username</span> <span class="o">:</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">from_user</span><span class="p">,</span>
-</span><span class='line'>         <span class="nx">tweet</span> <span class="o">:</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">text</span><span class="p">,</span>
-</span><span class='line'>         <span class="nx">imgSource</span> <span class="o">:</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">profile_image_url</span><span class="p">,</span>
-</span><span class='line'>         <span class="nx">geo</span> <span class="o">:</span> <span class="nx">obj</span><span class="p">.</span><span class="nx">geo</span>
-</span><span class='line'>      <span class="p">};</span>
-</span><span class='line'>   <span class="p">});</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">twitter</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">});</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MVC3 Scaffolding Commands]]></title>
-    <link href="http://blog.najamsikander.com/blog/2013/05/03/mvc3-scafolding-commands/"/>
-    <updated>2013-05-03T21:06:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2013/05/03/mvc3-scafolding-commands</id>
-    <content type="html"><![CDATA[<p>I had a freelance project that I have decided to do in MVC3 and to found following scaffolding commands very useful to get my Context, repository, controller, controller and views in PM console inside visual studio</p>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p>Then you can goto windows services and look for MongoDB service and simply start it. If you face any error during installation make sure you launch command prompt as administrator and log.txt file used in above command do exists in your hard drive.</p>
+
+<p>If for some reason you want to un-install the MongoDB service run following command in command prompt after stopping service from system services.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="n">Scaffold</span> <span class="n">DbContext</span> <span class="p">-</span><span class="n">Project</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span> <span class="n">Service</span> <span class="n">Concrete</span><span class="p">.</span><span class="n">CRSContext</span>
-</span><span class='line'><span class="n">Scaffold</span> <span class="n">Repository</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">Attachment</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">BigAppContext</span> <span class="p">-</span><span class="n">force</span>
-</span><span class='line'><span class="n">Scaffold</span> <span class="n">Controller</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Project</span> <span class="p">-</span><span class="n">ControllerName</span> <span class="n">Projects</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">BigAppContext</span> <span class="p">-</span><span class="n">Repository</span> <span class="p">-</span><span class="n">NoChildItems</span> <span class="p">-</span><span class="n">Force</span>
-</span><span class='line'><span class="n">Scaffold</span> <span class="n">Controller</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Service</span> <span class="p">-</span><span class="n">ControllerName</span> <span class="n">Services</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">CRSContext</span> <span class="p">-</span><span class="n">Repository</span> <span class="p">-</span><span class="n">NoChildItems</span> <span class="p">-</span><span class="n">Force</span> <span class="p">-</span><span class="n">Area</span> <span class="n">admin</span>
-</span><span class='line'><span class="n">Scaffold</span> <span class="n">Views</span> <span class="p">-</span><span class="n">Controller</span> <span class="n">Tags</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Tag</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[CSS Overflow benefit]]></title>
-    <link href="http://blog.najamsikander.com/blog/2010/12/08/css-overflow-benefit/"/>
-    <updated>2010-12-08T02:13:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2010/12/08/css-overflow-benefit</id>
-    <content type="html"><![CDATA[<p>I read this article <a href="http://bit.ly/16pqBm">http://bit.ly/16pqBm</a> and find out the power of overflow that is when you set it to a value it creates a new block formatting context in simple word that means non floated element’s content will not flow around the floated element instead will get narrower.</p>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>D:\mongodb\bin&gt;mongod --remove
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>PS. Width should not be mentioned for non floated content so it can get narrower.</p>
+<h2>GUI to manage MongoDB</h2>
+
+<p>You can interact with MongoDb database and collections using command prompt it will make you master of the little quires against small frequent tasks. In my case I wanted some simple GUI to perform simple tasks and I came across <a href="http://robomongo.org/">RoboMongo</a>.</p>
+
+<p>Installation is simple once this tool is installed and you have your MongoDb service up and running. click on the create button showing in following screen.</p>
+
+<p><img src="https://lh4.googleusercontent.com/-W5SYuoYBfqE/UmZNepJZPkI/AAAAAAAACcQ/LVaMJiW2k50/w668-h410-no/roboCreate.jpg" alt="Robo Mongo Connection Screen" /></p>
+
+<p>Proceed with defaults in address I have localhost and using port 27017. After connection is created you can click on the connect button and it will show you following screen listing with your databases and collections.</p>
+
+<p><img src="https://lh6.googleusercontent.com/fJjuZWRgwzWSRNwF0HzVw4bJ8JryEKLuAwWWIaKlfEY=w1183-h737-no" alt="Robo Mongo Showing Databases and Collections" /></p>
+
+<h2>Deployment</h2>
+
+<p>After completing v1.0 I have been asked to deploy our new web site on remote server. Asp.net deployment was not a big deal but to deploy local MongoDb database onto remote I had to read about two commands <em>mongodump</em> and <em>mongorestore</em></p>
+
+<p>First to create a backup file of my local mongoDB database I run following command</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>mongodump --db DBName
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Above command will generate called DBName under MongoDB_Installation_Folder/bin/dump inside generated folder you will find <em>.bson</em> files for all the collections your database contains. I have uploaded this folder on remote server.</p>
+
+<p>Now to restore MongoDB on remote server I used mongorestore command syntax is simple you need to supply foldername/dbname to restore</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>mongorestore dump/DBName
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Once restore is completed successfully you can check your database on remote using RoboMongo.</p>
+
+<p>I hope this will help someone starting with MongoDB thank you for reading my blog.</p>
 ]]></content>
   </entry>
   

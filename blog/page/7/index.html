@@ -9,7 +9,10 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="hi Guyz i am writing this post while using fedora core 6 live cd and it took 2 hours to make internet working on this live distro. I have acer &hellip;">
+  <meta name="description" content="Hi guyz My sound card working now after installing latest Alsa driver, Lib and Utils. Compile alsa-driver like this: 1
+2
+3
+./configure --with-cards= &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +80,259 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2007/02/20/realtek-hd-sound-card-working/">Realtek HD Sound Card Working</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-20T09:54:00+05:00" pubdate data-updated="true">Feb 20<span>th</span>, 2007</time>
+        
+         | <a href="/blog/2007/02/20/realtek-hd-sound-card-working/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hi guyz</p>
+
+<p>My sound card working now after installing latest <a href="http://www.alsa-project.org/"><font color="#578fb2">Alsa</font></a> driver, Lib and Utils.</p>
+
+<p>Compile alsa-driver like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>./configure --with-cards=hda-intel
+</span><span class='line'>make
+</span><span class='line'>make install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and alsa-lib and alsa-util in this order like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>./configure
+</span><span class='line'>make
+</span><span class='line'>make install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Reboot and there you go!</p>
+
+<p>Regards
+Najam Sikander Awan</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2007/02/13/oh-god-hd-audio-driver-for-linux/">Oh God Hd Audio Driver for Linux</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-13T22:33:00+05:00" pubdate data-updated="true">Feb 13<span>th</span>, 2007</time>
+        
+         | <a href="/blog/2007/02/13/oh-god-hd-audio-driver-for-linux/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hi guyz;</p>
+
+<p>Well after solving problem for my lan card through mac spoofing next problem that I want to solve now is making sound work on my acer laptop while running fedore core 6 live cd.</p>
+
+<p>Now as i inspect my hardware i get to know that i have a realtek sound card that has hd audio codec Alc 883 now.</p>
+
+<p>to check if your hardware is detected by linux or not you have to run following command in shell</p>
+
+<pre><code>/sbin/lspci
+</code></pre>
+
+<p>This will list hardware check your sound card vendor and note model for your card.</p>
+
+<p>output of sbin/lspci for my laptop is listed below</p>
+
+<pre><code>00:00.0 Host bridge: Intel Corporation Mobile 915GM/PM/GMS/910GML Express Processor to DRAM Controller (rev 04)
+00:02.0 VGA compatible controller: Intel Corporation Mobile 915GM/GMS/910GML Express Graphics Controller (rev 04)
+00:02.1 Display controller: Intel Corporation Mobile 915GM/GMS/910GML Express Graphics Controller (rev 04)
+00:1b.0 Audio device: Intel Corporation 82801FB/FBM/FR/FW/FRW (ICH6 Family) High Definition Audio Controller (rev 04)
+</code></pre>
+
+<p>Now as i googled i come to know that this problem is because alsa bug and older kernel many users with latest kernel like 2.6.17 and fedora 6 live hai kernel 2.6.18 so i think i don&#8217;t need to play with kernel.</p>
+
+<p>You can also find currently running modules for your sound card by running
+following into  shell</p>
+
+<pre><code>/sbin/lsmod
+</code></pre>
+
+<p>output of /sbin/lsmod is given below</p>
+
+<pre><code>Module                  Size  Used by
+i915                   23361  3
+drm                    72789  4 i915
+ipv6                  267489  12
+hidp                   24129  2
+rfcomm                 46041  0
+l2cap                  31681  10 hidp,rfcomm
+bluetooth              58917  5 hidp,rfcomm,l2cap
+cpufreq_ondemand       11085  1
+dm_mirror              33041  0
+video                  21061  0
+sbs                    20225  0
+i2c_ec                  9281  1 sbs
+button                 10961  0
+battery                14405  0
+asus_acpi              20697  0
+ac                      9541  0
+parport_pc             31205  0
+lp                     17033  0
+parport                40841  2 parport_pc,lp
+snd_hda_intel          22613  2
+snd_hda_codec         154049  1 snd_hda_intel
+joydev                 13697  0
+snd_seq_dummy           8133  0
+snd_seq_oss            37185  0
+snd_seq_midi_event     11841  1 snd_seq_oss
+snd_seq                57137  5 snd_seq_dummy,snd_seq_oss,snd_seq_midi_event
+snd_seq_device         12621  3 snd_seq_dummy,snd_seq_oss,snd_seq
+snd_pcm_oss            46561  0
+snd_mixer_oss          20545  1 snd_pcm_oss
+snd_pcm                80325  3 snd_hda_intel,snd_hda_codec,snd_pcm_oss
+ipw2200               112037  0
+snd_timer              27077  2 snd_seq,snd_pcm
+pcspkr                  7361  0
+serio_raw              11205  0
+snd                    57029  13 snd_hda_intel,snd_hda_codec,snd_seq_oss,snd_seq,snd_seq_device,snd_pcm_oss,snd_mixer_oss,snd_pcm,snd_timer
+8139too                31169  0
+8139cp                 28609  0
+i2c_i801               11853  0
+soundcore              14113  1 snd
+mii                     9665  2 8139too,8139cp
+snd_page_alloc         14281  2 snd_hda_intel,snd_pcm
+i2c_core               25537  2 i2c_ec,i2c_i801
+ieee80211              34953  1 ipw2200
+ieee80211_crypt        10433  1 ieee80211
+ext3                  136009  1
+jbd                    63337  1 ext3
+squashfs               49093  1
+dm_snapshot            21357  1
+dm_mod                 61529  6 dm_mirror,dm_snapshot
+loop                   20297  134
+uhci_hcd               27725  0
+ehci_hcd               35661  0
+ide_cd                 42337  3
+cdrom                  38625  1 ide_cd
+</code></pre>
+
+<p>Now 2nd thing is to check your alsa driver version now i don&#8217;t how to check that :( currently stuck on that i don&#8217;t know from where to download alsa driver for fedora 6 live and then how to make it work and i don&#8217;t want to run fedora 6 live on my laptop i just want all the functionality while running it with cd.</p>
+
+<p>Please help me out here.</p>
+
+<p>Check <a href="http://najam.wordpress.com/2007/02/13/my-acer-aspire-1642znwlci/" title="My laptop configuration">my laptop specification</a> if you need to know them to solve this problem.</p>
+
+<p>Regards</p>
+
+<p>Najam Sikander Awan</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2007/02/13/my-acer-aspire-1642znwlci/">My Acer Aspire 1642ZNWLCi</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-13T22:31:00+05:00" pubdate data-updated="true">Feb 13<span>th</span>, 2007</time>
+        
+         | <a href="/blog/2007/02/13/my-acer-aspire-1642znwlci/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hi i just wanted to share my laptop specification with you.</p>
+
+<ul>
+    <li>Intel Pentium M processor 735A  (1.7 Ghz, 400 Mhz FSB, 2 MB L2 cache)</li>
+    <li>15.4&#8221; CrystalBrite LCD</li>
+    <li>Intel Graphics  Media Accelator 900 has 64mb for games</li>
+    <li>60 Gb hdd</li>
+    <li>512Mb DDr2</li>
+    <li>802.11b/g</li>
+</ul>
+
+
+<p>i have two laptops of this configuration.</p>
+
+<p>Regards</p>
+
+<p>Najam Sikander Awan</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -415,129 +671,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/02/03/msn-messenger-live/">Msn Messenger Live</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-02-03T07:48:00+05:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2006</time>
-        
-         | <a href="/blog/2006/02/03/msn-messenger-live/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I just got my hands on beta version of Microsoft msn messenger live (msn messenger 8.0 beta), what I found new is new look with new animated backgrounds and new icons now and some little fancy things that are related to just new look and feel of msn live. One of new  features that I love most is you can <strong>chat while stay invisible</strong> to all of your buddies just like you can chat with yahoo messenger I enjoyed this new feature very much.  Second feature is again adopted from yahoo that is <strong>offline messages</strong>.
-Third feature that I like is you can <strong>change nicknames of your buddies</strong>. Now another feature that is totally new for me and I think its introduced by msn is if you switch your ids it can remember your password and you donât have to type your password again and again I always wanted this in prior versions and finally I get this in new msn live ï?. If anyone interested in getting to know more features provide by msn live can check official blog or website for msn live. Things I donât like in msn live is ad banner they included wide adds in every window taking so much space of your desktop and they may take your valuable bandwidth so I decided to mod my sweet new msn live I just google around and and find a nifty tool allow me to have multiple instances of msn running and striping all the adds from my msn.</p>
-
-<p>To get msn live really working you must have an invite first only then you can login through msn live I get 3 invites, one from thedruid.co.uk and two invites from matthew88@gmail.com. If you want msn invites just leave your name, email address and your asl if you have one ;) and I will send you invites as soon as I get them.</p>
-
-<p>Note: Readers who with brief introduction will be preferred.</p>
-
-<p>click on thumbnail given below to get larger picture.</p>
-
-<p><a title="Multi msn live " href="http://najam.files.wordpress.com/2006/02/Capture2-3-2006-12.49.15%20PM.jpg"><img width="111" height="96" alt="Multi msn live " src="http://najam.files.wordpress.com/2006/02/Capture2-3-2006-12.49.15%20PM.thumbnail.jpg" /></a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/01/28/exams-over/">Exams Over</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-01-28T16:54:00+05:00" pubdate data-updated="true">Jan 28<span>th</span>, 2006</time>
-        
-         | <a href="/blog/2006/01/28/exams-over/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Thank God my exams are over now only fear that i have is the result please pray for me<br /><br /></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/01/28/testing-yahoo-360/">Testing Yahoo 360</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-01-28T16:48:00+05:00" pubdate data-updated="true">Jan 28<span>th</span>, 2006</time>
-        
-         | <a href="/blog/2006/01/28/testing-yahoo-360/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Do you ever tried yahoo 360 well I just created a yahoo 360 blog for testing and I must admit that yahoo 360 offering more options then wordpress and can comptiable to your existing blogs (wordpress or other famious blogs) and to your flicker photostream. You can checkout my yahoo 360 beta blog ;) at <a href="http://360.yahoo.com/dragona_eyez">http://360.yahoo.com/dragona_eyez</a><br />and please leave your comments. They are needed to improve my writing skills :).<br /><br /><br /></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/8/">&larr; Older</a>
@@ -555,6 +688,10 @@ Third feature that I like is you can <strong>change nicknames of your buddies</s
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/10/22/mongodb-setup-on-windows-8/">MongoDB Setup On Windows 8</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/07/07/empower-your-outlook-with-powershell/">empower your outlook with powershell</a>
       </li>
     
@@ -568,10 +705,6 @@ Third feature that I like is you can <strong>change nicknames of your buddies</s
     
       <li class="post">
         <a href="/blog/2013/05/03/fetch-public-tweets-of-any-user-using-jquery/">fetch public tweets of any user using jQuery</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/03/mvc3-scafolding-commands/">MVC3 Scaffolding Commands</a>
       </li>
     
   </ul>
