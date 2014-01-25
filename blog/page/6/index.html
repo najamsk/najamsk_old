@@ -9,7 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content=" If you want to display the filename or page name of the current displaying page just use these two lines and it will show only the filename like &hellip;">
+  <meta name="description" content="Surrounded by computers and internet all the time when at work, in university labs or when browsing internet from your home. During long sessions we &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,53 +77,6 @@
     <div id="content">
       <div class="blog-index">
   
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2007/11/06/how-to-get-pagename-of-itself/">How to Get Pagename of Itself</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-11-06T06:04:00+05:00" pubdate data-updated="true">Nov 6<span>th</span>, 2007</time>
-        
-         | <a href="/blog/2007/11/06/how-to-get-pagename-of-itself/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p> If you want to display the filename or page name of the current displaying page just use these two lines and it will show only the filename like default.aspx, najam.aspx or indexas.aspx no matter it these pages are located deep into your site structure.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="kt">string</span> <span class="n">pagename</span> <span class="p">=</span> <span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">Path</span><span class="p">.</span><span class="n">GetFileName</span><span class="p">(</span><span class="n">Request</span><span class="p">.</span><span class="n">ServerVariables</span><span class="p">[</span><span class="s">&quot;SCRIPT_NAME&quot;</span><span class="p">]);</span> <span class="n">Response</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="n">pagename</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Enjoy coding</p>
-
-<p>Najam Sikander Awan</p>
-</div>
-  
-  
-
-
-    </article>
   
   
     <article>
@@ -740,6 +693,71 @@ Have fun.  <img src="http://linuxquestions.cachefly.net/images/questions/images/
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2007/02/20/realtek-hd-sound-card-working/">Realtek HD Sound Card Working</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-02-20T09:54:00+05:00" pubdate data-updated="true">Feb 20<span>th</span>, 2007</time>
+        
+         | <a href="/blog/2007/02/20/realtek-hd-sound-card-working/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hi guyz</p>
+
+<p>My sound card working now after installing latest <a href="http://www.alsa-project.org/"><font color="#578fb2">Alsa</font></a> driver, Lib and Utils.</p>
+
+<p>Compile alsa-driver like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>./configure --with-cards=hda-intel
+</span><span class='line'>make
+</span><span class='line'>make install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and alsa-lib and alsa-util in this order like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>./configure
+</span><span class='line'>make
+</span><span class='line'>make install</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Reboot and there you go!</p>
+
+<p>Regards
+Najam Sikander Awan</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/7/">&larr; Older</a>
@@ -757,6 +775,10 @@ Have fun.  <img src="http://linuxquestions.cachefly.net/images/questions/images/
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/01/25/open-letter-to-ptcl-desi-version/">Open letter to PTCL - desi version</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/10/22/mongodb-setup-on-windows-8/">MongoDB Setup On Windows 8</a>
       </li>
     
@@ -770,10 +792,6 @@ Have fun.  <img src="http://linuxquestions.cachefly.net/images/questions/images/
     
       <li class="post">
         <a href="/blog/2013/05/03/testing-jquery-code-via-yui-test/">Testing jQuery code via YUI Test</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/03/fetch-public-tweets-of-any-user-using-jquery/">fetch public tweets of any user using jQuery</a>
       </li>
     
   </ul>
@@ -793,7 +811,7 @@ Have fun.  <img src="http://linuxquestions.cachefly.net/images/questions/images/
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - najam sikander awan -
+  Copyright &copy; 2014 - najam sikander awan -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

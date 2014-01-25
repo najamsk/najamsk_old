@@ -4,7 +4,7 @@
   <title><![CDATA[Category: c# | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/c-number/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2013-10-22T15:45:50+05:00</updated>
+  <updated>2014-01-25T11:48:06+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -31,112 +31,6 @@
 </span><span class='line'><span class="n">Scaffold</span> <span class="n">Controller</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Service</span> <span class="p">-</span><span class="n">ControllerName</span> <span class="n">Services</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">CRSContext</span> <span class="p">-</span><span class="n">Repository</span> <span class="p">-</span><span class="n">NoChildItems</span> <span class="p">-</span><span class="n">Force</span> <span class="p">-</span><span class="n">Area</span> <span class="n">admin</span>
 </span><span class='line'><span class="n">Scaffold</span> <span class="n">Views</span> <span class="p">-</span><span class="n">Controller</span> <span class="n">Tags</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Tag</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Writing .Net Windows Service Made Easy Using Topshelp]]></title>
-    <link href="http://blog.najamsikander.com/blog/2013/04/21/"/>
-    <updated>2013-04-21T03:28:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2013/04/</id>
-    <content type="html"><![CDATA[<p>I have first read about <a href="http://topshelf-project.com/">topshelf</a> <a href="http://gregorsuttie.com/2012/08/20/what-i-learned-last-week-13th-august-17th-august/">Gregor's blog</a> and latter fond scott hanselman recommendation about it.
-<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-<span class='line-number'>29</span>
-<span class='line-number'>30</span>
-<span class='line-number'>31</span>
-<span class='line-number'>32</span>
-<span class='line-number'>33</span>
-<span class='line-number'>34</span>
-<span class='line-number'>35</span>
-<span class='line-number'>36</span>
-<span class='line-number'>37</span>
-<span class='line-number'>38</span>
-</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">TownCrier</span>
-</span><span class='line'><span class="p">{&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">&lt;</span><span class="n">pre</span><span class="p">&gt;&lt;</span><span class="n">code</span><span class="p">&gt;</span><span class="k">readonly</span> <span class="n">Timer</span> <span class="n">_timer</span><span class="p">;</span>
-</span><span class='line'><span class="k">public</span> <span class="nf">TownCrier</span><span class="p">()</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>    <span class="n">_timer</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Timer</span><span class="p">(</span><span class="m">1000</span><span class="p">)</span> <span class="p">{</span><span class="n">AutoReset</span> <span class="p">=</span> <span class="k">true</span><span class="p">};</span>
-</span><span class='line'>    <span class="n">_timer</span><span class="p">.</span><span class="n">Elapsed</span> <span class="p">+=</span> <span class="p">(</span><span class="n">sender</span><span class="p">,</span> <span class="n">eventArgs</span><span class="p">)</span> <span class="p">=&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">gt</span><span class="p">;</span> <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;It is {0} an all is well&quot;</span><span class="p">,</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span> <span class="p">{</span> <span class="n">_timer</span><span class="p">.</span><span class="n">Start</span><span class="p">();</span> <span class="p">}</span>
-</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">Stop</span><span class="p">()</span> <span class="p">{</span> <span class="n">_timer</span><span class="p">.</span><span class="n">Stop</span><span class="p">();</span> <span class="p">}</span>
-</span><span class='line'><span class="p">&lt;/</span><span class="n">code</span><span class="p">&gt;&lt;/</span><span class="n">pre</span><span class="p">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;}&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span><span class="k">public</span> <span class="k">class</span> <span class="nc">Program</span>
-</span><span class='line'><span class="p">{&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">&lt;</span><span class="n">pre</span><span class="p">&gt;&lt;</span><span class="n">code</span><span class="p">&gt;</span><span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">()</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'>    <span class="n">HostFactory</span><span class="p">.</span><span class="n">Run</span><span class="p">(</span><span class="n">x</span> <span class="p">=&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">gt</span><span class="p">;</span>                                 <span class="c1">//1</span>
-</span><span class='line'>    <span class="p">{</span>
-</span><span class='line'>        <span class="n">x</span><span class="p">.</span><span class="n">Service</span><span class="p">(</span><span class="n">s</span> <span class="p">=&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">gt</span><span class="p">;</span>                        <span class="c1">//2</span>
-</span><span class='line'>        <span class="p">{</span>
-</span><span class='line'>           <span class="n">s</span><span class="p">.</span><span class="n">ConstructUsing</span><span class="p">(</span><span class="n">name</span><span class="p">=&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">gt</span><span class="p">;</span> <span class="k">new</span> <span class="n">TownCrier</span><span class="p">());</span>     <span class="c1">//3</span>
-</span><span class='line'>           <span class="n">s</span><span class="p">.</span><span class="n">WhenStarted</span><span class="p">(</span><span class="n">tc</span> <span class="p">=&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">gt</span><span class="p">;</span> <span class="n">tc</span><span class="p">.</span><span class="n">Start</span><span class="p">());</span>              <span class="c1">//4</span>
-</span><span class='line'>           <span class="n">s</span><span class="p">.</span><span class="n">WhenStopped</span><span class="p">(</span><span class="n">tc</span> <span class="p">=&amp;</span><span class="n">amp</span><span class="p">;</span><span class="n">gt</span><span class="p">;</span> <span class="n">tc</span><span class="p">.</span><span class="n">Stop</span><span class="p">());</span>               <span class="c1">//5</span>
-</span><span class='line'>        <span class="p">});</span>
-</span><span class='line'>        <span class="n">x</span><span class="p">.</span><span class="n">RunAsLocalSystem</span><span class="p">();</span>                            <span class="c1">//6</span>
-</span><span class='line'>
-</span><span class='line'>        <span class="n">x</span><span class="p">.</span><span class="n">SetDescription</span><span class="p">(</span><span class="s">&quot;Sample Topshelf Host&quot;</span><span class="p">);</span>        <span class="c1">//7</span>
-</span><span class='line'>        <span class="n">x</span><span class="p">.</span><span class="n">SetDisplayName</span><span class="p">(</span><span class="s">&quot;Stuff&quot;</span><span class="p">);</span>                       <span class="c1">//8</span>
-</span><span class='line'>        <span class="n">x</span><span class="p">.</span><span class="n">SetServiceName</span><span class="p">(</span><span class="s">&quot;stuff&quot;</span><span class="p">);</span>                       <span class="c1">//9</span>
-</span><span class='line'>    <span class="p">});</span>                                                  <span class="c1">//10</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="p">&lt;/</span><span class="n">code</span><span class="p">&gt;&lt;/</span><span class="n">pre</span><span class="p">&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;}</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div>
-I have slowly started to play with this tool learning its simple APP, browsing documentation and creating test code. One of my asp.net project has a page which is performing monthly payments using authorize.net and as number of users are increased this page is timing out and asp.net gives us thread aborted exception.</p>
-
-<p>This was perfect timing to use topshelf and migrate payment code into a windows service. So I have started with very basic sample, few timers, stop/start events and while I was into it I have decided to implement Unit Of Work and Repository pattern for data access layer. Will write a short post about how I have used these patterns with asp.net web forms application.</p>
-
-<p>Back to Topshelf service has been written and deployed on live server and its working so far but I need to answer following questions and they will be a learning document for newcomer.</p>
-
-<ul>
-    <li><span style="line-height: 21px;">Q. When timer is elpased and if any config file is modified would it read updated settings?</span></li>
-    <li>even if service is running if code is reading from config inside timer elapsed event handler it will get fresh values from config</li>
-    <li><span style="line-height: 21px;">Q. How to install/uninstall the service?</span></li>
-    <li><span style="line-height: 21px;">Q. How to recover if service keeps running even after stop signal or some bug don't let it stop?</span></li>
-    <li><span style="line-height: 21px;">Q. How to send cc email using NLOG?</span></li>
-    <li><span style="line-height: 21px;">Q. Nlog write to file?</span></li>
-    <li><span style="line-height: 21px;">Q. How sential is helping me on live server with logging?</span></li>
-    <li><span style="line-height: 21px;">Q. When topshelf code is modified new exe file can be updated after just stopping service or un-install is required?</span></li>
-    <li><span style="line-height: 21px;">Q. Used Settings section (type safety) in app.config vs app settings that is basically a key value pair of string types?</span></li>
-</ul>
-
-
-<p>This tools also works great with logging tools, I have tested it against NLog and to view these logs I have used Sential.</p>
 ]]></content>
   </entry>
   
@@ -537,6 +431,169 @@ I have slowly started to play with this tool learning its simple APP, browsing 
 </span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Custom Event for Classes]]></title>
+    <link href="http://blog.najamsikander.com/blog/2009/07/06/custom-event-for-classes/"/>
+    <updated>2009-07-06T04:28:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2009/07/06/custom-event-for-classes</id>
+    <content type="html"><![CDATA[<p>I was reading how to write events for your custom classes so after reading a little I thought give it a shot and created this sample code. Below code is using Product class with event and delegate for event handling and other class named Test is using this class and manipulate product class data. If you change the Name of the product event will fire.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+<span class='line-number'>64</span>
+<span class='line-number'>65</span>
+<span class='line-number'>66</span>
+<span class='line-number'>67</span>
+<span class='line-number'>68</span>
+<span class='line-number'>69</span>
+<span class='line-number'>70</span>
+<span class='line-number'>71</span>
+<span class='line-number'>72</span>
+<span class='line-number'>73</span>
+<span class='line-number'>74</span>
+<span class='line-number'>75</span>
+<span class='line-number'>76</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="p">&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+</span><span class='line'><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+</span><span class='line'><span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+</span><span class='line'><span class="k">using</span> <span class="nn">System.Text</span><span class="p">;&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span><span class="k">namespace</span> <span class="nn">ConsoleApplication1</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">class</span> <span class="nc">Program</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="c1">/// &amp;lt;summary&amp;gt;</span>
+</span><span class='line'><span class="c1">/// Product Class</span>
+</span><span class='line'><span class="c1">/// &amp;lt;/summary&amp;gt;</span>
+</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">Product</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">public</span> <span class="k">delegate</span> <span class="k">void</span> <span class="nf">NameChangeEventHandler</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">);</span>
+</span><span class='line'><span class="k">public</span> <span class="k">event</span> <span class="n">NameChangeEventHandler</span> <span class="n">NameChanged</span><span class="p">;</span>
+</span><span class='line'><span class="k">private</span> <span class="kt">string</span> <span class="p">&lt;</span><span class="n">em</span><span class="p">&gt;</span><span class="n">name</span><span class="p">;</span>
+</span><span class='line'><span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">get</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="k">return</span> <span class="p">&lt;/</span><span class="n">em</span><span class="p">&gt;</span><span class="n">name</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">set</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">_name</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">NameChanged</span> <span class="p">!=</span> <span class="k">null</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">NameChanged</span><span class="p">(</span><span class="m">5</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span><span class="k">public</span> <span class="n">Product</span><span class="p">(</span><span class="kt">string</span> <span class="n">name</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Name</span> <span class="p">=</span> <span class="n">name</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">PrintName</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;ProductName={0}&quot;</span><span class="p">,</span> <span class="n">Name</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="p">}&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span><span class="c1">/// &amp;lt;summary&amp;gt;</span>
+</span><span class='line'><span class="c1">/// Test Class</span>
+</span><span class='line'><span class="c1">/// &amp;lt;/summary&amp;gt;</span>
+</span><span class='line'><span class="k">public</span> <span class="k">class</span> <span class="nc">Test</span>
+</span><span class='line'><span class="p">{&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span><span class="k">public</span> <span class="k">void</span> <span class="n">ChangeDetected</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;change found,argument passed is {0}&quot;</span><span class="p">,</span><span class="n">a</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="k">public</span> <span class="k">void</span> <span class="nf">TestProduct</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Product</span> <span class="n">p</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Product</span><span class="p">(</span><span class="s">&quot;najam awan&quot;</span><span class="p">);</span>
+</span><span class='line'><span class="n">p</span><span class="p">.</span><span class="n">PrintName</span><span class="p">();</span>
+</span><span class='line'><span class="n">p</span><span class="p">.</span><span class="n">NameChanged</span> <span class="p">+=</span> <span class="n">ChangeDetected</span><span class="p">;</span>
+</span><span class='line'><span class="n">p</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="s">&quot;najaf&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">p</span><span class="p">.</span><span class="n">PrintName</span><span class="p">();</span>
+</span><span class='line'><span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+</span><span class='line'><span class="p">}&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;}&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">&lt;</span><span class="n">p</span><span class="p">&gt;</span><span class="k">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">Test</span> <span class="n">t</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Test</span><span class="p">();</span>
+</span><span class='line'><span class="n">t</span><span class="p">.</span><span class="n">TestProduct</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'><span class="p">}&lt;/</span><span class="n">p</span><span class="p">&gt;</span>
 </span><span class='line'>
