@@ -4,7 +4,7 @@
   <title><![CDATA[Category: PTCL | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/ptcl/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-01-25T11:51:51+05:00</updated>
+  <updated>2014-09-30T22:19:15+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[State Design Pattern]]></title>
+    <link href="http://blog.najamsikander.com/blog/2014/09/30/state-design-pattern/"/>
+    <updated>2014-09-30T22:11:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2014/09/30/state-design-pattern</id>
+    <content type="html"><![CDATA[<p>Following is the email I  have sent to ebill@ptcl.net.pk it's unplugged raw version so don't mind about mistakes.</p>
+
+<p>Since i have shifted to new house date you can check in your records that corresponds with address change I am facing dsl connection issues with line disturbance</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Open letter to PTCL - desi version]]></title>
