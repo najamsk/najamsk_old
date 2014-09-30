@@ -83,46 +83,6 @@
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2014/09/30/state-design-pattern/">State Design Pattern</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-09-30T22:11:00+05:00" pubdate data-updated="true">Sep 30<span>th</span>, 2014</time>
-        
-         | <a href="/blog/2014/09/30/state-design-pattern/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Following is the email I  have sent to ebill@ptcl.net.pk it&#8217;s unplugged raw version so don&#8217;t mind about mistakes.</p>
-
-<p>Since i have shifted to new house date you can check in your records that corresponds with address change I am facing dsl connection issues with line disturbance</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
       <h1 class="entry-title"><a href="/blog/2014/01/25/open-letter-to-ptcl-desi-version/">Open Letter to PTCL - Desi Version</a></h1>
     
     
@@ -623,6 +583,80 @@
 
     </article>
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/22/playing-with-octopress-blogging/">Playing With Octopress Blogging</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-22T20:12:00+05:00" pubdate data-updated="true">Apr 22<span>nd</span>, 2013</time>
+        
+         | <a href="/blog/2013/04/22/playing-with-octopress-blogging/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I first came to know about octopress from yayquery episode in which rebbeca murphy mentioned she has moved her blog form wordpress to octopress and she is very happy with that. At that time I didn&#8217;t paid any attention to this.</p>
+
+<p>But today I suddenly started to play with it and I liked few things I learn along the way and that kept me going till I have imported all of my posts from wordpress to github pages.</p>
+
+<p>I have read following pages form octopress documentation for configuration and blogging:</p>
+
+<ul>
+<li><a href="http://octopress.org/docs/configuring/">configuring octopress</a></li>
+<li><a href="http://octopress.org/docs/blogging/">blogging with octopress</a></li>
+<li>To migrate your wordpress posts to markdown files i have used <a href="https://github.com/theaob/wpXml2Jekyll">wpxml2jekyll</a></li>
+<li>To integrate twitter into your octopress blog sidebar read <a href="http://blog.jmac.org/blog/2013/03/30/putting-twitter-back-into-octopress/">put twitter back into sidebar</a>
+To link your octopress setup with github you have to run following this will ask for your user/organization repository.</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next you need to do following two commands to generate site from octopress and upload it to github repo.</p>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<p>I will have few things in mind to discover about octopress</p>
+
+<ul>
+<li>q: how to customize the styles/layout?</li>
+<li>q: how to make twitter work in sidebar?</li>
+<li>q: how to make rake preview to work against current copy in master branch?</li>
+<li>q: how to make it work against blog.najamsikander.com</li>
+<li>q: how to get my comments against each post from discuss?</li>
+</ul>
+
+
+<p>I will keep updating this post while discovering work around. I guess i will be ditching wordpress soon after finding all the answers.</p>
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -638,10 +672,6 @@
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/blog/2014/09/30/state-design-pattern/">State Design Pattern</a>
-      </li>
-    
-      <li class="post">
         <a href="/blog/2014/01/25/open-letter-to-ptcl-desi-version/">Open letter to PTCL - desi version</a>
       </li>
     
@@ -655,6 +685,10 @@
     
       <li class="post">
         <a href="/blog/2013/06/12/screen-calipers/">screen calipers</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/03/testing-jquery-code-via-yui-test/">Testing jQuery code via YUI Test</a>
       </li>
     
   </ul>
