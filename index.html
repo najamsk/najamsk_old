@@ -9,7 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="I am managing different servers and each of them have different responsibilities. I am learning powershell and trying to build lego blocks that will &hellip;">
+  <meta name="description" content="When your web application is running on web server and you don&#8217;t have automatic backup service available form your hosting service provider &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,120 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/10/01/archive-folders-with-powershell/">Archive Folders With Powershell</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-01T12:09:00+05:00" pubdate data-updated="true">Oct 1<span>st</span>, 2014</time>
+        
+         | <a href="/blog/2014/10/01/archive-folders-with-powershell/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When your web application is running on web server and you don&#8217;t have automatic backup service available form your hosting service provider taking manual backups is really a frustrating job.</p>
+
+<p>I have <a href="[https://pscx.codeplex.com/](https://pscx.codeplex.com/">Pscx</a>) module installed on my PC and they have a nice little command Write-Zip available so I decided to write a custom powershell function that can create archive in zip formats for me. You can use windows task scheduler to invoke any powershell script so you can take advantage of this to have automatic daily or monthly backups.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#$target is the folder you want to zip
+</span><span class='line'>#$destinaion is the path where you want to create zip file
+</span><span class='line'>#$outFile is the fileName of the generated zip file
+</span><span class='line'>function CreateZip($target, $destination, $outFile)
+</span><span class='line'>{
+</span><span class='line'>
+</span><span class='line'>#todays date
+</span><span class='line'>$date = Get-Date -Format yyyy_dd_MM
+</span><span class='line'>
+</span><span class='line'>#if output file is not mentioned try to get a file name based on target
+</span><span class='line'>if ($outFile -eq $null -or $outFile -eq '')
+</span><span class='line'>{
+</span><span class='line'>    #$target = "E:\projects\AspNet\MVC\newFolder"
+</span><span class='line'>    $a = Split-Path $target -Parent
+</span><span class='line'>    $outFile = $target.Replace("$a\", "") + "_$date"  + ".zip"    
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>#if desitnation is not mentioned create zip file in target folder
+</span><span class='line'>if($destination -eq $null -or $destination -eq '')
+</span><span class='line'>{   
+</span><span class='line'>    $destinationPath = $target + $outFile;
+</span><span class='line'>}
+</span><span class='line'>else
+</span><span class='line'>{
+</span><span class='line'>    $destinationPath = $destination + $outFile
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>Write-Zip $target -IncludeEmptyDirectories -OutputPath $destinationPath
+</span><span class='line'>return $destinationPath
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>#this command will zip folder at E:\projects\AspNet\MVC\newFolder as myproject.zip at E:\Projects\AspNet\ 
+</span><span class='line'>$bakfile = CreateZip E:\projects\AspNet\MVC\newFolder E:\Projects\AspNet\ myproject.zip</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Please feel free to suggest improvements and if you have any questions use comments area.</p>
+
+<p>Thanks for your time.</p>
+
+<p>-Najam</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -584,73 +698,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/24/attended-bahria-university-job-fair/">Attended Bahria University Job Fair</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-24T21:48:00+05:00" pubdate data-updated="true">Apr 24<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/04/24/attended-bahria-university-job-fair/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Bahria university hosted a job fair session on 19th April 2013 in which they invites companies from local industry. My company also participated in the event.</p>
-
-<p>Myself and few other from our company spend whole day in the event looking for suitable events in .net, mobile development and social media positions.</p>
-
-<p>All day long I have been interviewing and the answers given by students in 6th and final semesters were disappointing.</p>
-
-<p>Common reason for such answers were:</p>
-
-<ul>
-<li>teacher didn&#8217;t teach us good</li>
-<li>course is not yet offered</li>
-<li>what we have read we don&#8217;t remember at the moment</li>
-<li>we are here for internship in 6 months you will teach us and than we will score good job in some other company. I don&#8217;t who told them we are here for schooling and companies will be teaching them for 6 months. Why universities are not teaching them?</li>
-</ul>
-
-
-<p>After attending this I have been thinking about giving sessions to students in web development for following reasons:</p>
-
-<ul>
-<li>Introduce them what industry expects form them as fresh devs.</li>
-<li>Also motivate them to learn more and don&#8217;t rely on university.</li>
-<li>Do small contributions in open source for learning.</li>
-</ul>
-
-
-<p>In next post I will outlines topics for basic training if you are interested to contribute in this cause let me know. If you want to attend such sessions than you can contact me.</p>
-
-<p>These sessions will be free and you can contribute in exercise files, topics and provide your valuable feedback.</p>
-
-<p><img src="http://sphotos-g.ak.fbcdn.net/hphotos-ak-ash3/533426_455628001181077_168154726_n.jpg" alt="bahria job expo" /></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -666,6 +713,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/10/01/archive-folders-with-powershell/">Archive Folders With Powershell</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/10/01/sending-emails-with-powershell/">Sending Emails With Powershell</a>
       </li>
     
@@ -679,10 +730,6 @@
     
       <li class="post">
         <a href="/blog/2013/07/07/empower-your-outlook-with-powershell/">empower your outlook with powershell</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/06/12/screen-calipers/">screen calipers</a>
       </li>
     
   </ul>

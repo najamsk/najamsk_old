@@ -9,7 +9,11 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content=" If you want to display the filename or page name of the current displaying page just use these two lines and it will show only the filename like &hellip;">
+  <meta name="description" content="If you want to know only the directory name not the full path of the page that is currently displaying you can use this code 1
+2
+3
+4
+string sPath = &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +81,59 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2007/11/06/how-to-get-directory-name-of-the-page-currently-displaying/">How to Get Directory Name of the Page Currently Displaying</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-11-06T06:40:00+05:00" pubdate data-updated="true">Nov 6<span>th</span>, 2007</time>
+        
+         | <a href="/blog/2007/11/06/how-to-get-directory-name-of-the-page-currently-displaying/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If you want to know only the directory name not the full path of the page that is currently displaying you can use this code</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="kt">string</span> <span class="n">sPath</span> <span class="p">=</span> <span class="n">System</span><span class="p">.</span><span class="n">Web</span><span class="p">.</span><span class="n">HttpContext</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">Request</span><span class="p">.</span><span class="n">Url</span><span class="p">.</span><span class="n">AbsolutePath</span><span class="p">;</span>
+</span><span class='line'><span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">FileInfo</span> <span class="n">oInfo</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">FileInfo</span><span class="p">(</span><span class="n">sPath</span><span class="p">);</span>
+</span><span class='line'><span class="kt">string</span> <span class="n">sRet</span> <span class="p">=</span> <span class="n">oInfo</span><span class="p">.</span><span class="n">Directory</span><span class="p">.</span><span class="n">Name</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
+</span><span class='line'><span class="n">Response</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;Directory name===&quot;</span> <span class="p">+</span> <span class="n">sRet</span> <span class="p">+</span> <span class="s">&quot;&amp;lt;br&amp;gt;&amp;lt;br&amp;gt;&quot;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Happy Coding</p>
+
+<p>Najam Sikander Awan</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -679,67 +736,6 @@ Have fun.  <img src="http://linuxquestions.cachefly.net/images/questions/images/
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2007/03/01/reinstall-grub-after-installing-windows-xp/">Reinstall Grub After Installing Windows Xp</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-03-01T11:15:00+05:00" pubdate data-updated="true">Mar 1<span>st</span>, 2007</time>
-        
-         | <a href="/blog/2007/03/01/reinstall-grub-after-installing-windows-xp/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>hi guyz</p>
-
-<p>Today i formated my c drive in which vista was installed and i replaced it with windows xp after installing win xp into my c drive my boot loader is disappeared as expected.</p>
-
-<p>Fixing  grub  (boot loader) is simple insert your suse 10.2 dvd or frist cd into drive and boot from it choose &#8220;Rescue System&#8221; after loading some stuff system will take you into command prompt</p>
-
-<ol>
-    <li>first I list all of my partitions by using fdisk -l
-<pre style="border:1px inset;overflow:auto;width:98%;height:210px;margin:0;padding:3px;">  Device Boot      Start         End      Blocks   Id  System
-/dev/sda1   *           1        2167    17406396    7  Fat32
-/dev/sda2            5822       12161    50926050    f  W95 Ext'd (LBA)
-/dev/sda3            2168        5821    29350755    c  W95 FAT32 (LBA)
-/dev/sda5            5822        6076     2048256    b  W95 FAT32
-/dev/sda6            6077        6270     1558273+  82  Linux swap
-/dev/sda7            6271        7837    12586896   83  Linux
-/dev/sda8            7838       12161    34732498+  83  Linux</pre>
-</li>
-    <li>Then enter grub</li>
-    <li>root (hd0,6)</li>
-    <li>setup (hd0)</li>
-    <li>quit</li>
-    <li>reboot :)</li>
-</ol>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/7/">&larr; Older</a>
@@ -757,6 +753,10 @@ Have fun.  <img src="http://linuxquestions.cachefly.net/images/questions/images/
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/10/01/archive-folders-with-powershell/">Archive Folders With Powershell</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/10/01/sending-emails-with-powershell/">Sending Emails With Powershell</a>
       </li>
     
@@ -770,10 +770,6 @@ Have fun.  <img src="http://linuxquestions.cachefly.net/images/questions/images/
     
       <li class="post">
         <a href="/blog/2013/07/07/empower-your-outlook-with-powershell/">empower your outlook with powershell</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/06/12/screen-calipers/">screen calipers</a>
       </li>
     
   </ul>

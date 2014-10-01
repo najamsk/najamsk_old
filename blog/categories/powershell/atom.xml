@@ -4,7 +4,7 @@
   <title><![CDATA[Category: powershell | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/powershell/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-10-01T10:36:24+05:00</updated>
+  <updated>2014-10-01T12:24:36+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -12,6 +12,130 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Archive Folders With Powershell]]></title>
+    <link href="http://blog.najamsikander.com/blog/2014/10/01/archive-folders-with-powershell/"/>
+    <updated>2014-10-01T12:09:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2014/10/01/archive-folders-with-powershell</id>
+    <content type="html"><![CDATA[<p>When your web application is running on web server and you don't have automatic backup service available form your hosting service provider taking manual backups is really a frustrating job.</p>
+
+<p>I have <a href="[https://pscx.codeplex.com/](https://pscx.codeplex.com/">Pscx</a>) module installed on my PC and they have a nice little command Write-Zip available so I decided to write a custom powershell function that can create archive in zip formats for me. You can use windows task scheduler to invoke any powershell script so you can take advantage of this to have automatic daily or monthly backups.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>$target is the folder you want to zip&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>$destinaion is the path where you want to create zip file&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>$outFile is the fileName of the generated zip file&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>function CreateZip($target, $destination, $outFile)
+</span><span class='line'>{&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>todays date&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>$date = Get-Date -Format yyyy_dd_MM&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>if output file is not mentioned try to get a file name based on target&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>if ($outFile -eq $null -or $outFile -eq '')
+</span><span class='line'>{&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>#$target = "E:\projects\AspNet\MVC\newFolder"
+</span><span class='line'>$a = Split-Path $target -Parent
+</span><span class='line'>$outFile = $target.Replace("$a\", "") + "_$date"  + ".zip"    
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>if desitnation is not mentioned create zip file in target folder&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>if($destination -eq $null -or $destination -eq '')
+</span><span class='line'>{&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>$destinationPath = $target + $outFile;
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}
+</span><span class='line'>else
+</span><span class='line'>{&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>$destinationPath = $destination + $outFile
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>Write-Zip $target -IncludeEmptyDirectories -OutputPath $destinationPath
+</span><span class='line'>return $destinationPath
+</span><span class='line'>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>this command will zip folder at E:\projects\AspNet\MVC\newFolder as myproject.zip at E:\Projects\AspNet\&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>$bakfile = CreateZip E:\projects\AspNet\MVC\newFolder E:\Projects\AspNet\ myproject.zip&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Please feel free to suggest improvements and if you have any questions use comments area.</p>
+
+<p>Thanks for your time.</p>
+
+<p>-Najam</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Sending Emails With Powershell]]></title>

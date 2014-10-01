@@ -4,7 +4,7 @@
   <title><![CDATA[Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-10-01T10:36:24+05:00</updated>
+  <updated>2014-10-01T12:24:36+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -12,6 +12,91 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Archive Folders With Powershell]]></title>
+    <link href="http://blog.najamsikander.com/blog/2014/10/01/archive-folders-with-powershell/"/>
+    <updated>2014-10-01T12:09:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2014/10/01/archive-folders-with-powershell</id>
+    <content type="html"><![CDATA[<p>When your web application is running on web server and you don&#8217;t have automatic backup service available form your hosting service provider taking manual backups is really a frustrating job.</p>
+
+<p>I have <a href="[https://pscx.codeplex.com/](https://pscx.codeplex.com/">Pscx</a>) module installed on my PC and they have a nice little command Write-Zip available so I decided to write a custom powershell function that can create archive in zip formats for me. You can use windows task scheduler to invoke any powershell script so you can take advantage of this to have automatic daily or monthly backups.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#$target is the folder you want to zip
+</span><span class='line'>#$destinaion is the path where you want to create zip file
+</span><span class='line'>#$outFile is the fileName of the generated zip file
+</span><span class='line'>function CreateZip($target, $destination, $outFile)
+</span><span class='line'>{
+</span><span class='line'>
+</span><span class='line'>#todays date
+</span><span class='line'>$date = Get-Date -Format yyyy_dd_MM
+</span><span class='line'>
+</span><span class='line'>#if output file is not mentioned try to get a file name based on target
+</span><span class='line'>if ($outFile -eq $null -or $outFile -eq '')
+</span><span class='line'>{
+</span><span class='line'>    #$target = "E:\projects\AspNet\MVC\newFolder"
+</span><span class='line'>    $a = Split-Path $target -Parent
+</span><span class='line'>    $outFile = $target.Replace("$a\", "") + "_$date"  + ".zip"    
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>#if desitnation is not mentioned create zip file in target folder
+</span><span class='line'>if($destination -eq $null -or $destination -eq '')
+</span><span class='line'>{   
+</span><span class='line'>    $destinationPath = $target + $outFile;
+</span><span class='line'>}
+</span><span class='line'>else
+</span><span class='line'>{
+</span><span class='line'>    $destinationPath = $destination + $outFile
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>Write-Zip $target -IncludeEmptyDirectories -OutputPath $destinationPath
+</span><span class='line'>return $destinationPath
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>#this command will zip folder at E:\projects\AspNet\MVC\newFolder as myproject.zip at E:\Projects\AspNet\ 
+</span><span class='line'>$bakfile = CreateZip E:\projects\AspNet\MVC\newFolder E:\Projects\AspNet\ myproject.zip</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Please feel free to suggest improvements and if you have any questions use comments area.</p>
+
+<p>Thanks for your time.</p>
+
+<p>-Najam</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Sending Emails With Powershell]]></title>
@@ -617,41 +702,6 @@ jQuery.fn.jquery;</pre>
 
 
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Facebook Application Development using Asp.net]]></title>
-    <link href="http://blog.najamsikander.com/blog/2010/09/23/facebook-application-development-using-asp-net/"/>
-    <updated>2010-09-23T01:31:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2010/09/23/facebook-application-development-using-asp-net</id>
-    <content type="html"><![CDATA[<p>Hi,</p>
-
-<p>I have been busy with facebook application development using IFrame and since I have asp.net background so instead of php I wanted to do this in asp.net their are few wrappers or sdk available for this like. After googling I have picked <a href="http://facebooktoolkit.codeplex.com/">Facebook developer toolkit v3.01</a>. After downloading the binaries I have created a asp.net web application project with 4.0 framework and simply added the reference of facebook.dll and facebook.web.dll.</p>
-
-<p>In default.aspx code behind file we add the using statements for facebook dlls and inherit our page from facebook.web.CanvasIFrameBasePage and override the PreInit method for default page. Look at the snapshot of my default.aspx.cs for more understanding.</p>
-
-<p><a href="http://lh5.ggpht.com/_N_nhMTznTSY/TJrnvUilvCI/AAAAAAAAACE/tHVcjSKB9BY/s800/5.jpg"><img class="  " title="Defualt.aspx.cs" src="http://lh5.ggpht.com/_N_nhMTznTSY/TJrnvUilvCI/AAAAAAAAACE/tHVcjSKB9BY/s800/5.jpg" alt="Default page code behind " width="504" height="308" /></a></p>
-
-<p>The hardest part was to configure my app with facebook and I also wanted to continue development using my development PC so that I don&#8217;t have to upload my code as code changes. So lets first dive into facebook app configurations.</p>
-
-<p><a href="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnqw-CC4I/AAAAAAAAABs/hPltmO-C6Io/s720/2.jpg"><img class=" " title="Facebook Application Settings" src="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnqw-CC4I/AAAAAAAAABs/hPltmO-C6Io/s720/2.jpg" alt="FB APP Settings" width="504" height="347" /></a></p>
-
-<p>From above snapshot you can see my application will run at at http://apps.facebook.com/fbnajam and the domain I am providing as Canvas URL is http://fbnajam.com. The www.fbnajam.com domain is not registered to anyone :) I will map this domain to my local IP address (127.0.0.1) by editting hosts file.</p>
-
-<p><a href="http://lh5.ggpht.com/_N_nhMTznTSY/TJrntfNdypI/AAAAAAAAAB8/H51GzD07FxM/s1024/3.jpg"><img class=" " title="Hosts file" src="http://lh5.ggpht.com/_N_nhMTznTSY/TJrntfNdypI/AAAAAAAAAB8/H51GzD07FxM/s1024/3.jpg" alt="domain mapping" width="717" height="338" /></a></p>
-
-<p>Note in hosts file you can&#8217;t put port with ip address for example 127.0.0./:1259 will not work so in your hosts file you will only enter the mapping between your virtual domain and 127.0.0.1 after making the entry make sure you reboot your PC to commit your changes.</p>
-
-<p>Final part is to edit your web.config file and put app settings section which will contain your faceboko app api key, facebook app secret key and facebook app callbak URL in my case that was fbnajam.com for more understanding please look at following snapshot.</p>
-
-<p><a href="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnuXSsh2I/AAAAAAAAACA/mJg7weL-tbI/s800/4.jpg"><img class=" " title="Web.Config" src="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnuXSsh2I/AAAAAAAAACA/mJg7weL-tbI/s800/4.jpg" alt="web config" width="560" height="337" /></a></p>
-
-<p>Now if you press F5 to run your application it will open facebook page showing your app and you will see your your name.</p>
-
-<p><a href="http://lh6.ggpht.com/_N_nhMTznTSY/TJrnrgWdiNI/AAAAAAAAAB0/QbLOxyowUww/6.jpg"><img class=" " title="Facebook App Running" src="http://lh6.ggpht.com/_N_nhMTznTSY/TJrnrgWdiNI/AAAAAAAAAB0/QbLOxyowUww/6.jpg" alt="app result" width="694" height="195" /></a></p>
-
-<p>After creating my first Facebook IFrame application I still want to use xFBML if supported need to test this application in my office. After doing some more experiments will update this post.</p>
 ]]></content>
   </entry>
   

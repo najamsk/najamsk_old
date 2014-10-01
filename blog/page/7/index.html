@@ -9,10 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="Hi guyz My sound card working now after installing latest Alsa driver, Lib and Utils. Compile alsa-driver like this: 1
-2
-3
-./configure --with-cards= &hellip;">
+  <meta name="description" content="hi guyz Today i formated my c drive in which vista was installed and i replaced it with windows xp after installing win xp into my c drive my boot &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -80,6 +77,67 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2007/03/01/reinstall-grub-after-installing-windows-xp/">Reinstall Grub After Installing Windows Xp</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2007-03-01T11:15:00+05:00" pubdate data-updated="true">Mar 1<span>st</span>, 2007</time>
+        
+         | <a href="/blog/2007/03/01/reinstall-grub-after-installing-windows-xp/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hi guyz</p>
+
+<p>Today i formated my c drive in which vista was installed and i replaced it with windows xp after installing win xp into my c drive my boot loader is disappeared as expected.</p>
+
+<p>Fixing  grub  (boot loader) is simple insert your suse 10.2 dvd or frist cd into drive and boot from it choose &#8220;Rescue System&#8221; after loading some stuff system will take you into command prompt</p>
+
+<ol>
+    <li>first I list all of my partitions by using fdisk -l
+<pre style="border:1px inset;overflow:auto;width:98%;height:210px;margin:0;padding:3px;">  Device Boot      Start         End      Blocks   Id  System
+/dev/sda1   *           1        2167    17406396    7  Fat32
+/dev/sda2            5822       12161    50926050    f  W95 Ext'd (LBA)
+/dev/sda3            2168        5821    29350755    c  W95 FAT32 (LBA)
+/dev/sda5            5822        6076     2048256    b  W95 FAT32
+/dev/sda6            6077        6270     1558273+  82  Linux swap
+/dev/sda7            6271        7837    12586896   83  Linux
+/dev/sda8            7838       12161    34732498+  83  Linux</pre>
+</li>
+    <li>Then enter grub</li>
+    <li>root (hd0,6)</li>
+    <li>setup (hd0)</li>
+    <li>quit</li>
+    <li>reboot :)</li>
+</ol>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -633,44 +691,6 @@ cdrom                  38625  1 ide_cd
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2006/02/18/windows-xp-professional-password-protected-file-sharing/">Windows XP Professional Password Protected File Sharing?</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2006-02-18T16:24:00+05:00" pubdate data-updated="true">Feb 18<span>th</span>, 2006</time>
-        
-         | <a href="/blog/2006/02/18/windows-xp-professional-password-protected-file-sharing/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Now days I am very curious to know how to restrict access to my shared folders I am currently using Windows XP Professional and I google a lot but till now I couldn’t find how to apply password. If someone knows how to do that with windows XP professional then please email me or comment your solution.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/8/">&larr; Older</a>
@@ -688,6 +708,10 @@ cdrom                  38625  1 ide_cd
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/10/01/archive-folders-with-powershell/">Archive Folders With Powershell</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/10/01/sending-emails-with-powershell/">Sending Emails With Powershell</a>
       </li>
     
@@ -701,10 +725,6 @@ cdrom                  38625  1 ide_cd
     
       <li class="post">
         <a href="/blog/2013/07/07/empower-your-outlook-with-powershell/">empower your outlook with powershell</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/06/12/screen-calipers/">screen calipers</a>
       </li>
     
   </ul>

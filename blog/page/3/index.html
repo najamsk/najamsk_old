@@ -9,8 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content=" Paul Irish : 10 Things I Learned from the jQuery Source from yayQuery on Vimeo.
-">
+  <meta name="description" content="Hi, I have been busy with facebook application development using IFrame and since I have asp.net background so instead of php I wanted to do this in &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +77,70 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/09/23/facebook-application-development-using-asp-net/">Facebook Application Development Using Asp.net</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-09-23T01:31:00+05:00" pubdate data-updated="true">Sep 23<span>rd</span>, 2010</time>
+        
+         | <a href="/blog/2010/09/23/facebook-application-development-using-asp-net/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hi,</p>
+
+<p>I have been busy with facebook application development using IFrame and since I have asp.net background so instead of php I wanted to do this in asp.net their are few wrappers or sdk available for this like. After googling I have picked <a href="http://facebooktoolkit.codeplex.com/">Facebook developer toolkit v3.01</a>. After downloading the binaries I have created a asp.net web application project with 4.0 framework and simply added the reference of facebook.dll and facebook.web.dll.</p>
+
+<p>In default.aspx code behind file we add the using statements for facebook dlls and inherit our page from facebook.web.CanvasIFrameBasePage and override the PreInit method for default page. Look at the snapshot of my default.aspx.cs for more understanding.</p>
+
+<p><a href="http://lh5.ggpht.com/_N_nhMTznTSY/TJrnvUilvCI/AAAAAAAAACE/tHVcjSKB9BY/s800/5.jpg"><img class="  " title="Defualt.aspx.cs" src="http://lh5.ggpht.com/_N_nhMTznTSY/TJrnvUilvCI/AAAAAAAAACE/tHVcjSKB9BY/s800/5.jpg" alt="Default page code behind " width="504" height="308" /></a></p>
+
+<p>The hardest part was to configure my app with facebook and I also wanted to continue development using my development PC so that I don&#8217;t have to upload my code as code changes. So lets first dive into facebook app configurations.</p>
+
+<p><a href="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnqw-CC4I/AAAAAAAAABs/hPltmO-C6Io/s720/2.jpg"><img class=" " title="Facebook Application Settings" src="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnqw-CC4I/AAAAAAAAABs/hPltmO-C6Io/s720/2.jpg" alt="FB APP Settings" width="504" height="347" /></a></p>
+
+<p>From above snapshot you can see my application will run at at http://apps.facebook.com/fbnajam and the domain I am providing as Canvas URL is http://fbnajam.com. The www.fbnajam.com domain is not registered to anyone :) I will map this domain to my local IP address (127.0.0.1) by editting hosts file.</p>
+
+<p><a href="http://lh5.ggpht.com/_N_nhMTznTSY/TJrntfNdypI/AAAAAAAAAB8/H51GzD07FxM/s1024/3.jpg"><img class=" " title="Hosts file" src="http://lh5.ggpht.com/_N_nhMTznTSY/TJrntfNdypI/AAAAAAAAAB8/H51GzD07FxM/s1024/3.jpg" alt="domain mapping" width="717" height="338" /></a></p>
+
+<p>Note in hosts file you can&#8217;t put port with ip address for example 127.0.0./:1259 will not work so in your hosts file you will only enter the mapping between your virtual domain and 127.0.0.1 after making the entry make sure you reboot your PC to commit your changes.</p>
+
+<p>Final part is to edit your web.config file and put app settings section which will contain your faceboko app api key, facebook app secret key and facebook app callbak URL in my case that was fbnajam.com for more understanding please look at following snapshot.</p>
+
+<p><a href="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnuXSsh2I/AAAAAAAAACA/mJg7weL-tbI/s800/4.jpg"><img class=" " title="Web.Config" src="http://lh4.ggpht.com/_N_nhMTznTSY/TJrnuXSsh2I/AAAAAAAAACA/mJg7weL-tbI/s800/4.jpg" alt="web config" width="560" height="337" /></a></p>
+
+<p>Now if you press F5 to run your application it will open facebook page showing your app and you will see your your name.</p>
+
+<p><a href="http://lh6.ggpht.com/_N_nhMTznTSY/TJrnrgWdiNI/AAAAAAAAAB0/QbLOxyowUww/6.jpg"><img class=" " title="Facebook App Running" src="http://lh6.ggpht.com/_N_nhMTznTSY/TJrnrgWdiNI/AAAAAAAAAB0/QbLOxyowUww/6.jpg" alt="app result" width="694" height="195" /></a></p>
+
+<p>After creating my first Facebook IFrame application I still want to use xFBML if supported need to test this application in my office. After doing some more experiments will update this post.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -964,48 +1027,6 @@ removes somebranch</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/06/29/javascript-5-ways-to-call-a-function/">JavaScript, 5 Ways to Call a Function</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-06-29T00:29:00+05:00" pubdate data-updated="true">Jun 29<span>th</span>, 2009</time>
-        
-         | <a href="/blog/2009/06/29/javascript-5-ways-to-call-a-function/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Hello</p>
-
-<p>I have came across to this wonderful blog post that show in details how to call javascript functions using different ways its a must read article even if you are not good in javascript please read article at</p>
-
-<p><a href="http://devlicio.us/blogs/sergio_pereira/archive/2009/02/09/javascript-5-ways-to-call-a-function.aspx" target="_self">http://devlicio.us/blogs/sergio_pereira/archive/2009/02/09/javascript-5-ways-to-call-a-function.aspx</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -1023,6 +1044,10 @@ removes somebranch</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/10/01/archive-folders-with-powershell/">Archive Folders With Powershell</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/10/01/sending-emails-with-powershell/">Sending Emails With Powershell</a>
       </li>
     
@@ -1036,10 +1061,6 @@ removes somebranch</p>
     
       <li class="post">
         <a href="/blog/2013/07/07/empower-your-outlook-with-powershell/">empower your outlook with powershell</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/06/12/screen-calipers/">screen calipers</a>
       </li>
     
   </ul>
