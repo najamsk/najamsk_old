@@ -4,7 +4,7 @@
   <title><![CDATA[Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-09-30T22:28:47+05:00</updated>
+  <updated>2014-10-01T10:16:47+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Sending Emails With Powershell]]></title>
+    <link href="http://blog.najamsikander.com/blog/2014/10/01/sending-emails-with-powershell/"/>
+    <updated>2014-10-01T10:09:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2014/10/01/sending-emails-with-powershell</id>
+    <content type="html"><![CDATA[<p>I am managing different servers and each of them have different responsibilities.</p>
+
+<p>I am learning powershell and trying to build lego blocks that will eventually become recipes for automating tasks on different servers. One important block is email report for that if you don&#8217;t have smtp configured on server you can use following powershell script with gmail SMTP information.</p>
+
+<p>I will open source on <a href="https://github.com/najamsk/powershellRepo">github</a> many of the small powershell scripts that you can make use of to build somethign cool.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$EmailFrom = "from@mail.com"
+</span><span class='line'>$EmailTo = "to@mail.com" 
+</span><span class='line'>$Subject = "emailing powershell report" 
+</span><span class='line'>$Body = "this should work on remove server as well. test email" 
+</span><span class='line'>$SMTPServer = "smtp.gmail.com" 
+</span><span class='line'>$SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587) 
+</span><span class='line'>$SMTPClient.EnableSsl = $true 
+</span><span class='line'>$SMTPClient.Credentials = New-Object System.Net.NetworkCredential("gmailUser", "gmailPasswor"); 
+</span><span class='line'>$SMTPClient.Send($EmailFrom, $EmailTo, $Subject, $Body)</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Open letter to PTCL - desi version]]></title>
@@ -613,18 +646,6 @@ jQuery.fn.jquery;</pre>
 <p><a href="http://lh6.ggpht.com/_N_nhMTznTSY/TJrnrgWdiNI/AAAAAAAAAB0/QbLOxyowUww/6.jpg"><img class=" " title="Facebook App Running" src="http://lh6.ggpht.com/_N_nhMTznTSY/TJrnrgWdiNI/AAAAAAAAAB0/QbLOxyowUww/6.jpg" alt="app result" width="694" height="195" /></a></p>
 
 <p>After creating my first Facebook IFrame application I still want to use xFBML if supported need to test this application in my office. After doing some more experiments will update this post.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[10 Things I Learned from the jQuery Source]]></title>
-    <link href="http://blog.najamsikander.com/blog/2010/07/23/10-things-i-learned-from-the-jquery-source/"/>
-    <updated>2010-07-23T03:22:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2010/07/23/10-things-i-learned-from-the-jquery-source</id>
-    <content type="html"><![CDATA[<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="450" height="275" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://vimeo.com/moogaloop.swf?clip_id=12529436&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed type="application/x-shockwave-flash" width="450" height="275" src="http://vimeo.com/moogaloop.swf?clip_id=12529436&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" allowscriptaccess="always" allowfullscreen="true"></embed></object>
-
-
-<p><a href="http://vimeo.com/12529436">Paul Irish : 10 Things I Learned from the jQuery Source</a> from <a href="http://vimeo.com/yayquery">yayQuery</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
 ]]></content>
   </entry>
   

@@ -9,7 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="Following is the email I have sent to ebill@ptcl.net.pk it&#8217;s unplugged raw version so don&#8217;t mind about mistakes. Since i have shifted to &hellip;">
+  <meta name="description" content="I am managing different servers and each of them have different responsibilities. I am learning powershell and trying to build lego blocks that will &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,68 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/10/01/sending-emails-with-powershell/">Sending Emails With Powershell</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-01T10:09:00+05:00" pubdate data-updated="true">Oct 1<span>st</span>, 2014</time>
+        
+         | <a href="/blog/2014/10/01/sending-emails-with-powershell/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I am managing different servers and each of them have different responsibilities.</p>
+
+<p>I am learning powershell and trying to build lego blocks that will eventually become recipes for automating tasks on different servers. One important block is email report for that if you don&#8217;t have smtp configured on server you can use following powershell script with gmail SMTP information.</p>
+
+<p>I will open source on <a href="https://github.com/najamsk/powershellRepo">github</a> many of the small powershell scripts that you can make use of to build somethign cool.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$EmailFrom = "from@mail.com"
+</span><span class='line'>$EmailTo = "to@mail.com" 
+</span><span class='line'>$Subject = "emailing powershell report" 
+</span><span class='line'>$Body = "this should work on remove server as well. test email" 
+</span><span class='line'>$SMTPServer = "smtp.gmail.com" 
+</span><span class='line'>$SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587) 
+</span><span class='line'>$SMTPClient.EnableSsl = $true 
+</span><span class='line'>$SMTPClient.Credentials = New-Object System.Net.NetworkCredential("gmailUser", "gmailPasswor"); 
+</span><span class='line'>$SMTPClient.Send($EmailFrom, $EmailTo, $Subject, $Body)</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -583,80 +645,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/22/playing-with-octopress-blogging/">Playing With Octopress Blogging</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-22T20:12:00+05:00" pubdate data-updated="true">Apr 22<span>nd</span>, 2013</time>
-        
-         | <a href="/blog/2013/04/22/playing-with-octopress-blogging/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I first came to know about octopress from yayquery episode in which rebbeca murphy mentioned she has moved her blog form wordpress to octopress and she is very happy with that. At that time I didn&#8217;t paid any attention to this.</p>
-
-<p>But today I suddenly started to play with it and I liked few things I learn along the way and that kept me going till I have imported all of my posts from wordpress to github pages.</p>
-
-<p>I have read following pages form octopress documentation for configuration and blogging:</p>
-
-<ul>
-<li><a href="http://octopress.org/docs/configuring/">configuring octopress</a></li>
-<li><a href="http://octopress.org/docs/blogging/">blogging with octopress</a></li>
-<li>To migrate your wordpress posts to markdown files i have used <a href="https://github.com/theaob/wpXml2Jekyll">wpxml2jekyll</a></li>
-<li>To integrate twitter into your octopress blog sidebar read <a href="http://blog.jmac.org/blog/2013/03/30/putting-twitter-back-into-octopress/">put twitter back into sidebar</a>
-To link your octopress setup with github you have to run following this will ask for your user/organization repository.</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Next you need to do following two commands to generate site from octopress and upload it to github repo.</p>
-
-<pre><code>rake generate
-rake deploy
-</code></pre>
-
-<p>I will have few things in mind to discover about octopress</p>
-
-<ul>
-<li>q: how to customize the styles/layout?</li>
-<li>q: how to make twitter work in sidebar?</li>
-<li>q: how to make rake preview to work against current copy in master branch?</li>
-<li>q: how to make it work against blog.najamsikander.com</li>
-<li>q: how to get my comments against each post from discuss?</li>
-</ul>
-
-
-<p>I will keep updating this post while discovering work around. I guess i will be ditching wordpress soon after finding all the answers.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -672,6 +660,10 @@ rake deploy
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/10/01/sending-emails-with-powershell/">Sending Emails With Powershell</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/01/25/open-letter-to-ptcl-desi-version/">Open letter to PTCL - desi version</a>
       </li>
     
@@ -685,10 +677,6 @@ rake deploy
     
       <li class="post">
         <a href="/blog/2013/06/12/screen-calipers/">screen calipers</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/03/testing-jquery-code-via-yui-test/">Testing jQuery code via YUI Test</a>
       </li>
     
   </ul>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: powershell | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/powershell/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-09-30T22:28:47+05:00</updated>
+  <updated>2014-10-01T10:16:47+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -12,6 +12,38 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Sending Emails With Powershell]]></title>
+    <link href="http://blog.najamsikander.com/blog/2014/10/01/sending-emails-with-powershell/"/>
+    <updated>2014-10-01T10:09:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2014/10/01/sending-emails-with-powershell</id>
+    <content type="html"><![CDATA[<p>I am managing different servers and each of them have different responsibilities.</p>
+
+<p>I am learning powershell and trying to build lego blocks that will eventually become recipes for automating tasks on different servers. One important block is email report for that if you don't have smtp configured on server you can use following powershell script with gmail SMTP information.</p>
+
+<p>I will open source on <a href="https://github.com/najamsk/powershellRepo">github</a> many of the small powershell scripts that you can make use of to build somethign cool.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$EmailFrom = "from@mail.com"
+</span><span class='line'>$EmailTo = "to@mail.com"
+</span><span class='line'>$Subject = "emailing powershell report"
+</span><span class='line'>$Body = "this should work on remove server as well. test email"
+</span><span class='line'>$SMTPServer = "smtp.gmail.com"
+</span><span class='line'>$SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
+</span><span class='line'>$SMTPClient.EnableSsl = $true
+</span><span class='line'>$SMTPClient.Credentials = New-Object System.Net.NetworkCredential("gmailUser", "gmailPasswor");
+</span><span class='line'>$SMTPClient.Send($EmailFrom, $EmailTo, $Subject, $Body)</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[empower your outlook with powershell]]></title>

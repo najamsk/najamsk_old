@@ -9,7 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="I have been watching Mix11 videos about asp.net mvc3 and felt pretty excited to mingle with these latest bits but I didn&#8217;t wanted to limit &hellip;">
+  <meta name="description" content="I first came to know about octopress from yayquery episode in which rebbeca murphy mentioned she has moved her blog form wordpress to octopress and &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,80 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/22/playing-with-octopress-blogging/">Playing With Octopress Blogging</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-22T20:12:00+05:00" pubdate data-updated="true">Apr 22<span>nd</span>, 2013</time>
+        
+         | <a href="/blog/2013/04/22/playing-with-octopress-blogging/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I first came to know about octopress from yayquery episode in which rebbeca murphy mentioned she has moved her blog form wordpress to octopress and she is very happy with that. At that time I didn&#8217;t paid any attention to this.</p>
+
+<p>But today I suddenly started to play with it and I liked few things I learn along the way and that kept me going till I have imported all of my posts from wordpress to github pages.</p>
+
+<p>I have read following pages form octopress documentation for configuration and blogging:</p>
+
+<ul>
+<li><a href="http://octopress.org/docs/configuring/">configuring octopress</a></li>
+<li><a href="http://octopress.org/docs/blogging/">blogging with octopress</a></li>
+<li>To migrate your wordpress posts to markdown files i have used <a href="https://github.com/theaob/wpXml2Jekyll">wpxml2jekyll</a></li>
+<li>To integrate twitter into your octopress blog sidebar read <a href="http://blog.jmac.org/blog/2013/03/30/putting-twitter-back-into-octopress/">put twitter back into sidebar</a>
+To link your octopress setup with github you have to run following this will ask for your user/organization repository.</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake setup_github_pages</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next you need to do following two commands to generate site from octopress and upload it to github repo.</p>
+
+<pre><code>rake generate
+rake deploy
+</code></pre>
+
+<p>I will have few things in mind to discover about octopress</p>
+
+<ul>
+<li>q: how to customize the styles/layout?</li>
+<li>q: how to make twitter work in sidebar?</li>
+<li>q: how to make rake preview to work against current copy in master branch?</li>
+<li>q: how to make it work against blog.najamsikander.com</li>
+<li>q: how to get my comments against each post from discuss?</li>
+</ul>
+
+
+<p>I will keep updating this post while discovering work around. I guess i will be ditching wordpress soon after finding all the answers.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -573,47 +647,6 @@ jQuery.fn.jquery;</pre>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/07/23/10-things-i-learned-from-the-jquery-source/">10 Things I Learned From the jQuery Source</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-07-23T03:22:00+05:00" pubdate data-updated="true">Jul 23<span>rd</span>, 2010</time>
-        
-         | <a href="/blog/2010/07/23/10-things-i-learned-from-the-jquery-source/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="450" height="275" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://vimeo.com/moogaloop.swf?clip_id=12529436&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed type="application/x-shockwave-flash" width="450" height="275" src="http://vimeo.com/moogaloop.swf?clip_id=12529436&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" allowscriptaccess="always" allowfullscreen="true"></embed></object>
-
-
-<p><a href="http://vimeo.com/12529436">Paul Irish : 10 Things I Learned from the jQuery Source</a> from <a href="http://vimeo.com/yayquery">yayQuery</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -631,6 +664,10 @@ jQuery.fn.jquery;</pre>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/10/01/sending-emails-with-powershell/">Sending Emails With Powershell</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/01/25/open-letter-to-ptcl-desi-version/">Open letter to PTCL - desi version</a>
       </li>
     
@@ -644,10 +681,6 @@ jQuery.fn.jquery;</pre>
     
       <li class="post">
         <a href="/blog/2013/06/12/screen-calipers/">screen calipers</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/05/03/testing-jquery-code-via-yui-test/">Testing jQuery code via YUI Test</a>
       </li>
     
   </ul>

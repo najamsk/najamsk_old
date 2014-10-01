@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Sending Emails With Powershell - Najam Sikander Awan</title>
+  <meta name="author" content="najam sikander awan">
+
+  
+  <meta name="description" content="I am managing different servers and each of them have different responsibilities. I am learning powershell and trying to build lego blocks that will &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.najamsikander.com/blog/2014/10/01/sending-emails-with-powershell">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Najam Sikander Awan" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-40504056-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Najam Sikander Awan</a></h1>
+  
+    <h2>covering web stack along with microsoft technologies</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.najamsikander.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Sending Emails With Powershell</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-01T10:09:00+05:00" pubdate data-updated="true">Oct 1<span>st</span>, 2014</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I am managing different servers and each of them have different responsibilities.</p>
+
+<p>I am learning powershell and trying to build lego blocks that will eventually become recipes for automating tasks on different servers. One important block is email report for that if you don&#8217;t have smtp configured on server you can use following powershell script with gmail SMTP information.</p>
+
+<p>I will open source on <a href="https://github.com/najamsk/powershellRepo">github</a> many of the small powershell scripts that you can make use of to build somethign cool.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$EmailFrom = "from@mail.com"
+</span><span class='line'>$EmailTo = "to@mail.com" 
+</span><span class='line'>$Subject = "emailing powershell report" 
+</span><span class='line'>$Body = "this should work on remove server as well. test email" 
+</span><span class='line'>$SMTPServer = "smtp.gmail.com" 
+</span><span class='line'>$SMTPClient = New-Object Net.Mail.SmtpClient($SmtpServer, 587) 
+</span><span class='line'>$SMTPClient.EnableSsl = $true 
+</span><span class='line'>$SMTPClient.Credentials = New-Object System.Net.NetworkCredential("gmailUser", "gmailPasswor"); 
+</span><span class='line'>$SMTPClient.Send($EmailFrom, $EmailTo, $Subject, $Body)</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">najam sikander awan</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-01T10:09:00+05:00" pubdate data-updated="true">Oct 1<span>st</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/email/'>Email</a>, <a class='category' href='/blog/categories/powershell/'>powershell</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.najamsikander.com/blog/2014/10/01/sending-emails-with-powershell/" data-via="najamsikander" data-counturl="http://blog.najamsikander.com/blog/2014/10/01/sending-emails-with-powershell/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/01/25/open-letter-to-ptcl-desi-version/" title="Previous Post: Open letter to PTCL - desi version">&laquo; Open letter to PTCL - desi version</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/10/01/sending-emails-with-powershell/">Sending Emails With Powershell</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/01/25/open-letter-to-ptcl-desi-version/">Open letter to PTCL - desi version</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/10/22/mongodb-setup-on-windows-8/">MongoDB Setup On Windows 8</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/07/07/empower-your-outlook-with-powershell/">empower your outlook with powershell</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/06/12/screen-calipers/">screen calipers</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+ <h1>Twitter</h1>
+ <a class="twitter-timeline" href="https://twitter.com/najamsikander" data-widget-id="327838592250548224">Tweets by @najamsikander</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</section>
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - najam sikander awan -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'najamsikanderawan';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.najamsikander.com/blog/2014/10/01/sending-emails-with-powershell/';
+        var disqus_url = 'http://blog.najamsikander.com/blog/2014/10/01/sending-emails-with-powershell/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
