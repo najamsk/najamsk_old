@@ -83,6 +83,96 @@
       
   <header>
     
+      <h1 class="entry-title"><a href="/blog/2014/10/01/automating-ftp-uploads-with-powershell/">Automating Ftp Uploads With Powershell</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-01T12:45:00+05:00" pubdate data-updated="true">Oct 1<span>st</span>, 2014</time>
+        
+         | <a href="/blog/2014/10/01/automating-ftp-uploads-with-powershell/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When your web application is running on web server and you don&#8217;t have automatic backup service available form your hosting service provider taking manual backups is really a frustrating job.</p>
+
+<p>I have <a href="https://pscx.codeplex.com/">Pscx</a> module installed on my PC and they have a nice little command Write-Zip available so I decided to write a custom powershell function that can create archive in zip formats for me. You can use windows task scheduler to invoke any powershell script so you can take advantage of this to have automatic daily or monthly backups.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#upload file using ftp
+</span><span class='line'>function FtpUpload($file, $ftphost, $ftpuser, $ftppass){   
+</span><span class='line'>   $Dir = Split-Path $file -Parent 
+</span><span class='line'>   $filename = $file.Replace("$Dir\", "")
+</span><span class='line'>
+</span><span class='line'>   #ftp server 
+</span><span class='line'>   $webclient = New-Object System.Net.WebClient 
+</span><span class='line'>   $webclient.Credentials = New-Object System.Net.NetworkCredential($ftpuser,$ftppass) 
+</span><span class='line'>    
+</span><span class='line'>    #list every sql server trace file 
+</span><span class='line'>    foreach($item in (dir $Dir $filename)){ 
+</span><span class='line'>        "Uploading $item..." 
+</span><span class='line'>        $filepath = $ftphost+$item.Name
+</span><span class='line'>        $filepath
+</span><span class='line'>        $uri = New-Object System.Uri($filepath)         
+</span><span class='line'>        $webclient.UploadFile($uri, $item.FullName) 
+</span><span class='line'>    } 
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>FtpUpload E:\projects\AspNet\MVC\newFoldernewFolder_2014_29_09.zip ftpHost ftpUser ftpPassword</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I have shared this script on <a href="https://github.com/najamsk/powershellRepo">github</a> adjust it accroding to your needs and share your resutls.</p>
+
+<p>Please feel free to suggest improvements and if you have any questions use comments area.</p>
+
+<p>Thanks for your time.</p>
+
+<p>-Najam</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
       <h1 class="entry-title"><a href="/blog/2014/10/01/archive-folders-with-powershell/">Archive Folders With Powershell</a></h1>
     
     
@@ -654,52 +744,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/">Microsoft Islamabad Meetup</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-04-24T22:46:00+05:00" pubdate data-updated="true">Apr 24<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I have been invited to [Microsoft Community Meetup] at marriott hotel islamabad on Friday 19th April 2013. It was really nice experience to meet fellow devs, students and MVP.</p>
-
-<p>Session was about windows 8 platform they have shown few apps that are developed in Pakistan and available for global audience. Highlight of the meetup was teams that have participated in Imagine cup and from pakistan. Team with first position showcased their project and I was blown away by their concept, presentation and business skills.</p>
-
-<p>These students are from <a href="http://www.giki.edu.pk/">Ghulam Ishaq Khan Institute</a> and their project is called &#8220;EPI-C&#8221; do check it out.</p>
-
-<p><img src="http://sphotos-h.ak.fbcdn.net/hphotos-ak-ash3/562418_10152378956639625_176689566_n.jpg" alt="EPI-C" /></p>
-
-<p>thanks for reading my blog.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -715,6 +759,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/10/01/automating-ftp-uploads-with-powershell/">Automating Ftp Uploads With Powershell</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/10/01/archive-folders-with-powershell/">Archive Folders With Powershell</a>
       </li>
     
@@ -728,10 +776,6 @@
     
       <li class="post">
         <a href="/blog/2013/10/22/mongodb-setup-on-windows-8/">MongoDB Setup On Windows 8</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/07/07/empower-your-outlook-with-powershell/">empower your outlook with powershell</a>
       </li>
     
   </ul>

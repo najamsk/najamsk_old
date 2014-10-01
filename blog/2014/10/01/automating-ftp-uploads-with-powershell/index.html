@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>empower your outlook with powershell - Najam Sikander Awan</title>
+  <title>Automating Ftp Uploads With Powershell - Najam Sikander Awan</title>
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="I needed to genrate an email log that contains every email from our clients these normally stored in their seprate folder. One way was to copy and &hellip;">
+  <meta name="description" content="When your web application is running on web server and you don&#8217;t have automatic backup service available form your hosting service provider &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.najamsikander.com/blog/2013/07/07/empower-your-outlook-with-powershell">
+  <link rel="canonical" href="http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Najam Sikander Awan" type="application/atom+xml">
@@ -80,7 +80,7 @@
   
   <header>
     
-      <h1 class="entry-title">Empower Your Outlook With Powershell</h1>
+      <h1 class="entry-title">Automating Ftp Uploads With Powershell</h1>
     
     
       <p class="meta">
@@ -96,7 +96,7 @@
   
 
 
-<time datetime="2013-07-07T19:49:00+05:00" pubdate data-updated="true">Jul 7<span>th</span>, 2013</time>
+<time datetime="2014-10-01T12:45:00+05:00" pubdate data-updated="true">Oct 1<span>st</span>, 2014</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -105,21 +105,59 @@
   </header>
 
 
-<div class="entry-content"><p>I needed to genrate an email log that contains every email from our clients these normally stored in their seprate folder. One way was to copy and paste email headers and body into a word document. Second was to use powershell and got all the emails using some script.</p>
+<div class="entry-content"><p>When your web application is running on web server and you don&#8217;t have automatic backup service available form your hosting service provider taking manual backups is really a frustrating job.</p>
 
-<p>After playing a little with powershell and google few of its basic I have completed my task with powershell.</p>
+<p>I have <a href="https://pscx.codeplex.com/">Pscx</a> module installed on my PC and they have a nice little command Write-Zip available so I decided to write a custom powershell function that can create archive in zip formats for me. You can use windows task scheduler to invoke any powershell script so you can take advantage of this to have automatic daily or monthly backups.</p>
 
-<div><script src='https://gist.github.com/5944505.js'></script>
-<noscript><pre><code></code></pre></noscript></div>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#upload file using ftp
+</span><span class='line'>function FtpUpload($file, $ftphost, $ftpuser, $ftppass){   
+</span><span class='line'>   $Dir = Split-Path $file -Parent 
+</span><span class='line'>   $filename = $file.Replace("$Dir\", "")
+</span><span class='line'>
+</span><span class='line'>   #ftp server 
+</span><span class='line'>   $webclient = New-Object System.Net.WebClient 
+</span><span class='line'>   $webclient.Credentials = New-Object System.Net.NetworkCredential($ftpuser,$ftppass) 
+</span><span class='line'>    
+</span><span class='line'>    #list every sql server trace file 
+</span><span class='line'>    foreach($item in (dir $Dir $filename)){ 
+</span><span class='line'>        "Uploading $item..." 
+</span><span class='line'>        $filepath = $ftphost+$item.Name
+</span><span class='line'>        $filepath
+</span><span class='line'>        $uri = New-Object System.Uri($filepath)         
+</span><span class='line'>        $webclient.UploadFile($uri, $item.FullName) 
+</span><span class='line'>    } 
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>FtpUpload E:\projects\AspNet\MVC\newFoldernewFolder_2014_29_09.zip ftpHost ftpUser ftpPassword</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Above code is used to select a folder under your outlook inbox in my case its jun 2013 which comes under EmailLog which is under my inbox. I have saved the result of this function into a variable. That would be passed into second function for html creation.</p>
+<p>I have shared this script on <a href="https://github.com/najamsk/powershellRepo">github</a> adjust it accroding to your needs and share your resutls.</p>
 
-<div><script src='https://gist.github.com/5944515.js'></script>
-<noscript><pre><code></code></pre></noscript></div>
+<p>Please feel free to suggest improvements and if you have any questions use comments area.</p>
 
+<p>Thanks for your time.</p>
 
-<p>This function will take email objects and wrap html mark around them before saving them into a html file.</p>
+<p>-Najam</p>
 </div>
 
 
@@ -142,12 +180,12 @@
   
 
 
-<time datetime="2013-07-07T19:49:00+05:00" pubdate data-updated="true">Jul 7<span>th</span>, 2013</time>
+<time datetime="2014-10-01T12:45:00+05:00" pubdate data-updated="true">Oct 1<span>st</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/emails/'>Emails</a>, <a class='category' href='/blog/categories/productivity/'>Productivity</a>, <a class='category' href='/blog/categories/hacking/'>hacking</a>, <a class='category' href='/blog/categories/powershell/'>powershell</a>
+    <a class='category' href='/blog/categories/powershell/'>powershell</a>
   
 </span>
 
@@ -156,7 +194,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.najamsikander.com/blog/2013/07/07/empower-your-outlook-with-powershell/" data-via="najamsikander" data-counturl="http://blog.najamsikander.com/blog/2013/07/07/empower-your-outlook-with-powershell/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell/" data-via="najamsikander" data-counturl="http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell/" >Tweet</a>
   
   
   
@@ -165,10 +203,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/06/12/screen-calipers/" title="Previous Post: screen calipers">&laquo; screen calipers</a>
+        <a class="basic-alignment left" href="/blog/2014/10/01/archive-folders-with-powershell/" title="Previous Post: Archive Folders With Powershell">&laquo; Archive Folders With Powershell</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/10/22/mongodb-setup-on-windows-8/" title="Next Post: MongoDB Setup On Windows 8">MongoDB Setup On Windows 8 &raquo;</a>
       
     </p>
   </footer>
@@ -238,8 +274,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://blog.najamsikander.com/blog/2013/07/07/empower-your-outlook-with-powershell/';
-        var disqus_url = 'http://blog.najamsikander.com/blog/2013/07/07/empower-your-outlook-with-powershell/';
+        var disqus_identifier = 'http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell/';
+        var disqus_url = 'http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: powershell | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/powershell/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-10-01T12:35:40+05:00</updated>
+  <updated>2014-10-01T13:07:33+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -12,6 +12,80 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Automating Ftp Uploads With Powershell]]></title>
+    <link href="http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell/"/>
+    <updated>2014-10-01T12:45:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell</id>
+    <content type="html"><![CDATA[<p>When your web application is running on web server and you don't have automatic backup service available form your hosting service provider taking manual backups is really a frustrating job.</p>
+
+<p>I have <a href="https://pscx.codeplex.com/">Pscx</a> module installed on my PC and they have a nice little command Write-Zip available so I decided to write a custom powershell function that can create archive in zip formats for me. You can use windows task scheduler to invoke any powershell script so you can take advantage of this to have automatic daily or monthly backups.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>upload file using ftp&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>function FtpUpload($file, $ftphost, $ftpuser, $ftppass){ &lt;br/>
+</span><span class='line'>   $Dir = Split-Path $file -Parent
+</span><span class='line'>   $filename = $file.Replace("$Dir\", "")&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>   #ftp server
+</span><span class='line'>   $webclient = New-Object System.Net.WebClient
+</span><span class='line'>   $webclient.Credentials = New-Object System.Net.NetworkCredential($ftpuser,$ftppass)&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>#list every sql server trace file 
+</span><span class='line'>foreach($item in (dir $Dir $filename)){ 
+</span><span class='line'>    "Uploading $item..." 
+</span><span class='line'>    $filepath = $ftphost+$item.Name
+</span><span class='line'>    $filepath
+</span><span class='line'>    $uri = New-Object System.Uri($filepath)         
+</span><span class='line'>    $webclient.UploadFile($uri, $item.FullName) 
+</span><span class='line'>} 
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p>}&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p>FtpUpload E:\projects\AspNet\MVC\newFoldernewFolder_2014_29_09.zip ftpHost ftpUser ftpPassword&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>I have shared this script on <a href="https://github.com/najamsk/powershellRepo">github</a> adjust it accroding to your needs and share your resutls.</p>
+
+<p>Please feel free to suggest improvements and if you have any questions use comments area.</p>
+
+<p>Thanks for your time.</p>
+
+<p>-Najam</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Archive Folders With Powershell]]></title>

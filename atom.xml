@@ -4,7 +4,7 @@
   <title><![CDATA[Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-10-01T12:35:40+05:00</updated>
+  <updated>2014-10-01T13:07:33+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -12,6 +12,67 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Automating Ftp Uploads With Powershell]]></title>
+    <link href="http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell/"/>
+    <updated>2014-10-01T12:45:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell</id>
+    <content type="html"><![CDATA[<p>When your web application is running on web server and you don&#8217;t have automatic backup service available form your hosting service provider taking manual backups is really a frustrating job.</p>
+
+<p>I have <a href="https://pscx.codeplex.com/">Pscx</a> module installed on my PC and they have a nice little command Write-Zip available so I decided to write a custom powershell function that can create archive in zip formats for me. You can use windows task scheduler to invoke any powershell script so you can take advantage of this to have automatic daily or monthly backups.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#upload file using ftp
+</span><span class='line'>function FtpUpload($file, $ftphost, $ftpuser, $ftppass){   
+</span><span class='line'>   $Dir = Split-Path $file -Parent 
+</span><span class='line'>   $filename = $file.Replace("$Dir\", "")
+</span><span class='line'>
+</span><span class='line'>   #ftp server 
+</span><span class='line'>   $webclient = New-Object System.Net.WebClient 
+</span><span class='line'>   $webclient.Credentials = New-Object System.Net.NetworkCredential($ftpuser,$ftppass) 
+</span><span class='line'>    
+</span><span class='line'>    #list every sql server trace file 
+</span><span class='line'>    foreach($item in (dir $Dir $filename)){ 
+</span><span class='line'>        "Uploading $item..." 
+</span><span class='line'>        $filepath = $ftphost+$item.Name
+</span><span class='line'>        $filepath
+</span><span class='line'>        $uri = New-Object System.Uri($filepath)         
+</span><span class='line'>        $webclient.UploadFile($uri, $item.FullName) 
+</span><span class='line'>    } 
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>FtpUpload E:\projects\AspNet\MVC\newFoldernewFolder_2014_29_09.zip ftpHost ftpUser ftpPassword</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I have shared this script on <a href="https://github.com/najamsk/powershellRepo">github</a> adjust it accroding to your needs and share your resutls.</p>
+
+<p>Please feel free to suggest improvements and if you have any questions use comments area.</p>
+
+<p>Thanks for your time.</p>
+
+<p>-Najam</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Archive Folders With Powershell]]></title>
@@ -658,52 +719,6 @@ jQuery.fn.jquery;</pre>
 <p>you can use *.css as well for all the css files in current directory.</p>
 
 <p>Other then these methods I am really interested to use a tool which will take a file and list all the rules along with their count in code.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[use SWFObject v2.2 to embed swf]]></title>
-    <link href="http://blog.najamsikander.com/blog/2010/11/01/use-swfobject-v2-2-to-embed-swf/"/>
-    <updated>2010-11-01T09:46:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2010/11/01/use-swfobject-v2-2-to-embed-swf</id>
-    <content type="html"><![CDATA[
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">function</span> <span class="nx">flashswf</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="nx">target</span><span class="p">,</span> <span class="nx">Width</span><span class="p">,</span> <span class="nx">Height</span><span class="p">,</span> <span class="nx">ID</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">flashvars</span> <span class="o">=</span> <span class="p">{}</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">params</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class='line'><span class="c1">//allowfullscreen:&quot;true&quot;,</span>
-</span><span class='line'><span class="nx">allowscriptaccess</span><span class="o">:</span> <span class="s2">&quot;always&quot;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">wmode</span><span class="o">:</span> <span class="s2">&quot;transparent&quot;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">menu</span><span class="o">:</span> <span class="s2">&quot;false&quot;</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="kd">var</span> <span class="nx">attributes</span> <span class="o">=</span> <span class="p">{</span>
-</span><span class='line'><span class="nx">id</span><span class="o">:</span> <span class="nx">ID</span><span class="p">,</span>
-</span><span class='line'><span class="nx">name</span><span class="o">:</span> <span class="nx">ID</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="nx">swfobject</span><span class="p">.</span><span class="nx">embedSWF</span><span class="p">(</span><span class="nx">file</span><span class="p">,</span> <span class="nx">target</span><span class="p">,</span> <span class="nx">Width</span><span class="p">,</span> <span class="nx">Height</span><span class="p">,</span> <span class="s2">&quot;9.0.115&quot;</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="nx">flashvars</span><span class="p">,</span> <span class="nx">params</span><span class="p">,</span> <span class="nx">attributes</span><span class="p">);</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">flashswf</span><span class="p">(</span><span class="s2">&quot;/swf/total moistureiser.swf&quot;</span><span class="p">,</span> <span class="s2">&quot;flashW&quot;</span><span class="p">,</span> <span class="s2">&quot;704&quot;</span><span class="p">,</span> <span class="s2">&quot;286&quot;</span><span class="p">,</span> <span class="s2">&quot;homeFlash&quot;</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
 ]]></content>
   </entry>
   

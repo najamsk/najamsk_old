@@ -9,8 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="hi guys After playing with wordpress we decided to make a small static website using wordpress 2.7. Please check it out at http://cbhtrade.com/cbh/
-">
+  <meta name="description" content="hi everyone, today I discovered a nice tip from a blog I never knew selecting random rows were that easy with sqlserver 2000 and above. I have a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -78,6 +77,74 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/01/29/random-rows-selection-from-a-database-table/">Random Rows Selection From a Database Table</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-01-29T03:36:00+05:00" pubdate data-updated="true">Jan 29<span>th</span>, 2009</time>
+        
+         | <a href="/blog/2009/01/29/random-rows-selection-from-a-database-table/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>hi everyone,</p>
+
+<p>today I discovered a nice tip from a <a href="http://haacked.com/archive/2004/06/21/658.aspx" target="_blank">blog</a> I never knew selecting random rows were that easy with sqlserver 2000 and above. I have a country table that has four countries and from 4 I am selecting random 2.</p>
+
+<pre><code>SELECT TOP 2 * FROM country ORDER By NEWID()
+select * from country
+</code></pre>
+
+<p><strong>First Result</strong></p>
+
+<p>3           SaudiArabia
+4           France</p>
+
+<p><strong>Second Result</strong></p>
+
+<p>1           UAE
+4           France</p>
+
+<p><strong>Third Result</strong></p>
+
+<p>1           UAE
+3           SaudiArabia</p>
+
+<p><strong>All Countries</strong></p>
+
+<p>1           UAE
+2           Pakistan
+3           SaudiArabia
+4           France</p>
+
+<p>Amazing right??</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -543,65 +610,6 @@
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2008/07/16/read-smtp-settings-from-aspnet-webconfig/">Read SMTP Settings From asp.net web.config</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-07-16T08:09:00+05:00" pubdate data-updated="true">Jul 16<span>th</span>, 2008</time>
-        
-         | <a href="/blog/2008/07/16/read-smtp-settings-from-aspnet-webconfig/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>hi guyz</p>
-
-<p>Sorry for writing after such a long time i guess i am very busy now a days so for a project i needed to read my smtp email settings defined in my web.config file so after some efforts i am able to read these settings direct from my system .net section.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="n">System</span><span class="p">.</span><span class="n">Configuration</span><span class="p">.</span><span class="n">Configuration</span> <span class="n">config</span> <span class="p">=</span> <span class="n">System</span><span class="p">.</span><span class="n">Web</span><span class="p">.</span><span class="n">Configuration</span><span class="p">.</span><span class="n">WebConfigurationManager</span><span class="p">.</span><span class="n">OpenWebConfiguration</span><span class="p">(</span><span class="n">HttpContext</span><span class="p">.</span><span class="n">Current</span><span class="p">.</span><span class="n">Request</span><span class="p">.</span><span class="n">ApplicationPath</span><span class="p">);</span>
-</span><span class='line'><span class="n">System</span><span class="p">.</span><span class="n">Net</span><span class="p">.</span><span class="n">Configuration</span><span class="p">.</span><span class="n">MailSettingsSectionGroup</span> <span class="n">settings</span> <span class="p">=</span> <span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">Net</span><span class="p">.</span><span class="n">Configuration</span><span class="p">.</span><span class="n">MailSettingsSectionGroup</span><span class="p">)</span> <span class="n">config</span><span class="p">.</span><span class="n">GetSectionGroup</span><span class="p">(</span><span class="s">&quot;system.net/mailSettings&quot;</span><span class="p">);</span>
-</span><span class='line'><span class="n">Response</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;&amp;lt;br&amp;gt;Username=&quot;</span><span class="p">+</span><span class="n">settings</span><span class="p">.</span><span class="n">Smtp</span><span class="p">.</span><span class="n">Network</span><span class="p">.</span><span class="n">UserName</span><span class="p">);</span>
-</span><span class='line'><span class="n">Response</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;&amp;lt;br&amp;gt;Password=&quot;</span> <span class="p">+</span> <span class="n">settings</span><span class="p">.</span><span class="n">Smtp</span><span class="p">.</span><span class="n">Network</span><span class="p">.</span><span class="n">Password</span><span class="p">);</span>
-</span><span class='line'><span class="n">Response</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;&amp;lt;br&amp;gt;host=&quot;</span> <span class="p">+</span> <span class="n">settings</span><span class="p">.</span><span class="n">Smtp</span><span class="p">.</span><span class="n">Network</span><span class="p">.</span><span class="n">Host</span><span class="p">);</span>
-</span><span class='line'><span class="n">Response</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;&amp;lt;br&amp;gt;port=&quot;</span> <span class="p">+</span> <span class="n">settings</span><span class="p">.</span><span class="n">Smtp</span><span class="p">.</span><span class="n">Network</span><span class="p">.</span><span class="n">Port</span><span class="p">);</span>
-</span><span class='line'><span class="n">Response</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;&amp;lt;br&amp;gt;from=&quot;</span> <span class="p">+</span> <span class="n">settings</span><span class="p">.</span><span class="n">Smtp</span><span class="p">.</span><span class="n">From</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/6/">&larr; Older</a>
@@ -619,6 +627,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/10/01/automating-ftp-uploads-with-powershell/">Automating Ftp Uploads With Powershell</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/10/01/archive-folders-with-powershell/">Archive Folders With Powershell</a>
       </li>
     
@@ -632,10 +644,6 @@
     
       <li class="post">
         <a href="/blog/2013/10/22/mongodb-setup-on-windows-8/">MongoDB Setup On Windows 8</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/07/07/empower-your-outlook-with-powershell/">empower your outlook with powershell</a>
       </li>
     
   </ul>
