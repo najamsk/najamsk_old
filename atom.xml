@@ -4,7 +4,7 @@
   <title><![CDATA[Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-10-01T10:16:47+05:00</updated>
+  <updated>2014-10-01T10:27:23+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -43,6 +43,12 @@
 </span><span class='line'>$SMTPClient.Credentials = New-Object System.Net.NetworkCredential("gmailUser", "gmailPasswor"); 
 </span><span class='line'>$SMTPClient.Send($EmailFrom, $EmailTo, $Subject, $Body)</span></code></pre></td></tr></table></div></figure>
 
+
+<p>Hope this will help someone, feel free to improve this script and than share it with me you can file bugs on github.</p>
+
+<p>Thanks for your time.</p>
+
+<p>-Najam</p>
 ]]></content>
   </entry>
   
