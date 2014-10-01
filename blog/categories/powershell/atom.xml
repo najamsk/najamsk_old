@@ -4,7 +4,7 @@
   <title><![CDATA[Category: powershell | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/powershell/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-10-01T12:24:36+05:00</updated>
+  <updated>2014-10-01T12:27:38+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -20,7 +20,7 @@
     <id>http://blog.najamsikander.com/blog/2014/10/01/archive-folders-with-powershell</id>
     <content type="html"><![CDATA[<p>When your web application is running on web server and you don't have automatic backup service available form your hosting service provider taking manual backups is really a frustrating job.</p>
 
-<p>I have <a href="[https://pscx.codeplex.com/](https://pscx.codeplex.com/">Pscx</a>) module installed on my PC and they have a nice little command Write-Zip available so I decided to write a custom powershell function that can create archive in zip formats for me. You can use windows task scheduler to invoke any powershell script so you can take advantage of this to have automatic daily or monthly backups.</p>
+<p>I have <a href="https://pscx.codeplex.com/">Pscx</a> module installed on my PC and they have a nice little command Write-Zip available so I decided to write a custom powershell function that can create archive in zip formats for me. You can use windows task scheduler to invoke any powershell script so you can take advantage of this to have automatic daily or monthly backups.</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
