@@ -4,7 +4,7 @@
   <title><![CDATA[Category: powershell | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/powershell/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-10-01T12:27:38+05:00</updated>
+  <updated>2014-10-01T12:35:40+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -128,6 +128,8 @@
 </span><span class='line'>&lt;p>$bakfile = CreateZip E:\projects\AspNet\MVC\newFolder E:\Projects\AspNet\ myproject.zip&lt;/p>
 </span><span class='line'>
 </span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>I have shared this script on <a href="https://github.com/najamsk/powershellRepo">github</a> adjust it accroding to your needs and share your resutls.</p>
 
 <p>Please feel free to suggest improvements and if you have any questions use comments area.</p>
 

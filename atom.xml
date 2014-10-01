@@ -4,7 +4,7 @@
   <title><![CDATA[Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-10-01T12:27:38+05:00</updated>
+  <updated>2014-10-01T12:35:40+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -89,6 +89,8 @@
 </span><span class='line'>#this command will zip folder at E:\projects\AspNet\MVC\newFolder as myproject.zip at E:\Projects\AspNet\ 
 </span><span class='line'>$bakfile = CreateZip E:\projects\AspNet\MVC\newFolder E:\Projects\AspNet\ myproject.zip</span></code></pre></td></tr></table></div></figure>
 
+
+<p>I have shared this script on <a href="https://github.com/najamsk/powershellRepo">github</a> adjust it accroding to your needs and share your resutls.</p>
 
 <p>Please feel free to suggest improvements and if you have any questions use comments area.</p>
 
