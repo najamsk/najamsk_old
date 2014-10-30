@@ -7,9 +7,11 @@ categories:
 - powershell
 ---
 
-When your web application is running on web server and you don't have automatic backup service available form your hosting service provider taking manual backups is really a frustrating job. 
 
-I have [Pscx](https://pscx.codeplex.com/) module installed on my PC and they have a nice little command Write-Zip available so I decided to write a custom powershell function that can create archive in zip formats for me. You can use windows task scheduler to invoke any powershell script so you can take advantage of this to have automatic daily or monthly backups. 
+In my last post I have shared hwo you can [archive a folder via powershell](http://blog.najamsikander.com/blog/2014/10/01/archive-folders-with-powershell/) and [Pscx](https://pscx.codeplex.com/). In my normal backup process I am used to upload zip files using ftp client like filezilla but now I am trying powershell to perform this task. 
+
+Please feel free to test following code and let me know your thoughts and improvements.
+
 
 {% codeblock %}
 
