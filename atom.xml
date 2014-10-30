@@ -4,7 +4,7 @@
   <title><![CDATA[Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-10-01T13:07:33+05:00</updated>
+  <updated>2014-10-30T10:38:52+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -18,9 +18,9 @@
     <link href="http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell/"/>
     <updated>2014-10-01T12:45:00+05:00</updated>
     <id>http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell</id>
-    <content type="html"><![CDATA[<p>When your web application is running on web server and you don&#8217;t have automatic backup service available form your hosting service provider taking manual backups is really a frustrating job.</p>
+    <content type="html"><![CDATA[<p>In my last post I have shared hwo you can <a href="http://blog.najamsikander.com/blog/2014/10/01/archive-folders-with-powershell/">archive a folder via powershell</a> and <a href="https://pscx.codeplex.com/">Pscx</a>. In my normal backup process I am used to upload zip files using ftp client like filezilla but now I am trying powershell to perform this task.</p>
 
-<p>I have <a href="https://pscx.codeplex.com/">Pscx</a> module installed on my PC and they have a nice little command Write-Zip available so I decided to write a custom powershell function that can create archive in zip formats for me. You can use windows task scheduler to invoke any powershell script so you can take advantage of this to have automatic daily or monthly backups.</p>
+<p>Please feel free to test following code and let me know your thoughts and improvements.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>

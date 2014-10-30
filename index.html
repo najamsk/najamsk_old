@@ -9,7 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="When your web application is running on web server and you don&#8217;t have automatic backup service available form your hosting service provider &hellip;">
+  <meta name="description" content="In my last post I have shared hwo you can archive a folder via powershell and Pscx. In my normal backup process I am used to upload zip files using &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -108,9 +108,9 @@
   </header>
 
 
-  <div class="entry-content"><p>When your web application is running on web server and you don&#8217;t have automatic backup service available form your hosting service provider taking manual backups is really a frustrating job.</p>
+  <div class="entry-content"><p>In my last post I have shared hwo you can <a href="http://blog.najamsikander.com/blog/2014/10/01/archive-folders-with-powershell/">archive a folder via powershell</a> and <a href="https://pscx.codeplex.com/">Pscx</a>. In my normal backup process I am used to upload zip files using ftp client like filezilla but now I am trying powershell to perform this task.</p>
 
-<p>I have <a href="https://pscx.codeplex.com/">Pscx</a> module installed on my PC and they have a nice little command Write-Zip available so I decided to write a custom powershell function that can create archive in zip formats for me. You can use windows task scheduler to invoke any powershell script so you can take advantage of this to have automatic daily or monthly backups.</p>
+<p>Please feel free to test following code and let me know your thoughts and improvements.</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
