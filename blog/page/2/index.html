@@ -9,7 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="I have been invited to [Microsoft Community Meetup] at marriott hotel islamabad on Friday 19th April 2013. It was really nice experience to meet &hellip;">
+  <meta name="description" content="I had a freelance project that I have decided to do in MVC3 and to found following scaffolding commands very useful to get my Context, repository, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,57 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/05/03/mvc3-scafolding-commands/">MVC3 Scaffolding Commands</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-03T21:06:00+05:00" pubdate data-updated="true">May 3<span>rd</span>, 2013</time>
+        
+         | <a href="/blog/2013/05/03/mvc3-scafolding-commands/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I had a freelance project that I have decided to do in MVC3 and to found following scaffolding commands very useful to get my Context, repository, controller, controller and views in PM console inside visual studio</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="n">Scaffold</span> <span class="n">DbContext</span> <span class="p">-</span><span class="n">Project</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span> <span class="n">Service</span> <span class="n">Concrete</span><span class="p">.</span><span class="n">CRSContext</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Repository</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">Attachment</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">BigAppContext</span> <span class="p">-</span><span class="n">force</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Controller</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Project</span> <span class="p">-</span><span class="n">ControllerName</span> <span class="n">Projects</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">BigAppContext</span> <span class="p">-</span><span class="n">Repository</span> <span class="p">-</span><span class="n">NoChildItems</span> <span class="p">-</span><span class="n">Force</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Controller</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Service</span> <span class="p">-</span><span class="n">ControllerName</span> <span class="n">Services</span> <span class="p">-</span><span class="n">DbContextType</span> <span class="n">CRS</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Concrete</span><span class="p">.</span><span class="n">CRSContext</span> <span class="p">-</span><span class="n">Repository</span> <span class="p">-</span><span class="n">NoChildItems</span> <span class="p">-</span><span class="n">Force</span> <span class="p">-</span><span class="n">Area</span> <span class="n">admin</span>
+</span><span class='line'><span class="n">Scaffold</span> <span class="n">Views</span> <span class="p">-</span><span class="n">Controller</span> <span class="n">Tags</span> <span class="p">-</span><span class="n">ModelType</span> <span class="n">BigApp</span><span class="p">.</span><span class="n">Domain</span><span class="p">.</span><span class="n">Entities</span><span class="p">.</span><span class="n">Tag</span>
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -565,62 +616,6 @@ jQuery.fn.jquery;</pre>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/12/03/css-diet-plan/">CSS Diet Plan - First Step to Object Oriented Css</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-12-03T01:59:00+05:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2010</time>
-        
-         | <a href="/blog/2010/12/03/css-diet-plan/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I was wondering how to count the rules of my style sheets after little googling i discovered two ways one is through vim and second is through a command line tool called grep.</p>
-
-<p>If you are a vim user and your css file is loaded into vim in command mode enter following command</p>
-
-<pre>:%s/font-size//gn</pre>
-
-
-<p>output will be the number of type font-size is used in your css file.</p>
-
-<p>for grep open your command line and enter</p>
-
-<pre>cat style.css | grep -c font-size</pre>
-
-
-<p>output will be the count of font-size occurrences in style.css.</p>
-
-<p>you can use *.css as well for all the css files in current directory.</p>
-
-<p>Other then these methods I am really interested to use a tool which will take a file and list all the rules along with their count in code.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/3/">&larr; Older</a>
@@ -638,6 +633,10 @@ jQuery.fn.jquery;</pre>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/11/16/lcl-2014-islamabad/">LCL 2014 Islamabad</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/10/01/automating-ftp-uploads-with-powershell/">Automating Ftp Uploads With Powershell</a>
       </li>
     
@@ -651,10 +650,6 @@ jQuery.fn.jquery;</pre>
     
       <li class="post">
         <a href="/blog/2014/01/25/open-letter-to-ptcl-desi-version/">Open letter to PTCL - desi version</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/10/22/mongodb-setup-on-windows-8/">MongoDB Setup On Windows 8</a>
       </li>
     
   </ul>

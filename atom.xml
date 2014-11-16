@@ -4,7 +4,7 @@
   <title><![CDATA[Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-11-16T16:19:31+05:00</updated>
+  <updated>2014-11-16T20:01:48+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[LCL 2014 Islamabad]]></title>
+    <link href="http://blog.najamsikander.com/blog/2014/11/16/lcl-2014-islamabad/"/>
+    <updated>2014-11-16T16:25:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2014/11/16/lcl-2014-islamabad</id>
+    <content type="html"><![CDATA[<p>LCL 2014 third annual conference held on 15th November 2014 at Jinnah Convention center. It was full day event and was targeting students, entrepreneurs and industry on large scale. Due to marketing hype, organizers, speakers list most of they people set their expectations to high level including me.</p>
+
+<p>I was interested in this event for couple of reasons for starters networking, interaction with students for <a href="http://codebar.pk">CodeBar</a> and last but not the least learning something new and useful. My fear was spending full day and achieving none of the goals I have set for this event at the cost of developing time required by <a href="http://codebar.pk">CodeBar</a>. Let me break down my day at this event and point out what went wrong, what worked and the result.</p>
+
+<h2>Event Day</h2>
+
+<p>Myself and Jumpstart Pakistan team gathered on our meeting place we pick equipment for our promised stall and start our journey to reach Convention Center.</p>
+
+<h3>Greetings</h3>
+
+<p>We wanted to reach on time to setup our promised stall but after spending time and moving up and down we decided not to put any stall. There were no power sources for our equipment, tables that were arranged after a long wait were not aligned and one fall with laptop over it. While we were figuring out what to do next, organizers were figuring out when to start. For unknown reasons event started late and this affected execution of the event.</p>
+
+<h3>Internet</h3>
+
+<p>There was no wifi available to participants our team&#8217;s wifi has been shared with limited participants including LCL social media team.</p>
+
+<h3>Power sockets for charging</h3>
+
+<p>In absence of power sources to charge equipment my laptop died. Few people were roaming around to find from where they can charge their devices. While organizers were telling everyone to use #LCL2014 on all social media (twitter, facebook, instagram).</p>
+
+<h3>Speeches</h3>
+
+<p>I must say large audience might like all this speech theme conference but to me it was not exciting. They were just for motivation not focusing on specifics. Interactions were down to zero due to time limitations. Few speeches were made to win the crowd but few which felt dry to many actually had some value. One such speech was disturbed greatly by arrival of Mr. Asad Umer. Now one more thing about speeches I have listen to many of them and now they feel redundant to me. I have heard some great and wise personalities like Mr. Asad Umer, Rozee Guru Mr. Monis but now instead of angro or rozee I want to know what other success they have. What small things they created that became big and created name of its own.</p>
+
+<h3>Entrepreneurs</h3>
+
+<p>LCL 2014 had some big names that gains lots of attention but it&#8217;s hard for beginners or students to connect with them to seek help or guidance. I personally feel there are many local entrepreneurs that are more reachable to me and many other people and they should be on stage in large events.</p>
+
+<h3>Water</h3>
+
+<p>I have been looking for water after lunch but couldn&#8217;t find it on my own. That was really a big downer.</p>
+
+<h3>Conclusion</h3>
+
+<p>I have been in &#8220;Convention Center&#8221; and I think it&#8217;s really a bad place to arrange any event or conference for tech people.</p>
+
+<p>For tech events Internet and power supply is a must have and you can&#8217;t have positive impact without them so always have dedicated connection for audience and digital content publishers.</p>
+
+<p>It was an effort and I know it&#8217;s almost impossible to organize and execute a large event without making someone really unhappy. I am hoping LCL team keep doing good work and rectify the issue one by one for their future events.</p>
+
+<ul>
+<li>Najam</li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Automating Ftp Uploads With Powershell]]></title>
@@ -692,33 +744,6 @@ $().jquery;
 jQuery.fn.jquery;</pre>
 </div>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[CSS Diet Plan - first step to object oriented css]]></title>
-    <link href="http://blog.najamsikander.com/blog/2010/12/03/css-diet-plan/"/>
-    <updated>2010-12-03T01:59:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2010/12/03/css-diet-plan</id>
-    <content type="html"><![CDATA[<p>I was wondering how to count the rules of my style sheets after little googling i discovered two ways one is through vim and second is through a command line tool called grep.</p>
-
-<p>If you are a vim user and your css file is loaded into vim in command mode enter following command</p>
-
-<pre>:%s/font-size//gn</pre>
-
-
-<p>output will be the number of type font-size is used in your css file.</p>
-
-<p>for grep open your command line and enter</p>
-
-<pre>cat style.css | grep -c font-size</pre>
-
-
-<p>output will be the count of font-size occurrences in style.css.</p>
-
-<p>you can use *.css as well for all the css files in current directory.</p>
-
-<p>Other then these methods I am really interested to use a tool which will take a file and list all the rules along with their count in code.</p>
 ]]></content>
   </entry>
   

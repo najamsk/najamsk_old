@@ -9,26 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-function flashswf(file, target, Width, Height, ID) {
-var flashvars = {}
-var params = {
-//allowfullscreen:& &hellip;">
+  <meta name="description" content="I was wondering how to count the rules of my style sheets after little googling i discovered two ways one is through vim and second is through a &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -96,6 +77,62 @@ var params = {
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2010/12/03/css-diet-plan/">CSS Diet Plan - First Step to Object Oriented Css</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-12-03T01:59:00+05:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2010</time>
+        
+         | <a href="/blog/2010/12/03/css-diet-plan/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I was wondering how to count the rules of my style sheets after little googling i discovered two ways one is through vim and second is through a command line tool called grep.</p>
+
+<p>If you are a vim user and your css file is loaded into vim in command mode enter following command</p>
+
+<pre>:%s/font-size//gn</pre>
+
+
+<p>output will be the number of type font-size is used in your css file.</p>
+
+<p>for grep open your command line and enter</p>
+
+<pre>cat style.css | grep -c font-size</pre>
+
+
+<p>output will be the count of font-size occurrences in style.css.</p>
+
+<p>you can use *.css as well for all the css files in current directory.</p>
+
+<p>Other then these methods I am really interested to use a tool which will take a file and list all the rules along with their count in code.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -896,44 +933,6 @@ removes somebranch</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2009/07/08/gmail-out-of-beta/">Gmail Out of Beta</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2009-07-08T01:22:00+05:00" pubdate data-updated="true">Jul 8<span>th</span>, 2009</time>
-        
-         | <a href="/blog/2009/07/08/gmail-out-of-beta/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Finally Gmaiil is out of beta :) login to your inbox and see yourself.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/4/">&larr; Older</a>
@@ -951,6 +950,10 @@ removes somebranch</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/11/16/lcl-2014-islamabad/">LCL 2014 Islamabad</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/10/01/automating-ftp-uploads-with-powershell/">Automating Ftp Uploads With Powershell</a>
       </li>
     
@@ -964,10 +967,6 @@ removes somebranch</p>
     
       <li class="post">
         <a href="/blog/2014/01/25/open-letter-to-ptcl-desi-version/">Open letter to PTCL - desi version</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/10/22/mongodb-setup-on-windows-8/">MongoDB Setup On Windows 8</a>
       </li>
     
   </ul>

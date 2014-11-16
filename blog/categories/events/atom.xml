@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: events | Najam Sikander Awan]]></title>
+  <title><![CDATA[Category: Events | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/events/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-11-16T16:19:31+05:00</updated>
+  <updated>2014-11-16T20:01:48+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -14,57 +14,54 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Microsoft Islamabad Meetup]]></title>
-    <link href="http://blog.najamsikander.com/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8/"/>
-    <updated>2013-04-24T22:46:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2013/04/24/microsoft-islamabad-meetup-windwos-8</id>
-    <content type="html"><![CDATA[<p>I have been invited to [Microsoft Community Meetup] at marriott hotel islamabad on Friday 19th April 2013. It was really nice experience to meet fellow devs, students and MVP.</p>
+    <title type="html"><![CDATA[LCL 2014 Islamabad]]></title>
+    <link href="http://blog.najamsikander.com/blog/2014/11/16/lcl-2014-islamabad/"/>
+    <updated>2014-11-16T16:25:00+05:00</updated>
+    <id>http://blog.najamsikander.com/blog/2014/11/16/lcl-2014-islamabad</id>
+    <content type="html"><![CDATA[<p>LCL 2014 third annual conference held on 15th November 2014 at Jinnah Convention center. It was full day event and was targeting students, entrepreneurs and industry on large scale. Due to marketing hype, organizers, speakers list most of they people set their expectations to high level including me.</p>
 
-<p>Session was about windows 8 platform they have shown few apps that are developed in Pakistan and available for global audience. Highlight of the meetup was teams that have participated in Imagine cup and from pakistan. Team with first position showcased their project and I was blown away by their concept, presentation and business skills.</p>
+<p>I was interested in this event for couple of reasons for starters networking, interaction with students for <a href="http://codebar.pk">CodeBar</a> and last but not the least learning something new and useful. My fear was spending full day and achieving none of the goals I have set for this event at the cost of developing time required by <a href="http://codebar.pk">CodeBar</a>. Let me break down my day at this event and point out what went wrong, what worked and the result.</p>
 
-<p>These students are from <a href="http://www.giki.edu.pk/">Ghulam Ishaq Khan Institute</a> and their project is called "EPI-C" do check it out.</p>
+<h2>Event Day</h2>
 
-<p><img src="http://sphotos-h.ak.fbcdn.net/hphotos-ak-ash3/562418_10152378956639625_176689566_n.jpg" alt="EPI-C" /></p>
+<p>Myself and Jumpstart Pakistan team gathered on our meeting place we pick equipment for our promised stall and start our journey to reach Convention Center.</p>
 
-<p>thanks for reading my blog.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Attended Bahria University Job Fair]]></title>
-    <link href="http://blog.najamsikander.com/blog/2013/04/24/attended-bahria-university-job-fair/"/>
-    <updated>2013-04-24T21:48:00+05:00</updated>
-    <id>http://blog.najamsikander.com/blog/2013/04/24/attended-bahria-university-job-fair</id>
-    <content type="html"><![CDATA[<p>Bahria university hosted a job fair session on 19th April 2013 in which they invites companies from local industry. My company also participated in the event.</p>
+<h3>Greetings</h3>
 
-<p>Myself and few other from our company spend whole day in the event looking for suitable events in .net, mobile development and social media positions.</p>
+<p>We wanted to reach on time to setup our promised stall but after spending time and moving up and down we decided not to put any stall. There were no power sources for our equipment, tables that were arranged after a long wait were not aligned and one fall with laptop over it. While we were figuring out what to do next, organizers were figuring out when to start. For unknown reasons event started late and this affected execution of the event.</p>
 
-<p>All day long I have been interviewing and the answers given by students in 6th and final semesters were disappointing.</p>
+<h3>Internet</h3>
 
-<p>Common reason for such answers were:</p>
+<p>There was no wifi available to participants our team's wifi has been shared with limited participants including LCL social media team.</p>
+
+<h3>Power sockets for charging</h3>
+
+<p>In absence of power sources to charge equipment my laptop died. Few people were roaming around to find from where they can charge their devices. While organizers were telling everyone to use #LCL2014 on all social media (twitter, facebook, instagram).</p>
+
+<h3>Speeches</h3>
+
+<p>I must say large audience might like all this speech theme conference but to me it was not exciting. They were just for motivation not focusing on specifics. Interactions were down to zero due to time limitations. Few speeches were made to win the crowd but few which felt dry to many actually had some value. One such speech was disturbed greatly by arrival of Mr. Asad Umer. Now one more thing about speeches I have listen to many of them and now they feel redundant to me. I have heard some great and wise personalities like Mr. Asad Umer, Rozee Guru Mr. Monis but now instead of angro or rozee I want to know what other success they have. What small things they created that became big and created name of its own.</p>
+
+<h3>Entrepreneurs</h3>
+
+<p>LCL 2014 had some big names that gains lots of attention but it's hard for beginners or students to connect with them to seek help or guidance. I personally feel there are many local entrepreneurs that are more reachable to me and many other people and they should be on stage in large events.</p>
+
+<h3>Water</h3>
+
+<p>I have been looking for water after lunch but couldn't find it on my own. That was really a big downer.</p>
+
+<h3>Conclusion</h3>
+
+<p>I have been in "Convention Center" and I think it's really a bad place to arrange any event or conference for tech people.</p>
+
+<p>For tech events Internet and power supply is a must have and you can't have positive impact without them so always have dedicated connection for audience and digital content publishers.</p>
+
+<p>It was an effort and I know it's almost impossible to organize and execute a large event without making someone really unhappy. I am hoping LCL team keep doing good work and rectify the issue one by one for their future events.</p>
 
 <ul>
-<li>teacher didn't teach us good</li>
-<li>course is not yet offered</li>
-<li>what we have read we don't remember at the moment</li>
-<li>we are here for internship in 6 months you will teach us and than we will score good job in some other company. I don't who told them we are here for schooling and companies will be teaching them for 6 months. Why universities are not teaching them?</li>
+<li>Najam</li>
 </ul>
 
-
-<p>After attending this I have been thinking about giving sessions to students in web development for following reasons:</p>
-
-<ul>
-<li>Introduce them what industry expects form them as fresh devs.</li>
-<li>Also motivate them to learn more and don't rely on university.</li>
-<li>Do small contributions in open source for learning.</li>
-</ul>
-
-
-<p>In next post I will outlines topics for basic training if you are interested to contribute in this cause let me know. If you want to attend such sessions than you can contact me.</p>
-
-<p>These sessions will be free and you can contribute in exercise files, topics and provide your valuable feedback.</p>
-
-<p><img src="http://sphotos-g.ak.fbcdn.net/hphotos-ak-ash3/533426_455628001181077_168154726_n.jpg" alt="bahria job expo" /></p>
 ]]></content>
   </entry>
   

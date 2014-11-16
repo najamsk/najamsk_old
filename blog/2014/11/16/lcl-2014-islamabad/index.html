@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Automating Ftp Uploads With Powershell - Najam Sikander Awan</title>
+  <title>LCL 2014 Islamabad - Najam Sikander Awan</title>
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="In my last post I have shared hwo you can archive a folder via powershell and Pscx. In my normal backup process I am used to upload zip files using &hellip;">
+  <meta name="description" content="LCL 2014 third annual conference held on 15th November 2014 at Jinnah Convention center. It was full day event and was targeting students, &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell">
+  <link rel="canonical" href="http://blog.najamsikander.com/blog/2014/11/16/lcl-2014-islamabad">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Najam Sikander Awan" type="application/atom+xml">
@@ -80,7 +80,7 @@
   
   <header>
     
-      <h1 class="entry-title">Automating Ftp Uploads With Powershell</h1>
+      <h1 class="entry-title">LCL 2014 Islamabad</h1>
     
     
       <p class="meta">
@@ -96,7 +96,7 @@
   
 
 
-<time datetime="2014-10-01T12:45:00+05:00" pubdate data-updated="true">Oct 1<span>st</span>, 2014</time>
+<time datetime="2014-11-16T16:25:00+05:00" pubdate data-updated="true">Nov 16<span>th</span>, 2014</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -105,59 +105,50 @@
   </header>
 
 
-<div class="entry-content"><p>In my last post I have shared hwo you can <a href="http://blog.najamsikander.com/blog/2014/10/01/archive-folders-with-powershell/">archive a folder via powershell</a> and <a href="https://pscx.codeplex.com/">Pscx</a>. In my normal backup process I am used to upload zip files using ftp client like filezilla but now I am trying powershell to perform this task.</p>
+<div class="entry-content"><p>LCL 2014 third annual conference held on 15th November 2014 at Jinnah Convention center. It was full day event and was targeting students, entrepreneurs and industry on large scale. Due to marketing hype, organizers, speakers list most of they people set their expectations to high level including me.</p>
 
-<p>Please feel free to test following code and let me know your thoughts and improvements.</p>
+<p>I was interested in this event for couple of reasons for starters networking, interaction with students for <a href="http://codebar.pk">CodeBar</a> and last but not the least learning something new and useful. My fear was spending full day and achieving none of the goals I have set for this event at the cost of developing time required by <a href="http://codebar.pk">CodeBar</a>. Let me break down my day at this event and point out what went wrong, what worked and the result.</p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>#upload file using ftp
-</span><span class='line'>function FtpUpload($file, $ftphost, $ftpuser, $ftppass){   
-</span><span class='line'>   $Dir = Split-Path $file -Parent 
-</span><span class='line'>   $filename = $file.Replace("$Dir\", "")
-</span><span class='line'>
-</span><span class='line'>   #ftp server 
-</span><span class='line'>   $webclient = New-Object System.Net.WebClient 
-</span><span class='line'>   $webclient.Credentials = New-Object System.Net.NetworkCredential($ftpuser,$ftppass) 
-</span><span class='line'>    
-</span><span class='line'>    #list every sql server trace file 
-</span><span class='line'>    foreach($item in (dir $Dir $filename)){ 
-</span><span class='line'>        "Uploading $item..." 
-</span><span class='line'>        $filepath = $ftphost+$item.Name
-</span><span class='line'>        $filepath
-</span><span class='line'>        $uri = New-Object System.Uri($filepath)         
-</span><span class='line'>        $webclient.UploadFile($uri, $item.FullName) 
-</span><span class='line'>    } 
-</span><span class='line'>}
-</span><span class='line'>
-</span><span class='line'>FtpUpload E:\projects\AspNet\MVC\newFoldernewFolder_2014_29_09.zip ftpHost ftpUser ftpPassword</span></code></pre></td></tr></table></div></figure>
+<h2>Event Day</h2>
 
+<p>Myself and Jumpstart Pakistan team gathered on our meeting place we pick equipment for our promised stall and start our journey to reach Convention Center.</p>
 
-<p>I have shared this script on <a href="https://github.com/najamsk/powershellRepo">github</a> adjust it accroding to your needs and share your resutls.</p>
+<h3>Greetings</h3>
 
-<p>Please feel free to suggest improvements and if you have any questions use comments area.</p>
+<p>We wanted to reach on time to setup our promised stall but after spending time and moving up and down we decided not to put any stall. There were no power sources for our equipment, tables that were arranged after a long wait were not aligned and one fall with laptop over it. While we were figuring out what to do next, organizers were figuring out when to start. For unknown reasons event started late and this affected execution of the event.</p>
 
-<p>Thanks for your time.</p>
+<h3>Internet</h3>
 
-<p>-Najam</p>
+<p>There was no wifi available to participants our team&#8217;s wifi has been shared with limited participants including LCL social media team.</p>
+
+<h3>Power sockets for charging</h3>
+
+<p>In absence of power sources to charge equipment my laptop died. Few people were roaming around to find from where they can charge their devices. While organizers were telling everyone to use #LCL2014 on all social media (twitter, facebook, instagram).</p>
+
+<h3>Speeches</h3>
+
+<p>I must say large audience might like all this speech theme conference but to me it was not exciting. They were just for motivation not focusing on specifics. Interactions were down to zero due to time limitations. Few speeches were made to win the crowd but few which felt dry to many actually had some value. One such speech was disturbed greatly by arrival of Mr. Asad Umer. Now one more thing about speeches I have listen to many of them and now they feel redundant to me. I have heard some great and wise personalities like Mr. Asad Umer, Rozee Guru Mr. Monis but now instead of angro or rozee I want to know what other success they have. What small things they created that became big and created name of its own.</p>
+
+<h3>Entrepreneurs</h3>
+
+<p>LCL 2014 had some big names that gains lots of attention but it&#8217;s hard for beginners or students to connect with them to seek help or guidance. I personally feel there are many local entrepreneurs that are more reachable to me and many other people and they should be on stage in large events.</p>
+
+<h3>Water</h3>
+
+<p>I have been looking for water after lunch but couldn&#8217;t find it on my own. That was really a big downer.</p>
+
+<h3>Conclusion</h3>
+
+<p>I have been in &#8220;Convention Center&#8221; and I think it&#8217;s really a bad place to arrange any event or conference for tech people.</p>
+
+<p>For tech events Internet and power supply is a must have and you can&#8217;t have positive impact without them so always have dedicated connection for audience and digital content publishers.</p>
+
+<p>It was an effort and I know it&#8217;s almost impossible to organize and execute a large event without making someone really unhappy. I am hoping LCL team keep doing good work and rectify the issue one by one for their future events.</p>
+
+<ul>
+<li>Najam</li>
+</ul>
+
 </div>
 
 
@@ -180,12 +171,12 @@
   
 
 
-<time datetime="2014-10-01T12:45:00+05:00" pubdate data-updated="true">Oct 1<span>st</span>, 2014</time>
+<time datetime="2014-11-16T16:25:00+05:00" pubdate data-updated="true">Nov 16<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/powershell/'>powershell</a>
+    <a class='category' href='/blog/categories/events/'>Events</a>
   
 </span>
 
@@ -194,7 +185,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell/" data-via="najamsikander" data-counturl="http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.najamsikander.com/blog/2014/11/16/lcl-2014-islamabad/" data-via="najamsikander" data-counturl="http://blog.najamsikander.com/blog/2014/11/16/lcl-2014-islamabad/" >Tweet</a>
   
   
   
@@ -203,10 +194,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/10/01/archive-folders-with-powershell/" title="Previous Post: Archive Folders With Powershell">&laquo; Archive Folders With Powershell</a>
+        <a class="basic-alignment left" href="/blog/2014/10/01/automating-ftp-uploads-with-powershell/" title="Previous Post: Automating Ftp Uploads With Powershell">&laquo; Automating Ftp Uploads With Powershell</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/11/16/lcl-2014-islamabad/" title="Next Post: LCL 2014 Islamabad">LCL 2014 Islamabad &raquo;</a>
       
     </p>
   </footer>
@@ -276,8 +265,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell/';
-        var disqus_url = 'http://blog.najamsikander.com/blog/2014/10/01/automating-ftp-uploads-with-powershell/';
+        var disqus_identifier = 'http://blog.najamsikander.com/blog/2014/11/16/lcl-2014-islamabad/';
+        var disqus_url = 'http://blog.najamsikander.com/blog/2014/11/16/lcl-2014-islamabad/';
         var disqus_script = 'embed.js';
       
     (function () {
