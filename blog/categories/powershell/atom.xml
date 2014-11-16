@@ -4,7 +4,7 @@
   <title><![CDATA[Category: powershell | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/powershell/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2014-10-30T10:38:52+05:00</updated>
+  <updated>2014-11-16T16:19:31+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -222,7 +222,7 @@
 
 <p>I am learning powershell and trying to build lego blocks that will eventually become recipes for automating tasks on different servers. One important block is email report for that if you don't have smtp configured on server you can use following powershell script with gmail SMTP information.</p>
 
-<p>I will open source on <a href="https://github.com/najamsk/powershellRepo">github</a> many of the small powershell scripts that you can make use of to build somethign cool.</p>
+<p>I will open source on <a href="https://github.com/najamsk/powershellRepo">github</a> many of the small powershell scripts that you can make use of to build something cool.</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
