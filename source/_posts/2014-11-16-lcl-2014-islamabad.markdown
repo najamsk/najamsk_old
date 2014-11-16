@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LCL 2014 Islamabad"
+title: "LCL 2014: Third Annual Conference Islamabad"
 date: 2014-11-16 16:25
 comments: true
 categories: 
