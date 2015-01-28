@@ -20,7 +20,7 @@ I started looking around, playing with tools from different vendors and finally 
 - TeamCity
 - Octopus Deployment
  
-__If you are thinking wow it's alot to get started with automation then I will recommond learning powershell if your using windows and .Net technologies. With powershell only you can do most of things I am about to share with you.__
+__If you are thinking wow it's alot to get started with automation then I will recommond learning Powershell if your using windows and .Net technologies. With Powershell only you can do most of things I am about to share with you.__
 
 ##Sprint Killings
 
@@ -54,7 +54,7 @@ To solve above problem our team agreed to follow a process which dictates that b
 Compiling code is no rocket science but it was painful to do it manually against each commit. Team started to feel the burden but keeps doing it in fact they name this push-pull exercise as "Push-Pa".
 
 ###### Real Solution: Teamcity
-I knew Teamcity for a while and used it against TFS source control for a big web forms based web applicatoin. At that time I was using it against TFS and to get notifications if lastest commit compiles without errors. 
+I knew Teamcity for a while and used it against TFS source control for a big web forms based web application. At that time I was using it against TFS and to get notifications if latest commit compiles without errors. 
 
 Since we are using GitLab now for latest projects first task at hand was how to integrate Teamcity with Gitlab server for monitoring latest commits in a specific branch. 
 
@@ -67,7 +67,7 @@ On server we need to unzip the latest code, and create backup of running website
 
 
 ###### Solution: Octopus Deploy
-There are many solutions out there to handle deployments some bundled with integration feture. In few talks related to devops I came across Octopus Deploy. It felt nice, easy and powerful best part was they were targeting .net devs with slogan __"Automated deployment for .NEt"__.
+There are many solutions out there to handle deployments some bundled with integration feature. In few talks related to devops I came across Octopus Deploy. It felt nice, easy and powerful best part was they were targeting .net devs with slogan __"Automated deployment for .NEt"__.
 
 Our team currently testing Octopus Deploy and it's linked with our Teamcity server. It takes the Teamcity compiled output/package and transform the code and settings for our deployment servers. Once code is modified for web servers its uploaded and deployed automatically. Backup against each deployment is managed by Octopus Deploy, you can roll back to preview release anytime you want. 
 
@@ -81,7 +81,7 @@ Achieving continuous deployment was fun and I felt good about it, but one proble
 In my view having these updates inside team chat room was the best option but it's hard to integrate notifications with vychat or skype. This is why my first mission was to convert each member to slack and enforce everyone is using it. (still working on that front)
 
 ###### Solution: Slack
-Slack offers integration points and rest api, using their api our Octopus server pushes updates about deployment like if deployment is successful or failed. After deployment notification another notification about same release updates team chat room for smoke tests(powershell scripts) status.
+Slack offers integration points and rest API, using their API our Octopus server pushes updates about deployment like if deployment is successful or failed. After deployment notification another notification about same release updates team chat room for smoke tests(Powershell scripts) status.
 
 ###### Problem 4: Smoke Testing
 Our current web application under development has many pages of different nature like public pages, secure pages, redirect pages and error pages.
@@ -89,7 +89,7 @@ Our current web application under development has many pages of different nature
 One time we got complaint that one or two public pages are not working for users. Another time pages that suppose to be secure and ask for user credentials were open to everyone. Even though we have QA department and they take proper time to test still these issues could have crawled back. 
 
 ###### Solution: PowerShell
-To avoid future complaints in this area I have developed a powershell script that has list of pages (public, secure, 404, 500) and it make requests to those pages and according to response it pushes notifications to slack. That powershell script is executed by Octopus on remote server after each deployment.
+To avoid future complaints in this area I have developed a Powershell script that has list of pages (public, secure, 404, 500) and it make requests to those pages and according to response it pushes notifications to slack. That Powershell script is executed by Octopus on remote server after each deployment.
 
 <img src="http://33.media.tumblr.com/tumblr_m2yyycfgnj1r2optzo1_500.gif"/>
 
@@ -109,7 +109,7 @@ To avoid future complaints in this area I have developed a powershell script tha
 ### Environment
 We have made modifications to our local IT infrastructure we have some new servers that are running Gitlab, Teamcity and Octopus deploy. Gitlab is configured on Ubuntu 12.04 box for rest of the tools we are using windows platform.
 
-Download Teamcity and octpus deploy setups files from following:
+Download Teamcity and Octopus Deploy setups files from following:
 
 - [TeamCity Setup](https://www.jetbrains.com/teamcity/download/)
 - [Octopus Deploy Sever](https://Octopusdeploy.com/downloads)
@@ -137,8 +137,6 @@ First thing is to create a new project, next choose create build configuration f
 
 You might tell from screenshot that our team city build will monitor dev branch of our project and as soon as new commit will arrive we will be notified to process it. 
 
-[Verson Control Settings](https://lh6.googleusercontent.com/-gawLVzorkio/VK08JhJiFNI/AAAAAAAADkQ/6Wz8eiDJSn4/s2560/Edit-VCS-Root----TeamCity.jpg)
-
 Now we need to configure build steps right now I only have two build steps that downloads the code of latest commit and compiles it using the method I have choose. Second step will package the compiled code and pass it on to Octopus Deployment. You can see my build step configuration from following screenshot.
 
 <a href="https://lh6.googleusercontent.com/--M2by-kAbPA/VK08NzqncBI/AAAAAAAADlA/vO2a0vnO9kE/s2560/jsp-Dev-Configuration----TeamCity_build_step.jpg"><img src="https://lh6.googleusercontent.com/--M2by-kAbPA/VK08NzqncBI/AAAAAAAADlA/vO2a0vnO9kE/s2560/jsp-Dev-Configuration----TeamCity_build_step.jpg" /></a>
@@ -147,7 +145,7 @@ Now we need to configure build steps right now I only have two build steps that 
 <img src="https://lh3.googleusercontent.com/-UE-hPQxWaFM/VK08NeMJOqI/AAAAAAAADk8/OwzNLBeQ9fk/s2560/jsp-Dev-Configuration----TeamCityOctopus.jpg" />
 </a>
 
-If you don't see octopack section yet with your Teamcity installation you need to install octopack plugin. Installation is dead simple copy Octopus.TeamCity.zip into Teamcity plugins folder (C:\ProgramData\JetBrains\TeamCity\plugins) then restart Teamciy windows service and refresh your browser you will have octopack section like screenshot.
+If you don't see OctoPack section yet with your Teamcity installation you need to install OctoPack plugin. Installation is dead simple copy Octopus.TeamCity.zip into Teamcity plugins folder (C:\ProgramData\JetBrains\TeamCity\plugins) then restart Teamciy windows service and refresh your browser you will have OctoPack section like screenshot.
 <a href="https://lh5.googleusercontent.com/-Kk6UsR-yd-8/VK08Ij1p8iI/AAAAAAAADj4/9TOuhJi_2S0/s2560/Diagnostics---Browse-Data-Directory-%E2%80%94-TeamCity.jpg">
 <img src="https://lh5.googleusercontent.com/-Kk6UsR-yd-8/VK08Ij1p8iI/AAAAAAAADj4/9TOuhJi_2S0/s2560/Diagnostics---Browse-Data-Directory-%E2%80%94-TeamCity.jpg" />
 </a>
@@ -156,17 +154,17 @@ If you don't see octopack section yet with your Teamcity installation you need t
 <img src="https://lh6.googleusercontent.com/-8051eiR2hqQ/VK08LJR0S0I/AAAAAAAADkk/wIEO5eM3Rx8/s2560/Plugins-List-%E2%80%94-TeamCity.jpg" />
 </a>
 
-### Installing octopack
-Installation is dead simple once you have installed the OctopusDeploy server. You can run a tenticle setup on any deployment server (Staging, Testing, Production).
+### Installing OctoPack
+Installation is dead simple once you have installed the Octopus Deploy server. You can run a tentacle setup on any deployment server (Staging, Testing, Production).
 
-Let's confgiure our project inside OctopusDeploy now. Create a new project and name it.
+Let's configure our project inside Octopus Deploy now. Create a new project and name it.
 
-Create a new envoirnment and make sure add your tenticle or deployemnet server to that envoirnment. I have one envoirnment called development but later on I will add more like staging and production. 
+Create a new environment and make sure add your tentacle or deployment server to that environment. I have one environment called development but later on I will add more like staging and production. 
 <a href="https://lh6.googleusercontent.com/-7BkVrcQkcc4/VK08HwRAiKI/AAAAAAAADj0/DNP6ANsOWvk/s2560/Development-settings---Octopus-Deploy.jpg">
 <img src="https://lh6.googleusercontent.com/-7BkVrcQkcc4/VK08HwRAiKI/AAAAAAAADj0/DNP6ANsOWvk/s2560/Development-settings---Octopus-Deploy.jpg" />
 </a>
 
-To integrate Octopus Deploy wiht Teamcity we need to create an API key. API keys are tied to Octopus Deploy user so you can create key by visiting users than pick a user and you will see a link to carete new key. 
+To integrate Octopus Deploy with Teamcity we need to create an API key. API keys are tied to Octopus Deploy user so you can create key by visiting users than pick a user and you will see a link to create new key. 
 
 <a href="https://lh4.googleusercontent.com/-Vsfpjoi1idE/VMiO7qVZVMI/AAAAAAAADmw/RU30d6zCt44/s2560/octopuskey.png">
 <img src="https://lh4.googleusercontent.com/-Vsfpjoi1idE/VMiO7qVZVMI/AAAAAAAADmw/RU30d6zCt44/s2560/octopuskey.png" />
@@ -178,13 +176,13 @@ We need to tell Octopus how to download Teamcity output for that you need to vis
 <img src="https://lh4.googleusercontent.com/-1rAGhlGhSg4/VMiO6_nhiOI/AAAAAAAADnE/oSGpIxXpsxQ/s2560/NuGetfeed.png" />
 </a>
 
-Now you need to add that feed inside Octopus Deploy you can do that from inside Octopus Deploy dahshboard. Simply click on library link from top navigation bar then you will see a link "External Feeds" on left sidebar. External feeds link will allow us to add teamcity feed and test it. For testing click on the test link and on new page you will see a search field and a search button. Cick on search button and you will get results from teamcity. 
+Now you need to add that feed inside Octopus Deploy you can do that from inside Octopus Deploy dashboard. Simply click on library link from top navigation bar then you will see a link "External Feeds" on left sidebar. External feeds link will allow us to add teamcity feed and test it. For testing click on the test link and on new page you will see a search field and a search button. Click on search button and you will get results from teamcity. 
 
 <a href="https://lh3.googleusercontent.com/-ZrS1eC9f-b4/VMiO69Nu5xI/AAAAAAAADm8/tuUaJ8TTbCU/s2560/octopusFeedArea.png">
 <img src="https://lh3.googleusercontent.com/-ZrS1eC9f-b4/VMiO69Nu5xI/AAAAAAAADm8/tuUaJ8TTbCU/s2560/octopusFeedArea.png" />
 </a>
 
-While are pecies of puzzle are in their place we can now define the deployment procoess for our project. Octopusdeploy breaks process into steps that you need to define and configured. 
+While are pieces of puzzle are in their place we can now define the deployment process for our project. Octopus Deploy breaks process into steps that you need to define and configured. 
 
 <a href="https://lh4.googleusercontent.com/-QgCOHh426Qo/VK08KQ8becI/AAAAAAAADkU/JRsK-3fkc6w/s2560/JumpstartPakistan-deployment-process---Octopus-Deploy.jpg">
 <img src="https://lh4.googleusercontent.com/-QgCOHh426Qo/VK08KQ8becI/AAAAAAAADkU/JRsK-3fkc6w/s2560/JumpstartPakistan-deployment-process---Octopus-Deploy.jpg" />
@@ -194,10 +192,10 @@ While are pecies of puzzle are in their place we can now define the deployment p
 <img src="https://lh3.googleusercontent.com/-izLzdy0drnQ/VK08HOYFABI/AAAAAAAADjs/4hTmdXlhWy4/s2560/Deploy---Octopus-Deploy_step_deploy.jpg" />
 </a>
 
-We start with our first step called deploy and like it's name it deploys the latest build from Teamcity to any envoirnment we have pick. 
+We start with our first step called deploy and like it's name it deploys the latest build from Teamcity to any environment we have pick. 
 
 #### Slack Notifications
-By this time you should be able to have a pipeline connecting your gitlab server to your deployment server using Teamcity and Octopus Deploy. It's time to inform team that new build has been deployed. To configure slack with Octopus deploy you need to visit Octopus Deploy dashboard again and click on library. On left sidebar click on "Step templates" link and than on top menu you will see another link "import step template". Octopus deploy has a community librar and from there I have imported [Slack Integration script](https://library.octopusdeploy.com/#!/step-template/actiontemplate-slack-notify-deployment). 
+By this time you should be able to have a pipeline connecting your gitlab server to your deployment server using Teamcity and Octopus Deploy. It's time to inform team that new build has been deployed. To configure slack with Octopus deploy you need to visit Octopus Deploy dashboard again and click on library. On left sidebar click on "Step templates" link and than on top menu you will see another link "import step template". Octopus deploy has a community library and from there I have imported [Slack Integration script](https://library.octopusdeploy.com/#!/step-template/actiontemplate-slack-notify-deployment). 
 
 Now you can add a new step into your process defined earlier. Follow screenshots to match my configuration. 
 
@@ -210,50 +208,24 @@ Now you can add a new step into your process defined earlier. Follow screenshots
 </a>
 
 #### Smoke Testing Deployment
-Remember the problem I have mentioned earlier in this post about some pages slip through QA and I solved that by writing powershell script. Well running that test script manually was not good enough. I configured my process to run powershell script for testing pages and announce the result of test in slack. Follow the screenshots for my configurations. 
+Remember the problem I have mentioned earlier in this post about some pages slip through QA and I solved that by writing Powershell script. Well running that test script manually was not good enough. I configured my process to run Powershell script for testing pages and announce the result of test in slack. Follow the screenshots for my configurations. 
 
 <a href="https://lh4.googleusercontent.com/-VNbGYhdpY1g/VMiRVkcUg6I/AAAAAAAADnY/_Ya_JCidGjM/s2560/octopussmoke.png">
 <img src="https://lh4.googleusercontent.com/-VNbGYhdpY1g/VMiRVkcUg6I/AAAAAAAADnY/_Ya_JCidGjM/s2560/octopussmoke.png" />
 </a>
 
+### Test Run
+I have recorded a screencast for whole thing in action so you have better understanding of what we achieved.
+
 ### What's Next
 
-- I need to add more envoirnments into octopus deploy specially production so from testing server I can promote a build on live server without ftp and have support for rolling back.
-- Need to have more powershell script to clean files of builds older than a month to save disk space.
+<img src="http://media.giphy.com/media/c3LrSypJkaj0A/giphy.gif" />
+
+- I need to add more environments into Octopus Deploy specially production so from testing server I can promote a build on live server without ftp and have support for rolling back.
+- Need to have more Powershell script to clean files of builds older than a month to save disk space.
 - Need to integrate twitter to post tweets about server status and post readings on slack. Monitoring bandwidth, hard disk space and some other events comes handy.
 
 
 <img src="http://media.giphy.com/media/c3LrSypJkaj0A/giphy.gif" />
-
-<img src="http://www.simonstratford.com/wp-content/uploads/game-of-thrones-tyrion-lanister.gif" />
-
-### Teamcity
-
-<img src ="https://lh5.googleusercontent.com/-UE-hPQxWaFM/VK08NeMJOqI/AAAAAAAADk8/OwzNLBeQ9fk/w675-h563-no/jsp-Dev-Configuration----TeamCityOctopus.jpg" />
-
-<img src ="https://lh4.googleusercontent.com/-DxsEE4vWejk/VK08KDHqhGI/AAAAAAAADkM/bokpxHfv0lI/w1044-h492-no/JumpstartPakistan----jsp-Dev----1--31-Dec-14-16-07----Build-Log-%E2%80%94-TeamCity.jpg" />
-
-<img src="https://lh4.googleusercontent.com/-8051eiR2hqQ/VK08LJR0S0I/AAAAAAAADkk/wIEO5eM3Rx8/w1044-h492-no/Plugins-List-%E2%80%94-TeamCity.jpg" />
-
-<img src="https://lh4.googleusercontent.com/-HgycLiQB-VE/VK08HN9MQ3I/AAAAAAAADjk/RzN8533XJkI/w1044-h492-no/Create-Build-Configuration-%E2%80%94-TeamCity.jpg" />
-
-<img src="https://lh4.googleusercontent.com/-gawLVzorkio/VK08JhJiFNI/AAAAAAAADkQ/6Wz8eiDJSn4/w351-h563-no/Edit-VCS-Root----TeamCity.jpg" />
-
-<img src="https://lh5.googleusercontent.com/-Kk6UsR-yd-8/VK08Ij1p8iI/AAAAAAAADj4/9TOuhJi_2S0/w1044-h492-no/Diagnostics---Browse-Data-Directory-%E2%80%94-TeamCity.jpg"/>
-
-<img src="https://lh6.googleusercontent.com/-8ywvuLLHDpg/VK08MbRYi9I/AAAAAAAADk0/LT3lOGdbdfg/w934-h563-no/gitpush.jpg" />
-<img src="https://lh5.googleusercontent.com/--M2by-kAbPA/VK08NzqncBI/AAAAAAAADlA/vO2a0vnO9kE/w686-h563-no/jsp-Dev-Configuration----TeamCity_build_step.jpg" />
-
-<img src="https://lh6.googleusercontent.com/FD74QCTbIywNS-ZKDWKV-3MQz41_8zdgF9gvrhzIcek=w1044-h492-no" />
-
-<img src ="https://lh5.googleusercontent.com/-QgCOHh426Qo/VK08KQ8becI/AAAAAAAADkU/JRsK-3fkc6w/w1044-h492-no/JumpstartPakistan-deployment-process---Octopus-Deploy.jpg" />
-
-<img src ="https://lh5.googleusercontent.com/-xUsarFDboeI/VK08KmN0dvI/AAAAAAAADkc/314u0zZYqXA/w1044-h492-no/JumpstartPakistan-variables---Octopus-Deploy_varriables.jpg" />
-
-<img src="https://lh5.googleusercontent.com/-2ncogbfvwlc/VK08LynNuPI/AAAAAAAADks/Mb0RAJnMsJI/w1044-h492-no/TeamCity-Packages---Octopus-Deployfeed.jpg" />
-
-<img src="https://lh5.googleusercontent.com/-izLzdy0drnQ/VK08HOYFABI/AAAAAAAADjs/4hTmdXlhWy4/w347-h562-no/Deploy---Octopus-Deploy_step_deploy.jpg" />
-
-<img src="https://lh4.googleusercontent.com/-7BkVrcQkcc4/VK08HwRAiKI/AAAAAAAADj0/DNP6ANsOWvk/w1044-h492-no/Development-settings---Octopus-Deploy.jpg" />
 
 
