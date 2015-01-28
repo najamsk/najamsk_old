@@ -225,7 +225,3 @@ I have recorded a screencast for whole thing in action so you have better unders
 - Need to have more Powershell script to clean files of builds older than a month to save disk space.
 - Need to integrate twitter to post tweets about server status and post readings on slack. Monitoring bandwidth, hard disk space and some other events comes handy.
 
-
-<img src="http://media.giphy.com/media/c3LrSypJkaj0A/giphy.gif" />
-
-
