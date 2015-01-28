@@ -4,7 +4,7 @@
   <title><![CDATA[Category: DevOps | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/devops/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2015-01-28T10:46:45+05:00</updated>
+  <updated>2015-01-28T10:49:20+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -148,9 +148,9 @@
 
 <p>First thing is to create a new project, next choose create build configuration for your new project. Since source is on GitLab you need to check version control settings inside Teamcity. Make sure your settings are similar to mine.</p>
 
-<p><a href="https://lh5.googleusercontent.com/-HgycLiQB-VE/VK08HN9MQ3I/AAAAAAAADjk/RzN8533XJkI/s2560/Create-Build-Configuration-%E2%80%94-TeamCity.jpg">Create Build</a></p>
+<p><img src="https://lh5.googleusercontent.com/-HgycLiQB-VE/VK08HN9MQ3I/AAAAAAAADjk/RzN8533XJkI/s2560/Create-Build-Configuration-%E2%80%94-TeamCity.jpg" title="Build Configuration"/></p>
 
-<p><a href="https://lh6.googleusercontent.com/-gawLVzorkio/VK08JhJiFNI/AAAAAAAADkQ/6Wz8eiDJSn4/s2560/Edit-VCS-Root----TeamCity.jpg">Verson Control Settings</a></p>
+<p><img src="https://lh6.googleusercontent.com/-gawLVzorkio/VK08JhJiFNI/AAAAAAAADkQ/6Wz8eiDJSn4/s2560/Edit-VCS-Root----TeamCity.jpg" title="version control settings" /></p>
 
 <p>You might tell from screenshot that our team city build will monitor dev branch of our project and as soon as new commit will arrive we will be notified to process it.</p>
 
