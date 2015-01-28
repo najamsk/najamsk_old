@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Development | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/development/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2015-01-28T14:39:09+05:00</updated>
+  <updated>2015-01-28T14:41:20+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -230,6 +230,8 @@
 <h3>Test Run</h3>
 
 <p>I have recorded a screencast for whole thing in action so you have better understanding of what we achieved.</p>
+
+<p><div class="embed-video-container"><iframe src="//player.vimeo.com/video/20241459"></iframe></div></p>
 
 <p><div class="embed-video-container"><iframe src="//player.vimeo.com/video/117998089"></iframe></div></p>
 
