@@ -4,7 +4,7 @@
   <title><![CDATA[Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2015-01-28T10:53:53+05:00</updated>
+  <updated>2015-01-28T11:07:03+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -161,7 +161,20 @@
 
 <p>Now we need to configure build steps right now I only have two build steps that downloads the code of latest commit and compiles it using the method I have choose. Second step will package the compiled code and pass it on to Octopus Deployment. You can see my build step configuration from following screenshot.</p>
 
-<p>If you don&#8217;t see octopack section yet with your Teamcity installation you need to install octopack plugin. Installation is dead simple copy Octopus.TeamCity.zip into Teamcity plugins folder (C:\ProgramData\JetBrains\TeamCity\plugins) then restart Teamciy windows service and refresh your browser you will have octopack section like screenshot.</p>
+<p><a href="https://lh6.googleusercontent.com/--M2by-kAbPA/VK08NzqncBI/AAAAAAAADlA/vO2a0vnO9kE/s2560/jsp-Dev-Configuration----TeamCity_build_step.jpg"><img src="https://lh6.googleusercontent.com/--M2by-kAbPA/VK08NzqncBI/AAAAAAAADlA/vO2a0vnO9kE/s2560/jsp-Dev-Configuration----TeamCity_build_step.jpg" /></a></p>
+
+<p><a href="https://lh3.googleusercontent.com/-UE-hPQxWaFM/VK08NeMJOqI/AAAAAAAADk8/OwzNLBeQ9fk/s2560/jsp-Dev-Configuration----TeamCityOctopus.jpg">
+<img src="https://lh3.googleusercontent.com/-UE-hPQxWaFM/VK08NeMJOqI/AAAAAAAADk8/OwzNLBeQ9fk/s2560/jsp-Dev-Configuration----TeamCityOctopus.jpg" />
+</a></p>
+
+<p>If you don&#8217;t see octopack section yet with your Teamcity installation you need to install octopack plugin. Installation is dead simple copy Octopus.TeamCity.zip into Teamcity plugins folder (C:\ProgramData\JetBrains\TeamCity\plugins) then restart Teamciy windows service and refresh your browser you will have octopack section like screenshot.
+<a href="https://lh5.googleusercontent.com/-Kk6UsR-yd-8/VK08Ij1p8iI/AAAAAAAADj4/9TOuhJi_2S0/s2560/Diagnostics---Browse-Data-Directory-%E2%80%94-TeamCity.jpg">
+<img src="https://lh5.googleusercontent.com/-Kk6UsR-yd-8/VK08Ij1p8iI/AAAAAAAADj4/9TOuhJi_2S0/s2560/Diagnostics---Browse-Data-Directory-%E2%80%94-TeamCity.jpg" />
+</a></p>
+
+<p><a href="https://lh6.googleusercontent.com/-8051eiR2hqQ/VK08LJR0S0I/AAAAAAAADkk/wIEO5eM3Rx8/s2560/Plugins-List-%E2%80%94-TeamCity.jpg">
+<img src="https://lh6.googleusercontent.com/-8051eiR2hqQ/VK08LJR0S0I/AAAAAAAADkk/wIEO5eM3Rx8/s2560/Plugins-List-%E2%80%94-TeamCity.jpg" />
+</a></p>
 
 <h3>Installing octopack</h3>
 
