@@ -162,21 +162,65 @@ Installation is dead simple once you have installed the OctopusDeploy server. Yo
 Let's confgiure our project inside OctopusDeploy now. Create a new project and name it.
 
 Create a new envoirnment and make sure add your tenticle or deployemnet server to that envoirnment. I have one envoirnment called development but later on I will add more like staging and production. 
+<a href="https://lh6.googleusercontent.com/-7BkVrcQkcc4/VK08HwRAiKI/AAAAAAAADj0/DNP6ANsOWvk/s2560/Development-settings---Octopus-Deploy.jpg">
+<img src="https://lh6.googleusercontent.com/-7BkVrcQkcc4/VK08HwRAiKI/AAAAAAAADj0/DNP6ANsOWvk/s2560/Development-settings---Octopus-Deploy.jpg" />
+</a>
 
-Octopusdeploy api key by going inside user.
+To integrate Octopus Deploy wiht Teamcity we need to create an API key. API keys are tied to Octopus Deploy user so you can create key by visiting users than pick a user and you will see a link to carete new key. 
 
-We need to tell Octopus how to download Teamcity output for that you need to visit back Teamcity and configure a nuget feed. 
+<a href="https://lh4.googleusercontent.com/-Vsfpjoi1idE/VMiO7qVZVMI/AAAAAAAADmw/RU30d6zCt44/s2560/octopuskey.png">
+<img src="https://lh4.googleusercontent.com/-Vsfpjoi1idE/VMiO7qVZVMI/AAAAAAAADmw/RU30d6zCt44/s2560/octopuskey.png" />
+</a>
 
-Add nuget feed of Teamcity with Teamcity credentials. test by
-searching packages. Make sure your Teamcity has nuget feed available.
+We need to tell Octopus how to download Teamcity output for that you need to visit back Teamcity and configure a nuget feed. Goto teamcity administration area on left sidebar under integrations heading you will see a link called nuget click on it for configuration.
+
+<a href="https://lh4.googleusercontent.com/-1rAGhlGhSg4/VMiO6_nhiOI/AAAAAAAADnE/oSGpIxXpsxQ/s2560/NuGetfeed.png">
+<img src="https://lh4.googleusercontent.com/-1rAGhlGhSg4/VMiO6_nhiOI/AAAAAAAADnE/oSGpIxXpsxQ/s2560/NuGetfeed.png" />
+</a>
+
+Now you need to add that feed inside Octopus Deploy you can do that from inside Octopus Deploy dahshboard. Simply click on library link from top navigation bar then you will see a link "External Feeds" on left sidebar. External feeds link will allow us to add teamcity feed and test it. For testing click on the test link and on new page you will see a search field and a search button. Cick on search button and you will get results from teamcity. 
+
+<a href="https://lh3.googleusercontent.com/-ZrS1eC9f-b4/VMiO69Nu5xI/AAAAAAAADm8/tuUaJ8TTbCU/s2560/octopusFeedArea.png">
+<img src="https://lh3.googleusercontent.com/-ZrS1eC9f-b4/VMiO69Nu5xI/AAAAAAAADm8/tuUaJ8TTbCU/s2560/octopusFeedArea.png" />
+</a>
 
 While are pecies of puzzle are in their place we can now define the deployment procoess for our project. Octopusdeploy breaks process into steps that you need to define and configured. 
+
+<a href="https://lh4.googleusercontent.com/-QgCOHh426Qo/VK08KQ8becI/AAAAAAAADkU/JRsK-3fkc6w/s2560/JumpstartPakistan-deployment-process---Octopus-Deploy.jpg">
+<img src="https://lh4.googleusercontent.com/-QgCOHh426Qo/VK08KQ8becI/AAAAAAAADkU/JRsK-3fkc6w/s2560/JumpstartPakistan-deployment-process---Octopus-Deploy.jpg" />
+</a>
+
+<a href="https://lh3.googleusercontent.com/-izLzdy0drnQ/VK08HOYFABI/AAAAAAAADjs/4hTmdXlhWy4/s2560/Deploy---Octopus-Deploy_step_deploy.jpg">
+<img src="https://lh3.googleusercontent.com/-izLzdy0drnQ/VK08HOYFABI/AAAAAAAADjs/4hTmdXlhWy4/s2560/Deploy---Octopus-Deploy_step_deploy.jpg" />
+</a>
 
 We start with our first step called deploy and like it's name it deploys the latest build from Teamcity to any envoirnment we have pick. 
 
 #### Slack Notifications
+By this time you should be able to have a pipeline connecting your gitlab server to your deployment server using Teamcity and Octopus Deploy. It's time to inform team that new build has been deployed. To configure slack with Octopus deploy you need to visit Octopus Deploy dashboard again and click on library. On left sidebar click on "Step templates" link and than on top menu you will see another link "import step template". Octopus deploy has a community librar and from there I have imported [Slack Integration script](https://library.octopusdeploy.com/#!/step-template/actiontemplate-slack-notify-deployment). 
+
+Now you can add a new step into your process defined earlier. Follow screenshots to match my configuration. 
+
+<a href="https://lh5.googleusercontent.com/-6jnog1nSD_o/VMiO746dWxI/AAAAAAAADm0/_5BZIBGETq4/s2560/slackImport.png">
+<img src="https://lh5.googleusercontent.com/-6jnog1nSD_o/VMiO746dWxI/AAAAAAAADm0/_5BZIBGETq4/s2560/slackImport.png" />
+</a>
+
+<a href="https://lh3.googleusercontent.com/-hVW5n-d_bqI/VMiO79o1qDI/AAAAAAAADnI/jqse1muUppk/s2560/slackDetails.png">
+<img src="https://lh3.googleusercontent.com/-hVW5n-d_bqI/VMiO79o1qDI/AAAAAAAADnI/jqse1muUppk/s2560/slackDetails.png" />
+</a>
 
 #### Smoke Testing Deployment
+Remember the problem I have mentioned earlier in this post about some pages slip through QA and I solved that by writing powershell script. Well running that test script manually was not good enough. I configured my process to run powershell script for testing pages and announce the result of test in slack. Follow the screenshots for my configurations. 
+
+<a href="https://lh4.googleusercontent.com/-VNbGYhdpY1g/VMiRVkcUg6I/AAAAAAAADnY/_Ya_JCidGjM/s2560/octopussmoke.png">
+<img src="https://lh4.googleusercontent.com/-VNbGYhdpY1g/VMiRVkcUg6I/AAAAAAAADnY/_Ya_JCidGjM/s2560/octopussmoke.png" />
+</a>
+
+### What's Next
+
+- I need to add more envoirnments into octopus deploy specially production so from testing server I can promote a build on live server without ftp and have support for rolling back.
+- Need to have more powershell script to clean files of builds older than a month to save disk space.
+- Need to integrate twitter to post tweets about server status and post readings on slack. Monitoring bandwidth, hard disk space and some other events comes handy.
 
 
 <img src="http://media.giphy.com/media/c3LrSypJkaj0A/giphy.gif" />
