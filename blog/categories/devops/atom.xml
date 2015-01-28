@@ -4,7 +4,7 @@
   <title><![CDATA[Category: DevOps | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/devops/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2015-01-28T09:54:59+05:00</updated>
+  <updated>2015-01-28T10:02:58+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -18,9 +18,9 @@
     <link href="http://blog.najamsikander.com/blog/2014/12/31/continuous-integration-and-deployment-for-net-projects/"/>
     <updated>2014-12-31T20:05:00+05:00</updated>
     <id>http://blog.najamsikander.com/blog/2014/12/31/continuous-integration-and-deployment-for-net-projects</id>
-    <content type="html"><![CDATA[<p>I have been involved with development of small and large web applications for quite sometime now. I have been using latest technologies and tooling but my workflow felt from ancient times. Recently I got much obsessed with automation I thought to improve my development workflow. In my mind I knew I need to do something about build process, tests the build, deployment of latest build and notify team members that new code/build is available.</p>
+    <content type="html"><![CDATA[<p>I have been involved with development of small and large web applications for quite sometime now. While using latest tools and technology for development I always felt my workflow is from ancient times. Recently I got much obsessed with automation, I thought to improve my development workflow. In my mind I knew I need to do something about build process, tests the build, deployment of latest build and notify team members that new code/build is available.</p>
 
-<p>I started looking around, playing with tools from different vendors and finally had a list to explore and get things done. Following are the tools made to my list.</p>
+<p>I started looking around, playing with tools from different vendors and finally shortlisted few tools to start with. Following are the tools made to my list.</p>
 
 <ul>
 <li>PowerShell</li>
