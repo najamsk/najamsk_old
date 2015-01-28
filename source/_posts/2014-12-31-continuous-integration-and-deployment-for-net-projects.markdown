@@ -93,19 +93,6 @@ To avoid future complaints in this area I have developed a Powershell script tha
 
 <img src="http://33.media.tumblr.com/tumblr_m2yyycfgnj1r2optzo1_500.gif"/>
 
-
-
-## Source Control: GitLab
-
-## Installing TeamCity
-
-## Installing Octopus Deploy
-
-## Configurations
-
-## Results 
-
-
 ### Environment
 We have made modifications to our local IT infrastructure we have some new servers that are running Gitlab, Teamcity and Octopus deploy. Gitlab is configured on Ubuntu 12.04 box for rest of the tools we are using windows platform.
 
