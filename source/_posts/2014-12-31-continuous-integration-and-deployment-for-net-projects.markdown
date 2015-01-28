@@ -54,9 +54,9 @@ To solve above problem our team agreed to follow a process which dictates that b
 Compiling code is no rocket science but it was painful to do it manually against each commit. Team started to feel the burden but keeps doing it in fact they name this push-pull exercise as "Push-Pa".
 
 ###### Real Solution: Teamcity
-I knew teamcity for a while and used it against TFS source control for a big web forms based web applicatoin. 
+I knew Teamcity for a while and used it against TFS source control for a big web forms based web applicatoin. 
 
-First task at hand was how to integrate teamcity with gitlab server for monitoring latest commits in a specific branch. 
+First task at hand was how to integrate Teamcity with Gitlab server for monitoring latest commits in a specific branch. 
 
 #### Deployment Nightmare
 Our deployment process was from 80's or 90's if ftp exist back then. When we needed to deploy code, first step was to pull the latest code from source control. Then make changes for server environment (if you miss transforms, and environment checks) in config files and other code which is specific to server environment. Once that's done create a zip file and upload it to server via ftp. 
@@ -67,14 +67,14 @@ On server we need to unzip the latest code, and create backup of running website
 
 
 ###### Solution: Octopus Deploy
-There are many solutions out there to handle deployments some also offer integration feature for which we are using teamcity. In few talks related to devops I came across octopus deploy. It felt nice, easy and powerful best part was they were targeting .net devs. 
+There are many solutions out there to handle deployments some also offer integration feature for which we are using Teamcity. In few talks related to devops I came across Octopus Deploy. It felt nice, easy and powerful best part was they were targeting .net devs. 
 
-Our team currently testing octopus deploy and it's linked with our teamcity server. It takes the teamcity compiled output/package and transform the code and settings for our deployment servers. Once code is modified for web servers its uploaded and deployed automatically. Backup against each deployment is managed by octopusdeploy, you can roll back to preview release anytime you want. 
+Our team currently testing Octopus Deploy and it's linked with our Teamcity server. It takes the Teamcity compiled output/package and transform the code and settings for our deployment servers. Once code is modified for web servers its uploaded and deployed automatically. Backup against each deployment is managed by Octopus Deploy, you can roll back to preview release anytime you want. 
 
-Configurations and integrating octopus server with teamcity and gitlab was little hard but I got minimal setup working in fair amount of time. Now its much easier to deploy code and we can develop our project faster, push small changes/fixes frequently while keeping our sanity intact.
+Configurations and integrating octopus server with Teamcity and Gitlab was little hard but I got minimal setup working in fair amount of time. Now its much easier to deploy code and we can develop our project faster, push small changes/fixes frequently while keeping our sanity intact.
 
 #### Are We There Yet?
-Achieving continuous deployment was fun and I felt good about it, but one problem was still sticking around. Team asking each other if latest code has been deployed I could have setup emails notification on teamcity and octopus but knew different people value email differently. Some will wait for it and read it to get latest updates some will apply filter so these kind of emails skip their inbox. 
+Achieving continuous deployment was fun and I felt good about it, but one problem was still sticking around. Team asking each other if latest code has been deployed I could have setup emails notification on Teamcity and octopus but knew different people value email differently. Some will wait for it and read it to get latest updates some will apply filter so these kind of emails skip their inbox. 
 
 <img src="http://media.giphy.com/media/XUR9XH8olimic/giphy.gif" />
 
@@ -103,9 +103,9 @@ One time we got complaint that one or two public pages are not working for users
 
 
 ### Environment
-To adopt a new modern workflow my baseline environment includes teamcity and octopus deploy on windows 8.1 box. Our gitlab is configured with ubuntu 12.04 box.
+To adopt a new modern workflow my baseline environment includes Teamcity and Octopus Deploy on windows 8.1 box. Our Gitlab is configured with ubuntu 12.04 box.
 
-Download teamcity and octpus deploy setups files from following:
+Download Teamcity and octpus deploy setups files from following:
 
 - TeamCity Setup
 - Octopus Deploy Sever
@@ -114,22 +114,22 @@ Download teamcity and octpus deploy setups files from following:
 
 
 
-###Installing teamcity
-Installation is fairly simple and for database I wanted to use Microsoft SQL Server for that teamcity installation wizard guides you to [download SQL JDBC driver](http://confluence.jetbrains.com/display/TCD9/Setting+up+an+External+Database#SettingupanExternalDatabase-MicrosoftSQLServer). Unzip the file and look for a file _4.0.jar_ copy this file to lib folder of teamcity installation directory. 
+###Installing Teamcity
+Installation is fairly simple and for database I wanted to use Microsoft SQL Server for that Teamcity installation wizard guides you to [download SQL JDBC driver](http://confluence.jetbrains.com/display/TCD9/Setting+up+an+External+Database#SettingupanExternalDatabase-MicrosoftSQLServer). Unzip the file and look for a file _4.0.jar_ copy this file to lib folder of Teamcity installation directory. 
 
-Now check your teamcity installation wizard and test if drivers are loaded. If there are no errors you can now specify connection detail for your sql server database. 
+Now check your Teamcity installation wizard and test if drivers are loaded. If there are no errors you can now specify connection detail for your sql server database. 
 
-After database setup teamcity will prompt you for terms and conditions and then ask you to create admin account. 
+After database setup Teamcity will prompt you for terms and conditions and then ask you to create admin account. 
 
 ####Creating Build: Gitlab
-First thing is to create a new project next choose create build configuration for your new project. Since source is on GitLab you need to check version control settings inside teamcity. Make sure your settings are similar to mine.
+First thing is to create a new project next choose create build configuration for your new project. Since source is on GitLab you need to check version control settings inside Teamcity. Make sure your settings are similar to mine.
 
 You might tell from screenshot that our team city build will monitor dev branch of our project and as soon as new commit will arrive we will be notified to process it. 
 
-Now we need to configure build steps right now I only have two build steps that downloads the code of latest commit and compiles it using the method I have choose. Second step will package the compiled code and pass it on to octopus deployment. You can see my build step configuration from following screenshot.
+Now we need to configure build steps right now I only have two build steps that downloads the code of latest commit and compiles it using the method I have choose. Second step will package the compiled code and pass it on to Octopus Deployment. You can see my build step configuration from following screenshot.
 
 
-If you don't see octopack section yet with your teamcity installation you need to install octopack plugin. Installation is dead simple copy Octopus.TeamCity.zip into teamcity plugins folder (C:\ProgramData\JetBrains\TeamCity\plugins) then restart Teamciy windows service and refresh your browser you will have octopack section like screenshot.
+If you don't see octopack section yet with your Teamcity installation you need to install octopack plugin. Installation is dead simple copy Octopus.TeamCity.zip into Teamcity plugins folder (C:\ProgramData\JetBrains\TeamCity\plugins) then restart Teamciy windows service and refresh your browser you will have octopack section like screenshot.
 
 ### Installing octopack
 Installation is dead simple once you have installed the OctopusDeploy server. You can run a tenticle setup on any deployment server (Staging, Testing, Production).
@@ -140,14 +140,14 @@ Create a new envoirnment and make sure add your tenticle or deployemnet server t
 
 Octopusdeploy api key by going inside user.
 
-We need to tell octopus how to download teamcity output for that you need to visit back teamcity and configure a nuget feed. 
+We need to tell octopus how to download Teamcity output for that you need to visit back Teamcity and configure a nuget feed. 
 
-Add nuget feed of teamcity with teamcity credentials. test by
-searching packages. Make sure your teamcity has nuget feed available.
+Add nuget feed of Teamcity with Teamcity credentials. test by
+searching packages. Make sure your Teamcity has nuget feed available.
 
 While are pecies of puzzle are in their place we can now define the deployment procoess for our project. Octopusdeploy breaks process into steps that you need to define and configured. 
 
-We start with our first step called deploy and like it's name it deploys the latest build from teamcity to any envoirnment we have pick. 
+We start with our first step called deploy and like it's name it deploys the latest build from Teamcity to any envoirnment we have pick. 
 
 #### Slack Notifications
 
