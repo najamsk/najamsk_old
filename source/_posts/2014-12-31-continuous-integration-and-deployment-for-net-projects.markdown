@@ -12,7 +12,7 @@ categories:
 
 I have been involved with development of small and large web applications for quite sometime now. While using latest tools and technology for development I always felt my workflow is from ancient times. Recently I got much obsessed with automation, I thought to improve my development workflow. In my mind I knew I need to do something about build process, tests the build, deployment of latest build and notify team members that new code/build is available. 
 
-I started looking around, playing with tools from different vendors and finally shortlisted few tools to start with. Following are the tools made to my list.
+I started looking around, playing with tools from different vendors and finally shortlisted few tools to start with. Following tools made the list.
 
 - PowerShell 
 - Slack
@@ -22,13 +22,13 @@ I started looking around, playing with tools from different vendors and finally 
  
 __If you are thinking wow it's alot to get started with automation then I will recommond learning powershell if your using windows and .Net technologies. With powershell only you can do most of things I am about to share with you.__
 
-##Problems
+##Sprint Killings
 
-We are using scrum for development with two week sprint cycle to get things out. Short sprints have their benefits but they also kills if you are doing testing and deployment manually and this pain reaches to maximum intensity if you need to to push code to multiple servers (Dev, QA, Staging, Production). 
+We are using scrum for development with two week sprint cycle to get things out. Short sprints have their benefits but they also kills, if you are doing testing and deployment manually and this pain reaches to maximum intensity if you need to to push code to multiple servers (Dev, QA, Staging, Production). 
 
 <img src="http://s3-ec.buzzfed.com/static/enhanced/webdr01/2013/2/20/17/anigif_enhanced-buzz-4131-1361399397-4.gif"/>
 
-We have been using some tooling while writing code and communicating with each other and we were missing few tools and that bites us after a while. Following list contains few common tools in use by our local industry:
+We have been using some tooling while writing code and communicating with each other and that was not modern and did hurt us after a while. Following list contains few common tools in use by our local industry:
 
 * __TFS and SVN__ - for version control
 * __Vychat & skype - for communication
@@ -36,16 +36,16 @@ We have been using some tooling while writing code and communicating with each o
 * __Zero integration tests__ (Again manual process followed by Devs and QA)
 * __Deployment using filezilla__ (Yes this is the holy grail of deployment)
 
-Few team members had major issues with SVN and TFS as souce control specially on non-windows platforms. Since I have been using Git for sometime now and loved it. I recommonded git and knew we can't move ahead without installing local git server. After some research found GitLab that has free option available. We are running GitLab on ubuntu 12.04 box and untill now it's working smoothly.
+Few team members had major issues with SVN and TFS as souce control specially when they are not using windows. Since I have been using Git for sometime now and loved it. I recommonded git and knew we can't move ahead without installing local git server. After some research found GitLab that has free option available. We are running GitLab on ubuntu 12.04 box and untill now it's working smoothly.
 
-Co-workers who were bitten by SVN were in love with git and thought it's the only change we needed in our current workflow/tooling. Well that was a mistake.
+Co-workers that got beatings from SVN fall in love with git and we all thought it's the only change we needed in our current workflow/tooling. Well that was a mistake.
 
 <img src="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/2/8/14/anigif_enhanced-buzz-11517-1360352639-1.gif" />
 
 
-#### Who Broke The Code?
+#### Who Moved The Code?
 
-"Is it ok to pull latest code from remote branch?". Gitlab was providing us information about what changed in latest commit and by whom but couldn't signal us about the integrity of the code it has.
+"Is it ok to pull latest code from remote branch?". Gitlab was providing us information about what changed in latest commit and by whom but couldn't signal us if the code is free from compile time errors. That created fear among devs and they came up with a solution called __"Push-Pa"__.
 
 ###### Manual Solution: Push-Pa
 
