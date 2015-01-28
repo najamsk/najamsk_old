@@ -67,7 +67,7 @@ On server we need to unzip the latest code, and create backup of running website
 
 
 ###### Solution: Octopus Deploy
-There are many solutions out there to handle deployments some bundled with integration feature. In few talks related to devops I came across Octopus Deploy. It felt nice, easy and powerful best part was they were targeting .net devs with slogan __"Automated deployment for .NEt"__.
+There are many solutions out there to handle deployments some bundled with integration feature. In few talks related to devops I came across Octopus Deploy. It felt nice, easy and powerful best part was they were targeting .net devs with slogan __"Automated deployment for .Net"__.
 
 Our team currently testing Octopus Deploy and it's linked with our Teamcity server. It takes the Teamcity compiled output/package and transform the code and settings for our deployment servers. Once code is modified for web servers its uploaded and deployed automatically. Backup against each deployment is managed by Octopus Deploy, you can roll back to preview release anytime you want. 
 
