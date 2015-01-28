@@ -9,7 +9,8 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="Hi guyz, Today I am sharing how to call asp.net web page code behind methods from client side javascript in my case it will be jquery. Let us divide &hellip;">
+  <meta name="description" content="Hi guys,
+Today I have installed a new wordpress plugin called &#8220;Code Snippet&#8221; and it support code highlight for many languages try this &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +78,45 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2009/02/03/highlight-your-code-with-wordpress/">Highlight Your Code With Wordpress</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2009-02-03T05:00:00+05:00" pubdate data-updated="true">Feb 3<span>rd</span>, 2009</time>
+        
+         | <a href="/blog/2009/02/03/highlight-your-code-with-wordpress/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hi guys,
+Today I have installed a new wordpress plugin called <strong>&#8220;Code Snippet&#8221;</strong> and it support code highlight for many languages try this out you would love it. <a title="Download code snippet" href="http://wordpress.org/extend/plugins/codesnippet-20/" target="_blank">Download it now</a>.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -609,77 +649,6 @@ select * from country
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2008/07/16/70/">Sql Data Srouce Control Fetch Data From Database</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2008-07-16T10:04:00+05:00" pubdate data-updated="true">Jul 16<span>th</span>, 2008</time>
-        
-         | <a href="/blog/2008/07/16/70/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Hi in asp.net 2.0 this new datasource control has been added and i liked it alot and i used it on many places so i thought it would be nice if I share my knowledge with all my readers so first of all i would just like to show you how to retrieve some data from your database into C# code behind file.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="kt">string</span> <span class="n">userID</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'><span class="kt">string</span> <span class="n">UserName</span><span class="p">=</span><span class="s">&quot;najam&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="n">SqlDataSource</span> <span class="n">myDbSource</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlDataSource</span><span class="p">();</span>
-</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ConnectionString</span> <span class="p">=</span> <span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">ConnectionStrings</span><span class="p">[</span><span class="s">&quot;ConnectionString&quot;</span><span class="p">].</span><span class="n">ConnectionString</span><span class="p">;</span>
-</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">SelectCommand</span> <span class="p">=</span> <span class="s">&quot;select userId from Users where userName=&#39;&quot;</span> <span class="p">+</span> <span class="n">UserName</span> <span class="p">+</span> <span class="s">&quot;&#39;&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ProviderName</span> <span class="p">=</span> <span class="s">&quot;System.Data.SqlClient&quot;</span><span class="p">;</span>
-</span><span class='line'><span class="n">DataView</span> <span class="n">dv</span> <span class="p">=</span> <span class="p">(</span><span class="n">DataView</span><span class="p">)</span><span class="n">myDbSource</span><span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="k">new</span> <span class="n">DataSourceSelectArguments</span><span class="p">());</span>
-</span><span class='line'><span class="n">DataTable</span> <span class="n">dt</span> <span class="p">=</span> <span class="n">dv</span><span class="p">.</span><span class="n">Table</span><span class="p">;</span>
-</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">dt</span><span class="p">.</span><span class="n">Rows</span><span class="p">.</span><span class="n">Count</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
-</span><span class='line'><span class="p">{</span>
-</span><span class='line'><span class="n">userID</span> <span class="p">=</span> <span class="n">dt</span><span class="p">.</span><span class="n">Rows</span><span class="p">[</span><span class="m">0</span><span class="p">][</span><span class="m">0</span><span class="p">].</span><span class="n">ToString</span><span class="p">();</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Above code will return user id if username supplied. You will see no data adapters or command object.</p>
-
-<p>If you like instead of creating sql datasrouce control in code behind just drag and drop it onto ur aspx page and then in your code behind reference it that will shorten the line of code for fetching data from your database.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/6/">&larr; Older</a>
@@ -697,6 +666,10 @@ select * from country
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/12/31/continuous-integration-and-deployment-for-net-projects/">Continuous Integration &amp; Deployment For .Net Projects TL;DR</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/11/16/lcl-2014-islamabad/">LCL 2014: Third Annual Conference Islamabad</a>
       </li>
     
@@ -710,10 +683,6 @@ select * from country
     
       <li class="post">
         <a href="/blog/2014/10/01/sending-emails-with-powershell/">Sending Emails With Powershell</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/25/open-letter-to-ptcl-desi-version/">Open letter to PTCL - desi version</a>
       </li>
     
   </ul>
@@ -733,7 +702,7 @@ select * from country
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - najam sikander awan -
+  Copyright &copy; 2015 - najam sikander awan -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

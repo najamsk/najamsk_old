@@ -9,7 +9,7 @@
   <meta name="author" content="najam sikander awan">
 
   
-  <meta name="description" content="Ummm whats new in my life? Well finally my Ms in telecom is completed all courses are clear and i am fleeing like a free bird. Tension free &hellip;">
+  <meta name="description" content="Hi in asp.net 2.0 this new datasource control has been added and i liked it alot and i used it on many places so i thought it would be nice if I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -77,6 +77,77 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/07/16/70/">Sql Data Srouce Control Fetch Data From Database</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2008-07-16T10:04:00+05:00" pubdate data-updated="true">Jul 16<span>th</span>, 2008</time>
+        
+         | <a href="/blog/2008/07/16/70/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hi in asp.net 2.0 this new datasource control has been added and i liked it alot and i used it on many places so i thought it would be nice if I share my knowledge with all my readers so first of all i would just like to show you how to retrieve some data from your database into C# code behind file.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='c#'><span class='line'><span class="kt">string</span> <span class="n">userID</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'><span class="kt">string</span> <span class="n">UserName</span><span class="p">=</span><span class="s">&quot;najam&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">SqlDataSource</span> <span class="n">myDbSource</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlDataSource</span><span class="p">();</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ConnectionString</span> <span class="p">=</span> <span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">ConnectionStrings</span><span class="p">[</span><span class="s">&quot;ConnectionString&quot;</span><span class="p">].</span><span class="n">ConnectionString</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">SelectCommand</span> <span class="p">=</span> <span class="s">&quot;select userId from Users where userName=&#39;&quot;</span> <span class="p">+</span> <span class="n">UserName</span> <span class="p">+</span> <span class="s">&quot;&#39;&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">myDbSource</span><span class="p">.</span><span class="n">ProviderName</span> <span class="p">=</span> <span class="s">&quot;System.Data.SqlClient&quot;</span><span class="p">;</span>
+</span><span class='line'><span class="n">DataView</span> <span class="n">dv</span> <span class="p">=</span> <span class="p">(</span><span class="n">DataView</span><span class="p">)</span><span class="n">myDbSource</span><span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="k">new</span> <span class="n">DataSourceSelectArguments</span><span class="p">());</span>
+</span><span class='line'><span class="n">DataTable</span> <span class="n">dt</span> <span class="p">=</span> <span class="n">dv</span><span class="p">.</span><span class="n">Table</span><span class="p">;</span>
+</span><span class='line'><span class="k">if</span> <span class="p">(</span><span class="n">dt</span><span class="p">.</span><span class="n">Rows</span><span class="p">.</span><span class="n">Count</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'><span class="n">userID</span> <span class="p">=</span> <span class="n">dt</span><span class="p">.</span><span class="n">Rows</span><span class="p">[</span><span class="m">0</span><span class="p">][</span><span class="m">0</span><span class="p">].</span><span class="n">ToString</span><span class="p">();</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Above code will return user id if username supplied. You will see no data adapters or command object.</p>
+
+<p>If you like instead of creating sql datasrouce control in code behind just drag and drop it onto ur aspx page and then in your code behind reference it that will shorten the line of code for fetching data from your database.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -498,64 +569,6 @@ Najam Sikander Awan</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2007/04/14/wifi-working-on-my-acer-1642-with-suse-102/">Wifi Working on My Acer 1642 With Suse 10.2</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2007-04-14T17:41:00+05:00" pubdate data-updated="true">Apr 14<span>th</span>, 2007</time>
-        
-         | <a href="/blog/2007/04/14/wifi-working-on-my-acer-1642-with-suse-102/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Hi,</p>
-
-
-<p>phew after lots of search finally my acer 1642 ( <a href="http://najam.wordpress.com/2007/02/13/my-acer-aspire-1642znwlci/">view specifications</a> ) laptop with suse 10.2 communication with Access Point. :D</p>
-
-
-<p>Intel
-PRO/Wireless 2200BG is my wireless card and its detected by suse 10.2
-but as i turn my wifi on led is not lightening up and nothing works&nbsp; as
-i searched&nbsp; i found that suse 10.2 includes driver for my wireless lan
-card but firmware is missing so all i have to do is install proper
-firmware for my card.</p>
-
-
-<p>Some forums mentioned that for suse10.2 and Intel PRO/Wireless 2200BG card proper firmware is version 3 and all i have to do is <a href="http://ipw2200.sourceforge.net/firmware.php">download</a> it and extract it into /lib/firmware.  Reboot.</p>
-
-
-<p>After reboot my led lighten up and i installed some packages like knetworkmanager from yast to manage my wireless connections.</p>
-
-
-<p>Regards<br />Najam Sikander Awan<br /><br /><p class="poweredbyperformancing">Powered by <a href="http://scribefire.com/">ScribeFire</a>.</p></p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/7/">&larr; Older</a>
@@ -573,6 +586,10 @@ firmware for my card.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/12/31/continuous-integration-and-deployment-for-net-projects/">Continuous Integration &amp; Deployment For .Net Projects TL;DR</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/11/16/lcl-2014-islamabad/">LCL 2014: Third Annual Conference Islamabad</a>
       </li>
     
@@ -586,10 +603,6 @@ firmware for my card.</p>
     
       <li class="post">
         <a href="/blog/2014/10/01/sending-emails-with-powershell/">Sending Emails With Powershell</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/01/25/open-letter-to-ptcl-desi-version/">Open letter to PTCL - desi version</a>
       </li>
     
   </ul>
@@ -609,7 +622,7 @@ firmware for my card.</p>
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - najam sikander awan -
+  Copyright &copy; 2015 - najam sikander awan -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 

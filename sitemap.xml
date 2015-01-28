@@ -392,15 +392,21 @@
     </url>
     <url>
         <loc>http://blog.najamsikander.com/blog/2014/11/16/lcl-2014-islamabad/</loc>
-        <lastmod>2014-11-16T21:02:38+05:00</lastmod>
+        <lastmod>2014-12-28T00:14:17+05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://blog.najamsikander.com/blog/2014/12/31/continuous-integration-and-deployment-for-net-projects/
+        </loc>
+        <lastmod>2015-01-28T09:26:05+05:00</lastmod>
     </url>
     <url>
         <loc>http://blog.najamsikander.com/blog/archives/</loc>
-        <lastmod>2014-11-16T21:02:38+05:00</lastmod>
+        <lastmod>2015-01-28T09:26:05+05:00</lastmod>
     </url>
     <url>
         <loc>http://blog.najamsikander.com/</loc>
-        <lastmod>2014-11-16T21:02:38+05:00</lastmod>
+        <lastmod>2015-01-28T09:26:05+05:00</lastmod>
     </url>
     <url>
         <loc>http://blog.najamsikander.com/robots.txt</loc>
