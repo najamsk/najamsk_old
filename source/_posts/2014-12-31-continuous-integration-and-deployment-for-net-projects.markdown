@@ -43,7 +43,7 @@ Co-workers that got beatings from SVN fall in love with git and we all thought i
 <img src="http://s3-ec.buzzfed.com/static/enhanced/webdr02/2013/2/8/14/anigif_enhanced-buzz-11517-1360352639-1.gif" />
 
 
-#### Who Moved The Code?
+#### Problem 1: Who Moved The Code?
 
 "Is it ok to pull latest code from remote branch?". Gitlab was providing us information about what changed in latest commit and by whom but couldn't signal us if the code is free from compile time errors. That created fear among devs and they came up with a solution called __"Push-Pa"__.
 
@@ -54,12 +54,12 @@ To solve above problem our team agreed to follow a process which dictates that b
 Compiling code is no rocket science but it was painful to do it manually against each commit. Team started to feel the burden but keeps doing it in fact they name this push-pull exercise as "Push-Pa".
 
 ###### Real Solution: Teamcity
-I knew Teamcity for a while and used it against TFS source control for a big web forms based web applicatoin. 
+I knew Teamcity for a while and used it against TFS source control for a big web forms based web applicatoin. At that time I was using it against TFS and to get notifications if lastest commit compiles without errors. 
 
-First task at hand was how to integrate Teamcity with Gitlab server for monitoring latest commits in a specific branch. 
+Since we are using GitLab now for latest projects first task at hand was how to integrate Teamcity with Gitlab server for monitoring latest commits in a specific branch. 
 
-#### Deployment Nightmare
-Our deployment process was from 80's or 90's if ftp exist back then. When we needed to deploy code, first step was to pull the latest code from source control. Then make changes for server environment (if you miss transforms, and environment checks) in config files and other code which is specific to server environment. Once that's done create a zip file and upload it to server via ftp. 
+#### Problem 2: Deployment Nightmare
+Our deployment process was from 80's or 90's if ftp exist back then. For deployment first step was to pull the latest code from source control. Then make changes for server environment (if you miss transforms, and environment checks) in config files and other code which is specific to server environment. Once that's done create a zip file and upload it to server via ftp. 
 
 On server we need to unzip the latest code, and create backup of running website. Then overwrite files and test to see if deployment works. If its failing restore the backup, if it works pray to God and say thanks for the blessings.
 
@@ -67,25 +67,29 @@ On server we need to unzip the latest code, and create backup of running website
 
 
 ###### Solution: Octopus Deploy
-There are many solutions out there to handle deployments some also offer integration feature for which we are using Teamcity. In few talks related to devops I came across Octopus Deploy. It felt nice, easy and powerful best part was they were targeting .net devs. 
+There are many solutions out there to handle deployments some bundled with integration feture. In few talks related to devops I came across Octopus Deploy. It felt nice, easy and powerful best part was they were targeting .net devs with slogan __"Automated deployment for .NEt"__.
 
 Our team currently testing Octopus Deploy and it's linked with our Teamcity server. It takes the Teamcity compiled output/package and transform the code and settings for our deployment servers. Once code is modified for web servers its uploaded and deployed automatically. Backup against each deployment is managed by Octopus Deploy, you can roll back to preview release anytime you want. 
 
-Configurations and integrating octopus server with Teamcity and Gitlab was little hard but I got minimal setup working in fair amount of time. Now its much easier to deploy code and we can develop our project faster, push small changes/fixes frequently while keeping our sanity intact.
+Configurations and integrating Octopus server with Teamcity and Gitlab was little hard but I got minimal setup working in fair amount of time. Now its much easier to deploy code and we can develop our project faster, push small changes/fixes frequently while keeping our sanity intact.
 
-#### Are We There Yet?
-Achieving continuous deployment was fun and I felt good about it, but one problem was still sticking around. Team asking each other if latest code has been deployed I could have setup emails notification on Teamcity and octopus but knew different people value email differently. Some will wait for it and read it to get latest updates some will apply filter so these kind of emails skip their inbox. 
+#### Problem 3: Are We There Yet?
+Achieving continuous deployment was fun and I felt good about it, but one problem was still sticking around. Team asking each other if latest code has been deployed I could have setup emails notification on Teamcity and Octopus but knew different people value email differently. Some will wait for it and read it to get latest updates some will apply filter so these kind of emails skip their inbox. 
 
 <img src="http://media.giphy.com/media/XUR9XH8olimic/giphy.gif" />
 
 In my view having these updates inside team chat room was the best option but it's hard to integrate notifications with vychat or skype. This is why my first mission was to convert each member to slack and enforce everyone is using it. (still working on that front)
 
-Slack offers integration points and rest api, using their api our octopus server pushes updates about deployment like if deployment is successful or failed. After deployment notification another notification about same release updates team chat room for smoke tests(powershell scripts) status.
+###### Solution: Slack
+Slack offers integration points and rest api, using their api our Octopus server pushes updates about deployment like if deployment is successful or failed. After deployment notification another notification about same release updates team chat room for smoke tests(powershell scripts) status.
 
-###### Smoke Testing
+###### Problem 4: Smoke Testing
 Our current web application under development has many pages of different nature like public pages, secure pages, redirect pages and error pages.
 
-One time we got complaint that one or two public pages are not working for users. Another time pages that suppose to be secure and ask for user credentials were open to everyone. Even though we have QA department and they take proper time to test still these issues could have crawled back. To avoid future complaints in this area I have developed a powershell script that has list of pages (public, secure, 404, 500) and it make requests to those pages and according to response it pushes notifications to slack. That powershell script is executed by Octopus on remote server after each deployment.
+One time we got complaint that one or two public pages are not working for users. Another time pages that suppose to be secure and ask for user credentials were open to everyone. Even though we have QA department and they take proper time to test still these issues could have crawled back. 
+
+###### Solution: PowerShell
+To avoid future complaints in this area I have developed a powershell script that has list of pages (public, secure, 404, 500) and it make requests to those pages and according to response it pushes notifications to slack. That powershell script is executed by Octopus on remote server after each deployment.
 
 <img src="http://33.media.tumblr.com/tumblr_m2yyycfgnj1r2optzo1_500.gif"/>
 
@@ -103,28 +107,34 @@ One time we got complaint that one or two public pages are not working for users
 
 
 ### Environment
-To adopt a new modern workflow my baseline environment includes Teamcity and Octopus Deploy on windows 8.1 box. Our Gitlab is configured with ubuntu 12.04 box.
+We have made modifications to our local IT infrastructure we have some new servers that are running Gitlab, Teamcity and Octopus deploy. Gitlab is configured on Ubuntu 12.04 box for rest of the tools we are using windows platform.
 
 Download Teamcity and octpus deploy setups files from following:
 
 - [TeamCity Setup](https://www.jetbrains.com/teamcity/download/)
-- [Octopus Deploy Sever](https://octopusdeploy.com/downloads)
-- [Octopus Deploy Tentacle](https://octopusdeploy.com/downloads)
-- [Ocotpus Deploy Teamcity Plugin](https://octopusdeploy.com/downloads)
+- [Octopus Deploy Sever](https://Octopusdeploy.com/downloads)
+- [Octopus Deploy Tentacle](https://Octopusdeploy.com/downloads)
+- [Ocotpus Deploy Teamcity Plugin](https://Octopusdeploy.com/downloads)
 
 
 
 ###Installing Teamcity
-Installation is fairly simple and for database I wanted to use Microsoft SQL Server for that Teamcity installation wizard guides you to [download SQL JDBC driver](http://confluence.jetbrains.com/display/TCD9/Setting+up+an+External+Database#SettingupanExternalDatabase-MicrosoftSQLServer). Unzip the file and look for a file _4.0.jar_ copy this file to lib folder of Teamcity installation directory. 
+Installation is fairly simple and for database I wanted to use Microsoft SQL Server.Teamcity installation wizard guides you to [download SQL JDBC driver](http://confluence.jetbrains.com/display/TCD9/Setting+up+an+External+Database#SettingupanExternalDatabase-MicrosoftSQLServer). Unzip the file and look for a file _4.0.jar_ copy this file to lib folder of Teamcity installation directory. 
 
 Now check your Teamcity installation wizard and test if drivers are loaded. If there are no errors you can now specify connection detail for your sql server database. 
 
 After database setup Teamcity will prompt you for terms and conditions and then ask you to create admin account. 
 
 ####Creating Build: Gitlab
-First thing is to create a new project next choose create build configuration for your new project. Since source is on GitLab you need to check version control settings inside Teamcity. Make sure your settings are similar to mine.
+First thing is to create a new project, next choose create build configuration for your new project. Since source is on GitLab you need to check version control settings inside Teamcity. Make sure your settings are similar to mine.
+
+[Create Build](https://lh5.googleusercontent.com/-HgycLiQB-VE/VK08HN9MQ3I/AAAAAAAADjk/RzN8533XJkI/s2560/Create-Build-Configuration-%E2%80%94-TeamCity.jpg)
+
+[Verson Control Settings](https://lh6.googleusercontent.com/-gawLVzorkio/VK08JhJiFNI/AAAAAAAADkQ/6Wz8eiDJSn4/s2560/Edit-VCS-Root----TeamCity.jpg)
 
 You might tell from screenshot that our team city build will monitor dev branch of our project and as soon as new commit will arrive we will be notified to process it. 
+
+[Verson Control Settings](https://lh6.googleusercontent.com/-gawLVzorkio/VK08JhJiFNI/AAAAAAAADkQ/6Wz8eiDJSn4/s2560/Edit-VCS-Root----TeamCity.jpg)
 
 Now we need to configure build steps right now I only have two build steps that downloads the code of latest commit and compiles it using the method I have choose. Second step will package the compiled code and pass it on to Octopus Deployment. You can see my build step configuration from following screenshot.
 
@@ -134,13 +144,13 @@ If you don't see octopack section yet with your Teamcity installation you need t
 ### Installing octopack
 Installation is dead simple once you have installed the OctopusDeploy server. You can run a tenticle setup on any deployment server (Staging, Testing, Production).
 
-Let's confgiure our project inside octopusDeploy now. Create a new project and name it.
+Let's confgiure our project inside OctopusDeploy now. Create a new project and name it.
 
 Create a new envoirnment and make sure add your tenticle or deployemnet server to that envoirnment. I have one envoirnment called development but later on I will add more like staging and production. 
 
 Octopusdeploy api key by going inside user.
 
-We need to tell octopus how to download Teamcity output for that you need to visit back Teamcity and configure a nuget feed. 
+We need to tell Octopus how to download Teamcity output for that you need to visit back Teamcity and configure a nuget feed. 
 
 Add nuget feed of Teamcity with Teamcity credentials. test by
 searching packages. Make sure your Teamcity has nuget feed available.
