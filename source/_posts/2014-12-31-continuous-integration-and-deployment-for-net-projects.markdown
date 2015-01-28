@@ -107,10 +107,10 @@ To adopt a new modern workflow my baseline environment includes Teamcity and Oct
 
 Download Teamcity and octpus deploy setups files from following:
 
-- TeamCity Setup
-- Octopus Deploy Sever
-- Octopus Deploy Tentacle 
-- Ocotpus Deploy Teamcity Plugin
+- [TeamCity Setup](https://www.jetbrains.com/teamcity/download/)
+- [Octopus Deploy Sever](https://octopusdeploy.com/downloads)
+- [Octopus Deploy Tentacle](https://octopusdeploy.com/downloads)
+- [Ocotpus Deploy Teamcity Plugin](https://octopusdeploy.com/downloads)
 
 
 
