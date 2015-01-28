@@ -10,9 +10,9 @@ categories:
 - Setup
 ---
 
-I have been involved with development of small and large web applications for quite sometime now. I have been using latest technologies and tooling but my workflow felt from ancient times. Recently I got much obsessed with automation I thought to improve my development workflow. In my mind I knew I need to do something about build process, tests the build, deployment of latest build and notify team members that new code/build is available. 
+I have been involved with development of small and large web applications for quite sometime now. While using latest tools and technology for development I always felt my workflow is from ancient times. Recently I got much obsessed with automation, I thought to improve my development workflow. In my mind I knew I need to do something about build process, tests the build, deployment of latest build and notify team members that new code/build is available. 
 
-I started looking around, playing with tools from different vendors and finally had a list to explore and get things done. Following are the tools made to my list.
+I started looking around, playing with tools from different vendors and finally shortlisted few tools to start with. Following are the tools made to my list.
 
 - PowerShell 
 - Slack
