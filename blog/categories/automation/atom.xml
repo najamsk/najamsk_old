@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Automation | Najam Sikander Awan]]></title>
   <link href="http://blog.najamsikander.com/blog/categories/automation/atom.xml" rel="self"/>
   <link href="http://blog.najamsikander.com/"/>
-  <updated>2015-01-28T12:47:24+05:00</updated>
+  <updated>2015-01-28T13:11:22+05:00</updated>
   <id>http://blog.najamsikander.com/</id>
   <author>
     <name><![CDATA[najam sikander awan]]></name>
@@ -111,16 +111,6 @@
 <p>To avoid future complaints in this area I have developed a Powershell script that has list of pages (public, secure, 404, 500) and it make requests to those pages and according to response it pushes notifications to slack. That Powershell script is executed by Octopus on remote server after each deployment.</p>
 
 <p><img src="http://33.media.tumblr.com/tumblr_m2yyycfgnj1r2optzo1_500.gif"/></p>
-
-<h2>Source Control: GitLab</h2>
-
-<h2>Installing TeamCity</h2>
-
-<h2>Installing Octopus Deploy</h2>
-
-<h2>Configurations</h2>
-
-<h2>Results</h2>
 
 <h3>Environment</h3>
 
