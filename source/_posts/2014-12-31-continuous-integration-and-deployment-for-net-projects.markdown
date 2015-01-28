@@ -4,9 +4,13 @@ title: "Continuous Integration &amp; Deployment For .Net Projects TL;DR"
 date: 2014-12-31 20:05
 comments: true
 categories: 
+- DevOps
+- Automation
+- Development
+- Setup
 ---
 
-I have been involved with development of small and large web applications. I have been using latest technologies and tooling but my workflow felt from ancient times. Recently I got much obsessed with automation I thought to improve my development workflow. In my mind I knew I need to do somthing about build process, tests the build, deployment of latest build and notify team members that new code/build is available. 
+I have been involved with development of small and large web applications for quite sometime now. I have been using latest technologies and tooling but my workflow felt from ancient times. Recently I got much obsessed with automation I thought to improve my development workflow. In my mind I knew I need to do something about build process, tests the build, deployment of latest build and notify team members that new code/build is available. 
 
 I started looking around, playing with tools from different vendors and finally had a list to explore and get things done. Following are the tools made to my list.
 
@@ -20,7 +24,7 @@ __If you are thinking wow it's alot to get started with automation then I will r
 
 ##Problems
 
-We are using scrum for development with two week sprint cycle to get things out. Short sprints have their benefits but they also kills if you are doing testing and deployment manually and this pain reachs to maximum intensity if you need to to push code to multple servers (Dev, QA, Staging, Production). 
+We are using scrum for development with two week sprint cycle to get things out. Short sprints have their benefits but they also kills if you are doing testing and deployment manually and this pain reaches to maximum intensity if you need to to push code to multiple servers (Dev, QA, Staging, Production). 
 
 <img src="http://s3-ec.buzzfed.com/static/enhanced/webdr01/2013/2/20/17/anigif_enhanced-buzz-4131-1361399397-4.gif"/>
 
@@ -30,7 +34,7 @@ We have been using some tooling while writing code and communicating with each o
 * __Vychat & skype - for communication
 * __Zero unit tests__ - (well few devs were submiting their forms to check output and called that unit testing. I am not joking.)
 * __Zero integration tests__ (Again manual process followed by Devs and QA)
-* __Deployoment using filezilla__ (Yes this is the holy grail of deployment)
+* __Deployment using filezilla__ (Yes this is the holy grail of deployment)
 
 Few team members had major issues with SVN and TFS as souce control specially on non-windows platforms. Since I have been using Git for sometime now and loved it. I recommonded git and knew we can't move ahead without installing local git server. After some research found GitLab that has free option available. We are running GitLab on ubuntu 12.04 box and untill now it's working smoothly.
 
@@ -41,13 +45,13 @@ Co-workers who were bitten by SVN were in love with git and thought it's the onl
 
 #### Who Broke The Code?
 
-"Is it ok to pull latest code from remote branch?". Gitlab was providing us information about what changed in latest commit and by whome but couldn't singal us about the integratity of the code it has.
+"Is it ok to pull latest code from remote branch?". Gitlab was providing us information about what changed in latest commit and by whom but couldn't signal us about the integrity of the code it has.
 
 ###### Manual Solution: Push-Pa
 
 To solve above problem our team agreed to follow a process which dictates that before pushing your code to version control make sure you pull the code first merge it with your local changes. Compile the merged code, test it to check every feature is still working and than push it to remote branch. 
 
-Compiling code is no rocket science but it was painful to do it manually against each commit. Team started to feel the burden but keeps doing it infact they name this push-pull excersize as "Push-Pa".
+Compiling code is no rocket science but it was painful to do it manually against each commit. Team started to feel the burden but keeps doing it in fact they name this push-pull exercise as "Push-Pa".
 
 ###### Real Solution: Teamcity
 I knew teamcity for a while and used it against TFS source control for a big web forms based web applicatoin. 
@@ -55,33 +59,33 @@ I knew teamcity for a while and used it against TFS source control for a big web
 First task at hand was how to integrate teamcity with gitlab server for monitoring latest commits in a specific branch. 
 
 #### Deployment Nightmare
-Our deployment process was from 80's or 90's if ftp exist back then. When we needed to deploy code, first step was to pull the latest code from source control. Then make changes for server envoirnment (if you miss transforms, and envoirnment checks) in config files and other code which is specific to server envoirnment. Once that's done create a zip file and upload it to server via ftp. 
+Our deployment process was from 80's or 90's if ftp exist back then. When we needed to deploy code, first step was to pull the latest code from source control. Then make changes for server environment (if you miss transforms, and environment checks) in config files and other code which is specific to server environment. Once that's done create a zip file and upload it to server via ftp. 
 
-On server we need to unzip the latest code, and create backup of running website. than overwrite files and test to see if deployment works. If its failing restore the backup, if it works pray to God and say thanks for the blessings.
+On server we need to unzip the latest code, and create backup of running website. Then overwrite files and test to see if deployment works. If its failing restore the backup, if it works pray to God and say thanks for the blessings.
 
 <img src="http://25.media.tumblr.com/18f10fa837406181e2b43e1680187bb6/tumblr_mpg1oe3dK21qjmdwqo1_500.gif" />
 
 
 ###### Solution: Octopus Deploy
-There are many solutions out there to handle deployments some also offer integration feature for which we are using teamcity. In few talks related to devops I came across octopus deploy. It felt nice, easy and powerfull best part was they were targeting .net devs. 
+There are many solutions out there to handle deployments some also offer integration feature for which we are using teamcity. In few talks related to devops I came across octopus deploy. It felt nice, easy and powerful best part was they were targeting .net devs. 
 
 Our team currently testing octopus deploy and it's linked with our teamcity server. It takes the teamcity compiled output/package and transform the code and settings for our deployment servers. Once code is modified for web servers its uploaded and deployed automatically. Backup against each deployment is managed by octopusdeploy, you can roll back to preview release anytime you want. 
 
-Configurations and integrating octopus server with teamcity and gitlab was little hard but I got minimal setup working in fair amount of time. Now its much easire to deploy code and we can develop our project faster, push small changes/fixes frequently while keeping our sanity intact.
+Configurations and integrating octopus server with teamcity and gitlab was little hard but I got minimal setup working in fair amount of time. Now its much easier to deploy code and we can develop our project faster, push small changes/fixes frequently while keeping our sanity intact.
 
 #### Are We There Yet?
-Achieving continous deployment was fun and I felt good about it, but one problem was still sticking around. Team asking each other if latest code has been deployed I could have setup emails notification on teamcity and octopus but knew different people value email differently. Some will wait for it and read it to get latest updates some will apply filter so these kind of emails skip their inbox. 
+Achieving continuous deployment was fun and I felt good about it, but one problem was still sticking around. Team asking each other if latest code has been deployed I could have setup emails notification on teamcity and octopus but knew different people value email differently. Some will wait for it and read it to get latest updates some will apply filter so these kind of emails skip their inbox. 
 
 <img src="http://media.giphy.com/media/XUR9XH8olimic/giphy.gif" />
 
-In my view having these updates inside team chat room was the best option but it's hard to integrate notfications with vychat or skype. This is why my first mission was to convert each member to slack and enforce everyone is using it. (still working on that front)
+In my view having these updates inside team chat room was the best option but it's hard to integrate notifications with vychat or skype. This is why my first mission was to convert each member to slack and enforce everyone is using it. (still working on that front)
 
-Slack offers integration points and rest api, using their api our octopus server pushes updates about deployment like if deployment is successful or failed. After deployment notification another notification about same release updates team chat room for somke tests(powershell scripts) status.
+Slack offers integration points and rest api, using their api our octopus server pushes updates about deployment like if deployment is successful or failed. After deployment notification another notification about same release updates team chat room for smoke tests(powershell scripts) status.
 
 ###### Smoke Testing
-Our current web application under development has many pages of different nature like public pages, secure pages, rediret pages and error pages.
+Our current web application under development has many pages of different nature like public pages, secure pages, redirect pages and error pages.
 
-One time we got complaint that one or two public pages are not working for users. Another time pages that suppose to be secure and ask for user credentials were open to everyone. Even though we have QA department and they take proper time to test still these issues could have crawled back. To avoid future compalints in this area I have developed a powershell script that has list of pages (public, secure, 404, 500) and it make requests to those pages and according to response it pushes notifications to slack. That powershell script is executed by Octopus on remote server after each deployment.
+One time we got complaint that one or two public pages are not working for users. Another time pages that suppose to be secure and ask for user credentials were open to everyone. Even though we have QA department and they take proper time to test still these issues could have crawled back. To avoid future complaints in this area I have developed a powershell script that has list of pages (public, secure, 404, 500) and it make requests to those pages and according to response it pushes notifications to slack. That powershell script is executed by Octopus on remote server after each deployment.
 
 <img src="http://33.media.tumblr.com/tumblr_m2yyycfgnj1r2optzo1_500.gif"/>
 
@@ -98,22 +102,22 @@ One time we got complaint that one or two public pages are not working for users
 ## Results 
 
 
-### Envoirnment
-To adopt a new modern workflow my baseline envoirment includes teamcity and octopus deploy on windows 8.1 box. Our gitlab is configured with ubuntu 12.04 box.
+### Environment
+To adopt a new modern workflow my baseline environment includes teamcity and octopus deploy on windows 8.1 box. Our gitlab is configured with ubuntu 12.04 box.
 
 Download teamcity and octpus deploy setups files from following:
 
 - TeamCity Setup
 - Octopus Deploy Sever
-- Octopus Deploy Tenticle 
+- Octopus Deploy Tentacle 
 - Ocotpus Deploy Teamcity Plugin
 
 
 
 ###Installing teamcity
-Installation is fairly simple and for database I wanted to use Microsoft SQL Server for that teamcity installation wizard guides you to [download SQL JDBC driver](http://confluence.jetbrains.com/display/TCD9/Setting+up+an+External+Database#SettingupanExternalDatabase-MicrosoftSQLServer). Unzip the file and look for a file _4.0.jar_ copy this file to lib foder of teamcity installation directory. 
+Installation is fairly simple and for database I wanted to use Microsoft SQL Server for that teamcity installation wizard guides you to [download SQL JDBC driver](http://confluence.jetbrains.com/display/TCD9/Setting+up+an+External+Database#SettingupanExternalDatabase-MicrosoftSQLServer). Unzip the file and look for a file _4.0.jar_ copy this file to lib folder of teamcity installation directory. 
 
-Now check your teamcity installation wizard and test if drivers are loaded. If there are no errors you can now specifiy connection detail for your sql server database. 
+Now check your teamcity installation wizard and test if drivers are loaded. If there are no errors you can now specify connection detail for your sql server database. 
 
 After database setup teamcity will prompt you for terms and conditions and then ask you to create admin account. 
 
