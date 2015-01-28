@@ -202,7 +202,8 @@ Remember the problem I have mentioned earlier in this post about some pages slip
 </a>
 
 ### Test Run
-I have recorded a screencast for whole thing in action so you have better understanding of what we achieved.
+I have recorded a screencast showing everything connected with each other and working hope it will give you better understanding.
+{% vimeo 117998089 %}
 
 ### What's Next
 
